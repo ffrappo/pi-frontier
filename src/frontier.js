@@ -113,9 +113,9 @@ console.log('\n═════════════════════�
 console.log('  TABLE 2 — MAJOR PROVIDERS × TIERS (frontier per tier)');
 console.log('══════════════════════════════════════════════════════════\n');
 
-const MAJOR = ['openai', 'anthropic', 'gemini', 'mistral', 'deepseek', 'xai', 'cohere', 'ai21', 'amazon_nova', 'meta_llama'];
+const ALL_PROVIDERS = [...new Set(frontier.map(m => m._provider))].sort();
 
-for (const provider of MAJOR) {
+for (const provider of ALL_PROVIDERS) {
   const models = frontier.filter(m => m._provider === provider);
   if (models.length === 0) { console.log(`\n${provider.toUpperCase()}: (none)\n`); continue; }
 
