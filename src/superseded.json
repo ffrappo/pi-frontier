@@ -1,0 +1,20 @@
+[
+  {
+    "provider": "alibaba",
+    "pattern": "^qwen3\\.5",
+    "supersededBy": "qwen3.6",
+    "reason": "Superseded by Qwen 3.6 generation"
+  },
+  {
+    "provider": "zai",
+    "pattern": "^glm-4\\.",
+    "supersededBy": "glm-5",
+    "reason": "Superseded by GLM 5 generation"
+  },
+  {
+    "provider": "moonshotai",
+    "pattern": "^kimi-k2-thinking",
+    "supersededBy": "kimi-k2.6",
+    "reason": "Superseded by kimi-k2.6 generation"
+  }
+]

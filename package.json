@@ -1,7 +1,7 @@
 {
   "name": "pi-frontier",
   "version": "1.0.0",
-  "description": "Fetch and filter LiteLLM model list — strip deprecated models, drop stale-by-name models, and surface frontier (latest) models per provider/tier.",
+  "description": "Fetch the models.dev catalog and surface frontier (latest) models per provider/tier using a release-date-first filter — no AI stage.",
   "type": "module",
   "scripts": {
     "fetch": "node src/fetch.js",
@@ -9,6 +9,6 @@
     "frontier": "node src/frontier.js",
     "all": "npm run fetch && npm run filter && npm run frontier"
   },
-  "keywords": ["llm", "models", "frontier", "litellm"],
+  "keywords": ["llm", "models", "frontier", "models.dev"],
   "license": "MIT"
 }
