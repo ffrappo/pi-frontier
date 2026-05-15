@@ -1,5 +1,7 @@
 # pi-frontier
 
+![pi-frontier banner](https://fcskjxapefiqdclrvbtw.supabase.co/storage/v1/object/public/assets/pi-packages/pi-frontier-banner.jpg)
+
 A daily-rebuilt snapshot of the **frontier LLM landscape** — the latest model
 per provider × family × tier (release-date-first, no AI in the loop) plus the
 full **reseller route table** for each one. Comes as a JS library, a CLI, and
