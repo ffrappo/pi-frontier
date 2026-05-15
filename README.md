@@ -12,10 +12,12 @@ and each model carries a real `release_date`, `limit.{context,output}`, and
 ## Quickstart
 
 ```bash
-npm run all       # fetch → filter → frontier
+npm run all       # fetch → filter → frontier → routes
 npm run fetch     # download raw JSON
 npm run filter    # flatten + release-date cutoff + normalize
 npm run frontier  # dedup + prune + write final output
+npm run routes    # precompute every frontier model's full route table
+npm run where     # CLI lookup — see "Lookup" below
 ```
 
 ## How it works
@@ -47,10 +49,53 @@ The release-date cutoff is orthogonal to deduplication, so this stage still:
   real false-negative: a slow-cadence model like `claude-haiku-4-5` (no Haiku
   successor shipped) would otherwise be wrongly aged out.
 
-Writes `data/frontier_final.json` and the `FRONTIER_MODELS.md` dashboard.
+Writes `data/frontier_final.json` and the `FRONTIER_MODELS.md` dashboard. The
+final record carries model-intrinsic capability fields too: `reasoning`,
+`tool_call`, `attachment`, `modalities` (`{input, output}` arrays),
+`open_weights`, `knowledge` (cutoff date).
 
 `SCOPE` env var (default `creators`) restricts to `creators`, `creators+cloud`,
 or `all` provider classes.
+
+### 3. `routes.js` — every reseller copy of every frontier model
+
+The frontier list is canonical (44 first-party rows), but the same model is
+typically also hosted under a dozen aggregators / clouds (`openrouter`,
+`vercel`, `chutes`, `kilo`, `nano-gpt`, …). `routes.js` precomputes that view
+into `data/routes.json`: for each frontier model, the full sorted route array
+(by `input_cost` asc). Routes are matched by **last-segment-after-slash**
+case-insensitive — so `glm-5-turbo` correctly collects `zai/glm-5-turbo`,
+`openrouter/z-ai/glm-5-turbo`, `kilo/zai/glm-5-turbo`, etc., while still
+ignoring strict variants like `glm-5-turbo-fp8` (different last segment).
+
+## Lookup (`npm run where`)
+
+`src/where.js` is a small CLI on top of `frontier_final.json` + `raw_models.json`.
+Same matching rule as routes.json. No deps — uses Node's `util.parseArgs`.
+
+```bash
+# All routes for glm-5-turbo, cheapest first (★ marks the cheapest):
+node src/where.js glm-5-turbo
+
+# List the frontier models that can reason AND call tools with ≥200K context:
+node src/where.js --reasoning --tools --min-context 200000
+
+# Open-weight, vision-capable models:
+node src/where.js --vision --open-weights
+
+# Machine-readable (JSON) — pipe into jq / scripts:
+node src/where.js gpt-5.5 --json
+```
+
+Capability flags: `--reasoning` / `--no-reasoning`, `--tools` / `--no-tools`
+(maps to `tool_call`), `--attachment` / `--no-attachment`, `--vision`
+(image input), `--audio` (audio input), `--open-weights` /
+`--no-open-weights`.
+
+Constraints: `--min-context <tokens>`, `--max-input-cost <usd-per-1m>`,
+`--max-output-cost <usd-per-1m>`.
+
+Output: `--routes` (force route view without a pattern), `--json` (machine-readable).
 
 ## Limitations
 

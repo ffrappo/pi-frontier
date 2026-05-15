@@ -7,7 +7,9 @@
     "fetch": "node src/fetch.js",
     "filter": "node src/filter.js",
     "frontier": "node src/frontier.js",
-    "all": "npm run fetch && npm run filter && npm run frontier"
+    "routes": "node src/routes.js",
+    "where": "node src/where.js",
+    "all": "npm run fetch && npm run filter && npm run frontier && npm run routes"
   },
   "keywords": ["llm", "models", "frontier", "models.dev"],
   "license": "MIT"

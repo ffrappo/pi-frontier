@@ -118,8 +118,18 @@ for (const [providerId, provider] of Object.entries(data)) {
       max_output_tokens: (m.limit && m.limit.output) ?? null,
       input_cost_per_token: perTok(cost.input),
       output_cost_per_token: perTok(cost.output),
-      reasoning: m.reasoning ?? null,
-      open_weights: m.open_weights ?? null,
+      // capability fields propagated end-to-end (model-intrinsic properties)
+      reasoning: m.reasoning ?? false,
+      tool_call: m.tool_call ?? false,
+      attachment: m.attachment ?? false,
+      modalities: m.modalities && typeof m.modalities === 'object'
+        ? {
+            input: Array.isArray(m.modalities.input) ? m.modalities.input : [],
+            output: Array.isArray(m.modalities.output) ? m.modalities.output : [],
+          }
+        : { input: [], output: [] },
+      open_weights: m.open_weights ?? false,
+      knowledge: m.knowledge ?? null,
       mode: 'chat',
     };
   }

@@ -201,6 +201,13 @@ function rec(m) {
     max_output_tokens: m.val.max_output_tokens || null,
     input_cost: m.val.input_cost_per_token ?? null,
     output_cost: m.val.output_cost_per_token ?? null,
+    // capability fields — model-intrinsic, carried through from filter.js.
+    reasoning: m.val.reasoning ?? false,
+    tool_call: m.val.tool_call ?? false,
+    attachment: m.val.attachment ?? false,
+    modalities: m.val.modalities ?? { input: [], output: [] },
+    open_weights: m.val.open_weights ?? false,
+    knowledge: m.val.knowledge ?? null,
   };
 }
 let records = scoped.map(rec);
