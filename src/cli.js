@@ -20,7 +20,6 @@ import { existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import {
-  getFrontierModels,
   getRoutes,
   loadRaw,
   buildRouteIndex,
