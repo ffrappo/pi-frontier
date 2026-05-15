@@ -1,39 +1,56 @@
 #!/usr/bin/env node
-// where.js — provider route lookup + capability filter CLI.
+// cli.js — `pi-frontier` command. Provider-route lookup + capability filter
+// on top of the bundled frontier_final.json + raw_models.json snapshot.
 //
-//   node src/where.js                    list all 44 frontier models
-//   node src/where.js glm-5-turbo        show frontier match + route table
-//   node src/where.js --reasoning --tools --min-context 200000
-//   node src/where.js --vision           image-input capable
-//   node src/where.js gpt-5.5 --json     machine-readable
+//   pi-frontier                       list all frontier models
+//   pi-frontier glm-5-turbo           frontier match + route table
+//   pi-frontier --reasoning --tools --min-context 200000
+//   pi-frontier --vision              image-input capable
+//   pi-frontier gpt-5.5 --json        machine-readable
 //
 // Match rule: last-segment-after-slash, case-insensitive substring. So
 // `glm-5-turbo` matches `zai/glm-5-turbo`, `openrouter/z-ai/glm-5-turbo`, etc.,
 // but NOT `glm-5-turbo-fp8` (different last segment).
 //
-// Routes (the reseller copies) are scanned from data/raw_models.json by the
-// same last-segment rule. Costs in route tables are USD per 1M tokens (the
-// raw-dump native unit). Costs on the frontier list are stored per-token —
-// where.js converts on display for human readability.
+// Costs in the route table are USD per 1M tokens (raw catalog native unit).
+// Costs on the frontier list are stored per-token — we convert on display.
 
 import { parseArgs } from 'util';
+import { existsSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import {
-  loadFrontier,
+  getFrontierModels,
+  getRoutes,
   loadRaw,
   buildRouteIndex,
   routesForFrontier,
   matchFrontier,
-} from './routes-lib.js';
+  filterCapability,
+} from './index.js';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const RAW_PATH = join(__dirname, '..', 'data', 'raw_models.json');
+
+// Use raw_models.json when present (development checkout), otherwise fall back
+// to the precomputed routes.json snapshot (shipped in the npm tarball). Both
+// paths produce the same route table; only the development one can rebuild
+// from scratch via `npm run all`.
+function routeLookup() {
+  if (existsSync(RAW_PATH)) {
+    const idx = buildRouteIndex(loadRaw());
+    return m => routesForFrontier(m, idx);
+  }
+  const routes = getRoutes();
+  return m => (routes.models[m.model_key]?.routes) || [];
+}
 
 // ── arg parsing ────────────────────────────────────────────────────
-// All flags are boolean OR string. The optional positional pattern is the
-// first non-flag arg; we use `allowPositionals` and grab args[0].
 const { values: flags, positionals } = parseArgs({
   args: process.argv.slice(2),
   allowPositionals: true,
   strict: true,
   options: {
-    // capability filters (all boolean — negative forms below)
     'reasoning':       { type: 'boolean' },
     'no-reasoning':    { type: 'boolean' },
     'tools':           { type: 'boolean' },
@@ -44,11 +61,9 @@ const { values: flags, positionals } = parseArgs({
     'audio':           { type: 'boolean' },
     'open-weights':    { type: 'boolean' },
     'no-open-weights': { type: 'boolean' },
-    // numeric constraints
     'min-context':     { type: 'string' },
     'max-input-cost':  { type: 'string' },
     'max-output-cost': { type: 'string' },
-    // output mode
     'routes':          { type: 'boolean' },
     'json':            { type: 'boolean' },
     'help':            { type: 'boolean', short: 'h' },
@@ -56,7 +71,7 @@ const { values: flags, positionals } = parseArgs({
 });
 
 if (flags.help) {
-  console.log(`Usage: node src/where.js [pattern] [flags]
+  console.log(`Usage: pi-frontier [pattern] [flags]
 
   pattern               substring match on the last segment of the model id
                         (case-insensitive). e.g. 'glm-5-turbo', 'gpt-5', 'minimax'
@@ -84,54 +99,43 @@ Output:
 
 const pattern = positionals[0] || null;
 
-// ── apply capability filters ───────────────────────────────────────
-// frontier_final cost fields are PER TOKEN; user supplies $/1M, so we
-// compare in $/1M units (× 1e6) to keep the flag UX human.
-
-function passesCapabilities(m) {
-  if (flags['reasoning']      && !m.reasoning)              return false;
-  if (flags['no-reasoning']   &&  m.reasoning)              return false;
-  if (flags['tools']          && !m.tool_call)              return false;
-  if (flags['no-tools']       &&  m.tool_call)              return false;
-  if (flags['attachment']     && !m.attachment)             return false;
-  if (flags['no-attachment']  &&  m.attachment)             return false;
-  if (flags['open-weights']   && !m.open_weights)           return false;
-  if (flags['no-open-weights'] && m.open_weights)           return false;
-
-  const inputs = (m.modalities && m.modalities.input) || [];
-  if (flags['vision'] && !inputs.includes('image'))         return false;
-  if (flags['audio']  && !inputs.includes('audio'))         return false;
-
-  if (flags['min-context'] != null) {
-    const min = Number(flags['min-context']);
-    if (!Number.isFinite(min)) {
-      console.error(`Invalid --min-context: ${flags['min-context']}`);
-      process.exit(1);
-    }
-    if ((m.max_input_tokens ?? 0) < min) return false;
+// ── numeric flag parsing (with sane error messages) ────────────────
+function numericFlag(name) {
+  if (flags[name] == null) return undefined;
+  const n = Number(flags[name]);
+  if (!Number.isFinite(n)) {
+    console.error(`Invalid --${name}: ${flags[name]}`);
+    process.exit(1);
   }
-  if (flags['max-input-cost'] != null) {
-    const cap = Number(flags['max-input-cost']);
-    if (!Number.isFinite(cap)) {
-      console.error(`Invalid --max-input-cost: ${flags['max-input-cost']}`);
-      process.exit(1);
-    }
-    // models with null cost (open-weight) fail an explicit cost cap — the user
-    // is asking for a price ceiling, and unknown price ≠ within budget.
-    if (m.input_cost == null) return false;
-    if (m.input_cost * 1e6 > cap) return false;
-  }
-  if (flags['max-output-cost'] != null) {
-    const cap = Number(flags['max-output-cost']);
-    if (!Number.isFinite(cap)) {
-      console.error(`Invalid --max-output-cost: ${flags['max-output-cost']}`);
-      process.exit(1);
-    }
-    if (m.output_cost == null) return false;
-    if (m.output_cost * 1e6 > cap) return false;
-  }
-  return true;
+  return n;
 }
+
+// Use index.js's filterCapability for the positive side; handle negative flags
+// (--no-reasoning etc.) inline since the library only exposes positive
+// constraints (the lib is the canonical, headed-UI-friendly API surface).
+function applyNegativeFlags(list) {
+  return list.filter(m => {
+    if (flags['no-reasoning']    &&  m.reasoning)    return false;
+    if (flags['no-tools']        &&  m.tool_call)    return false;
+    if (flags['no-attachment']   &&  m.attachment)   return false;
+    if (flags['no-open-weights'] &&  m.open_weights) return false;
+    return true;
+  });
+}
+
+const capFiltered = filterCapability({
+  reasoning:      flags['reasoning']      || undefined,
+  tools:          flags['tools']          || undefined,
+  attachment:     flags['attachment']     || undefined,
+  vision:         flags['vision']         || undefined,
+  audio:          flags['audio']          || undefined,
+  openWeights:    flags['open-weights']   || undefined,
+  minContext:     numericFlag('min-context'),
+  maxInputCost:   numericFlag('max-input-cost'),
+  maxOutputCost:  numericFlag('max-output-cost'),
+});
+
+let matched = applyNegativeFlags(matchFrontier(capFiltered, pattern));
 
 // ── formatting ─────────────────────────────────────────────────────
 function fmtTok(n) {
@@ -148,7 +152,6 @@ function fmtMods(mods) {
   return `${i.join('+') || '—'}→${o.join('+') || '—'}`;
 }
 
-// Render a column-aligned plain-text table. headers: string[], rows: string[][]
 function table(headers, rows) {
   const widths = headers.map((h, i) =>
     Math.max(h.length, ...rows.map(r => (r[i] ?? '').length))
@@ -160,22 +163,13 @@ function table(headers, rows) {
   return `${head}\n${rule}\n${body}`;
 }
 
-// ── load + match ───────────────────────────────────────────────────
-const frontier = loadFrontier();
-
-let matched = matchFrontier(frontier, pattern).filter(passesCapabilities);
-
 // ── route view? Triggered by a pattern OR --routes. Otherwise list view. ──
 const wantRoutes = !!pattern || flags.routes;
 
 if (flags.json) {
   if (wantRoutes) {
-    const raw = loadRaw();
-    const idx = buildRouteIndex(raw);
-    const out = matched.map(m => ({
-      frontier: m,
-      routes: routesForFrontier(m, idx),
-    }));
+    const lookup = routeLookup();
+    const out = matched.map(m => ({ frontier: m, routes: lookup(m) }));
     console.log(JSON.stringify(out, null, 2));
   } else {
     console.log(JSON.stringify(matched, null, 2));
@@ -213,8 +207,7 @@ if (!wantRoutes) {
 }
 
 // ── route view ─────────────────────────────────────────────────────
-const raw = loadRaw();
-const idx = buildRouteIndex(raw);
+const lookup = routeLookup();
 
 for (let i = 0; i < matched.length; i++) {
   const m = matched[i];
@@ -223,12 +216,11 @@ for (let i = 0; i < matched.length; i++) {
   console.log(`   context ${fmtTok(m.max_input_tokens)}→${fmtTok(m.max_output_tokens)}  ·  reasoning:${fmtBool(m.reasoning)}  tools:${fmtBool(m.tool_call)}  attach:${fmtBool(m.attachment)}  open:${fmtBool(m.open_weights)}`);
   console.log(`   modalities ${fmtMods(m.modalities)}${m.knowledge ? `  ·  knowledge ${m.knowledge}` : ''}`);
 
-  const routes = routesForFrontier(m, idx);
+  const routes = lookup(m);
   if (!routes.length) {
     console.log(`   (no routes in raw catalog)`);
     continue;
   }
-  // Find cheapest by input cost for the ★ marker; ignore null-cost entries.
   let cheapest = null;
   for (const r of routes) {
     if (r.input_cost == null) continue;

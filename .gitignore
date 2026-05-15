@@ -1,3 +1,7 @@
 node_modules/
 data/raw_models.json
 _tmp/
+# CI-staged copies for GitHub Pages; the canonical data lives in /data/.
+web/data/
+web/FRONTIER_MODELS.md
+*.tgz

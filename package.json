@@ -1,16 +1,57 @@
 {
   "name": "pi-frontier",
-  "version": "1.0.0",
-  "description": "Fetch the models.dev catalog and surface frontier (latest) models per provider/tier using a release-date-first filter — no AI stage.",
+  "version": "1.1.0",
+  "description": "Daily-rebuilt snapshot of the frontier LLM landscape — 44 models from models.dev, plus a full reseller route table for each. Headless API, CLI, and web UI.",
   "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": "./src/index.js",
+    "./data/frontier": "./data/frontier_final.json",
+    "./data/routes": "./data/routes.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "pi-frontier": "./src/cli.js"
+  },
+  "files": [
+    "src/",
+    "data/frontier_final.json",
+    "data/routes.json",
+    "FRONTIER_MODELS.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.10"
+  },
   "scripts": {
     "fetch": "node src/fetch.js",
     "filter": "node src/filter.js",
     "frontier": "node src/frontier.js",
     "routes": "node src/routes.js",
-    "where": "node src/where.js",
-    "all": "npm run fetch && npm run filter && npm run frontier && npm run routes"
+    "where": "node src/cli.js",
+    "all": "npm run fetch && npm run filter && npm run frontier && npm run routes",
+    "prepublishOnly": "npm run all"
   },
-  "keywords": ["llm", "models", "frontier", "models.dev"],
-  "license": "MIT"
+  "keywords": [
+    "llm",
+    "models",
+    "frontier",
+    "models.dev",
+    "openrouter",
+    "routing",
+    "ai",
+    "providers"
+  ],
+  "author": "Francesco Frapporti",
+  "license": "MIT",
+  "homepage": "https://github.com/ffrappo/pi-frontier#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffrappo/pi-frontier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ffrappo/pi-frontier/issues"
+  }
 }
