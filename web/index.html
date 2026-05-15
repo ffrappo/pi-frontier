@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>pi-frontier — daily LLM frontier snapshot</title>
+<meta name="description" content="Daily-rebuilt snapshot of the frontier LLM landscape — every first-party model plus its full reseller route table." />
+<meta name="color-scheme" content="light dark" />
+<style>
+  :root {
+    --bg: #0c0d10;
+    --bg-card: #15171c;
+    --bg-card-hi: #1c1f26;
+    --border: #262a33;
+    --text: #e8eaf0;
+    --text-dim: #8a93a3;
+    --text-faint: #5a6273;
+    --accent: #79b8ff;
+    --accent-hi: #a7d0ff;
+    --good: #6cd49a;
+    --warn: #f0c674;
+    --bad: #ff6b6b;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    --radius: 6px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fafbfc;
+      --bg-card: #ffffff;
+      --bg-card-hi: #f3f5f8;
+      --border: #e3e6eb;
+      --text: #16181d;
+      --text-dim: #5a6273;
+      --text-faint: #8a93a3;
+      --accent: #0969da;
+      --accent-hi: #054aa3;
+      --good: #2da44e;
+      --warn: #bf8700;
+      --bad: #cf222e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+  body { font-family: var(--sans); font-size: 14px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-hi); text-decoration: underline; }
+  .mono { font-family: var(--mono); }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 16px; }
+  header { padding: 8px 0 16px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+  h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: -0.02em; font-weight: 700; font-family: var(--mono); }
+  h1 .badge { font-size: 11px; font-weight: 500; color: var(--text-faint); margin-left: 8px; vertical-align: middle; padding: 2px 6px; border: 1px solid var(--border); border-radius: 4px; }
+  .sub { color: var(--text-dim); font-size: 12px; font-family: var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sub a { color: var(--text-dim); }
+  .sub a:hover { color: var(--accent); }
+
+  /* ── filter bar ─────────────────────────────────────────────── */
+  .filters { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 14px; }
+  @media (min-width: 640px) { .filters { grid-template-columns: 1fr auto; align-items: start; } }
+  .search { display: flex; align-items: center; gap: 6px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px 10px; }
+  .search:focus-within { border-color: var(--accent); }
+  .search input { background: transparent; border: 0; outline: 0; color: var(--text); font: 14px var(--mono); flex: 1; min-width: 0; }
+  .search input::placeholder { color: var(--text-faint); }
+  .search .count { color: var(--text-faint); font: 11px var(--mono); white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font: 11px var(--mono); padding: 5px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-card); color: var(--text-dim); cursor: pointer; user-select: none; white-space: nowrap; transition: all 0.1s; }
+  .chip:hover { color: var(--text); border-color: var(--text-faint); }
+  .chip.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .ranges { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+  .range { display: flex; flex-direction: column; gap: 2px; min-width: 180px; flex: 1; }
+  .range label { font: 11px var(--mono); color: var(--text-dim); display: flex; justify-content: space-between; gap: 8px; }
+  .range label .v { color: var(--text); }
+  .range input[type="range"] { width: 100%; accent-color: var(--accent); }
+
+  /* ── grid ───────────────────────────────────────────────────── */
+  .grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1280px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+
+  .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; cursor: pointer; transition: border-color 0.1s, background 0.1s; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .card:hover { border-color: var(--accent); background: var(--bg-card-hi); }
+  .card.open { border-color: var(--accent); }
+  .card .row1 { display: flex; align-items: baseline; gap: 8px; justify-content: space-between; min-width: 0; }
+  .card .provider { font: 11px var(--mono); color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card .tier { font: 10px var(--mono); padding: 2px 6px; border: 1px solid var(--border); border-radius: 3px; color: var(--text-dim); text-transform: uppercase; white-space: nowrap; }
+  .card .name { font: 600 14px var(--mono); color: var(--text); word-break: break-all; line-height: 1.3; }
+  .card .meta { font: 11px var(--mono); color: var(--text-faint); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .card .meta .cost { color: var(--text-dim); }
+  .card .caps { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; padding-top: 4px; }
+  .cap { font: 10px var(--mono); padding: 1px 6px; border-radius: 3px; background: var(--bg-card-hi); color: var(--text-dim); border: 1px solid var(--border); }
+  .cap.on { color: var(--good); border-color: rgba(108, 212, 154, 0.3); }
+  .cap.warn { color: var(--warn); border-color: rgba(240, 198, 116, 0.3); }
+
+  /* ── route drawer (expand inline) ───────────────────────────── */
+  .drawer { grid-column: 1 / -1; background: var(--bg-card-hi); border: 1px solid var(--accent); border-radius: var(--radius); padding: 12px; overflow-x: auto; }
+  .drawer h3 { margin: 0 0 8px; font: 600 13px var(--mono); display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .drawer h3 .close { margin-left: auto; cursor: pointer; color: var(--text-faint); font-size: 11px; }
+  .drawer h3 .close:hover { color: var(--text); }
+  table.routes { width: 100%; border-collapse: collapse; font: 12px var(--mono); }
+  table.routes th, table.routes td { text-align: left; padding: 5px 10px 5px 0; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  table.routes th { color: var(--text-dim); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; padding-bottom: 6px; }
+  table.routes td.key { max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+  table.routes td.key span { color: var(--text); }
+  table.routes tr.cheap td { color: var(--good); }
+  table.routes tr.cheap td::first-letter { color: var(--good); }
+  table.routes td.num { text-align: right; padding-right: 10px; color: var(--text-dim); }
+  table.routes tr.cheap td.num { color: var(--good); }
+  .star { color: var(--good); font-weight: 700; }
+  .empty { color: var(--text-faint); font: 12px var(--mono); padding: 12px 0; }
+
+  footer { margin-top: 24px; padding: 16px 0; border-top: 1px solid var(--border); font: 11px var(--mono); color: var(--text-faint); display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>pi-frontier <span class="badge" id="badge">loading…</span></h1>
+    <div class="sub" id="sub">Daily snapshot · source: <a href="https://models.dev" target="_blank" rel="noopener">models.dev</a></div>
+  </header>
+
+  <div class="filters">
+    <div>
+      <div class="search">
+        <input id="q" type="search" placeholder="filter by name — e.g. glm-5-turbo, gpt-5, minimax" autocomplete="off" />
+        <span class="count" id="count"></span>
+      </div>
+      <div class="ranges">
+        <div class="range">
+          <label>min context <span class="v" id="ctxLabel">0</span></label>
+          <input id="ctx" type="range" min="0" max="2000" step="50" value="0" />
+        </div>
+        <div class="range">
+          <label>max $/1M in <span class="v" id="costLabel">any</span></label>
+          <input id="cost" type="range" min="0" max="50" step="0.5" value="50" />
+        </div>
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <span class="chip" data-cap="reasoning">reasoning</span>
+      <span class="chip" data-cap="tool_call">tools</span>
+      <span class="chip" data-cap="attachment">attachment</span>
+      <span class="chip" data-cap="vision">vision</span>
+      <span class="chip" data-cap="audio">audio</span>
+      <span class="chip" data-cap="open_weights">open weights</span>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    <span><a href="https://github.com/ffrappo/pi-frontier" target="_blank" rel="noopener">github.com/ffrappo/pi-frontier</a></span>
+    <span>
+      <a href="./data/frontier_final.json">frontier_final.json</a>
+      &nbsp;·&nbsp;
+      <a href="./data/routes.json">routes.json</a>
+      &nbsp;·&nbsp;
+      <a href="./FRONTIER_MODELS.md">FRONTIER_MODELS.md</a>
+    </span>
+  </footer>
+</div>
+
+<script>
+// ── data load ────────────────────────────────────────────────────
+// Both files live next to index.html under ./data/ — same layout in dev
+// (python -m http.server) and on GitHub Pages.
+const STATE = {
+  frontier: [],
+  routes: { models: {} },
+  active: { caps: new Set(), q: '', minContext: 0, maxCost: Infinity, open: null },
+};
+
+async function load() {
+  try {
+    const [f, r] = await Promise.all([
+      fetch('./data/frontier_final.json').then(x => x.json()),
+      fetch('./data/routes.json').then(x => x.json()),
+    ]);
+    STATE.frontier = f;
+    STATE.routes = r;
+    const providers = new Set(f.map(m => m.provider));
+    document.getElementById('badge').textContent =
+      `${f.length} models · ${providers.size} providers`;
+    document.getElementById('sub').innerHTML =
+      `Generated <b>${r.generated}</b> · ${f.length} models · ${providers.size} providers · source: ` +
+      `<a href="https://models.dev" target="_blank" rel="noopener">models.dev</a>`;
+    render();
+  } catch (e) {
+    document.getElementById('badge').textContent = 'failed to load';
+    document.getElementById('grid').innerHTML =
+      `<div class="empty">Could not load data. If you're viewing this on file://, serve it via <code>python3 -m http.server</code> instead.</div>`;
+    console.error(e);
+  }
+}
+
+// ── formatters ───────────────────────────────────────────────────
+const fmtTok = n => n == null ? '—' : (n >= 1000 ? Math.round(n/1000) + 'K' : String(n));
+const fmtPerTok = c => c == null ? '—' : '$' + (c * 1e6).toFixed(2);
+const fmtPerMil = c => c == null ? '—' : '$' + Number(c).toFixed(2);
+const lastSeg = id => { const i = id.lastIndexOf('/'); return (i >= 0 ? id.slice(i+1) : id).toLowerCase(); };
+
+// ── filter ───────────────────────────────────────────────────────
+function pass(m) {
+  const a = STATE.active;
+  if (a.q && !lastSeg(m.model_key).includes(a.q)) return false;
+  for (const cap of a.caps) {
+    if (cap === 'vision') { if (!(m.modalities?.input || []).includes('image')) return false; continue; }
+    if (cap === 'audio')  { if (!(m.modalities?.input || []).includes('audio')) return false; continue; }
+    if (!m[cap]) return false;
+  }
+  if (a.minContext > 0 && (m.max_input_tokens ?? 0) < a.minContext) return false;
+  if (a.maxCost !== Infinity) {
+    if (m.input_cost == null) return false;
+    if (m.input_cost * 1e6 > a.maxCost) return false;
+  }
+  return true;
+}
+
+// ── render ───────────────────────────────────────────────────────
+function render() {
+  const grid = document.getElementById('grid');
+  const list = STATE.frontier.filter(pass);
+  document.getElementById('count').textContent =
+    list.length + ' / ' + STATE.frontier.length;
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty">No models match these filters.</div>';
+    return;
+  }
+  // Insert each card; if the drawer is open, insert it after that card so it
+  // takes the full row in the grid.
+  const out = [];
+  for (const m of list) {
+    out.push(renderCard(m));
+    if (STATE.active.open === m.model_key) out.push(renderDrawer(m));
+  }
+  grid.innerHTML = out.join('');
+  // attach click handlers
+  for (const card of grid.querySelectorAll('.card')) {
+    card.addEventListener('click', e => {
+      const key = card.getAttribute('data-key');
+      STATE.active.open = STATE.active.open === key ? null : key;
+      render();
+      if (STATE.active.open === key) {
+        // small scroll-into-view so the drawer is visible
+        requestAnimationFrame(() => {
+          card.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        });
+      }
+    });
+  }
+  for (const x of grid.querySelectorAll('.drawer .close')) {
+    x.addEventListener('click', e => { e.stopPropagation(); STATE.active.open = null; render(); });
+  }
+}
+
+function esc(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function renderCard(m) {
+  const open = STATE.active.open === m.model_key ? ' open' : '';
+  const inputs = m.modalities?.input || [];
+  const caps = [
+    m.reasoning   ? '<span class="cap on">reason</span>' : '',
+    m.tool_call   ? '<span class="cap on">tools</span>'  : '',
+    m.attachment  ? '<span class="cap on">attach</span>' : '',
+    inputs.includes('image') ? '<span class="cap on">vision</span>' : '',
+    inputs.includes('audio') ? '<span class="cap on">audio</span>'  : '',
+    m.open_weights ? '<span class="cap warn">open-weight</span>' : '',
+  ].filter(Boolean).join('');
+  return `
+    <div class="card${open}" data-key="${esc(m.model_key)}">
+      <div class="row1">
+        <span class="provider" title="${esc(m.provider)}">${esc(m.provider)}</span>
+        <span class="tier">${esc(m.tier)}</span>
+      </div>
+      <div class="name" title="${esc(m.model_key)}">${esc(m.model_key)}</div>
+      <div class="meta">
+        <span>${esc(m.release_date || '—')}</span>
+        <span>${esc(fmtTok(m.max_input_tokens))} → ${esc(fmtTok(m.max_output_tokens))}</span>
+        <span class="cost">in ${esc(fmtPerTok(m.input_cost))} · out ${esc(fmtPerTok(m.output_cost))}</span>
+      </div>
+      <div class="caps">${caps || '<span class="cap">text-only</span>'}</div>
+    </div>`;
+}
+
+function renderDrawer(m) {
+  const entry = STATE.routes.models[m.model_key];
+  const routes = entry?.routes || [];
+  // cheapest by input_cost, ignore nulls
+  let cheap = null;
+  for (const r of routes) {
+    if (r.input_cost == null) continue;
+    if (!cheap || r.input_cost < cheap.input_cost) cheap = r;
+  }
+  const rows = routes.map(r => `
+    <tr class="${r === cheap ? 'cheap' : ''}">
+      <td>${r === cheap ? '<span class="star">★</span>' : ''}</td>
+      <td>${esc(r.provider)}</td>
+      <td class="key" title="${esc(r.model_id)}"><span>${esc(r.model_id)}</span></td>
+      <td class="num">${esc(fmtPerMil(r.input_cost))}</td>
+      <td class="num">${esc(fmtPerMil(r.output_cost))}</td>
+      <td class="num">${esc(fmtTok(r.max_input_tokens))} → ${esc(fmtTok(r.max_output_tokens))}</td>
+    </tr>`).join('');
+  return `
+    <div class="drawer">
+      <h3>
+        <span>${esc(m.model_key)}</span>
+        <span style="color:var(--text-faint);font-weight:400">${routes.length} route${routes.length === 1 ? '' : 's'}${cheap ? ` · cheapest <span class="star">★</span> ${esc(cheap.provider)} @ ${esc(fmtPerMil(cheap.input_cost))}/$${esc(fmtPerMil(cheap.output_cost).slice(1))}` : ''}</span>
+        <span class="close">[close]</span>
+      </h3>
+      ${routes.length ? `
+        <table class="routes">
+          <thead><tr><th></th><th>provider</th><th>model key</th><th style="text-align:right">$/1M in</th><th style="text-align:right">$/1M out</th><th style="text-align:right">context</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      ` : '<div class="empty">No routes in the raw catalog.</div>'}
+    </div>`;
+}
+
+// ── wire up controls ─────────────────────────────────────────────
+document.getElementById('q').addEventListener('input', e => {
+  STATE.active.q = e.target.value.trim().toLowerCase();
+  render();
+});
+
+for (const chip of document.querySelectorAll('#chips .chip')) {
+  chip.addEventListener('click', () => {
+    const cap = chip.getAttribute('data-cap');
+    if (STATE.active.caps.has(cap)) STATE.active.caps.delete(cap);
+    else STATE.active.caps.add(cap);
+    chip.classList.toggle('on');
+    render();
+  });
+}
+
+const ctx = document.getElementById('ctx');
+const ctxLabel = document.getElementById('ctxLabel');
+ctx.addEventListener('input', e => {
+  const k = Number(e.target.value);
+  STATE.active.minContext = k * 1000;
+  ctxLabel.textContent = k === 0 ? '0' : (k >= 1000 ? (k/1000) + 'M' : k + 'K');
+  render();
+});
+
+const cost = document.getElementById('cost');
+const costLabel = document.getElementById('costLabel');
+cost.addEventListener('input', e => {
+  const v = Number(e.target.value);
+  STATE.active.maxCost = v >= 50 ? Infinity : v;
+  costLabel.textContent = v >= 50 ? 'any' : '$' + v.toFixed(2);
+  render();
+});
+
+load();
+</script>
+</body>
+</html>

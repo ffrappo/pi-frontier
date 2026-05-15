@@ -1,0 +1,35 @@
+name: Publish to npm
+
+# Tag-triggered: pushing a vMAJOR.MINOR.PATCH tag publishes the package.
+# prepublishOnly runs `npm run all`, so the tarball always ships a fresh
+# data snapshot — never a stale one from the tagged commit.
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write   # required for npm provenance
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install --no-package-lock; fi
+
+      - name: Publish
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

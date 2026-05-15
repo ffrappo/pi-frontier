@@ -1,0 +1,50 @@
+name: Deploy Pages
+
+# Publishes the static web UI plus the canonical JSON artifacts to GitHub
+# Pages. The UI fetches ./data/*.json relative to itself, so the workflow
+# stages copies of /data/frontier_final.json + /data/routes.json into web/data/
+# (and FRONTIER_MODELS.md into web/) before uploading the web/ directory as
+# the Pages artifact.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage data into web/
+        run: |
+          mkdir -p web/data
+          cp data/frontier_final.json web/data/
+          cp data/routes.json         web/data/
+          cp FRONTIER_MODELS.md       web/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

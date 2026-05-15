@@ -1,0 +1,47 @@
+name: Daily rebuild
+
+# Runs the full pipeline (fetch → filter → frontier → routes) every day and
+# commits the refreshed snapshots if any of the canonical artifacts changed.
+# Cron is 03:17 UTC — off-peak and slightly offset to dodge top-of-hour rushes.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-rebuild
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No deps — but be explicit so the step is portable if that ever changes.
+      - name: Install
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install --no-package-lock; fi
+
+      - name: Rebuild snapshots
+        run: npm run all
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/frontier_final.json data/routes.json FRONTIER_MODELS.md; then
+            echo "no changes — skipping commit"
+            exit 0
+          fi
+          git add data/frontier_final.json data/routes.json FRONTIER_MODELS.md
+          git commit -m "chore: daily rebuild"
+          git push
