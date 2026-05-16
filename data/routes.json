@@ -4178,6 +4178,100 @@
         }
       ]
     },
+    "xai/grok-imagine-image": {
+      "frontier": {
+        "provider": "xai",
+        "providerClass": "creator",
+        "family": "grok-imagine-image",
+        "model_key": "xai/grok-imagine-image",
+        "version": "—",
+        "tier": "base",
+        "release_date": "2026-03",
+        "last_updated": "2026-05-16",
+        "max_input_tokens": 1024,
+        "max_output_tokens": null,
+        "input_cost": null,
+        "output_cost": null,
+        "reasoning": false,
+        "tool_call": false,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "knowledge": null
+      },
+      "routes": []
+    },
+    "xai/grok-imagine-image-quality": {
+      "frontier": {
+        "provider": "xai",
+        "providerClass": "creator",
+        "family": "grok-imagine-image-quality",
+        "model_key": "xai/grok-imagine-image-quality",
+        "version": "—",
+        "tier": "base",
+        "release_date": "2026-04",
+        "last_updated": "2026-05-16",
+        "max_input_tokens": 1024,
+        "max_output_tokens": null,
+        "input_cost": null,
+        "output_cost": null,
+        "reasoning": false,
+        "tool_call": false,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "image"
+          ]
+        },
+        "open_weights": false,
+        "knowledge": null
+      },
+      "routes": []
+    },
+    "xai/grok-imagine-video": {
+      "frontier": {
+        "provider": "xai",
+        "providerClass": "creator",
+        "family": "grok-imagine-video",
+        "model_key": "xai/grok-imagine-video",
+        "version": "—",
+        "tier": "base",
+        "release_date": "2026-03",
+        "last_updated": "2026-05-16",
+        "max_input_tokens": 1024,
+        "max_output_tokens": null,
+        "input_cost": null,
+        "output_cost": null,
+        "reasoning": false,
+        "tool_call": false,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "video"
+          ]
+        },
+        "open_weights": false,
+        "knowledge": null
+      },
+      "routes": []
+    },
     "xiaomi/mimo-v2.5": {
       "frontier": {
         "provider": "xiaomi",
