@@ -986,34 +986,6 @@
     "provider": "xai",
     "providerClass": "creator",
     "family": "grok",
-    "model_key": "xai/grok-4-1-fast",
-    "version": "4.1 / 2025-11-19",
-    "tier": "fast",
-    "release_date": "2025-11-19",
-    "last_updated": "2025-11-19",
-    "max_input_tokens": 2000000,
-    "max_output_tokens": 30000,
-    "input_cost": 2.0000000000000002e-7,
-    "output_cost": 5e-7,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-07"
-  },
-  {
-    "provider": "xai",
-    "providerClass": "creator",
-    "family": "grok",
     "model_key": "xai/grok-4.20-0309-reasoning",
     "version": "4.20 / mmdd:0309",
     "tier": "reasoning",

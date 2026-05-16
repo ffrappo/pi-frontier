@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-05-15
+Generated: 2026-05-16
 Source: models.dev
-44 frontier models across 15 providers (scope: creators).
+43 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -106,7 +106,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `xai/grok-4.3` | base | 2026-05-01 | 1000K → 30K | $1.25 | $2.50 |
 | `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 2000K → 30K | $2.00 | $6.00 |
-| `xai/grok-4-1-fast` | fast | 2025-11-19 | 2000K → 30K | $0.20 | $0.50 |
 
 ## xiaomi
 
