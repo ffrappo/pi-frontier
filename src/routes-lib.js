@@ -1,7 +1,7 @@
 // routes-lib.js — shared route scanning + capability filtering helpers
 // used by src/where.js and src/routes.js.
 //
-// The frontier list (data/frontier_final.json) holds 44 canonical models. The
+// The frontier list (data/frontier_final.json) holds the canonical curated models. The
 // raw dump (data/raw_models.json) lists ~4500 entries — every reseller copy,
 // cloud mirror, and aggregator variant. A "route" here is one provider's hosted
 // copy of a frontier model. We map frontier → routes by matching the LAST

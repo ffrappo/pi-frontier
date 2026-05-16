@@ -5,7 +5,7 @@
 //      and routes generator. Stable, low-level.
 //   2. Convenience accessors that read the bundled JSON snapshots and offer
 //      single-call helpers for the most common questions:
-//         - "give me the 44 frontier models"
+//         - "give me the frontier models"
 //         - "where can I run <name> and what's the cheapest route?"
 //         - "give me everything that reasons + does tools + has 200k+ context"
 //
@@ -52,7 +52,7 @@ function readJSON(name) {
 }
 
 /**
- * Returns the 44-model frontier_final.json array.
+ * Returns the frontier_final.json array.
  * Same data as the CLI's `where` list view. Costs are PER TOKEN.
  */
 export function getFrontierModels() {

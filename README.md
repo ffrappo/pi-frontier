@@ -2,13 +2,11 @@
 
 ![pi-frontier banner](https://fcskjxapefiqdclrvbtw.supabase.co/storage/v1/object/public/assets/pi-packages/pi-frontier-banner.jpg)
 
-A daily-rebuilt snapshot of the **frontier LLM landscape** — the latest model
-per provider × family × tier (release-date-first, no AI in the loop) plus the
-full **reseller route table** for each one. Comes as a JS library, a CLI, and
-a static web UI.
+A daily-rebuilt snapshot of the **frontier AI landscape** — the latest models
+per provider × family × tier (release-date-first, no AI in the loop) spanning **LLMs, multimodal, image, and video generators**. It includes a complete **reseller API route table** and pricing data for every model. Available as a Node.js library, a CLI tool, and a static web UI.
 
-Source: [models.dev](https://models.dev/api.json). Pipeline is purely
-deterministic.
+Source: [models.dev](https://models.dev/api.json). The pipeline is purely
+deterministic and curates the top generative AI models globally.
 
 ## Three ways to use it
 
@@ -23,7 +21,7 @@ import {
   getGeneratedAt,
 } from 'pi-frontier';
 
-getFrontierModels();                          // → 44 frontier model objects
+getFrontierModels();                          // → All frontier model objects
 getGeneratedAt();                             // → "2026-05-15"
 
 cheapestRoute('glm-5-turbo');

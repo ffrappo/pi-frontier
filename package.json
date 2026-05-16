@@ -1,7 +1,7 @@
 {
   "name": "pi-frontier",
-  "version": "1.1.0",
-  "description": "Daily-rebuilt snapshot of the frontier LLM landscape — 44 models from models.dev, plus a full reseller route table for each. Headless API, CLI, and web UI.",
+  "version": "1.2.0",
+  "description": "Daily-updated, curated catalog of frontier AI models (LLMs, multimodal, image, video). Includes unified API routing tables, pricing data, a headless JS library, CLI, and Web UI.",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -42,7 +42,12 @@
     "openrouter",
     "routing",
     "ai",
-    "providers"
+    "providers",
+    "multimodal",
+    "generative-ai",
+    "pricing",
+    "text-to-image",
+    "api"
   ],
   "author": "Francesco Frapporti",
   "license": "MIT",
