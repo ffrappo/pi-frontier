@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-05-15
+Generated: 2026-05-16
 Source: models.dev
-44 frontier models across 15 providers (scope: creators).
+49 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -38,6 +38,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `google/gemini-3.1-flash-lite` | flash | 2026-05-07 | 1049K → 66K | $0.25 | $1.50 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 256K → 8K | — | — |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 256K → 8K | — | — |
+| `google/gemini-3.1-flash-image-preview` | flash | 2026-02-26 | 131K → 33K | $0.50 | $60.00 |
 | `google/gemini-3.1-pro-preview` | pro | 2026-02-19 | 1049K → 66K | $2.00 | $12.00 |
 
 ## inception
@@ -80,6 +81,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `openai/gpt-5.4-nano` | nano | 2026-03-17 | 400K → 128K | $0.20 | $1.25 |
 | `openai/gpt-5.3-codex` | base | 2026-02-05 | 400K → 128K | $1.75 | $14.00 |
 | `openai/gpt-5.3-codex-spark` | base | 2026-02-05 | 128K → 32K | $1.75 | $14.00 |
+| `openai/chatgpt-image-latest` | base | 2025-12-16 | — → — | — | — |
+| `openai/gpt-image-1.5` | base | 2025-11-25 | — → — | — | — |
 
 ## sarvam
 
@@ -105,8 +108,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `xai/grok-4.3` | base | 2026-05-01 | 1000K → 30K | $1.25 | $2.50 |
+| `xai/grok-imagine-image-quality` | base | 2026-04 | 1K → — | — | — |
 | `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 2000K → 30K | $2.00 | $6.00 |
-| `xai/grok-4-1-fast` | fast | 2025-11-19 | 2000K → 30K | $0.20 | $0.50 |
+| `xai/grok-imagine-image` | base | 2026-03 | 1K → — | — | — |
+| `xai/grok-imagine-video` | base | 2026-03 | 1K → — | — | — |
 
 ## xiaomi
 

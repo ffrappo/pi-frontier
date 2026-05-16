@@ -346,6 +346,36 @@
   {
     "provider": "google",
     "providerClass": "creator",
+    "family": "gemini-image",
+    "model_key": "google/gemini-3.1-flash-image-preview",
+    "version": "3.1 / 2026-02-26",
+    "tier": "flash",
+    "release_date": "2026-02-26",
+    "last_updated": "2026-02-26",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 32768,
+    "input_cost": 5e-7,
+    "output_cost": 0.00006,
+    "reasoning": true,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": "2025-01"
+  },
+  {
+    "provider": "google",
+    "providerClass": "creator",
     "family": "gemma-26b-a4b-it",
     "model_key": "google/gemma-4-26b-a4b-it",
     "version": "4 / 2026-04-02",
@@ -677,6 +707,35 @@
   {
     "provider": "openai",
     "providerClass": "creator",
+    "family": "chatgpt-image",
+    "model_key": "openai/chatgpt-image-latest",
+    "version": "2025-12-16",
+    "tier": "base",
+    "release_date": "2025-12-16",
+    "last_updated": "2025-12-16",
+    "max_input_tokens": null,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "openai",
+    "providerClass": "creator",
     "family": "gpt",
     "model_key": "openai/gpt-5.5",
     "version": "5.5 / 2026-04-23",
@@ -847,6 +906,35 @@
     "knowledge": "2025-08-31"
   },
   {
+    "provider": "openai",
+    "providerClass": "creator",
+    "family": "gpt-image",
+    "model_key": "openai/gpt-image-1.5",
+    "version": "1.5 / 2025-11-25",
+    "tier": "base",
+    "release_date": "2025-11-25",
+    "last_updated": "2025-11-25",
+    "max_input_tokens": null,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text",
+        "image"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
     "provider": "sarvam",
     "providerClass": "creator",
     "family": "sarvam-105b",
@@ -986,34 +1074,6 @@
     "provider": "xai",
     "providerClass": "creator",
     "family": "grok",
-    "model_key": "xai/grok-4-1-fast",
-    "version": "4.1 / 2025-11-19",
-    "tier": "fast",
-    "release_date": "2025-11-19",
-    "last_updated": "2025-11-19",
-    "max_input_tokens": 2000000,
-    "max_output_tokens": 30000,
-    "input_cost": 2.0000000000000002e-7,
-    "output_cost": 5e-7,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-07"
-  },
-  {
-    "provider": "xai",
-    "providerClass": "creator",
-    "family": "grok",
     "model_key": "xai/grok-4.20-0309-reasoning",
     "version": "4.20 / mmdd:0309",
     "tier": "reasoning",
@@ -1033,6 +1093,91 @@
       ],
       "output": [
         "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "xai",
+    "providerClass": "creator",
+    "family": "grok-imagine-image",
+    "model_key": "xai/grok-imagine-image",
+    "version": "—",
+    "tier": "base",
+    "release_date": "2026-03",
+    "last_updated": "2026-05-16",
+    "max_input_tokens": 1024,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "xai",
+    "providerClass": "creator",
+    "family": "grok-imagine-image-quality",
+    "model_key": "xai/grok-imagine-image-quality",
+    "version": "—",
+    "tier": "base",
+    "release_date": "2026-04",
+    "last_updated": "2026-05-16",
+    "max_input_tokens": 1024,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "xai",
+    "providerClass": "creator",
+    "family": "grok-imagine-video",
+    "model_key": "xai/grok-imagine-video",
+    "version": "—",
+    "tier": "base",
+    "release_date": "2026-03",
+    "last_updated": "2026-05-16",
+    "max_input_tokens": 1024,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "video"
       ]
     },
     "open_weights": false,

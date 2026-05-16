@@ -80,11 +80,11 @@ function baseFamily(family) {
   return f || family;
 }
 
-// ── gather chat models ──────────────────────────────────────────────
-// filter.js already dropped non-text-output and embedding/rerank models and
-// applied the release_date cutoff. This name-based blocklist is a cheap safety
-// net for chat-tagged models that are not general-purpose chat.
-const MODAL_BLOCK_RE = /(?:audio|realtime|tts|-search-api|search-preview|robotics|lyria|image|whisper|transcribe|moderation|guard|computer-use)/i;
+// ── gather models ──────────────────────────────────────────────────
+// filter.js categorized models into mode: chat | image | audio | video | embedding.
+// This name-based blocklist is a cheap safety net for utility endpoints
+// that are not generative models.
+const UTIL_BLOCK_RE = /(?:-search-api|search-preview|robotics|lyria|moderation|guard|safety)/i;
 
 function modelDate(val) {
   if (!val.release_date) return 0;
@@ -92,11 +92,11 @@ function modelDate(val) {
   return m ? +(m[1] + m[2] + m[3]) : 0;
 }
 
-const chat = [];
+const modelsList = [];
 for (const [key, val] of Object.entries(data)) {
   if (typeof val !== 'object' || !val) continue;
   const id = val.model_id || key;
-  if (MODAL_BLOCK_RE.test(id)) continue;
+  if (UTIL_BLOCK_RE.test(id)) continue;
 
   const provider = canonProvider(val.litellm_provider || 'unknown');
   const { family, version } = parseModelKey(id);
@@ -109,18 +109,19 @@ for (const [key, val] of Object.entries(data)) {
       ? { ...version, date: version.date || relDate }
       : { semver: [], date: relDate, dotted: false, dateApprox: false };
   }
-  chat.push({
+  modelsList.push({
     key, val, provider,
     providerClass: classifyProvider(provider),
     family: baseFamily(family), version: ver,
     tier: detectTier(id),
+    mode: val.mode,
     relDate, // numeric YYYYMMDD or 0
   });
 }
-const N_CHAT = chat.length;
+const N_GATHERED = modelsList.length;
 
-// ── within-family×tier pruning ─────────────────────────────────────
-// key = provider :: family :: tier  → highest version wins. Because of regional
+// ── within-family×tier×mode pruning ────────────────────────────────
+// key = provider :: family :: tier :: mode → highest version wins. Because of regional
 // dedup above, the *-cn twin lands in the same bucket as its global twin; the
 // tiebreak below then prefers the cheaper-priced entry.
 const PREVIEW_RE = /\b(?:preview|beta|exp|experimental|nightly|rc)\b/i;
@@ -128,8 +129,8 @@ const isPreview = key => PREVIEW_RE.test(key);
 const inCost = m => (m.val.input_cost_per_token == null ? Infinity : m.val.input_cost_per_token);
 
 const pruned = new Map();
-for (const m of chat) {
-  const k = `${m.provider}::${m.family}::${m.tier}`;
+for (const m of modelsList) {
+  const k = `${m.provider}::${m.family}::${m.tier}::${m.mode}`;
   const cur = pruned.get(k);
   if (!cur) { pruned.set(k, m); continue; }
   const c = cmpVersion(m.version, cur.version);
@@ -149,16 +150,16 @@ let frontier = [...pruned.values()];
 // ── keep-newest-in-family guarantee ─────────────────────────────────
 // The release_date cutoff is a pre-filter; it can wrongly kill a slow-cadence
 // family's only live model (e.g. claude-haiku-4-5 — no Haiku successor shipped).
-// For every provider×family present in the FULL chat set, make sure the newest
+// For every provider×family present in the FULL set, make sure the newest
 // member (by release_date, then version) is in the frontier even if filter.js
 // would have aged it out — it never gets here aged-out since filter.js drops
 // pre-cutoff, so this instead guarantees we don't *prune* away the family head.
 // Concretely: per provider×family, if pruning left the family with entries but
 // a newer-dated member of that family was dropped as a non-top tier, that's
 // fine — tiers are intentional. The real fix is at filter.js (cutoff) — but to
-// be safe, re-scan: ensure each family's overall newest chat member survives.
-const familyNewest = new Map(); // provider::family -> newest chat member
-for (const m of chat) {
+// be safe, re-scan: ensure each family's overall newest member survives.
+const familyNewest = new Map(); // provider::family -> newest member
+for (const m of modelsList) {
   const fk = `${m.provider}::${m.family}`;
   const cur = familyNewest.get(fk);
   if (!cur) { familyNewest.set(fk, m); continue; }
@@ -292,6 +293,6 @@ for (const provider of Object.keys(byProvider).sort()) {
   })));
 }
 
-console.log(`\nfunnel: filtered ${N_RAW} → chat ${N_CHAT} → families ${familySet.size} → pruned ${N_PRUNED} → scope:${SCOPE} ${records.length}`);
+console.log(`\nfunnel: filtered ${N_RAW} → gathered ${N_GATHERED} → families ${familySet.size} → pruned ${N_PRUNED} → scope:${SCOPE} ${records.length}`);
 console.log(`→ ${OUT_JSON}  (${records.length} records)`);
 console.log(`→ ${OUT_MD}`);

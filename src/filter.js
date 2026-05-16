@@ -70,7 +70,7 @@ for (const [providerId, provider] of Object.entries(data)) {
   }
 }
 
-let total = 0, droppedModality = 0, droppedOld = 0, rescuedNewest = 0;
+let total = 0, droppedModality = 0, droppedOld = 0, droppedDeprecated = 0, rescuedNewest = 0;
 const kept = {};
 
 for (const [providerId, provider] of Object.entries(data)) {
@@ -95,11 +95,26 @@ for (const [providerId, provider] of Object.entries(data)) {
       }
     }
 
-    // ── modality filter: a chat model emits text. Drop image/audio/video-only
-    // and embedding/rerank models.
+    // ── DEPRECATION FILTER
+    if (m.status === 'deprecated') {
+      droppedDeprecated++;
+      continue;
+    }
+
+    // ── mode classification ────────────────────────────────────────
+    let mode = 'chat';
+    const isEmbed = /\b(embed|embedding|rerank|reranker)\b/i.test(modelId);
     const out = (m.modalities && m.modalities.output) || ['text'];
-    if (!out.includes('text')) { droppedModality++; continue; }
-    if (/\b(embed|embedding|rerank|reranker)\b/i.test(modelId)) { droppedModality++; continue; }
+    
+    if (isEmbed) {
+      mode = 'embedding';
+    } else if (!out.includes('text')) {
+      // It doesn't emit text. Classify based on what it DOES emit.
+      if (out.includes('image')) mode = 'image';
+      else if (out.includes('video')) mode = 'video';
+      else if (out.includes('audio')) mode = 'audio';
+      else mode = 'unknown';
+    }
 
     // ── normalize to the downstream shape ──────────────────────────
     // models.dev cost is USD per 1M tokens → store per-token (÷ 1e6).
@@ -130,7 +145,7 @@ for (const [providerId, provider] of Object.entries(data)) {
         : { input: [], output: [] },
       open_weights: m.open_weights ?? false,
       knowledge: m.knowledge ?? null,
-      mode: 'chat',
+      mode,
     };
   }
 }
@@ -139,6 +154,7 @@ writeFileSync(OUT, JSON.stringify(kept, null, 2));
 
 console.log(`Total models:    ${total}`);
 console.log(`  release-old:   ${droppedOld}  (release_date < ${CUTOFF.toISOString().slice(0, 10)})`);
+console.log(`  deprecated:    ${droppedDeprecated}`);
 console.log(`  non-chat:      ${droppedModality}`);
 console.log(`  rescued (family head, pre-cutoff): ${rescuedNewest}`);
 console.log(`  ─────────────────────`);
