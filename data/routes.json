@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-18",
+  "generated": "2026-05-19",
   "models": {
     "alibaba/qwen3.6-max-preview": {
       "frontier": {
@@ -162,6 +162,15 @@
           "output_cost": 3.5999999999999996,
           "max_input_tokens": 256000,
           "max_output_tokens": 256000
+        },
+        {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/qwen3.6-27b",
+          "model_id": "route/qwen3.6-27b",
+          "input_cost": 1.1,
+          "output_cost": 3.3,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         }
       ]
     },
@@ -989,6 +998,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/deepseek-v4-flash",
+          "model_id": "route/deepseek-v4-flash",
+          "input_cost": 0.4928,
+          "output_cost": 0.7392,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "ollama-cloud",
           "model_key": "ollama-cloud/deepseek-v4-flash",
           "model_id": "deepseek-v4-flash",
@@ -1054,6 +1072,15 @@
           "output_cost": 0.87,
           "max_input_tokens": 1048576,
           "max_output_tokens": 384000
+        },
+        {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/deepseek-v4-pro",
+          "model_id": "route/deepseek-v4-pro",
+          "input_cost": 0.4928,
+          "output_cost": 0.7392,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "orcarouter",
@@ -1794,6 +1821,15 @@
           "max_output_tokens": 16384
         },
         {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/gemma-4-31b-it",
+          "model_id": "route/gemma-4-31b-it",
+          "input_cost": 0.1,
+          "output_cost": 0.3,
+          "max_input_tokens": 131072,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "lilac",
           "model_key": "lilac/google/gemma-4-31b-it",
           "model_id": "google/gemma-4-31b-it",
@@ -2238,6 +2274,15 @@
           "max_output_tokens": 131070
         },
         {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/minimax-m2.7",
+          "model_id": "route/minimax-m2.7",
+          "input_cost": 0.33,
+          "output_cost": 1.32,
+          "max_input_tokens": 100000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "cortecs",
           "model_key": "cortecs/minimax-m2.7",
           "model_id": "minimax-m2.7",
@@ -2302,6 +2347,15 @@
           "input_cost": 0,
           "output_cost": 0,
           "max_input_tokens": 204800,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/minimax-m2.7-highspeed",
+          "model_id": "route/minimax-m2.7-highspeed",
+          "input_cost": 0.33,
+          "output_cost": 1.32,
+          "max_input_tokens": 100000,
           "max_output_tokens": 131072
         },
         {
@@ -2645,6 +2699,15 @@
           "model_id": "moonshotai/kimi-k2.6",
           "input_cost": 0,
           "output_cost": 0,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/kimi-k2.6",
+          "model_id": "route/kimi-k2.6",
+          "input_cost": 0.462,
+          "output_cost": 2.42,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         },
@@ -4019,6 +4082,15 @@
       },
       "routes": [
         {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/step-3.5-flash-2603",
+          "model_id": "route/step-3.5-flash-2603",
+          "input_cost": 0.1,
+          "output_cost": 0.3,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "stepfun",
           "model_key": "stepfun/step-3.5-flash-2603",
           "model_id": "step-3.5-flash-2603",
@@ -4413,6 +4485,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/mimo-v2.5",
+          "model_id": "route/mimo-v2.5",
+          "input_cost": 0.4,
+          "output_cost": 2,
+          "max_input_tokens": 256000,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "xiaomi",
           "model_key": "xiaomi/mimo-v2.5",
           "model_id": "mimo-v2.5",
@@ -4662,6 +4743,15 @@
           "output_cost": 0,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/mimo-v2.5-pro",
+          "model_id": "route/mimo-v2.5-pro",
+          "input_cost": 0.45,
+          "output_cost": 1.35,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 262144
         },
         {
           "provider": "deepinfra",
@@ -4989,6 +5079,15 @@
           "output_cost": 3.2,
           "max_input_tokens": 202752,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "routing-run",
+          "model_key": "routing-run/route/glm-5.1",
+          "model_id": "route/glm-5.1",
+          "input_cost": 1,
+          "output_cost": 3,
+          "max_input_tokens": 202752,
+          "max_output_tokens": 202752
         },
         {
           "provider": "synthetic",
