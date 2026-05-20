@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-19",
+  "generated": "2026-05-20",
   "models": {
     "alibaba/qwen3.6-max-preview": {
       "frontier": {
@@ -908,6 +908,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "fireworks-ai",
+          "model_key": "fireworks-ai/accounts/fireworks/models/deepseek-v4-flash",
+          "model_id": "accounts/fireworks/models/deepseek-v4-flash",
+          "input_cost": 0.14,
+          "output_cost": 0.28,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "kilo",
           "model_key": "kilo/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
@@ -1367,20 +1376,20 @@
         }
       ]
     },
-    "google/gemini-3.1-flash-lite": {
+    "google/gemini-3.5-flash": {
       "frontier": {
         "provider": "google",
         "providerClass": "creator",
         "family": "gemini",
-        "model_key": "google/gemini-3.1-flash-lite",
-        "version": "3.1 / 2026-05-07",
+        "model_key": "google/gemini-3.5-flash",
+        "version": "3.5 / 2026-05-19",
         "tier": "flash",
-        "release_date": "2026-05-07",
-        "last_updated": "2026-05-07",
+        "release_date": "2026-05-19",
+        "last_updated": "2026-05-19",
         "max_input_tokens": 1048576,
         "max_output_tokens": 65536,
-        "input_cost": 2.5e-7,
-        "output_cost": 0.0000015,
+        "input_cost": 0.0000015,
+        "output_cost": 0.000009,
         "reasoning": true,
         "tool_call": true,
         "attachment": true,
@@ -1401,85 +1410,13 @@
       },
       "routes": [
         {
-          "provider": "aihubmix",
-          "model_key": "aihubmix/gemini-3.1-flash-lite",
-          "model_id": "gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
           "provider": "google",
-          "model_key": "google/gemini-3.1-flash-lite",
-          "model_id": "gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
+          "model_key": "google/gemini-3.5-flash",
+          "model_id": "gemini-3.5-flash",
+          "input_cost": 1.5,
+          "output_cost": 9,
           "max_input_tokens": 1048576,
           "max_output_tokens": 65536
-        },
-        {
-          "provider": "google-vertex",
-          "model_key": "google-vertex/gemini-3.1-flash-lite",
-          "model_id": "gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "kilo",
-          "model_key": "kilo/google/gemini-3.1-flash-lite",
-          "model_id": "google/gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "llmgateway",
-          "model_key": "llmgateway/gemini-3.1-flash-lite",
-          "model_id": "gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "nearai",
-          "model_key": "nearai/google/gemini-3.1-flash-lite",
-          "model_id": "google/gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/google/gemini-3.1-flash-lite",
-          "model_id": "google/gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "poe",
-          "model_key": "poe/google/gemini-3.1-flash-lite",
-          "model_id": "google/gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "vercel",
-          "model_key": "vercel/google/gemini-3.1-flash-lite",
-          "model_id": "google/gemini-3.1-flash-lite",
-          "input_cost": 0.25,
-          "output_cost": 1.5,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 65000
         }
       ]
     },
@@ -4483,15 +4420,6 @@
           "output_cost": 2,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "routing-run",
-          "model_key": "routing-run/route/mimo-v2.5",
-          "model_id": "route/mimo-v2.5",
-          "input_cost": 0.4,
-          "output_cost": 2,
-          "max_input_tokens": 256000,
-          "max_output_tokens": 65536
         },
         {
           "provider": "xiaomi",
