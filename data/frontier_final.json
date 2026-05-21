@@ -352,8 +352,8 @@
     "tier": "flash",
     "release_date": "2026-02-26",
     "last_updated": "2026-02-26",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 32768,
+    "max_input_tokens": 65536,
+    "max_output_tokens": 65536,
     "input_cost": 5e-7,
     "output_cost": 0.00006,
     "reasoning": true,
@@ -382,13 +382,13 @@
     "tier": "base",
     "release_date": "2026-04-02",
     "last_updated": "2026-04-02",
-    "max_input_tokens": 256000,
-    "max_output_tokens": 8192,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 32768,
     "input_cost": null,
     "output_cost": null,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
         "text",
@@ -410,13 +410,13 @@
     "tier": "base",
     "release_date": "2026-04-02",
     "last_updated": "2026-04-02",
-    "max_input_tokens": 256000,
-    "max_output_tokens": 8192,
+    "max_input_tokens": 262144,
+    "max_output_tokens": 32768,
     "input_cost": null,
     "output_cost": null,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
         "text",
@@ -1047,10 +1047,10 @@
     "providerClass": "creator",
     "family": "grok",
     "model_key": "xai/grok-4.3",
-    "version": "4.3 / 2026-05-01",
+    "version": "4.3 / 2026-04-17",
     "tier": "base",
-    "release_date": "2026-05-01",
-    "last_updated": "2026-05-01",
+    "release_date": "2026-04-17",
+    "last_updated": "2026-04-17",
     "max_input_tokens": 1000000,
     "max_output_tokens": 30000,
     "input_cost": 0.00000125,
@@ -1061,7 +1061,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1081,15 +1082,45 @@
     "last_updated": "2026-03-09",
     "max_input_tokens": 2000000,
     "max_output_tokens": 30000,
-    "input_cost": 0.000002,
-    "output_cost": 0.000006,
+    "input_cost": 0.00000125,
+    "output_cost": 0.0000025,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "xai",
+    "providerClass": "creator",
+    "family": "grok-build",
+    "model_key": "xai/grok-build-0.1",
+    "version": "0.1 / 2026-05-20",
+    "tier": "base",
+    "release_date": "2026-05-20",
+    "last_updated": "2026-05-20",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 256000,
+    "input_cost": 0.000001,
+    "output_cost": 0.000002,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1103,11 +1134,11 @@
     "providerClass": "creator",
     "family": "grok-imagine-image",
     "model_key": "xai/grok-imagine-image",
-    "version": "—",
+    "version": "2026-01-28",
     "tier": "base",
-    "release_date": "2026-03",
-    "last_updated": "2026-05-16",
-    "max_input_tokens": 1024,
+    "release_date": "2026-01-28",
+    "last_updated": "2026-01-28",
+    "max_input_tokens": 8000,
     "max_output_tokens": null,
     "input_cost": null,
     "output_cost": null,
@@ -1131,11 +1162,11 @@
     "providerClass": "creator",
     "family": "grok-imagine-image-quality",
     "model_key": "xai/grok-imagine-image-quality",
-    "version": "—",
+    "version": "2026-04-03",
     "tier": "base",
-    "release_date": "2026-04",
-    "last_updated": "2026-05-16",
-    "max_input_tokens": 1024,
+    "release_date": "2026-04-03",
+    "last_updated": "2026-04-03",
+    "max_input_tokens": 8000,
     "max_output_tokens": null,
     "input_cost": null,
     "output_cost": null,
@@ -1159,10 +1190,10 @@
     "providerClass": "creator",
     "family": "grok-imagine-video",
     "model_key": "xai/grok-imagine-video",
-    "version": "—",
+    "version": "2026-01-28",
     "tier": "base",
-    "release_date": "2026-03",
-    "last_updated": "2026-05-16",
+    "release_date": "2026-01-28",
+    "last_updated": "2026-01-28",
     "max_input_tokens": 1024,
     "max_output_tokens": null,
     "input_cost": null,
@@ -1173,8 +1204,7 @@
     "modalities": {
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "output": [
         "video"

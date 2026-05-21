@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-05-20
+Generated: 2026-05-21
 Source: models.dev
-49 frontier models across 15 providers (scope: creators).
+50 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -36,9 +36,9 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `google/gemini-3.5-flash` | flash | 2026-05-19 | 1049K → 66K | $1.50 | $9.00 |
-| `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 256K → 8K | — | — |
-| `google/gemma-4-31b-it` | base | 2026-04-02 | 256K → 8K | — | — |
-| `google/gemini-3.1-flash-image-preview` | flash | 2026-02-26 | 131K → 33K | $0.50 | $60.00 |
+| `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | — | — |
+| `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | — | — |
+| `google/gemini-3.1-flash-image-preview` | flash | 2026-02-26 | 66K → 66K | $0.50 | $60.00 |
 | `google/gemini-3.1-pro-preview` | pro | 2026-02-19 | 1049K → 66K | $2.00 | $12.00 |
 
 ## inception
@@ -107,11 +107,12 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `xai/grok-4.3` | base | 2026-05-01 | 1000K → 30K | $1.25 | $2.50 |
-| `xai/grok-imagine-image-quality` | base | 2026-04 | 1K → — | — | — |
-| `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 2000K → 30K | $2.00 | $6.00 |
-| `xai/grok-imagine-image` | base | 2026-03 | 1K → — | — | — |
-| `xai/grok-imagine-video` | base | 2026-03 | 1K → — | — | — |
+| `xai/grok-build-0.1` | base | 2026-05-20 | 256K → 256K | $1.00 | $2.00 |
+| `xai/grok-4.3` | base | 2026-04-17 | 1000K → 30K | $1.25 | $2.50 |
+| `xai/grok-imagine-image-quality` | base | 2026-04-03 | 8K → — | — | — |
+| `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 2000K → 30K | $1.25 | $2.50 |
+| `xai/grok-imagine-image` | base | 2026-01-28 | 8K → — | — | — |
+| `xai/grok-imagine-video` | base | 2026-01-28 | 1K → — | — | — |
 
 ## xiaomi
 
