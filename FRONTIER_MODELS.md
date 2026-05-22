@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-05-21
+Generated: 2026-05-22
 Source: models.dev
 50 frontier models across 15 providers (scope: creators).
 
@@ -10,8 +10,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `alibaba/qwen3.7-max` | base | 2026-05-21 | 1000K → 66K | $2.50 | $7.50 |
 | `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
-| `alibaba/qwen3.6-max-preview` | base | 2026-04-20 | 262K → 66K | $1.30 | $7.80 |
 | `alibaba/qwen3.6-35b-a3b` | base | 2026-04-17 | 262K → 66K | $0.25 | $1.49 |
 
 ## anthropic
@@ -107,8 +107,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `xai/grok-build-0.1` | base | 2026-05-20 | 256K → 256K | $1.00 | $2.00 |
 | `xai/grok-4.3` | base | 2026-04-17 | 1000K → 30K | $1.25 | $2.50 |
+| `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
 | `xai/grok-imagine-image-quality` | base | 2026-04-03 | 8K → — | — | — |
 | `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 2000K → 30K | $1.25 | $2.50 |
 | `xai/grok-imagine-image` | base | 2026-01-28 | 8K → — | — | — |

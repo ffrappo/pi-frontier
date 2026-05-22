@@ -3,15 +3,15 @@
     "provider": "alibaba",
     "providerClass": "creator",
     "family": "qwen",
-    "model_key": "alibaba/qwen3.6-max-preview",
-    "version": "3.6 / 2026-04-20",
+    "model_key": "alibaba/qwen3.7-max",
+    "version": "3.7 / 2026-05-21",
     "tier": "base",
-    "release_date": "2026-04-20",
-    "last_updated": "2026-04-20",
-    "max_input_tokens": 262144,
+    "release_date": "2026-05-21",
+    "last_updated": "2026-05-21",
+    "max_input_tokens": 1000000,
     "max_output_tokens": 65536,
-    "input_cost": 0.0000013,
-    "output_cost": 0.0000078,
+    "input_cost": 0.0000025,
+    "output_cost": 0.0000075,
     "reasoning": true,
     "tool_call": true,
     "attachment": false,
@@ -24,7 +24,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2025-04"
+    "knowledge": null
   },
   {
     "provider": "alibaba",
@@ -1105,10 +1105,10 @@
     "providerClass": "creator",
     "family": "grok-build",
     "model_key": "xai/grok-build-0.1",
-    "version": "0.1 / 2026-05-20",
+    "version": "0.1 / 2026-04-16",
     "tier": "base",
-    "release_date": "2026-05-20",
-    "last_updated": "2026-05-20",
+    "release_date": "2026-04-16",
+    "last_updated": "2026-04-16",
     "max_input_tokens": 256000,
     "max_output_tokens": 256000,
     "input_cost": 0.000001,
@@ -1148,10 +1148,12 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
-        "image"
+        "image",
+        "pdf"
       ]
     },
     "open_weights": false,
@@ -1176,10 +1178,12 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
-        "image"
+        "image",
+        "pdf"
       ]
     },
     "open_weights": false,
@@ -1204,7 +1208,8 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "pdf"
       ],
       "output": [
         "video"
