@@ -29,6 +29,35 @@
   {
     "provider": "alibaba",
     "providerClass": "creator",
+    "family": "qwen",
+    "model_key": "alibaba/qwen3.6-flash",
+    "version": "3.6 / 2026-04-27",
+    "tier": "flash",
+    "release_date": "2026-04-27",
+    "last_updated": "2026-04-27",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 65536,
+    "input_cost": 1.875e-7,
+    "output_cost": 0.000001125,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
     "family": "qwen-27b",
     "model_key": "alibaba/qwen3.6-27b",
     "version": "3.6 / 2026-04-22",
