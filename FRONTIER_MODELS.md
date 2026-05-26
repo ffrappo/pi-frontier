@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-05-25
+Generated: 2026-05-26
 Source: models.dev
-51 frontier models across 15 providers (scope: creators).
+50 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -28,7 +28,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `deepseek/deepseek-v4-flash` | flash | 2026-04-24 | 1000K → 384K | $0.14 | $0.28 |
-| `deepseek/deepseek-v4-pro` | pro | 2026-04-24 | 1000K → 384K | $1.74 | $3.48 |
+| `deepseek/deepseek-v4-pro` | pro | 2026-04-24 | 1000K → 384K | $0.43 | $0.87 |
 | `deepseek/deepseek-chat` | base | 2025-12-01 | 1000K → 384K | $0.14 | $0.28 |
 | `deepseek/deepseek-reasoner` | reasoning | 2025-12-01 | 1000K → 384K | $0.14 | $0.28 |
 
@@ -83,7 +83,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `openai/gpt-5.3-codex` | base | 2026-02-05 | 400K → 128K | $1.75 | $14.00 |
 | `openai/gpt-5.3-codex-spark` | base | 2026-02-05 | 128K → 32K | $1.75 | $14.00 |
 | `openai/chatgpt-image-latest` | base | 2025-12-16 | — → — | — | — |
-| `openai/gpt-image-1.5` | base | 2025-11-25 | — → — | — | — |
 
 ## sarvam
 

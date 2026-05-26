@@ -267,8 +267,8 @@
     "last_updated": "2026-04-24",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
-    "input_cost": 0.00000174,
-    "output_cost": 0.00000348,
+    "input_cost": 4.35e-7,
+    "output_cost": 8.7e-7,
     "reasoning": true,
     "tool_call": true,
     "attachment": false,
@@ -933,35 +933,6 @@
     },
     "open_weights": false,
     "knowledge": "2025-08-31"
-  },
-  {
-    "provider": "openai",
-    "providerClass": "creator",
-    "family": "gpt-image",
-    "model_key": "openai/gpt-image-1.5",
-    "version": "1.5 / 2025-11-25",
-    "tier": "base",
-    "release_date": "2025-11-25",
-    "last_updated": "2025-11-25",
-    "max_input_tokens": null,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
   },
   {
     "provider": "sarvam",
