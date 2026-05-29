@@ -148,11 +148,11 @@
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude",
-    "model_key": "anthropic/claude-opus-4-7",
-    "version": "4.7 / 2026-04-16",
+    "model_key": "anthropic/claude-opus-4-8",
+    "version": "4.8 / 2026-05-28",
     "tier": "opus",
-    "release_date": "2026-04-16",
-    "last_updated": "2026-04-16",
+    "release_date": "2026-05-28",
+    "last_updated": "2026-05-28",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
     "input_cost": 0.000005,
@@ -171,7 +171,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2026-01-31"
+    "knowledge": null
   },
   {
     "provider": "anthropic",
@@ -542,8 +542,62 @@
   {
     "provider": "minimax",
     "providerClass": "creator",
+    "family": "minimax-m",
+    "model_key": "minimax-cn/MiniMax-M2.7",
+    "version": "2.7 / 2026-03-18",
+    "tier": "base",
+    "release_date": "2026-03-18",
+    "last_updated": "2026-03-18",
+    "max_input_tokens": 204800,
+    "max_output_tokens": 131072,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "minimax",
+    "providerClass": "creator",
     "family": "minimax-m-highspeed",
     "model_key": "minimax/MiniMax-M2.7-highspeed",
+    "version": "2.7 / 2026-03-18",
+    "tier": "base",
+    "release_date": "2026-03-18",
+    "last_updated": "2026-03-18",
+    "max_input_tokens": 204800,
+    "max_output_tokens": 131072,
+    "input_cost": 6e-7,
+    "output_cost": 0.0000024,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "minimax",
+    "providerClass": "creator",
+    "family": "minimax-m-highspeed",
+    "model_key": "minimax-cn/MiniMax-M2.7-highspeed",
     "version": "2.7 / 2026-03-18",
     "tier": "base",
     "release_date": "2026-03-18",
@@ -709,6 +763,35 @@
     "providerClass": "creator",
     "family": "kimi-k",
     "model_key": "moonshotai/kimi-k2.6",
+    "version": "2.6 / 2026-04-21",
+    "tier": "base",
+    "release_date": "2026-04-21",
+    "last_updated": "2026-04-21",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "input_cost": 9.499999999999999e-7,
+    "output_cost": 0.000004,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-01"
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
+    "family": "kimi-k",
+    "model_key": "moonshotai-cn/kimi-k2.6",
     "version": "2.6 / 2026-04-21",
     "tier": "base",
     "release_date": "2026-04-21",
@@ -1364,6 +1447,33 @@
     "provider": "zai",
     "providerClass": "creator",
     "family": "glm",
+    "model_key": "zhipuai/glm-5.1",
+    "version": "5.1 / 2026-03-27",
+    "tier": "base",
+    "release_date": "2026-03-27",
+    "last_updated": "2026-03-27",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000006,
+    "output_cost": 0.000024,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm",
     "model_key": "zai/glm-5-turbo",
     "version": "5 / 2026-03-16",
     "tier": "lite",
@@ -1400,6 +1510,36 @@
     "max_output_tokens": 131072,
     "input_cost": 0.0000012,
     "output_cost": 0.000004,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-5v",
+    "model_key": "zhipuai/glm-5v-turbo",
+    "version": "2026-04-01",
+    "tier": "lite",
+    "release_date": "2026-04-01",
+    "last_updated": "2026-04-01",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000005,
+    "output_cost": 0.000022,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
