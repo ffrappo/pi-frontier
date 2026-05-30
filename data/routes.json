@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-29",
+  "generated": "2026-05-30",
   "models": {
     "alibaba/qwen3.7-max": {
       "frontier": {
@@ -639,6 +639,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "cloudflare-ai-gateway",
+          "model_key": "cloudflare-ai-gateway/anthropic/claude-opus-4-8",
+          "model_id": "anthropic/claude-opus-4-8",
+          "input_cost": 5,
+          "output_cost": 25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "llmgateway",
           "model_key": "llmgateway/claude-opus-4-8",
           "model_id": "claude-opus-4-8",
@@ -962,10 +971,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.2,
+          "input_cost": 0.0983,
+          "output_cost": 0.1966,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 16384
+          "max_output_tokens": 131072
         },
         {
           "provider": "gmicloud",
@@ -3455,6 +3464,15 @@
           "max_output_tokens": 65536
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.6",
+          "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0.684,
+          "output_cost": 3.42,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "neuralwatt",
           "model_key": "neuralwatt/moonshotai/Kimi-K2.6",
           "model_id": "moonshotai/Kimi-K2.6",
@@ -3471,15 +3489,6 @@
           "output_cost": 3.5,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.6",
-          "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.73,
-          "output_cost": 3.49,
-          "max_input_tokens": 262142,
-          "max_output_tokens": 262142
         },
         {
           "provider": "deepinfra",
@@ -3857,6 +3866,15 @@
           "max_output_tokens": 65536
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.6",
+          "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0.684,
+          "output_cost": 3.42,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "neuralwatt",
           "model_key": "neuralwatt/moonshotai/Kimi-K2.6",
           "model_id": "moonshotai/Kimi-K2.6",
@@ -3873,15 +3891,6 @@
           "output_cost": 3.5,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.6",
-          "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.73,
-          "output_cost": 3.49,
-          "max_input_tokens": 262142,
-          "max_output_tokens": 262142
         },
         {
           "provider": "deepinfra",
