@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-31",
+  "generated": "2026-06-01",
   "models": {
     "alibaba/qwen3.7-max": {
       "frontier": {
@@ -1119,6 +1119,15 @@
           "output_cost": 0.28,
           "max_input_tokens": 1048576,
           "max_output_tokens": 393216
+        },
+        {
+          "provider": "opencode",
+          "model_key": "opencode/deepseek-v4-flash",
+          "model_id": "deepseek-v4-flash",
+          "input_cost": 0.14,
+          "output_cost": 0.28,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
         },
         {
           "provider": "opencode-go",
@@ -6218,15 +6227,6 @@
           "output_cost": 2,
           "max_input_tokens": 262144,
           "max_output_tokens": 128000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/xiaomi/mimo-v2-omni",
-          "model_id": "xiaomi/mimo-v2-omni",
-          "input_cost": 0.4,
-          "output_cost": 2,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
         },
         {
           "provider": "xiaomi",
