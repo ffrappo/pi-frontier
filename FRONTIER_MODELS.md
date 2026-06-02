@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-06-01
+Generated: 2026-06-02
 Source: models.dev
-55 frontier models across 15 providers (scope: creators).
+56 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -30,7 +30,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `deepseek/deepseek-v4-flash` | flash | 2026-04-24 | 1000K → 384K | $0.14 | $0.28 |
 | `deepseek/deepseek-v4-pro` | pro | 2026-04-24 | 1000K → 384K | $0.43 | $0.87 |
 | `deepseek/deepseek-chat` | base | 2025-12-01 | 1000K → 384K | $0.14 | $0.28 |
-| `deepseek/deepseek-reasoner` | reasoning | 2025-12-01 | 1000K → 384K | $0.14 | $0.28 |
 
 ## google
 
@@ -53,6 +52,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 512K → 131K | $0.30 | $1.20 |
+| `minimax/MiniMax-M3` | base | 2026-06-01 | 512K → 131K | $0.30 | $1.20 |
 | `minimax-cn/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
 | `minimax-cn/MiniMax-M2.7-highspeed` | base | 2026-03-18 | 205K → 131K | $0.60 | $2.40 |
 | `minimax/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |

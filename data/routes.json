@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-01",
+  "generated": "2026-06-02",
   "models": {
     "alibaba/qwen3.7-max": {
       "frontier": {
@@ -305,6 +305,15 @@
           "max_output_tokens": 65536
         },
         {
+          "provider": "ovhcloud",
+          "model_key": "ovhcloud/qwen3.6-27b",
+          "model_id": "qwen3.6-27b",
+          "input_cost": 0.47,
+          "output_cost": 3.19,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "alibaba",
           "model_key": "alibaba/qwen3.6-27b",
           "model_id": "qwen3.6-27b",
@@ -606,6 +615,15 @@
           "max_output_tokens": 200000
         },
         {
+          "provider": "anyapi",
+          "model_key": "anyapi/anthropic/claude-haiku-4-5",
+          "model_id": "anthropic/claude-haiku-4-5",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 200000,
+          "max_output_tokens": 64000
+        },
+        {
           "provider": "snowflake-cortex",
           "model_key": "snowflake-cortex/claude-haiku-4-5",
           "model_id": "claude-haiku-4-5",
@@ -861,6 +879,15 @@
           "max_output_tokens": 64000
         },
         {
+          "provider": "anyapi",
+          "model_key": "anyapi/anthropic/claude-sonnet-4-6",
+          "model_id": "anthropic/claude-sonnet-4-6",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 64000
+        },
+        {
           "provider": "snowflake-cortex",
           "model_key": "snowflake-cortex/claude-sonnet-4-6",
           "model_id": "claude-sonnet-4-6",
@@ -922,8 +949,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-chat",
           "model_id": "deepseek/deepseek-chat",
-          "input_cost": 0.2288,
-          "output_cost": 0.9144,
+          "input_cost": 0.2002,
+          "output_cost": 0.8001,
           "max_input_tokens": 128000,
           "max_output_tokens": 16000
         },
@@ -962,6 +989,15 @@
           "output_cost": 0.89,
           "max_input_tokens": 163840,
           "max_output_tokens": 163840
+        },
+        {
+          "provider": "anyapi",
+          "model_key": "anyapi/deepseek/deepseek-chat",
+          "model_id": "deepseek/deepseek-chat",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
         }
       ]
     },
@@ -1202,6 +1238,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "anyapi",
+          "model_key": "anyapi/deepseek/deepseek-v4-flash",
+          "model_id": "deepseek/deepseek-v4-flash",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "ollama-cloud",
           "model_key": "ollama-cloud/deepseek-v4-flash",
           "model_id": "deepseek-v4-flash",
@@ -1245,8 +1290,8 @@
           "provider": "crof",
           "model_key": "crof/deepseek-v4-pro",
           "model_id": "deepseek-v4-pro",
-          "input_cost": 0.4,
-          "output_cost": 0.85,
+          "input_cost": 0.35,
+          "output_cost": 0.8,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
         },
@@ -1512,6 +1557,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "anyapi",
+          "model_key": "anyapi/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "ollama-cloud",
           "model_key": "ollama-cloud/deepseek-v4-pro",
           "model_id": "deepseek-v4-pro",
@@ -1519,82 +1573,6 @@
           "output_cost": null,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
-        }
-      ]
-    },
-    "deepseek/deepseek-reasoner": {
-      "frontier": {
-        "provider": "deepseek",
-        "providerClass": "creator",
-        "family": "deepseek",
-        "model_key": "deepseek/deepseek-reasoner",
-        "version": "2025-12-01",
-        "tier": "reasoning",
-        "release_date": "2025-12-01",
-        "last_updated": "2026-02-28",
-        "max_input_tokens": 1000000,
-        "max_output_tokens": 384000,
-        "input_cost": 1.4e-7,
-        "output_cost": 2.8e-7,
-        "reasoning": true,
-        "tool_call": true,
-        "attachment": true,
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "knowledge": "2025-09"
-      },
-      "routes": [
-        {
-          "provider": "deepseek",
-          "model_key": "deepseek/deepseek-reasoner",
-          "model_id": "deepseek-reasoner",
-          "input_cost": 0.14,
-          "output_cost": 0.28,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "302ai",
-          "model_key": "302ai/deepseek-reasoner",
-          "model_id": "deepseek-reasoner",
-          "input_cost": 0.29,
-          "output_cost": 0.43,
-          "max_input_tokens": 128000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/deepseek-reasoner",
-          "model_id": "deepseek-reasoner",
-          "input_cost": 0.4,
-          "output_cost": 1.7,
-          "max_input_tokens": 64000,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "orcarouter",
-          "model_key": "orcarouter/deepseek/deepseek-reasoner",
-          "model_id": "deepseek/deepseek-reasoner",
-          "input_cost": 0.435,
-          "output_cost": 0.87,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "helicone",
-          "model_key": "helicone/deepseek-reasoner",
-          "model_id": "deepseek-reasoner",
-          "input_cost": 0.56,
-          "output_cost": 1.68,
-          "max_input_tokens": 128000,
-          "max_output_tokens": 64000
         }
       ]
     },
@@ -1635,8 +1613,8 @@
           "provider": "github-copilot",
           "model_key": "github-copilot/gemini-3.5-flash",
           "model_id": "gemini-3.5-flash",
-          "input_cost": 0,
-          "output_cost": 0,
+          "input_cost": 1.5,
+          "output_cost": 9,
           "max_input_tokens": 200000,
           "max_output_tokens": 64000
         },
@@ -1766,15 +1744,6 @@
       },
       "routes": [
         {
-          "provider": "github-copilot",
-          "model_key": "github-copilot/gemini-3.1-pro-preview",
-          "model_id": "gemini-3.1-pro-preview",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 200000,
-          "max_output_tokens": 64000
-        },
-        {
           "provider": "abacus",
           "model_key": "abacus/gemini-3.1-pro-preview",
           "model_id": "gemini-3.1-pro-preview",
@@ -1800,6 +1769,15 @@
           "output_cost": 12,
           "max_input_tokens": 1048576,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "github-copilot",
+          "model_key": "github-copilot/gemini-3.1-pro-preview",
+          "model_id": "gemini-3.1-pro-preview",
+          "input_cost": 2,
+          "output_cost": 12,
+          "max_input_tokens": 200000,
+          "max_output_tokens": 64000
         },
         {
           "provider": "google",
@@ -2418,7 +2396,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/minimax/minimax-m2.7",
           "model_id": "minimax/minimax-m2.7",
-          "input_cost": 0.26,
+          "input_cost": 0.279,
           "output_cost": 1.2,
           "max_input_tokens": 196608,
           "max_output_tokens": 131072
@@ -2683,7 +2661,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/minimax/minimax-m2.7",
           "model_id": "minimax/minimax-m2.7",
-          "input_cost": 0.26,
+          "input_cost": 0.279,
           "output_cost": 1.2,
           "max_input_tokens": 196608,
           "max_output_tokens": 131072
@@ -3166,6 +3144,216 @@
         }
       ]
     },
+    "minimax/MiniMax-M3": {
+      "frontier": {
+        "provider": "minimax",
+        "providerClass": "creator",
+        "family": "minimax-m3",
+        "model_key": "minimax/MiniMax-M3",
+        "version": "2026-06-01",
+        "tier": "base",
+        "release_date": "2026-06-01",
+        "last_updated": "2026-06-01",
+        "max_input_tokens": 512000,
+        "max_output_tokens": 131072,
+        "input_cost": 3e-7,
+        "output_cost": 0.0000012,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": null
+      },
+      "routes": [
+        {
+          "provider": "minimax-cn-coding-plan",
+          "model_key": "minimax-cn-coding-plan/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "minimax-coding-plan",
+          "model_key": "minimax-coding-plan/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "minimax",
+          "model_key": "minimax/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "minimax-cn",
+          "model_key": "minimax-cn/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/minimax/minimax-m3",
+          "model_id": "minimax/minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 524288,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "venice",
+          "model_key": "venice/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 500000,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "opencode-go",
+          "model_key": "opencode-go/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.6,
+          "output_cost": 2.4,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "ollama-cloud",
+          "model_key": "ollama-cloud/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        }
+      ]
+    },
+    "minimax-cn/MiniMax-M3": {
+      "frontier": {
+        "provider": "minimax",
+        "providerClass": "creator",
+        "family": "minimax-m3",
+        "model_key": "minimax-cn/MiniMax-M3",
+        "version": "2026-06-01",
+        "tier": "base",
+        "release_date": "2026-06-01",
+        "last_updated": "2026-06-01",
+        "max_input_tokens": 512000,
+        "max_output_tokens": 131072,
+        "input_cost": 3e-7,
+        "output_cost": 0.0000012,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": null
+      },
+      "routes": [
+        {
+          "provider": "minimax-cn-coding-plan",
+          "model_key": "minimax-cn-coding-plan/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "minimax-coding-plan",
+          "model_key": "minimax-coding-plan/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "minimax",
+          "model_key": "minimax/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "minimax-cn",
+          "model_key": "minimax-cn/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/minimax/minimax-m3",
+          "model_id": "minimax/minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 524288,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "venice",
+          "model_key": "venice/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 500000,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "opencode-go",
+          "model_key": "opencode-go/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.6,
+          "output_cost": 2.4,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "ollama-cloud",
+          "model_key": "ollama-cloud/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": null,
+          "output_cost": null,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 131072
+        }
+      ]
+    },
     "mistral/devstral-2512": {
       "frontier": {
         "provider": "mistral",
@@ -3246,6 +3434,15 @@
           "model_id": "mistralai/devstral-2512",
           "input_cost": 0.4,
           "output_cost": 2,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "anyapi",
+          "model_key": "anyapi/mistralai/devstral-2512",
+          "model_id": "mistralai/devstral-2512",
+          "input_cost": null,
+          "output_cost": null,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         }
@@ -3518,6 +3715,15 @@
           "max_output_tokens": 65536
         },
         {
+          "provider": "wafer.ai",
+          "model_key": "wafer.ai/Kimi-K2.6",
+          "model_id": "Kimi-K2.6",
+          "input_cost": 0.68,
+          "output_cost": 3.15,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.6",
           "model_id": "moonshotai/kimi-k2.6",
@@ -3596,15 +3802,6 @@
           "input_cost": 0.855,
           "output_cost": 3.6,
           "max_input_tokens": 65536,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "wafer.ai",
-          "model_key": "wafer.ai/Kimi-K2.6",
-          "model_id": "Kimi-K2.6",
-          "input_cost": 0.88,
-          "output_cost": 3.84,
-          "max_input_tokens": 262144,
           "max_output_tokens": 65536
         },
         {
@@ -3920,6 +4117,15 @@
           "max_output_tokens": 65536
         },
         {
+          "provider": "wafer.ai",
+          "model_key": "wafer.ai/Kimi-K2.6",
+          "model_id": "Kimi-K2.6",
+          "input_cost": 0.68,
+          "output_cost": 3.15,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.6",
           "model_id": "moonshotai/kimi-k2.6",
@@ -3998,15 +4204,6 @@
           "input_cost": 0.855,
           "output_cost": 3.6,
           "max_input_tokens": 65536,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "wafer.ai",
-          "model_key": "wafer.ai/Kimi-K2.6",
-          "model_id": "Kimi-K2.6",
-          "input_cost": 0.88,
-          "output_cost": 3.84,
-          "max_input_tokens": 262144,
           "max_output_tokens": 65536
         },
         {
@@ -4309,15 +4506,6 @@
       },
       "routes": [
         {
-          "provider": "github-copilot",
-          "model_key": "github-copilot/gpt-5.5",
-          "model_id": "gpt-5.5",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "poe",
           "model_key": "poe/openai/gpt-5.5",
           "model_id": "openai/gpt-5.5",
@@ -4360,6 +4548,15 @@
           "input_cost": 5,
           "output_cost": 30,
           "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "github-copilot",
+          "model_key": "github-copilot/gpt-5.5",
+          "model_id": "gpt-5.5",
+          "input_cost": 5,
+          "output_cost": 30,
+          "max_input_tokens": 400000,
           "max_output_tokens": 128000
         },
         {
@@ -4503,15 +4700,6 @@
       },
       "routes": [
         {
-          "provider": "github-copilot",
-          "model_key": "github-copilot/gpt-5.4-mini",
-          "model_id": "gpt-5.4-mini",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "poe",
           "model_key": "poe/openai/gpt-5.4-mini",
           "model_id": "openai/gpt-5.4-mini",
@@ -4550,6 +4738,15 @@
         {
           "provider": "azure-cognitive-services",
           "model_key": "azure-cognitive-services/gpt-5.4-mini",
+          "model_id": "gpt-5.4-mini",
+          "input_cost": 0.75,
+          "output_cost": 4.5,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "github-copilot",
+          "model_key": "github-copilot/gpt-5.4-mini",
           "model_id": "gpt-5.4-mini",
           "input_cost": 0.75,
           "output_cost": 4.5,
@@ -4726,6 +4923,15 @@
         {
           "provider": "azure-cognitive-services",
           "model_key": "azure-cognitive-services/gpt-5.4-nano",
+          "model_id": "gpt-5.4-nano",
+          "input_cost": 0.2,
+          "output_cost": 1.25,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "github-copilot",
+          "model_key": "github-copilot/gpt-5.4-nano",
           "model_id": "gpt-5.4-nano",
           "input_cost": 0.2,
           "output_cost": 1.25,
@@ -4970,15 +5176,6 @@
       },
       "routes": [
         {
-          "provider": "github-copilot",
-          "model_key": "github-copilot/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "poe",
           "model_key": "poe/openai/gpt-5.3-codex",
           "model_id": "openai/gpt-5.3-codex",
@@ -5027,6 +5224,15 @@
           "provider": "cloudflare-ai-gateway",
           "model_key": "cloudflare-ai-gateway/openai/gpt-5.3-codex",
           "model_id": "openai/gpt-5.3-codex",
+          "input_cost": 1.75,
+          "output_cost": 14,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "github-copilot",
+          "model_key": "github-copilot/gpt-5.3-codex",
+          "model_id": "gpt-5.3-codex",
           "input_cost": 1.75,
           "output_cost": 14,
           "max_input_tokens": 400000,
@@ -5462,6 +5668,15 @@
           "model_id": "grok-4.3",
           "input_cost": 1.25,
           "output_cost": 2.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 30000
+        },
+        {
+          "provider": "anyapi",
+          "model_key": "anyapi/xai/grok-4.3",
+          "model_id": "xai/grok-4.3",
+          "input_cost": null,
+          "output_cost": null,
           "max_input_tokens": 1000000,
           "max_output_tokens": 30000
         }
@@ -6041,6 +6256,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "crof",
+          "model_key": "crof/mimo-v2.5-pro",
+          "model_id": "mimo-v2.5-pro",
+          "input_cost": 0.4,
+          "output_cost": 0.8,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/xiaomi/mimo-v2.5-pro",
           "model_id": "xiaomi/mimo-v2.5-pro",
@@ -6057,15 +6281,6 @@
           "output_cost": 1.35,
           "max_input_tokens": 1000000,
           "max_output_tokens": 262144
-        },
-        {
-          "provider": "crof",
-          "model_key": "crof/mimo-v2.5-pro",
-          "model_id": "mimo-v2.5-pro",
-          "input_cost": 0.5,
-          "output_cost": 1.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
         },
         {
           "provider": "deepinfra",
@@ -6318,7 +6533,7 @@
           "model_key": "crof/glm-5.1",
           "model_id": "glm-5.1",
           "input_cost": 0.45,
-          "output_cost": 2.1,
+          "output_cost": 2.15,
           "max_input_tokens": 202752,
           "max_output_tokens": 202752
         },
@@ -6326,8 +6541,8 @@
           "provider": "hpc-ai",
           "model_key": "hpc-ai/zai-org/glm-5.1",
           "model_id": "zai-org/glm-5.1",
-          "input_cost": 0.66,
-          "output_cost": 2,
+          "input_cost": 0.615,
+          "output_cost": 2.46,
           "max_input_tokens": 202000,
           "max_output_tokens": 202000
         },
@@ -6374,7 +6589,7 @@
           "input_cost": 0.98,
           "output_cost": 3.08,
           "max_input_tokens": 202752,
-          "max_output_tokens": 202800
+          "max_output_tokens": 131072
         },
         {
           "provider": "huggingface",
@@ -6407,8 +6622,8 @@
           "provider": "wafer.ai",
           "model_key": "wafer.ai/GLM-5.1",
           "model_id": "GLM-5.1",
-          "input_cost": 1.2,
-          "output_cost": 3.6,
+          "input_cost": 1,
+          "output_cost": 3.2,
           "max_input_tokens": 202752,
           "max_output_tokens": 131072
         },
@@ -6664,7 +6879,7 @@
           "model_key": "crof/glm-5.1",
           "model_id": "glm-5.1",
           "input_cost": 0.45,
-          "output_cost": 2.1,
+          "output_cost": 2.15,
           "max_input_tokens": 202752,
           "max_output_tokens": 202752
         },
@@ -6672,8 +6887,8 @@
           "provider": "hpc-ai",
           "model_key": "hpc-ai/zai-org/glm-5.1",
           "model_id": "zai-org/glm-5.1",
-          "input_cost": 0.66,
-          "output_cost": 2,
+          "input_cost": 0.615,
+          "output_cost": 2.46,
           "max_input_tokens": 202000,
           "max_output_tokens": 202000
         },
@@ -6720,7 +6935,7 @@
           "input_cost": 0.98,
           "output_cost": 3.08,
           "max_input_tokens": 202752,
-          "max_output_tokens": 202800
+          "max_output_tokens": 131072
         },
         {
           "provider": "huggingface",
@@ -6753,8 +6968,8 @@
           "provider": "wafer.ai",
           "model_key": "wafer.ai/GLM-5.1",
           "model_id": "GLM-5.1",
-          "input_cost": 1.2,
-          "output_cost": 3.6,
+          "input_cost": 1,
+          "output_cost": 3.2,
           "max_input_tokens": 202752,
           "max_output_tokens": 131072
         },

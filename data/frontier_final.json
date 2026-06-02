@@ -284,33 +284,6 @@
     "knowledge": "2025-05"
   },
   {
-    "provider": "deepseek",
-    "providerClass": "creator",
-    "family": "deepseek",
-    "model_key": "deepseek/deepseek-reasoner",
-    "version": "2025-12-01",
-    "tier": "reasoning",
-    "release_date": "2025-12-01",
-    "last_updated": "2026-02-28",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 384000,
-    "input_cost": 1.4e-7,
-    "output_cost": 2.8e-7,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": "2025-09"
-  },
-  {
     "provider": "google",
     "providerClass": "creator",
     "family": "gemini",
@@ -612,6 +585,64 @@
     "modalities": {
       "input": [
         "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "minimax",
+    "providerClass": "creator",
+    "family": "minimax-m3",
+    "model_key": "minimax/MiniMax-M3",
+    "version": "2026-06-01",
+    "tier": "base",
+    "release_date": "2026-06-01",
+    "last_updated": "2026-06-01",
+    "max_input_tokens": 512000,
+    "max_output_tokens": 131072,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "minimax",
+    "providerClass": "creator",
+    "family": "minimax-m3",
+    "model_key": "minimax-cn/MiniMax-M3",
+    "version": "2026-06-01",
+    "tier": "base",
+    "release_date": "2026-06-01",
+    "last_updated": "2026-06-01",
+    "max_input_tokens": 512000,
+    "max_output_tokens": 131072,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
       ],
       "output": [
         "text"
