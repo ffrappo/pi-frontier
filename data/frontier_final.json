@@ -603,9 +603,9 @@
     "release_date": "2026-06-01",
     "last_updated": "2026-06-01",
     "max_input_tokens": 512000,
-    "max_output_tokens": 131072,
-    "input_cost": 3e-7,
-    "output_cost": 0.0000012,
+    "max_output_tokens": 128000,
+    "input_cost": 6e-7,
+    "output_cost": 0.0000024,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -632,9 +632,9 @@
     "release_date": "2026-06-01",
     "last_updated": "2026-06-01",
     "max_input_tokens": 512000,
-    "max_output_tokens": 131072,
-    "input_cost": 3e-7,
-    "output_cost": 0.0000012,
+    "max_output_tokens": 128000,
+    "input_cost": 6e-7,
+    "output_cost": 0.0000024,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -650,88 +650,6 @@
     },
     "open_weights": true,
     "knowledge": null
-  },
-  {
-    "provider": "mistral",
-    "providerClass": "creator",
-    "family": "devstral",
-    "model_key": "mistral/devstral-2512",
-    "version": "2025-12-00",
-    "tier": "base",
-    "release_date": "2025-12-09",
-    "last_updated": "2025-12-09",
-    "max_input_tokens": 262144,
-    "max_output_tokens": 262144,
-    "input_cost": 4.0000000000000003e-7,
-    "output_cost": 0.000002,
-    "reasoning": false,
-    "tool_call": true,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": "2025-12"
-  },
-  {
-    "provider": "mistral",
-    "providerClass": "creator",
-    "family": "devstral-medium",
-    "model_key": "mistral/devstral-medium-latest",
-    "version": "2025-12-02",
-    "tier": "base",
-    "release_date": "2025-12-02",
-    "last_updated": "2025-12-02",
-    "max_input_tokens": 262144,
-    "max_output_tokens": 262144,
-    "input_cost": 4.0000000000000003e-7,
-    "output_cost": 0.000002,
-    "reasoning": false,
-    "tool_call": true,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": "2025-12"
-  },
-  {
-    "provider": "mistral",
-    "providerClass": "creator",
-    "family": "labs-devstral",
-    "model_key": "mistral/labs-devstral-small-2512",
-    "version": "2025-12-00",
-    "tier": "lite",
-    "release_date": "2025-12-09",
-    "last_updated": "2025-12-09",
-    "max_input_tokens": 256000,
-    "max_output_tokens": 256000,
-    "input_cost": 0,
-    "output_cost": 0,
-    "reasoning": false,
-    "tool_call": true,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": "2025-12"
   },
   {
     "provider": "mistral",
@@ -1323,6 +1241,7 @@
       "input": [
         "text",
         "image",
+        "video",
         "pdf"
       ],
       "output": [

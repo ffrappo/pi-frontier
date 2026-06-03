@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-06-02
+Generated: 2026-06-03
 Source: models.dev
-56 frontier models across 15 providers (scope: creators).
+53 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -52,8 +52,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 512K → 131K | $0.30 | $1.20 |
-| `minimax/MiniMax-M3` | base | 2026-06-01 | 512K → 131K | $0.30 | $1.20 |
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 512K → 128K | $0.60 | $2.40 |
+| `minimax/MiniMax-M3` | base | 2026-06-01 | 512K → 128K | $0.60 | $2.40 |
 | `minimax-cn/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
 | `minimax-cn/MiniMax-M2.7-highspeed` | base | 2026-03-18 | 205K → 131K | $0.60 | $2.40 |
 | `minimax/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
@@ -65,9 +65,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `mistral/mistral-medium-latest` | base | 2026-04-29 | 262K → 262K | $1.50 | $7.50 |
 | `mistral/mistral-small-latest` | lite | 2026-03-16 | 256K → 256K | $0.15 | $0.60 |
-| `mistral/devstral-2512` | base | 2025-12-09 | 262K → 262K | $0.40 | $2.00 |
-| `mistral/labs-devstral-small-2512` | lite | 2025-12-09 | 256K → 256K | $0.00 | $0.00 |
-| `mistral/devstral-medium-latest` | base | 2025-12-02 | 262K → 262K | $0.40 | $2.00 |
 
 ## moonshotai
 
