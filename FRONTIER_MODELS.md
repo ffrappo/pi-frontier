@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-06-03
+Generated: 2026-06-04
 Source: models.dev
 53 frontier models across 15 providers (scope: creators).
 
@@ -10,7 +10,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `alibaba/qwen3.7-max` | base | 2026-05-21 | 1000K → 66K | $2.50 | $7.50 |
+| `alibaba/qwen3.7-plus` | base | 2026-06-02 | 131K → 16K | $0.50 | $3.00 |
 | `alibaba/qwen3.6-flash` | flash | 2026-04-27 | 1000K → 66K | $0.19 | $1.13 |
 | `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
 | `alibaba/qwen3.6-35b-a3b` | base | 2026-04-17 | 262K → 66K | $0.25 | $1.49 |
