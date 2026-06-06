@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-06-05
+Generated: 2026-06-06
 Source: models.dev
 53 frontier models across 15 providers (scope: creators).
 

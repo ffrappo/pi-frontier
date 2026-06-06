@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05",
+  "generated": "2026-06-06",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -47,7 +47,7 @@
           "model_id": "qwen3.7-plus",
           "input_cost": 0.4,
           "output_cost": 1.6,
-          "max_input_tokens": 262144,
+          "max_input_tokens": 1000000,
           "max_output_tokens": 65536
         },
         {
