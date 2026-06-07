@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-06",
+  "generated": "2026-06-07",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -2144,9 +2144,9 @@
           "model_key": "openrouter/google/gemma-4-31b-it",
           "model_id": "google/gemma-4-31b-it",
           "input_cost": 0.12,
-          "output_cost": 0.37,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 16384
+          "output_cost": 0.36,
+          "max_input_tokens": 256000,
+          "max_output_tokens": 8192
         },
         {
           "provider": "deepinfra",
@@ -2464,7 +2464,7 @@
           "input_cost": 0.279,
           "output_cost": 1.2,
           "max_input_tokens": 196608,
-          "max_output_tokens": 131072
+          "max_output_tokens": 196608
         },
         {
           "provider": "302ai",
@@ -2729,7 +2729,7 @@
           "input_cost": 0.279,
           "output_cost": 1.2,
           "max_input_tokens": 196608,
-          "max_output_tokens": 131072
+          "max_output_tokens": 196608
         },
         {
           "provider": "302ai",
