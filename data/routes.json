@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-07",
+  "generated": "2026-06-08",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -33,6 +33,15 @@
       },
       "routes": [
         {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/qwen3.7-plus",
+          "model_id": "qwen3.7-plus",
+          "input_cost": 0.4,
+          "output_cost": 1.6,
+          "max_input_tokens": 131072,
+          "max_output_tokens": 16384
+        },
+        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/qwen3.7-plus",
           "model_id": "qwen3.7-plus",
@@ -58,6 +67,15 @@
           "output_cost": 1.6,
           "max_input_tokens": 1000000,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/alibaba/qwen3.7-plus",
+          "model_id": "alibaba/qwen3.7-plus",
+          "input_cost": 0.4,
+          "output_cost": 1.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 64000
         },
         {
           "provider": "alibaba",
@@ -247,10 +265,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
-          "input_cost": 0.29,
-          "output_cost": 3.2,
-          "max_input_tokens": 262140,
-          "max_output_tokens": 262140
+          "input_cost": 0.289,
+          "output_cost": 2.4,
+          "max_input_tokens": 131072,
+          "max_output_tokens": 131072
         },
         {
           "provider": "kilo",
@@ -284,7 +302,7 @@
           "model_key": "vercel/alibaba/qwen3.6-27b",
           "model_id": "alibaba/qwen3.6-27b",
           "input_cost": 0.6,
-          "output_cost": 3.5999999999999996,
+          "output_cost": 3.6,
           "max_input_tokens": 256000,
           "max_output_tokens": 256000
         },
@@ -641,6 +659,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "freemodel",
+          "model_key": "freemodel/claude-opus-4-8",
+          "model_id": "claude-opus-4-8",
+          "input_cost": 5,
+          "output_cost": 25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "llmgateway",
           "model_key": "llmgateway/claude-opus-4-8",
           "model_id": "claude-opus-4-8",
@@ -758,6 +785,15 @@
           "provider": "cloudflare-ai-gateway",
           "model_key": "cloudflare-ai-gateway/anthropic/claude-sonnet-4-6",
           "model_id": "anthropic/claude-sonnet-4-6",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 64000
+        },
+        {
+          "provider": "freemodel",
+          "model_key": "freemodel/claude-sonnet-4-6",
+          "model_id": "claude-sonnet-4-6",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1000000,
@@ -1361,6 +1397,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "vercel",
+          "model_key": "vercel/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.435,
+          "output_cost": 0.87,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "vivgrid",
           "model_key": "vivgrid/deepseek-v4-pro",
           "model_id": "deepseek-v4-pro",
@@ -1521,15 +1566,6 @@
           "output_cost": 3.48,
           "max_input_tokens": 1049000,
           "max_output_tokens": 393000
-        },
-        {
-          "provider": "vercel",
-          "model_key": "vercel/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 1.74,
-          "output_cost": 3.48,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
         },
         {
           "provider": "wafer.ai",
@@ -2030,8 +2066,8 @@
           "provider": "vercel",
           "model_key": "vercel/google/gemma-4-26b-a4b-it",
           "model_id": "google/gemma-4-26b-a4b-it",
-          "input_cost": 0.13,
-          "output_cost": 0.39999999999999997,
+          "input_cost": 0.15,
+          "output_cost": 0.6,
           "max_input_tokens": 262144,
           "max_output_tokens": 131072
         },
@@ -2198,7 +2234,7 @@
           "model_key": "vercel/google/gemma-4-31b-it",
           "model_id": "google/gemma-4-31b-it",
           "input_cost": 0.14,
-          "output_cost": 0.39999999999999997,
+          "output_cost": 0.4,
           "max_input_tokens": 262144,
           "max_output_tokens": 131072
         },
@@ -3286,6 +3322,24 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "vercel",
+          "model_key": "vercel/minimax/minimax-m3",
+          "model_id": "minimax/minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 1000000
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.6,
+          "output_cost": 2.4,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "minimax",
           "model_key": "minimax/MiniMax-M3",
           "model_id": "MiniMax-M3",
@@ -3398,6 +3452,24 @@
           "output_cost": 1.2,
           "max_input_tokens": 500000,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/minimax/minimax-m3",
+          "model_id": "minimax/minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 1000000
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.6,
+          "output_cost": 2.4,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "minimax",
@@ -4477,6 +4549,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "freemodel",
+          "model_key": "freemodel/gpt-5.5",
+          "model_id": "gpt-5.5",
+          "input_cost": 5,
+          "output_cost": 30,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "github-copilot",
           "model_key": "github-copilot/gpt-5.5",
           "model_id": "gpt-5.5",
@@ -4689,6 +4770,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "freemodel",
+          "model_key": "freemodel/gpt-5.4-mini",
+          "model_id": "gpt-5.4-mini",
+          "input_cost": 0.75,
+          "output_cost": 4.5,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "github-copilot",
           "model_key": "github-copilot/gpt-5.4-mini",
           "model_id": "gpt-5.4-mini",
@@ -4847,15 +4937,6 @@
           "max_output_tokens": 128000
         },
         {
-          "provider": "vercel",
-          "model_key": "vercel/openai/gpt-5.4-nano",
-          "model_id": "openai/gpt-5.4-nano",
-          "input_cost": 0.19999999999999998,
-          "output_cost": 1.25,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "302ai",
           "model_key": "302ai/gpt-5.4-nano",
           "model_id": "gpt-5.4-nano",
@@ -4966,6 +5047,15 @@
         {
           "provider": "orcarouter",
           "model_key": "orcarouter/openai/gpt-5.4-nano",
+          "model_id": "openai/gpt-5.4-nano",
+          "input_cost": 0.2,
+          "output_cost": 1.25,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/openai/gpt-5.4-nano",
           "model_id": "openai/gpt-5.4-nano",
           "input_cost": 0.2,
           "output_cost": 1.25,
@@ -5186,6 +5276,15 @@
           "provider": "cloudflare-ai-gateway",
           "model_key": "cloudflare-ai-gateway/openai/gpt-5.3-codex",
           "model_id": "openai/gpt-5.3-codex",
+          "input_cost": 1.75,
+          "output_cost": 14,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "freemodel",
+          "model_key": "freemodel/gpt-5.3-codex",
+          "model_id": "gpt-5.3-codex",
           "input_cost": 1.75,
           "output_cost": 14,
           "max_input_tokens": 400000,
@@ -6016,8 +6115,8 @@
           "provider": "vercel",
           "model_key": "vercel/xiaomi/mimo-v2.5",
           "model_id": "xiaomi/mimo-v2.5",
-          "input_cost": 0.39999999999999997,
-          "output_cost": 2,
+          "input_cost": 0.14,
+          "output_cost": 0.28,
           "max_input_tokens": 1050000,
           "max_output_tokens": 131100
         },
@@ -6192,7 +6291,7 @@
           "model_key": "vercel/xiaomi/mimo-v2-flash",
           "model_id": "xiaomi/mimo-v2-flash",
           "input_cost": 0.1,
-          "output_cost": 0.29,
+          "output_cost": 0.3,
           "max_input_tokens": 262144,
           "max_output_tokens": 32000
         },
@@ -6309,6 +6408,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "vercel",
+          "model_key": "vercel/xiaomi/mimo-v2.5-pro",
+          "model_id": "xiaomi/mimo-v2.5-pro",
+          "input_cost": 0.435,
+          "output_cost": 0.87,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 131000
+        },
+        {
           "provider": "routing-run",
           "model_key": "routing-run/route/mimo-v2.5-pro",
           "model_id": "route/mimo-v2.5-pro",
@@ -6343,15 +6451,6 @@
           "output_cost": 3,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "vercel",
-          "model_key": "vercel/xiaomi/mimo-v2.5-pro",
-          "model_id": "xiaomi/mimo-v2.5-pro",
-          "input_cost": 1,
-          "output_cost": 3,
-          "max_input_tokens": 1050000,
-          "max_output_tokens": 131000
         },
         {
           "provider": "xiaomi",
@@ -6812,8 +6911,8 @@
           "model_id": "zai/glm-5.1",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 202752,
-          "max_output_tokens": 202752
+          "max_input_tokens": 202800,
+          "max_output_tokens": 64000
         },
         {
           "provider": "wandb",
@@ -7176,8 +7275,8 @@
           "model_id": "zai/glm-5.1",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 202752,
-          "max_output_tokens": 202752
+          "max_input_tokens": 202800,
+          "max_output_tokens": 64000
         },
         {
           "provider": "wandb",
