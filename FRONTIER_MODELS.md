@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-06-08
+Generated: 2026-06-09
 Source: models.dev
 53 frontier models across 15 providers (scope: creators).
 
@@ -111,7 +111,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `xai/grok-4.3` | base | 2026-04-17 | 1000K → 30K | $1.25 | $2.50 |
 | `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
 | `xai/grok-imagine-image-quality` | base | 2026-04-03 | 8K → — | — | — |
-| `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 2000K → 30K | $1.25 | $2.50 |
+| `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 1000K → 30K | $1.25 | $2.50 |
 | `xai/grok-imagine-image` | base | 2026-01-28 | 8K → — | — | — |
 | `xai/grok-imagine-video` | base | 2026-01-28 | 1K → — | — | — |
 
