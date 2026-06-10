@@ -9,7 +9,7 @@
     "release_date": "2026-06-02",
     "last_updated": "2026-06-04",
     "max_input_tokens": 1000000,
-    "max_output_tokens": 16384,
+    "max_output_tokens": 65536,
     "input_cost": 5e-7,
     "output_cost": 0.000003,
     "reasoning": true,
@@ -203,6 +203,90 @@
     },
     "open_weights": false,
     "knowledge": "2025-08-31"
+  },
+  {
+    "provider": "anthropic",
+    "providerClass": "creator",
+    "family": "claude-fable",
+    "model_key": "anthropic/claude-fable-5",
+    "version": "5 / 2026-06-09",
+    "tier": "base",
+    "release_date": "2026-06-09",
+    "last_updated": "2026-06-09",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "input_cost": 0.00001,
+    "output_cost": 0.00005,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "cohere",
+    "providerClass": "creator",
+    "family": "command-a",
+    "model_key": "cohere/command-a-plus-05-2026",
+    "version": "2026-05-00",
+    "tier": "base",
+    "release_date": "2026-05-20",
+    "last_updated": "2026-06-09",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 64000,
+    "input_cost": 0.0000025,
+    "output_cost": 0.00001,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-04-01"
+  },
+  {
+    "provider": "cohere",
+    "providerClass": "creator",
+    "family": "north",
+    "model_key": "cohere/north-mini-code-1-0",
+    "version": "1.0 / 2026-06-09",
+    "tier": "mini",
+    "release_date": "2026-06-09",
+    "last_updated": "2026-06-09",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 64000,
+    "input_cost": 0,
+    "output_cost": 0,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-09-23"
   },
   {
     "provider": "deepseek",
@@ -1366,6 +1450,33 @@
       ]
     },
     "open_weights": false,
+    "knowledge": "2024-12"
+  },
+  {
+    "provider": "xiaomi",
+    "providerClass": "creator",
+    "family": "mimo-ultraspeed",
+    "model_key": "xiaomi/mimo-v2.5-pro-ultraspeed",
+    "version": "2.5 / 2026-06-08",
+    "tier": "pro",
+    "release_date": "2026-06-08",
+    "last_updated": "2026-06-09",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000001305,
+    "output_cost": 0.00000261,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
     "knowledge": "2024-12"
   },
   {

@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-06-09
+Generated: 2026-06-10
 Source: models.dev
-53 frontier models across 15 providers (scope: creators).
+57 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -10,7 +10,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `alibaba/qwen3.7-plus` | base | 2026-06-02 | 1000K → 16K | $0.50 | $3.00 |
+| `alibaba/qwen3.7-plus` | base | 2026-06-02 | 1000K → 66K | $0.50 | $3.00 |
 | `alibaba/qwen3.6-flash` | flash | 2026-04-27 | 1000K → 66K | $0.19 | $1.13 |
 | `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
 | `alibaba/qwen3.6-35b-a3b` | base | 2026-04-17 | 262K → 66K | $0.25 | $1.49 |
@@ -19,9 +19,17 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `anthropic/claude-fable-5` | base | 2026-06-09 | 1000K → 128K | $10.00 | $50.00 |
 | `anthropic/claude-opus-4-8` | opus | 2026-05-28 | 1000K → 128K | $5.00 | $25.00 |
 | `anthropic/claude-sonnet-4-6` | sonnet | 2026-02-17 | 1000K → 64K | $3.00 | $15.00 |
 | `anthropic/claude-haiku-4-5` | haiku | 2025-10-15 | 200K → 64K | $1.00 | $5.00 |
+
+## cohere
+
+| Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
+|---|---|---|---|---|---|
+| `cohere/north-mini-code-1-0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
+| `cohere/command-a-plus-05-2026` | base | 2026-05-20 | 128K → 64K | $2.50 | $10.00 |
 
 ## deepseek
 
@@ -119,6 +127,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `xiaomi/mimo-v2.5-pro-ultraspeed` | pro | 2026-06-08 | 1049K → 131K | $1.30 | $2.61 |
 | `xiaomi/mimo-v2.5` | base | 2026-04-22 | 1049K → 131K | $0.40 | $2.00 |
 | `xiaomi/mimo-v2.5-pro` | pro | 2026-04-22 | 1049K → 131K | $1.00 | $3.00 |
 | `xiaomi/mimo-v2-omni` | base | 2026-03-18 | 262K → 131K | $0.40 | $2.00 |

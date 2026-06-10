@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-09",
+  "generated": "2026-06-10",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -12,7 +12,7 @@
         "release_date": "2026-06-02",
         "last_updated": "2026-06-04",
         "max_input_tokens": 1000000,
-        "max_output_tokens": 16384,
+        "max_output_tokens": 65536,
         "input_cost": 5e-7,
         "output_cost": 0.000003,
         "reasoning": true,
@@ -102,7 +102,7 @@
           "input_cost": 0.5,
           "output_cost": 3,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 16384
+          "max_output_tokens": 65536
         },
         {
           "provider": "alibaba-cn",
@@ -909,6 +909,183 @@
         }
       ]
     },
+    "anthropic/claude-fable-5": {
+      "frontier": {
+        "provider": "anthropic",
+        "providerClass": "creator",
+        "family": "claude-fable",
+        "model_key": "anthropic/claude-fable-5",
+        "version": "5 / 2026-06-09",
+        "tier": "base",
+        "release_date": "2026-06-09",
+        "last_updated": "2026-06-09",
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 128000,
+        "input_cost": 0.00001,
+        "output_cost": 0.00005,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "knowledge": null
+      },
+      "routes": [
+        {
+          "provider": "anthropic",
+          "model_key": "anthropic/claude-fable-5",
+          "model_id": "claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "cloudflare-ai-gateway",
+          "model_key": "cloudflare-ai-gateway/anthropic/claude-fable-5",
+          "model_id": "anthropic/claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "opencode",
+          "model_key": "opencode/claude-fable-5",
+          "model_id": "claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/anthropic/claude-fable-5",
+          "model_id": "anthropic/claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/anthropic/claude-fable-5",
+          "model_id": "anthropic/claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/anthropic/claude-fable-5",
+          "model_id": "anthropic/claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        }
+      ]
+    },
+    "cohere/command-a-plus-05-2026": {
+      "frontier": {
+        "provider": "cohere",
+        "providerClass": "creator",
+        "family": "command-a",
+        "model_key": "cohere/command-a-plus-05-2026",
+        "version": "2026-05-00",
+        "tier": "base",
+        "release_date": "2026-05-20",
+        "last_updated": "2026-06-09",
+        "max_input_tokens": 128000,
+        "max_output_tokens": 64000,
+        "input_cost": 0.0000025,
+        "output_cost": 0.00001,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": "2025-04-01"
+      },
+      "routes": [
+        {
+          "provider": "cohere",
+          "model_key": "cohere/command-a-plus-05-2026",
+          "model_id": "command-a-plus-05-2026",
+          "input_cost": 2.5,
+          "output_cost": 10,
+          "max_input_tokens": 128000,
+          "max_output_tokens": 64000
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/command-a-plus-05-2026",
+          "model_id": "command-a-plus-05-2026",
+          "input_cost": 2.5,
+          "output_cost": 10,
+          "max_input_tokens": 128000,
+          "max_output_tokens": 64000
+        }
+      ]
+    },
+    "cohere/north-mini-code-1-0": {
+      "frontier": {
+        "provider": "cohere",
+        "providerClass": "creator",
+        "family": "north",
+        "model_key": "cohere/north-mini-code-1-0",
+        "version": "1.0 / 2026-06-09",
+        "tier": "mini",
+        "release_date": "2026-06-09",
+        "last_updated": "2026-06-09",
+        "max_input_tokens": 256000,
+        "max_output_tokens": 64000,
+        "input_cost": 0,
+        "output_cost": 0,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": "2025-09-23"
+      },
+      "routes": [
+        {
+          "provider": "cohere",
+          "model_key": "cohere/north-mini-code-1-0",
+          "model_id": "north-mini-code-1-0",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 256000,
+          "max_output_tokens": 64000
+        }
+      ]
+    },
     "deepseek/deepseek-chat": {
       "frontier": {
         "provider": "deepseek",
@@ -1267,6 +1444,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "azure",
+          "model_key": "azure/deepseek-v4-flash",
+          "model_id": "deepseek-v4-flash",
+          "input_cost": 1.74,
+          "output_cost": 3.48,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "anyapi",
           "model_key": "anyapi/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
@@ -1321,6 +1507,15 @@
           "model_id": "deepseek-v4-pro",
           "input_cost": 0,
           "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
+          "provider": "azure",
+          "model_key": "azure/deepseek-v4-pro",
+          "model_id": "deepseek-v4-pro",
+          "input_cost": 0.19,
+          "output_cost": 0.51,
           "max_input_tokens": 1000000,
           "max_output_tokens": 384000
         },
@@ -2515,10 +2710,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/minimax/minimax-m2.7",
           "model_id": "minimax/minimax-m2.7",
-          "input_cost": 0.279,
-          "output_cost": 1.2,
-          "max_input_tokens": 196608,
-          "max_output_tokens": 196608
+          "input_cost": 0.27,
+          "output_cost": 1.08,
+          "max_input_tokens": 204800,
+          "max_output_tokens": 131072
         },
         {
           "provider": "302ai",
@@ -2780,10 +2975,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/minimax/minimax-m2.7",
           "model_id": "minimax/minimax-m2.7",
-          "input_cost": 0.279,
-          "output_cost": 1.2,
-          "max_input_tokens": 196608,
-          "max_output_tokens": 196608
+          "input_cost": 0.27,
+          "output_cost": 1.08,
+          "max_input_tokens": 204800,
+          "max_output_tokens": 131072
         },
         {
           "provider": "302ai",
@@ -6660,6 +6855,46 @@
         }
       ]
     },
+    "xiaomi/mimo-v2.5-pro-ultraspeed": {
+      "frontier": {
+        "provider": "xiaomi",
+        "providerClass": "creator",
+        "family": "mimo-ultraspeed",
+        "model_key": "xiaomi/mimo-v2.5-pro-ultraspeed",
+        "version": "2.5 / 2026-06-08",
+        "tier": "pro",
+        "release_date": "2026-06-08",
+        "last_updated": "2026-06-09",
+        "max_input_tokens": 1048576,
+        "max_output_tokens": 131072,
+        "input_cost": 0.000001305,
+        "output_cost": 0.00000261,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": false,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": "2024-12"
+      },
+      "routes": [
+        {
+          "provider": "xiaomi",
+          "model_key": "xiaomi/mimo-v2.5-pro-ultraspeed",
+          "model_id": "mimo-v2.5-pro-ultraspeed",
+          "input_cost": 1.305,
+          "output_cost": 2.61,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        }
+      ]
+    },
     "zai/glm-5.1": {
       "frontier": {
         "provider": "zai",
@@ -7513,7 +7748,7 @@
           "model_id": "z-ai/glm-5-turbo",
           "input_cost": 1.2,
           "output_cost": 4,
-          "max_input_tokens": 202752,
+          "max_input_tokens": 262144,
           "max_output_tokens": 131072
         },
         {
@@ -7630,15 +7865,6 @@
           "output_cost": 4,
           "max_input_tokens": 202800,
           "max_output_tokens": 131100
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5v-turbo",
-          "model_id": "z-ai/glm-5v-turbo",
-          "input_cost": 1.2,
-          "output_cost": 4,
-          "max_input_tokens": 202752,
-          "max_output_tokens": 131072
         },
         {
           "provider": "siliconflow",
@@ -7772,15 +7998,6 @@
           "output_cost": 4,
           "max_input_tokens": 202800,
           "max_output_tokens": 131100
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5v-turbo",
-          "model_id": "z-ai/glm-5v-turbo",
-          "input_cost": 1.2,
-          "output_cost": 4,
-          "max_input_tokens": 202752,
-          "max_output_tokens": 131072
         },
         {
           "provider": "siliconflow",
