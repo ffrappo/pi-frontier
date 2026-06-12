@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-06-11
+Generated: 2026-06-12
 Source: models.dev
-57 frontier models across 16 providers (scope: creators).
+56 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -78,7 +78,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `moonshotai-cn/kimi-k2.6` | base | 2026-04-21 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.6` | base | 2026-04-21 | 262K → 262K | $0.95 | $4.00 |
 
 ## openai
