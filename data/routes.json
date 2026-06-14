@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13",
+  "generated": "2026-06-14",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -1067,15 +1067,6 @@
           "max_output_tokens": 128000
         },
         {
-          "provider": "vercel",
-          "model_key": "vercel/anthropic/claude-fable-5",
-          "model_id": "anthropic/claude-fable-5",
-          "input_cost": 10,
-          "output_cost": 50,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "zenmux",
           "model_key": "zenmux/anthropic/claude-fable-5",
           "model_id": "anthropic/claude-fable-5",
@@ -1348,10 +1339,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.098,
-          "output_cost": 0.196,
-          "max_input_tokens": 1048575,
-          "max_output_tokens": 131072
+          "input_cost": 0.09,
+          "output_cost": 0.18,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 65536
         },
         {
           "provider": "deepinfra",
@@ -1543,6 +1534,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "azure",
+          "model_key": "azure/deepseek-v4-flash",
+          "model_id": "deepseek-v4-flash",
+          "input_cost": 0.19,
+          "output_cost": 0.51,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "orcarouter",
           "model_key": "orcarouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
@@ -1559,15 +1559,6 @@
           "output_cost": 0.7392,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "azure",
-          "model_key": "azure/deepseek-v4-flash",
-          "model_id": "deepseek-v4-flash",
-          "input_cost": 1.74,
-          "output_cost": 3.48,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
         },
         {
           "provider": "anyapi",
@@ -1633,15 +1624,6 @@
           "model_id": "deepseek-v4-pro",
           "input_cost": 0,
           "output_cost": 0,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "azure",
-          "model_key": "azure/deepseek-v4-pro",
-          "model_id": "deepseek-v4-pro",
-          "input_cost": 0.19,
-          "output_cost": 0.51,
           "max_input_tokens": 1000000,
           "max_output_tokens": 384000
         },
@@ -1842,6 +1824,15 @@
           "output_cost": 3.796,
           "max_input_tokens": 1000000,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "azure",
+          "model_key": "azure/deepseek-v4-pro",
+          "model_id": "deepseek-v4-pro",
+          "input_cost": 1.74,
+          "output_cost": 3.48,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
         },
         {
           "provider": "baseten",
@@ -3760,6 +3751,15 @@
           "max_output_tokens": 512000
         },
         {
+          "provider": "togetherai",
+          "model_key": "togetherai/MiniMaxAI/MiniMax-M3",
+          "model_id": "MiniMaxAI/MiniMax-M3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 524288,
+          "max_output_tokens": 250000
+        },
+        {
           "provider": "venice",
           "model_key": "venice/minimax-m3",
           "model_id": "minimax-m3",
@@ -3908,6 +3908,15 @@
           "output_cost": 1.2,
           "max_input_tokens": 524288,
           "max_output_tokens": 512000
+        },
+        {
+          "provider": "togetherai",
+          "model_key": "togetherai/MiniMaxAI/MiniMax-M3",
+          "model_id": "MiniMaxAI/MiniMax-M3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 524288,
+          "max_output_tokens": 250000
         },
         {
           "provider": "venice",
@@ -4535,6 +4544,15 @@
       },
       "routes": [
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.75,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "cloudflare-workers-ai",
           "model_key": "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.7-code",
           "model_id": "@cf/moonshotai/kimi-k2.7-code",
@@ -4562,15 +4580,6 @@
           "max_output_tokens": 262144
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
-          "input_cost": 0.95,
-          "output_cost": 4,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
           "provider": "vercel",
           "model_key": "vercel/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
@@ -4585,6 +4594,15 @@
           "model_id": "moonshotai/kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "ollama-cloud",
+          "model_key": "ollama-cloud/kimi-k2.7-code",
+          "model_id": "kimi-k2.7-code",
+          "input_cost": null,
+          "output_cost": null,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         }
