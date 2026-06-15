@@ -518,6 +518,64 @@
     "knowledge": null
   },
   {
+    "provider": "google",
+    "providerClass": "creator",
+    "family": "gemma-e2b-it",
+    "model_key": "google/gemma-4-E2B-it",
+    "version": "4 / 2026-04-02",
+    "tier": "base",
+    "release_date": "2026-04-02",
+    "last_updated": "2026-04-02",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 8192,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "google",
+    "providerClass": "creator",
+    "family": "gemma-e4b-it",
+    "model_key": "google/gemma-4-E4B-it",
+    "version": "4 / 2026-04-02",
+    "tier": "base",
+    "release_date": "2026-04-02",
+    "last_updated": "2026-04-02",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 8192,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
     "provider": "inception",
     "providerClass": "creator",
     "family": "mercury",
