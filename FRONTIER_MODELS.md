@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-06-15
+Generated: 2026-06-16
 Source: models.dev
-59 frontier models across 16 providers (scope: creators).
+58 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -22,7 +22,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `anthropic/claude-fable-5` | base | 2026-06-09 | 1000K → 128K | $10.00 | $50.00 |
 | `anthropic/claude-opus-4-8` | opus | 2026-05-28 | 1000K → 128K | $5.00 | $25.00 |
 | `anthropic/claude-sonnet-4-6` | sonnet | 2026-02-17 | 1000K → 64K | $3.00 | $15.00 |
-| `anthropic/claude-haiku-4-5` | haiku | 2025-10-15 | 200K → 64K | $1.00 | $5.00 |
 
 ## cohere
 

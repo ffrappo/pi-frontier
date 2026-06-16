@@ -121,35 +121,6 @@
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude",
-    "model_key": "anthropic/claude-haiku-4-5",
-    "version": "4.5 / 2025-10-15",
-    "tier": "haiku",
-    "release_date": "2025-10-15",
-    "last_updated": "2025-10-15",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 64000,
-    "input_cost": 0.000001,
-    "output_cost": 0.000005,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-02-28"
-  },
-  {
-    "provider": "anthropic",
-    "providerClass": "creator",
-    "family": "claude",
     "model_key": "anthropic/claude-opus-4-8",
     "version": "4.8 / 2026-05-28",
     "tier": "opus",
