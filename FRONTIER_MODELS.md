@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-06-16
+Generated: 2026-06-17
 Source: models.dev
 58 frontier models across 16 providers (scope: creators).
 
@@ -80,6 +80,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
+| `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 | `moonshotai/kimi-k2.6` | base | 2026-04-21 | 262K → 262K | $0.95 | $4.00 |
 
 ## openai
@@ -132,7 +133,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `xiaomi/mimo-v2.5` | base | 2026-04-22 | 1049K → 131K | $0.40 | $2.00 |
 | `xiaomi/mimo-v2.5-pro` | pro | 2026-04-22 | 1049K → 131K | $1.00 | $3.00 |
 | `xiaomi/mimo-v2-omni` | base | 2026-03-18 | 262K → 131K | $0.40 | $2.00 |
-| `xiaomi/mimo-v2-flash` | flash | 2025-12-16 | 262K → 66K | $0.10 | $0.30 |
 
 ## zai
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-16",
+  "generated": "2026-06-17",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -890,15 +890,6 @@
           "max_output_tokens": 128000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/anthropic/claude-fable-5",
-          "model_id": "anthropic/claude-fable-5",
-          "input_cost": 10,
-          "output_cost": 50,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "zenmux",
           "model_key": "zenmux/anthropic/claude-fable-5",
           "model_id": "anthropic/claude-fable-5",
@@ -1171,9 +1162,9 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.09,
-          "output_cost": 0.18,
-          "max_input_tokens": 1000000,
+          "input_cost": 0.098,
+          "output_cost": 0.196,
+          "max_input_tokens": 1048575,
           "max_output_tokens": 65536
         },
         {
@@ -3712,6 +3703,15 @@
           "max_output_tokens": 1000000
         },
         {
+          "provider": "cortecs",
+          "model_key": "cortecs/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.355,
+          "output_cost": 1.775,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "llmgateway",
           "model_key": "llmgateway/minimax-m3",
           "model_id": "minimax-m3",
@@ -3878,6 +3878,15 @@
           "output_cost": 1.2,
           "max_input_tokens": 1000000,
           "max_output_tokens": 1000000
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.355,
+          "output_cost": 1.775,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "llmgateway",
@@ -4184,6 +4193,15 @@
           "max_output_tokens": 65535
         },
         {
+          "provider": "siliconflow",
+          "model_key": "siliconflow/moonshotai/Kimi-K2.6",
+          "model_id": "moonshotai/Kimi-K2.6",
+          "input_cost": 0.77,
+          "output_cost": 4,
+          "max_input_tokens": 262000,
+          "max_output_tokens": 262000
+        },
+        {
           "provider": "inceptron",
           "model_key": "inceptron/moonshotai/Kimi-K2.6",
           "model_id": "moonshotai/Kimi-K2.6",
@@ -4382,15 +4400,6 @@
           "max_output_tokens": 262144
         },
         {
-          "provider": "siliconflow",
-          "model_key": "siliconflow/moonshotai/Kimi-K2.6",
-          "model_id": "moonshotai/Kimi-K2.6",
-          "input_cost": 0.95,
-          "output_cost": 4,
-          "max_input_tokens": 262000,
-          "max_output_tokens": 262000
-        },
-        {
           "provider": "siliconflow-cn",
           "model_key": "siliconflow-cn/Pro/moonshotai/Kimi-K2.6",
           "model_id": "Pro/moonshotai/Kimi-K2.6",
@@ -4496,6 +4505,15 @@
       },
       "routes": [
         {
+          "provider": "ambient",
+          "model_key": "ambient/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.75,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
@@ -4503,6 +4521,15 @@
           "output_cost": 3.5,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
+        },
+        {
+          "provider": "baseten",
+          "model_key": "baseten/moonshotai/Kimi-K2.7-Code",
+          "model_id": "moonshotai/Kimi-K2.7-Code",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262000,
+          "max_output_tokens": 262000
         },
         {
           "provider": "cloudflare-workers-ai",
@@ -4526,6 +4553,24 @@
           "provider": "moonshotai",
           "model_key": "moonshotai/kimi-k2.7-code",
           "model_id": "kimi-k2.7-code",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "moonshotai-cn",
+          "model_key": "moonshotai-cn/kimi-k2.7-code",
+          "model_id": "kimi-k2.7-code",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "neuralwatt",
+          "model_key": "neuralwatt/moonshotai/Kimi-K2.7-Code",
+          "model_id": "moonshotai/Kimi-K2.7-Code",
           "input_cost": 0.95,
           "output_cost": 4,
           "max_input_tokens": 262144,
@@ -4575,6 +4620,66 @@
           "output_cost": null,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
+        }
+      ]
+    },
+    "moonshotai/kimi-k2.7-code-highspeed": {
+      "frontier": {
+        "provider": "moonshotai",
+        "providerClass": "creator",
+        "family": "kimi-k-highspeed",
+        "model_key": "moonshotai/kimi-k2.7-code-highspeed",
+        "version": "2.7 / 2026-06-12",
+        "tier": "code",
+        "release_date": "2026-06-12",
+        "last_updated": "2026-06-12",
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "input_cost": 0.0000018999999999999998,
+        "output_cost": 0.000008,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": "2025-01"
+      },
+      "routes": [
+        {
+          "provider": "moonshotai",
+          "model_key": "moonshotai/kimi-k2.7-code-highspeed",
+          "model_id": "kimi-k2.7-code-highspeed",
+          "input_cost": 1.9,
+          "output_cost": 8,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "moonshotai-cn",
+          "model_key": "moonshotai-cn/kimi-k2.7-code-highspeed",
+          "model_id": "kimi-k2.7-code-highspeed",
+          "input_cost": 1.9,
+          "output_cost": 8,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/moonshotai/kimi-k2.7-code-highspeed",
+          "model_id": "moonshotai/kimi-k2.7-code-highspeed",
+          "input_cost": 1.9,
+          "output_cost": 8,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 0
         }
       ]
     },
@@ -6413,154 +6518,6 @@
         }
       ]
     },
-    "xiaomi/mimo-v2-flash": {
-      "frontier": {
-        "provider": "xiaomi",
-        "providerClass": "creator",
-        "family": "mimo",
-        "model_key": "xiaomi/mimo-v2-flash",
-        "version": "2 / 2025-12-16",
-        "tier": "flash",
-        "release_date": "2025-12-16",
-        "last_updated": "2026-02-04",
-        "max_input_tokens": 262144,
-        "max_output_tokens": 65536,
-        "input_cost": 1.0000000000000001e-7,
-        "output_cost": 3e-7,
-        "reasoning": true,
-        "tool_call": true,
-        "attachment": false,
-        "modalities": {
-          "input": [
-            "text"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "knowledge": "2024-12-01"
-      },
-      "routes": [
-        {
-          "provider": "jiekou",
-          "model_key": "jiekou/xiaomimimo/mimo-v2-flash",
-          "model_id": "xiaomimimo/mimo-v2-flash",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "kilo",
-          "model_key": "kilo/xiaomi/mimo-v2-flash",
-          "model_id": "xiaomi/mimo-v2-flash",
-          "input_cost": 0.09,
-          "output_cost": 0.29,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "huggingface",
-          "model_key": "huggingface/XiaomiMiMo/MiMo-V2-Flash",
-          "model_id": "XiaomiMiMo/MiMo-V2-Flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 4096
-        },
-        {
-          "provider": "llmgateway",
-          "model_key": "llmgateway/mimo-v2-flash",
-          "model_id": "mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "meganova",
-          "model_key": "meganova/XiaomiMiMo/MiMo-V2-Flash",
-          "model_id": "XiaomiMiMo/MiMo-V2-Flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 32000
-        },
-        {
-          "provider": "novita-ai",
-          "model_key": "novita-ai/xiaomimimo/mimo-v2-flash",
-          "model_id": "xiaomimimo/mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 32000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/xiaomi/mimo-v2-flash",
-          "model_id": "xiaomi/mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "qiniu-ai",
-          "model_key": "qiniu-ai/mimo-v2-flash",
-          "model_id": "mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 256000,
-          "max_output_tokens": 256000
-        },
-        {
-          "provider": "qiniu-ai",
-          "model_key": "qiniu-ai/xiaomi/mimo-v2-flash",
-          "model_id": "xiaomi/mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 256000,
-          "max_output_tokens": 256000
-        },
-        {
-          "provider": "vercel",
-          "model_key": "vercel/xiaomi/mimo-v2-flash",
-          "model_id": "xiaomi/mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 32000
-        },
-        {
-          "provider": "xiaomi",
-          "model_key": "xiaomi/mimo-v2-flash",
-          "model_id": "mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "zenmux",
-          "model_key": "zenmux/xiaomi/mimo-v2-flash",
-          "model_id": "xiaomi/mimo-v2-flash",
-          "input_cost": 0.1,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/xiaomi/mimo-v2-flash",
-          "model_id": "xiaomi/mimo-v2-flash",
-          "input_cost": 0.102,
-          "output_cost": 0.306,
-          "max_input_tokens": 256000,
-          "max_output_tokens": 32768
-        }
-      ]
-    },
     "xiaomi/mimo-v2.5-pro": {
       "frontier": {
         "provider": "xiaomi",
@@ -7792,6 +7749,15 @@
           "output_cost": 4,
           "max_input_tokens": 200000,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/glm-5-turbo",
+          "model_id": "glm-5-turbo",
+          "input_cost": 1.235,
+          "output_cost": 4.118,
+          "max_input_tokens": 200000,
+          "max_output_tokens": 131072
         }
       ]
     },
@@ -7914,6 +7880,15 @@
           "model_id": "glm-5v-turbo",
           "input_cost": 1.2,
           "output_cost": 4,
+          "max_input_tokens": 200000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/glm-5v-turbo",
+          "model_id": "glm-5v-turbo",
+          "input_cost": 1.235,
+          "output_cost": 4.118,
           "max_input_tokens": 200000,
           "max_output_tokens": 131072
         },
@@ -8047,6 +8022,15 @@
           "model_id": "glm-5v-turbo",
           "input_cost": 1.2,
           "output_cost": 4,
+          "max_input_tokens": 200000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/glm-5v-turbo",
+          "model_id": "glm-5v-turbo",
+          "input_cost": 1.235,
+          "output_cost": 4.118,
           "max_input_tokens": 200000,
           "max_output_tokens": 131072
         },
