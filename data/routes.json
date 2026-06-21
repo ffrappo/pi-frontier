@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-20",
+  "generated": "2026-06-21",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -2225,6 +2225,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/gemma-4-26b-a4b-it",
+          "model_id": "gemma-4-26b-a4b-it",
+          "input_cost": 0.07,
+          "output_cost": 0.34,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 32768
+        },
+        {
           "provider": "cloudflare-workers-ai",
           "model_key": "cloudflare-workers-ai/@cf/google/gemma-4-26b-a4b-it",
           "model_id": "@cf/google/gemma-4-26b-a4b-it",
@@ -2404,6 +2413,15 @@
           "provider": "fastrouter",
           "model_key": "fastrouter/google/gemma-4-31b-it",
           "model_id": "google/gemma-4-31b-it",
+          "input_cost": 0.13,
+          "output_cost": 0.38,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/gemma-4-31b-it",
+          "model_id": "gemma-4-31b-it",
           "input_cost": 0.13,
           "output_cost": 0.38,
           "max_input_tokens": 262144,
@@ -4049,10 +4067,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.6",
           "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.67,
+          "input_cost": 0.66,
           "output_cost": 3.5,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
+          "max_input_tokens": 262142,
+          "max_output_tokens": 262142
         },
         {
           "provider": "wafer.ai",
@@ -4451,8 +4469,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
-          "input_cost": 0.68,
-          "output_cost": 3.41,
+          "input_cost": 0.612,
+          "output_cost": 3.069,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         },
@@ -4607,6 +4625,15 @@
       },
       "routes": [
         {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/kimi-k2.7-code-highspeed",
+          "model_id": "kimi-k2.7-code-highspeed",
+          "input_cost": 1.9,
+          "output_cost": 8,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "moonshotai",
           "model_key": "moonshotai/kimi-k2.7-code-highspeed",
           "model_id": "kimi-k2.7-code-highspeed",
@@ -4631,7 +4658,7 @@
           "input_cost": 1.9,
           "output_cost": 8,
           "max_input_tokens": 262144,
-          "max_output_tokens": 0
+          "max_output_tokens": 32768
         }
       ]
     },
@@ -6882,6 +6909,15 @@
           "output_cost": 4.4,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/glm-5.2",
+          "model_id": "glm-5.2",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "opencode-go",
