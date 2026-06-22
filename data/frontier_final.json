@@ -1455,6 +1455,33 @@
     "provider": "zai",
     "providerClass": "creator",
     "family": "glm",
+    "model_key": "zai/glm-5.2",
+    "version": "5.2 / 2026-06-13",
+    "tier": "base",
+    "release_date": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 0.0000014,
+    "output_cost": 0.0000044,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm",
     "model_key": "zhipuai/glm-5.2",
     "version": "5.2 / 2026-06-13",
     "tier": "base",

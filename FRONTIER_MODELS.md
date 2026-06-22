@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-06-21
+Generated: 2026-06-22
 Source: models.dev
-55 frontier models across 16 providers (scope: creators).
+56 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -136,6 +136,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `zai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `zhipuai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
 | `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $5.00 | $22.00 |
