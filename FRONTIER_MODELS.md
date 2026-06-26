@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-06-25
+Generated: 2026-06-26
 Source: models.dev
 56 frontier models across 16 providers (scope: creators).
 
@@ -59,8 +59,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 512K → 128K | $0.60 | $2.40 |
-| `minimax/MiniMax-M3` | base | 2026-06-01 | 512K → 128K | $0.60 | $2.40 |
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 128K | $0.30 | $1.20 |
+| `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 128K | $0.30 | $1.20 |
 | `minimax-cn/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
 | `minimax-cn/MiniMax-M2.7-highspeed` | base | 2026-03-18 | 205K → 131K | $0.60 | $2.40 |
 | `minimax/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
@@ -104,7 +104,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `stepfun/step-3.5-flash-2603` | flash | 2026-04-02 | 256K → 256K | $0.10 | $0.30 |
+| `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.19 | $1.13 |
 
 ## upstage
 
