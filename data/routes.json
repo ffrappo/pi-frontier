@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-27",
+  "generated": "2026-06-28",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -328,10 +328,19 @@
           "provider": "openrouter",
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
-          "input_cost": 0.2885,
-          "output_cost": 2.65,
+          "input_cost": 0.2596,
+          "output_cost": 2.385,
           "max_input_tokens": 262140,
           "max_output_tokens": 262140
+        },
+        {
+          "provider": "siliconflow",
+          "model_key": "siliconflow/Qwen/Qwen3.6-27B",
+          "model_id": "Qwen/Qwen3.6-27B",
+          "input_cost": 0.3,
+          "output_cost": 3.2,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "kilo",
@@ -474,6 +483,15 @@
           "output_cost": 0.96525,
           "max_input_tokens": 262144,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "siliconflow",
+          "model_key": "siliconflow/Qwen/Qwen3.6-35B-A3B",
+          "model_id": "Qwen/Qwen3.6-35B-A3B",
+          "input_cost": 0.2,
+          "output_cost": 1.6,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "siliconflow-cn",
@@ -1385,8 +1403,8 @@
         },
         {
           "provider": "siliconflow",
-          "model_key": "siliconflow/deepseek-ai/deepseek-v4-flash",
-          "model_id": "deepseek-ai/deepseek-v4-flash",
+          "model_key": "siliconflow/deepseek-ai/DeepSeek-V4-Flash",
+          "model_id": "deepseek-ai/DeepSeek-V4-Flash",
           "input_cost": 0.14,
           "output_cost": 0.28,
           "max_input_tokens": 1000000,
@@ -1794,8 +1812,8 @@
         },
         {
           "provider": "siliconflow",
-          "model_key": "siliconflow/deepseek-ai/deepseek-v4-pro",
-          "model_id": "deepseek-ai/deepseek-v4-pro",
+          "model_key": "siliconflow/deepseek-ai/DeepSeek-V4-Pro",
+          "model_id": "deepseek-ai/DeepSeek-V4-Pro",
           "input_cost": 1.74,
           "output_cost": 3.48,
           "max_input_tokens": 1000000,
@@ -3664,6 +3682,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "nvidia",
+          "model_key": "nvidia/minimaxai/minimax-m3",
+          "model_id": "minimaxai/minimax-m3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 16384
+        },
+        {
           "provider": "opencode-go",
           "model_key": "opencode-go/minimax-m3",
           "model_id": "minimax-m3",
@@ -3857,6 +3884,15 @@
           "output_cost": 0,
           "max_input_tokens": 1000000,
           "max_output_tokens": 128000
+        },
+        {
+          "provider": "nvidia",
+          "model_key": "nvidia/minimaxai/minimax-m3",
+          "model_id": "minimaxai/minimax-m3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 16384
         },
         {
           "provider": "opencode-go",
@@ -7107,8 +7143,8 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 205000,
-          "max_output_tokens": 205000
+          "max_input_tokens": 1049000,
+          "max_output_tokens": 262000
         },
         {
           "provider": "siliconflow-cn",
@@ -7116,8 +7152,8 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 205000,
-          "max_output_tokens": 205000
+          "max_input_tokens": 1049000,
+          "max_output_tokens": 262000
         },
         {
           "provider": "togetherai",
@@ -7417,8 +7453,8 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 205000,
-          "max_output_tokens": 205000
+          "max_input_tokens": 1049000,
+          "max_output_tokens": 262000
         },
         {
           "provider": "siliconflow-cn",
@@ -7426,8 +7462,8 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 205000,
-          "max_output_tokens": 205000
+          "max_input_tokens": 1049000,
+          "max_output_tokens": 262000
         },
         {
           "provider": "togetherai",
