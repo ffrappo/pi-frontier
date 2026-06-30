@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-06-29
+Generated: 2026-06-30
 Source: models.dev
 55 frontier models across 16 providers (scope: creators).
 
@@ -104,7 +104,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.19 | $1.13 |
+| `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.20 | $1.15 |
 
 ## upstage
 
@@ -128,8 +128,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `xiaomi/mimo-v2.5-pro-ultraspeed` | pro | 2026-06-08 | 1049K → 131K | $1.30 | $2.61 |
-| `xiaomi/mimo-v2.5` | base | 2026-04-22 | 1049K → 131K | $0.40 | $2.00 |
-| `xiaomi/mimo-v2.5-pro` | pro | 2026-04-22 | 1049K → 131K | $1.00 | $3.00 |
+| `xiaomi/mimo-v2.5` | base | 2026-04-22 | 1049K → 131K | $0.14 | $0.28 |
+| `xiaomi/mimo-v2.5-pro` | pro | 2026-04-22 | 1049K → 131K | $0.43 | $0.87 |
 
 ## zai
 
