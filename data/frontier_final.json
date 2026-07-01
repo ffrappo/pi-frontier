@@ -150,15 +150,15 @@
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude",
-    "model_key": "anthropic/claude-sonnet-4-6",
-    "version": "4.6 / 2026-02-17",
+    "model_key": "anthropic/claude-sonnet-5",
+    "version": "5 / 2026-06-30",
     "tier": "sonnet",
-    "release_date": "2026-02-17",
-    "last_updated": "2026-03-13",
+    "release_date": "2026-06-30",
+    "last_updated": "2026-06-30",
     "max_input_tokens": 1000000,
-    "max_output_tokens": 64000,
-    "input_cost": 0.000003,
-    "output_cost": 0.000015,
+    "max_output_tokens": 128000,
+    "input_cost": 0.000002,
+    "output_cost": 0.00001,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -173,7 +173,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2025-08-31"
+    "knowledge": "2026-01-31"
   },
   {
     "provider": "anthropic",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30",
+  "generated": "2026-07-01",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -328,8 +328,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
-          "input_cost": 0.2596,
-          "output_cost": 2.385,
+          "input_cost": 0.285,
+          "output_cost": 2.4,
           "max_input_tokens": 262140,
           "max_output_tokens": 262140
         },
@@ -681,20 +681,20 @@
         }
       ]
     },
-    "anthropic/claude-sonnet-4-6": {
+    "anthropic/claude-sonnet-5": {
       "frontier": {
         "provider": "anthropic",
         "providerClass": "creator",
         "family": "claude",
-        "model_key": "anthropic/claude-sonnet-4-6",
-        "version": "4.6 / 2026-02-17",
+        "model_key": "anthropic/claude-sonnet-5",
+        "version": "5 / 2026-06-30",
         "tier": "sonnet",
-        "release_date": "2026-02-17",
-        "last_updated": "2026-03-13",
+        "release_date": "2026-06-30",
+        "last_updated": "2026-06-30",
         "max_input_tokens": 1000000,
-        "max_output_tokens": 64000,
-        "input_cost": 0.000003,
-        "output_cost": 0.000015,
+        "max_output_tokens": 128000,
+        "input_cost": 0.000002,
+        "output_cost": 0.00001,
         "reasoning": true,
         "tool_call": true,
         "attachment": true,
@@ -709,179 +709,71 @@
           ]
         },
         "open_weights": false,
-        "knowledge": "2025-08-31"
+        "knowledge": "2026-01-31"
       },
       "routes": [
         {
-          "provider": "302ai",
-          "model_key": "302ai/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "abacus",
-          "model_key": "abacus/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 200000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "aihubmix",
-          "model_key": "aihubmix/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
           "provider": "anthropic",
-          "model_key": "anthropic/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "auriko",
-          "model_key": "auriko/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "azure",
-          "model_key": "azure/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "cloudflare-ai-gateway",
-          "model_key": "cloudflare-ai-gateway/anthropic/claude-sonnet-4-6",
-          "model_id": "anthropic/claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "freemodel",
-          "model_key": "freemodel/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "frogbot",
-          "model_key": "frogbot/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 200000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "llmgateway",
-          "model_key": "llmgateway/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "merge-gateway",
-          "model_key": "merge-gateway/anthropic/claude-sonnet-4-6",
-          "model_id": "anthropic/claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "nearai",
-          "model_key": "nearai/anthropic/claude-sonnet-4-6",
-          "model_id": "anthropic/claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "neon",
-          "model_key": "neon/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "opencode",
-          "model_key": "opencode/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "perplexity-agent",
-          "model_key": "perplexity-agent/anthropic/claude-sonnet-4-6",
-          "model_id": "anthropic/claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 200000,
-          "max_output_tokens": 64000
-        },
-        {
-          "provider": "requesty",
-          "model_key": "requesty/anthropic/claude-sonnet-4-6",
-          "model_id": "anthropic/claude-sonnet-4-6",
-          "input_cost": 3,
-          "output_cost": 15,
+          "model_key": "anthropic/claude-sonnet-5",
+          "model_id": "claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
           "max_input_tokens": 1000000,
           "max_output_tokens": 128000
         },
         {
-          "provider": "venice",
-          "model_key": "venice/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": 3.6,
-          "output_cost": 18,
+          "provider": "azure",
+          "model_key": "azure/claude-sonnet-5",
+          "model_id": "claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
+          "max_output_tokens": 128000
         },
         {
-          "provider": "anyapi",
-          "model_key": "anyapi/anthropic/claude-sonnet-4-6",
-          "model_id": "anthropic/claude-sonnet-4-6",
-          "input_cost": null,
-          "output_cost": null,
+          "provider": "cloudflare-ai-gateway",
+          "model_key": "cloudflare-ai-gateway/anthropic/claude-sonnet-5",
+          "model_id": "anthropic/claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 64000
+          "max_output_tokens": 128000
         },
         {
-          "provider": "snowflake-cortex",
-          "model_key": "snowflake-cortex/claude-sonnet-4-6",
-          "model_id": "claude-sonnet-4-6",
-          "input_cost": null,
-          "output_cost": null,
+          "provider": "opencode",
+          "model_key": "opencode/claude-sonnet-5",
+          "model_id": "claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 16384
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/anthropic/claude-sonnet-5",
+          "model_id": "anthropic/claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/anthropic/claude-sonnet-5",
+          "model_id": "anthropic/claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/claude-sonnet-5",
+          "model_id": "claude-sonnet-5",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 1000000
         }
       ]
     },
@@ -1243,9 +1135,9 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.09,
-          "output_cost": 0.18,
-          "max_input_tokens": 1000000,
+          "input_cost": 0.098,
+          "output_cost": 0.196,
+          "max_input_tokens": 1048575,
           "max_output_tokens": 65536
         },
         {
@@ -3700,15 +3592,6 @@
           "max_output_tokens": 16384
         },
         {
-          "provider": "opencode-go",
-          "model_key": "opencode-go/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.1,
-          "output_cost": 0.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "lilac",
           "model_key": "lilac/minimaxai/minimax-m3",
           "model_id": "minimaxai/minimax-m3",
@@ -3761,6 +3644,24 @@
           "output_cost": 1.2,
           "max_input_tokens": 512000,
           "max_output_tokens": 80000
+        },
+        {
+          "provider": "opencode",
+          "model_key": "opencode/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "opencode-go",
+          "model_key": "opencode-go/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "openrouter",
@@ -3904,15 +3805,6 @@
           "max_output_tokens": 16384
         },
         {
-          "provider": "opencode-go",
-          "model_key": "opencode-go/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.1,
-          "output_cost": 0.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "lilac",
           "model_key": "lilac/minimaxai/minimax-m3",
           "model_id": "minimaxai/minimax-m3",
@@ -3965,6 +3857,24 @@
           "output_cost": 1.2,
           "max_input_tokens": 512000,
           "max_output_tokens": 80000
+        },
+        {
+          "provider": "opencode",
+          "model_key": "opencode/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "opencode-go",
+          "model_key": "opencode-go/minimax-m3",
+          "model_id": "minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "openrouter",
@@ -4655,6 +4565,15 @@
           "max_output_tokens": 262144
         },
         {
+          "provider": "deepinfra",
+          "model_key": "deepinfra/moonshotai/Kimi-K2.7-Code",
+          "model_id": "moonshotai/Kimi-K2.7-Code",
+          "input_cost": 0.74,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
@@ -4748,6 +4667,15 @@
           "provider": "neuralwatt",
           "model_key": "neuralwatt/moonshotai/Kimi-K2.7-Code",
           "model_id": "moonshotai/Kimi-K2.7-Code",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "opencode",
+          "model_key": "opencode/kimi-k2.7-code",
+          "model_id": "kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
           "max_input_tokens": 262144,
@@ -7051,7 +6979,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.94,
+          "input_cost": 0.93,
           "output_cost": 3,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
@@ -7388,7 +7316,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.94,
+          "input_cost": 0.93,
           "output_cost": 3,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
