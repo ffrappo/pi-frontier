@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-01",
+  "generated": "2026-07-02",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -740,6 +740,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "github-copilot",
+          "model_key": "github-copilot/claude-sonnet-5",
+          "model_id": "claude-sonnet-5",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "opencode",
           "model_key": "opencode/claude-sonnet-5",
           "model_id": "claude-sonnet-5",
@@ -774,6 +783,15 @@
           "output_cost": 15,
           "max_input_tokens": 1000000,
           "max_output_tokens": 1000000
+        },
+        {
+          "provider": "venice",
+          "model_key": "venice/claude-sonnet-5",
+          "model_id": "claude-sonnet-5",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 64000
         }
       ]
     },
@@ -857,6 +875,24 @@
           "provider": "opencode",
           "model_key": "opencode/claude-fable-5",
           "model_id": "claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/anthropic/claude-fable-5",
+          "model_id": "anthropic/claude-fable-5",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/anthropic/claude-fable-5",
+          "model_id": "anthropic/claude-fable-5",
           "input_cost": 10,
           "output_cost": 50,
           "max_input_tokens": 1000000,
@@ -1135,10 +1171,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.098,
-          "output_cost": 0.196,
-          "max_input_tokens": 1048575,
-          "max_output_tokens": 65536
+          "input_cost": 0.09,
+          "output_cost": 0.18,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 16384
         },
         {
           "provider": "deepinfra",
