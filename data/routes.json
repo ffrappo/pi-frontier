@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03",
+  "generated": "2026-07-04",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -1216,7 +1216,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.089,
+          "input_cost": 0.09,
           "output_cost": 0.18,
           "max_input_tokens": 1048576,
           "max_output_tokens": 16384
@@ -7174,6 +7174,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "nvidia",
+          "model_key": "nvidia/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "zai-coding-plan",
           "model_key": "zai-coding-plan/glm-5.2",
           "model_id": "glm-5.2",
@@ -7213,10 +7222,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.93,
-          "output_cost": 3,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 32768
+          "input_cost": 0.91,
+          "output_cost": 2.86,
+          "max_input_tokens": 1024000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "deepinfra",
@@ -7226,6 +7235,15 @@
           "output_cost": 3,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "alibaba-cn",
+          "model_key": "alibaba-cn/glm-5.2",
+          "model_id": "glm-5.2",
+          "input_cost": 1.1,
+          "output_cost": 3.851,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "aihubmix",
@@ -7511,6 +7529,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "nvidia",
+          "model_key": "nvidia/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "zai-coding-plan",
           "model_key": "zai-coding-plan/glm-5.2",
           "model_id": "glm-5.2",
@@ -7550,10 +7577,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.93,
-          "output_cost": 3,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 32768
+          "input_cost": 0.91,
+          "output_cost": 2.86,
+          "max_input_tokens": 1024000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "deepinfra",
@@ -7563,6 +7590,15 @@
           "output_cost": 3,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "alibaba-cn",
+          "model_key": "alibaba-cn/glm-5.2",
+          "model_id": "glm-5.2",
+          "input_cost": 1.1,
+          "output_cost": 3.851,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "aihubmix",
