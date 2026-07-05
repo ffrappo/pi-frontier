@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-07-04
+Generated: 2026-07-05
 Source: models.dev
 58 frontier models across 16 providers (scope: creators).
 
@@ -70,7 +70,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `mistral/mistral-medium-2604` | base | 2026-04-29 | 262K → 262K | $1.50 | $7.50 |
+| `mistral/mistral-medium-latest` | base | 2026-04-29 | 262K → 262K | $1.50 | $7.50 |
 | `mistral/mistral-small-latest` | lite | 2026-03-16 | 256K → 256K | $0.15 | $0.60 |
 
 ## moonshotai
