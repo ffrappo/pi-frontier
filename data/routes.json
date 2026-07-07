@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06",
+  "generated": "2026-07-07",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -7273,15 +7273,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.686,
-          "output_cost": 2.156,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "lilac",
           "model_key": "lilac/zai-org/glm-5.2",
           "model_id": "zai-org/glm-5.2",
@@ -7289,6 +7280,15 @@
           "output_cost": 3,
           "max_input_tokens": 524288,
           "max_output_tokens": 524288
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.9086,
+          "output_cost": 2.8556,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "deepinfra",
@@ -7451,6 +7451,15 @@
           "output_cost": 4.4,
           "max_input_tokens": 1049000,
           "max_output_tokens": 262000
+        },
+        {
+          "provider": "subconscious",
+          "model_key": "subconscious/subconscious/glm-5.2",
+          "model_id": "subconscious/glm-5.2",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "synthetic",
@@ -7637,15 +7646,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.686,
-          "output_cost": 2.156,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "lilac",
           "model_key": "lilac/zai-org/glm-5.2",
           "model_id": "zai-org/glm-5.2",
@@ -7653,6 +7653,15 @@
           "output_cost": 3,
           "max_input_tokens": 524288,
           "max_output_tokens": 524288
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.9086,
+          "output_cost": 2.8556,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "deepinfra",
@@ -7815,6 +7824,15 @@
           "output_cost": 4.4,
           "max_input_tokens": 1049000,
           "max_output_tokens": 262000
+        },
+        {
+          "provider": "subconscious",
+          "model_key": "subconscious/subconscious/glm-5.2",
+          "model_id": "subconscious/glm-5.2",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "synthetic",
