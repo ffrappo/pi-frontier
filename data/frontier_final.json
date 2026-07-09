@@ -144,7 +144,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": null
+    "knowledge": "2026-01"
   },
   {
     "provider": "anthropic",
@@ -431,6 +431,35 @@
     },
     "open_weights": false,
     "knowledge": "2025-01"
+  },
+  {
+    "provider": "google",
+    "providerClass": "creator",
+    "family": "gemini-omni",
+    "model_key": "google/gemini-omni-flash-preview",
+    "version": "2026-06-30",
+    "tier": "flash",
+    "release_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "input_cost": 0.0000015,
+    "output_cost": 0.0000175,
+    "reasoning": true,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "video"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
   },
   {
     "provider": "google",
@@ -1245,15 +1274,15 @@
     "provider": "xai",
     "providerClass": "creator",
     "family": "grok",
-    "model_key": "xai/grok-4.3",
-    "version": "4.3 / 2026-04-17",
+    "model_key": "xai/grok-4.5",
+    "version": "4.5 / 2026-07-08",
     "tier": "base",
-    "release_date": "2026-04-17",
-    "last_updated": "2026-04-17",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 30000,
-    "input_cost": 0.00000125,
-    "output_cost": 0.0000025,
+    "release_date": "2026-07-08",
+    "last_updated": "2026-07-08",
+    "max_input_tokens": 500000,
+    "max_output_tokens": 500000,
+    "input_cost": 0.000002,
+    "output_cost": 0.000006,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,

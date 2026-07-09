@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-07-08
+Generated: 2026-07-09
 Source: models.dev
-58 frontier models across 16 providers (scope: creators).
+59 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -42,6 +42,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
 | `google/gemini-3.5-flash` | flash | 2026-05-19 | 1049K → 66K | $1.50 | $9.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | — | — |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | — | — |
@@ -119,7 +120,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `xai/grok-4.3` | base | 2026-04-17 | 1000K → 30K | $1.25 | $2.50 |
+| `xai/grok-4.5` | base | 2026-07-08 | 500K → 500K | $2.00 | $6.00 |
 | `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
 | `xai/grok-imagine-image-quality` | base | 2026-04-03 | 8K → — | — | — |
 | `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 1000K → 30K | $1.25 | $2.50 |
