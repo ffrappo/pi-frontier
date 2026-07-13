@@ -1262,22 +1262,23 @@
     "last_updated": "2026-06-29",
     "max_input_tokens": 256000,
     "max_output_tokens": 256000,
-    "input_cost": 2.0000000000000002e-7,
-    "output_cost": 0.00000115,
+    "input_cost": 1.85e-7,
+    "output_cost": 0.0000011100000000000002,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "open_weights": true,
-    "knowledge": "2026-01-01"
+    "knowledge": "2026-03-01"
   },
   {
     "provider": "stepfun",
