@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14",
+  "generated": "2026-07-15",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -373,10 +373,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
-          "input_cost": 0.285,
+          "input_cost": 0.289,
           "output_cost": 2.4,
           "max_input_tokens": 262144,
-          "max_output_tokens": 262140
+          "max_output_tokens": 131072
         },
         {
           "provider": "siliconflow",
@@ -2965,6 +2965,15 @@
           "max_output_tokens": 16384
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/google/gemma-4-31b-it",
+          "model_id": "google/gemma-4-31b-it",
+          "input_cost": 0.06,
+          "output_cost": 0.35,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 8192
+        },
+        {
           "provider": "crof",
           "model_key": "crof/gemma-4-31b-it",
           "model_id": "gemma-4-31b-it",
@@ -2990,15 +2999,6 @@
           "output_cost": 0.35,
           "max_input_tokens": 262100,
           "max_output_tokens": 262100
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/google/gemma-4-31b-it",
-          "model_id": "google/gemma-4-31b-it",
-          "input_cost": 0.12,
-          "output_cost": 0.35,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
         },
         {
           "provider": "wandb",
@@ -7434,6 +7434,15 @@
           "max_output_tokens": 256000
         },
         {
+          "provider": "ambient",
+          "model_key": "ambient/stepfun/step-3.7-flash",
+          "model_id": "stepfun/step-3.7-flash",
+          "input_cost": 0.2,
+          "output_cost": 1.15,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "huggingface",
           "model_key": "huggingface/stepfun-ai/Step-3.7-Flash",
           "model_id": "stepfun-ai/Step-3.7-Flash",
@@ -7660,6 +7669,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "crossmodel",
+          "model_key": "crossmodel/x-ai/grok-4.5",
+          "model_id": "x-ai/grok-4.5",
+          "input_cost": 2,
+          "output_cost": 6,
+          "max_input_tokens": 500000,
+          "max_output_tokens": 500000
+        },
+        {
           "provider": "daoxe",
           "model_key": "daoxe/grok-4.5",
           "model_id": "grok-4.5",
@@ -7797,6 +7815,15 @@
         "knowledge": null
       },
       "routes": [
+        {
+          "provider": "crossmodel",
+          "model_key": "crossmodel/x-ai/grok-build-0.1",
+          "model_id": "x-ai/grok-build-0.1",
+          "input_cost": 1,
+          "output_cost": 2,
+          "max_input_tokens": 256000,
+          "max_output_tokens": 256000
+        },
         {
           "provider": "fastrouter",
           "model_key": "fastrouter/x-ai/grok-build-0.1",
@@ -8465,6 +8492,15 @@
           "max_output_tokens": 524288
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.91,
+          "output_cost": 2.86,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "deepinfra",
           "model_key": "deepinfra/zai-org/GLM-5.2",
           "model_id": "zai-org/GLM-5.2",
@@ -8474,13 +8510,13 @@
           "max_output_tokens": 32768
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
+          "provider": "ambient",
+          "model_key": "ambient/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.93,
-          "output_cost": 3,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 32768
+          "input_cost": 1.05,
+          "output_cost": 4.4,
+          "max_input_tokens": 101376,
+          "max_output_tokens": 101376
         },
         {
           "provider": "digitalocean",
@@ -8573,22 +8609,13 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "ambient",
-          "model_key": "ambient/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 101376,
-          "max_output_tokens": 101376
-        },
-        {
           "provider": "baseten",
           "model_key": "baseten/zai-org/GLM-5.2",
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 202720,
-          "max_output_tokens": 202720
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
         },
         {
           "provider": "cloudflare-ai-gateway",
@@ -8937,6 +8964,15 @@
           "max_output_tokens": 524288
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.91,
+          "output_cost": 2.86,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "deepinfra",
           "model_key": "deepinfra/zai-org/GLM-5.2",
           "model_id": "zai-org/GLM-5.2",
@@ -8946,13 +8982,13 @@
           "max_output_tokens": 32768
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
+          "provider": "ambient",
+          "model_key": "ambient/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.93,
-          "output_cost": 3,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 32768
+          "input_cost": 1.05,
+          "output_cost": 4.4,
+          "max_input_tokens": 101376,
+          "max_output_tokens": 101376
         },
         {
           "provider": "digitalocean",
@@ -9045,22 +9081,13 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "ambient",
-          "model_key": "ambient/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 101376,
-          "max_output_tokens": 101376
-        },
-        {
           "provider": "baseten",
           "model_key": "baseten/zai-org/GLM-5.2",
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 202720,
-          "max_output_tokens": 202720
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
         },
         {
           "provider": "cloudflare-ai-gateway",
