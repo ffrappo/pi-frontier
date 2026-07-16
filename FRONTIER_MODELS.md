@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-07-15
+Generated: 2026-07-16
 Source: models.dev
-63 frontier models across 16 providers (scope: creators).
+60 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -60,10 +60,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 128K | $0.30 | $1.20 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 128K | $0.30 | $1.20 |
-| `minimax-cn/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
-| `minimax-cn/MiniMax-M2.7-highspeed` | base | 2026-03-18 | 205K → 131K | $0.60 | $2.40 |
 | `minimax/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
 | `minimax/MiniMax-M2.7-highspeed` | base | 2026-03-18 | 205K → 131K | $0.60 | $2.40 |
 
@@ -78,6 +75,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `moonshotai-cn/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
+| `moonshotai-cn/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 | `moonshotai/kimi-k2.6` | base | 2026-04-21 | 262K → 262K | $0.95 | $4.00 |
@@ -144,7 +143,5 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `zai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
-| `zhipuai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
-| `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $5.00 | $22.00 |
 | `zai/glm-5-turbo` | lite | 2026-03-16 | 200K → 131K | $1.20 | $4.00 |
