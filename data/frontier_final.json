@@ -856,6 +856,64 @@
     "knowledge": "2025-01"
   },
   {
+    "provider": "moonshotai",
+    "providerClass": "creator",
+    "family": "kimi-k3",
+    "model_key": "moonshotai/kimi-k3",
+    "version": "2026-07-16",
+    "tier": "base",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000003,
+    "output_cost": 0.000015,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
+    "family": "kimi-k3",
+    "model_key": "moonshotai-cn/kimi-k3",
+    "version": "2026-07-16",
+    "tier": "base",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000003,
+    "output_cost": 0.000015,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
     "provider": "openai",
     "providerClass": "creator",
     "family": "gpt",
