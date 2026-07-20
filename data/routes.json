@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19",
+  "generated": "2026-07-20",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -8556,15 +8556,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.2576,
-          "output_cost": 0.8096,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "crof",
           "model_key": "crof/glm-5.2",
           "model_id": "glm-5.2",
@@ -8599,6 +8590,15 @@
           "output_cost": 3,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.9786,
+          "output_cost": 3.0756,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "ambient",
