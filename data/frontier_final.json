@@ -344,15 +344,15 @@
     "provider": "google",
     "providerClass": "creator",
     "family": "gemini",
-    "model_key": "google/gemini-3.5-flash",
-    "version": "3.5 / 2026-05-19",
+    "model_key": "google/gemini-3.6-flash",
+    "version": "3.6 / 2026-07-21",
     "tier": "flash",
-    "release_date": "2026-05-19",
-    "last_updated": "2026-05-19",
+    "release_date": "2026-07-21",
+    "last_updated": "2026-07-21",
     "max_input_tokens": 1048576,
     "max_output_tokens": 65536,
     "input_cost": 0.0000015,
-    "output_cost": 0.000009,
+    "output_cost": 0.0000075,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -369,7 +369,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2025-01"
+    "knowledge": "2026-03"
   },
   {
     "provider": "google",
