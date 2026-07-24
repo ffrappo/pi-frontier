@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-07-23
+Generated: 2026-07-24
 Source: models.dev
-62 frontier models across 16 providers (scope: creators).
+71 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -43,10 +43,17 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `google/gemini-3.6-flash` | flash | 2026-07-21 | 1049K → 66K | $1.50 | $7.50 |
+| `google/gemini-3.1-flash-lite-image` | flash | 2026-06-30 | 66K → 4K | $0.25 | $30.00 |
 | `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
+| `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 131K → 66K | $3.50 | $21.00 |
+| `google/gemini-3-pro-image` | pro | 2026-05-28 | 66K → 33K | $2.00 | $120.00 |
+| `google/gemini-embedding-2` | base | 2026-04-22 | 8K → 3K | $0.20 | $0.00 |
+| `google/deep-research-max-preview-04-2026` | base | 2026-04-21 | 1049K → 66K | $2.00 | $12.00 |
+| `google/gemini-3.1-flash-tts-preview` | flash | 2026-04-15 | 8K → 16K | $1.00 | $20.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | — | — |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | — | — |
-| `google/gemini-3.1-flash-image-preview` | flash | 2026-02-26 | 66K → 66K | $0.50 | $60.00 |
+| `google/veo-3.1-lite-generate-preview` | lite | 2026-03-31 | 1K → — | — | — |
+| `google/gemini-3.1-flash-live-preview` | flash | 2026-03-26 | 131K → 66K | $0.75 | $4.50 |
 | `google/gemini-3.1-pro-preview` | pro | 2026-02-19 | 1049K → 66K | $2.00 | $12.00 |
 
 ## inception
@@ -126,11 +133,11 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `xai/grok-4.5` | base | 2026-07-08 | 500K → 500K | $2.00 | $6.00 |
+| `xai/grok-imagine-video-1.5` | base | 2026-05-30 | 1K → — | — | — |
 | `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
 | `xai/grok-imagine-image-quality` | base | 2026-04-03 | 8K → — | — | — |
 | `xai/grok-4.20-0309-reasoning` | reasoning | 2026-03-09 | 1000K → 30K | $1.25 | $2.50 |
 | `xai/grok-imagine-image` | base | 2026-01-28 | 8K → — | — | — |
-| `xai/grok-imagine-video` | base | 2026-01-28 | 1K → — | — | — |
 
 ## xiaomi
 
@@ -145,5 +152,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `zai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
+| `zhipuai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
+| `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $5.00 | $22.00 |
 | `zai/glm-5-turbo` | lite | 2026-03-16 | 200K → 131K | $1.20 | $4.00 |
