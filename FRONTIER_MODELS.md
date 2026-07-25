@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-07-24
+Generated: 2026-07-25
 Source: models.dev
 71 frontier models across 16 providers (scope: creators).
 
@@ -19,9 +19,9 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `anthropic/claude-opus-5` | opus | 2026-07-24 | 1000K → 128K | $5.00 | $25.00 |
 | `anthropic/claude-sonnet-5` | sonnet | 2026-06-29 | 1000K → 128K | $2.00 | $10.00 |
 | `anthropic/claude-fable-5` | base | 2026-06-07 | 1000K → 128K | $10.00 | $50.00 |
-| `anthropic/claude-opus-4-8` | opus | 2026-05-28 | 1000K → 128K | $5.00 | $25.00 |
 
 ## cohere
 
@@ -43,16 +43,16 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `google/gemini-3.6-flash` | flash | 2026-07-21 | 1049K → 66K | $1.50 | $7.50 |
-| `google/gemini-3.1-flash-lite-image` | flash | 2026-06-30 | 66K → 4K | $0.25 | $30.00 |
+| `google/gemini-3.1-flash-lite-image` | flash | 2026-06-30 | 66K → 66K | $0.25 | $30.00 |
 | `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
-| `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 131K → 66K | $3.50 | $21.00 |
-| `google/gemini-3-pro-image` | pro | 2026-05-28 | 66K → 33K | $2.00 | $120.00 |
-| `google/gemini-embedding-2` | base | 2026-04-22 | 8K → 3K | $0.20 | $0.00 |
-| `google/deep-research-max-preview-04-2026` | base | 2026-04-21 | 1049K → 66K | $2.00 | $12.00 |
+| `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 33K | $3.50 | $21.00 |
+| `google/gemini-3-pro-image` | pro | 2026-05-28 | 131K → 33K | $2.00 | $120.00 |
+| `google/gemini-embedding-2` | base | 2026-04-22 | 8K → 1 | $0.20 | $0.00 |
+| `google/deep-research-max-preview-04-2026` | base | 2026-04-21 | 131K → 66K | $2.00 | $12.00 |
 | `google/gemini-3.1-flash-tts-preview` | flash | 2026-04-15 | 8K → 16K | $1.00 | $20.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | — | — |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | — | — |
-| `google/veo-3.1-lite-generate-preview` | lite | 2026-03-31 | 1K → — | — | — |
+| `google/veo-3.1-lite-generate-preview` | lite | 2026-03-31 | 480 → 8K | — | — |
 | `google/gemini-3.1-flash-live-preview` | flash | 2026-03-26 | 131K → 66K | $0.75 | $4.50 |
 | `google/gemini-3.1-pro-preview` | pro | 2026-02-19 | 1049K → 66K | $2.00 | $12.00 |
 

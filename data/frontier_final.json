@@ -121,11 +121,11 @@
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude",
-    "model_key": "anthropic/claude-opus-4-8",
-    "version": "4.8 / 2026-05-28",
+    "model_key": "anthropic/claude-opus-5",
+    "version": "5 / 2026-07-24",
     "tier": "opus",
-    "release_date": "2026-05-28",
-    "last_updated": "2026-05-28",
+    "release_date": "2026-07-24",
+    "last_updated": "2026-07-24",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
     "input_cost": 0.000005,
@@ -144,7 +144,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2026-01"
+    "knowledge": "2026-05"
   },
   {
     "provider": "anthropic",
@@ -349,7 +349,7 @@
     "tier": "base",
     "release_date": "2026-04-21",
     "last_updated": "2026-04-21",
-    "max_input_tokens": 1048576,
+    "max_input_tokens": 131072,
     "max_output_tokens": 65536,
     "input_cost": 0.000002,
     "output_cost": 0.000012,
@@ -444,7 +444,7 @@
     "release_date": "2026-04-22",
     "last_updated": "2026-04-22",
     "max_input_tokens": 8192,
-    "max_output_tokens": 3072,
+    "max_output_tokens": 1,
     "input_cost": 2.0000000000000002e-7,
     "output_cost": 0,
     "reasoning": false,
@@ -475,7 +475,7 @@
     "release_date": "2026-06-30",
     "last_updated": "2026-06-30",
     "max_input_tokens": 65536,
-    "max_output_tokens": 4096,
+    "max_output_tokens": 65536,
     "input_cost": 2.5e-7,
     "output_cost": 0.00003,
     "reasoning": true,
@@ -503,7 +503,7 @@
     "tier": "pro",
     "release_date": "2026-05-28",
     "last_updated": "2026-05-28",
-    "max_input_tokens": 65536,
+    "max_input_tokens": 131072,
     "max_output_tokens": 32768,
     "input_cost": 0.000002,
     "output_cost": 0.00012,
@@ -563,8 +563,8 @@
     "tier": "base",
     "release_date": "2026-06-09",
     "last_updated": "2026-06-09",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 65536,
+    "max_input_tokens": 16384,
+    "max_output_tokens": 32768,
     "input_cost": 0.0000035,
     "output_cost": 0.000021,
     "reasoning": false,
@@ -624,7 +624,7 @@
     "max_output_tokens": 16384,
     "input_cost": 0.000001,
     "output_cost": 0.00002,
-    "reasoning": false,
+    "reasoning": true,
     "tool_call": false,
     "attachment": false,
     "modalities": {
@@ -703,8 +703,8 @@
     "tier": "lite",
     "release_date": "2026-03-31",
     "last_updated": "2026-03-31",
-    "max_input_tokens": 1024,
-    "max_output_tokens": null,
+    "max_input_tokens": 480,
+    "max_output_tokens": 8192,
     "input_cost": null,
     "output_cost": null,
     "reasoning": false,
@@ -1791,9 +1791,8 @@
     "attachment": true,
     "modalities": {
       "input": [
-        "text",
         "image",
-        "video"
+        "pdf"
       ],
       "output": [
         "video"
