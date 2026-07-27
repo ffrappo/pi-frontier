@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26",
+  "generated": "2026-07-27",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -746,6 +746,15 @@
           "provider": "azure-cognitive-services",
           "model_key": "azure-cognitive-services/claude-opus-5",
           "model_id": "claude-opus-5",
+          "input_cost": 5,
+          "output_cost": 25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "cloudflare-ai-gateway",
+          "model_key": "cloudflare-ai-gateway/anthropic/claude-opus-5",
+          "model_id": "anthropic/claude-opus-5",
           "input_cost": 5,
           "output_cost": 25,
           "max_input_tokens": 1000000,
@@ -4993,6 +5002,24 @@
           "max_output_tokens": 262144
         },
         {
+          "provider": "ambient",
+          "model_key": "ambient/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.73,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.73,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "deepinfra",
           "model_key": "deepinfra/moonshotai/Kimi-K2.7-Code",
           "model_id": "moonshotai/Kimi-K2.7-Code",
@@ -5011,28 +5038,10 @@
           "max_output_tokens": 262144
         },
         {
-          "provider": "ambient",
-          "model_key": "ambient/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
-          "input_cost": 0.75,
-          "output_cost": 3.5,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
           "provider": "inceptron",
           "model_key": "inceptron/moonshotai/Kimi-K2.7-Code",
           "model_id": "moonshotai/Kimi-K2.7-Code",
           "input_cost": 0.75,
-          "output_cost": 3.5,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
-          "input_cost": 0.78,
           "output_cost": 3.5,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
@@ -5332,6 +5341,24 @@
           "max_output_tokens": 262144
         },
         {
+          "provider": "ambient",
+          "model_key": "ambient/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.73,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.73,
+          "output_cost": 3.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "deepinfra",
           "model_key": "deepinfra/moonshotai/Kimi-K2.7-Code",
           "model_id": "moonshotai/Kimi-K2.7-Code",
@@ -5350,28 +5377,10 @@
           "max_output_tokens": 262144
         },
         {
-          "provider": "ambient",
-          "model_key": "ambient/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
-          "input_cost": 0.75,
-          "output_cost": 3.5,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
           "provider": "inceptron",
           "model_key": "inceptron/moonshotai/Kimi-K2.7-Code",
           "model_id": "moonshotai/Kimi-K2.7-Code",
           "input_cost": 0.75,
-          "output_cost": 3.5,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
-          "input_cost": 0.78,
           "output_cost": 3.5,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
@@ -8939,10 +8948,19 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.7182,
-          "output_cost": 2.2572,
+          "input_cost": 0.6692,
+          "output_cost": 2.1032,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "ambient",
+          "model_key": "ambient/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.76,
+          "output_cost": 2.42,
+          "max_input_tokens": 101376,
+          "max_output_tokens": 101376
         },
         {
           "provider": "wandb",
@@ -8988,15 +9006,6 @@
           "output_cost": 4,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "ambient",
-          "model_key": "ambient/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 1.05,
-          "output_cost": 4.4,
-          "max_input_tokens": 101376,
-          "max_output_tokens": 101376
         },
         {
           "provider": "digitalocean",
@@ -9456,10 +9465,19 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.7182,
-          "output_cost": 2.2572,
+          "input_cost": 0.6692,
+          "output_cost": 2.1032,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "ambient",
+          "model_key": "ambient/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.76,
+          "output_cost": 2.42,
+          "max_input_tokens": 101376,
+          "max_output_tokens": 101376
         },
         {
           "provider": "wandb",
@@ -9505,15 +9523,6 @@
           "output_cost": 4,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "ambient",
-          "model_key": "ambient/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 1.05,
-          "output_cost": 4.4,
-          "max_input_tokens": 101376,
-          "max_output_tokens": 101376
         },
         {
           "provider": "digitalocean",
