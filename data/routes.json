@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28",
+  "generated": "2026-07-29",
   "models": {
     "alibaba/qwen3.7-plus": {
       "frontier": {
@@ -1074,7 +1074,7 @@
           "model_key": "xpersona/claude-fable-5",
           "model_id": "claude-fable-5",
           "input_cost": 3,
-          "output_cost": 18,
+          "output_cost": 18.5,
           "max_input_tokens": 1000000,
           "max_output_tokens": 128000
         },
@@ -3023,15 +3023,6 @@
           "max_output_tokens": 16384
         },
         {
-          "provider": "hyper",
-          "model_key": "hyper/gemma-4-26b-a4b-it",
-          "model_id": "gemma-4-26b-a4b-it",
-          "input_cost": 0.114,
-          "output_cost": 0.398,
-          "max_input_tokens": 256000,
-          "max_output_tokens": 25600
-        },
-        {
           "provider": "kilo",
           "model_key": "kilo/google/gemma-4-26b-a4b-it",
           "model_id": "google/gemma-4-26b-a4b-it",
@@ -3057,6 +3048,15 @@
           "output_cost": 0.4,
           "max_input_tokens": 262144,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "hyper",
+          "model_key": "hyper/gemma-4-26b-a4b-it",
+          "model_id": "gemma-4-26b-a4b-it",
+          "input_cost": 0.13,
+          "output_cost": 0.424,
+          "max_input_tokens": 256000,
+          "max_output_tokens": 25600
         },
         {
           "provider": "nano-gpt",
@@ -3857,8 +3857,8 @@
           "provider": "hyper",
           "model_key": "hyper/minimax-m2.7",
           "model_id": "minimax-m2.7",
-          "input_cost": 0.42,
-          "output_cost": 1.62,
+          "input_cost": 0.348,
+          "output_cost": 1.332,
           "max_input_tokens": 204800,
           "max_output_tokens": 20480
         },
@@ -4663,15 +4663,6 @@
           "max_output_tokens": 262144
         },
         {
-          "provider": "aiand",
-          "model_key": "aiand/moonshotai/kimi-k2.6",
-          "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.85,
-          "output_cost": 3.5,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
           "provider": "gmicloud",
           "model_key": "gmicloud/moonshotai/Kimi-K2.6",
           "model_id": "moonshotai/Kimi-K2.6",
@@ -5178,8 +5169,8 @@
           "model_id": "kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
-          "max_input_tokens": 262000,
-          "max_output_tokens": 262000
+          "max_input_tokens": 256000,
+          "max_output_tokens": 16000
         },
         {
           "provider": "llmgateway",
@@ -5526,8 +5517,8 @@
           "model_id": "kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
-          "max_input_tokens": 262000,
-          "max_output_tokens": 262000
+          "max_input_tokens": 256000,
+          "max_output_tokens": 16000
         },
         {
           "provider": "llmgateway",
@@ -5962,6 +5953,15 @@
           "max_output_tokens": 262144
         },
         {
+          "provider": "berget",
+          "model_key": "berget/moonshotai/Kimi-K3",
+          "model_id": "moonshotai/Kimi-K3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 327680,
+          "max_output_tokens": 32768
+        },
+        {
           "provider": "cline-pass",
           "model_key": "cline-pass/cline-pass/kimi-k3",
           "model_id": "cline-pass/kimi-k3",
@@ -6229,6 +6229,15 @@
           "max_output_tokens": 262144
         },
         {
+          "provider": "berget",
+          "model_key": "berget/moonshotai/Kimi-K3",
+          "model_id": "moonshotai/Kimi-K3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 327680,
+          "max_output_tokens": 32768
+        },
+        {
           "provider": "cline-pass",
           "model_key": "cline-pass/cline-pass/kimi-k3",
           "model_id": "cline-pass/kimi-k3",
@@ -6442,6 +6451,15 @@
       },
       "routes": [
         {
+          "provider": "xpersona",
+          "model_key": "xpersona/gpt-5.6",
+          "model_id": "gpt-5.6",
+          "input_cost": 1.5,
+          "output_cost": 12,
+          "max_input_tokens": 372000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "openai",
           "model_key": "openai/gpt-5.6",
           "model_id": "gpt-5.6",
@@ -6482,6 +6500,15 @@
         "knowledge": "2025-08-31"
       },
       "routes": [
+        {
+          "provider": "xpersona",
+          "model_key": "xpersona/gpt-5.4-mini",
+          "model_id": "gpt-5.4-mini",
+          "input_cost": 0.375,
+          "output_cost": 4,
+          "max_input_tokens": 272000,
+          "max_output_tokens": 128000
+        },
         {
           "provider": "poe",
           "model_key": "poe/openai/gpt-5.4-mini",
@@ -7626,6 +7653,15 @@
       },
       "routes": [
         {
+          "provider": "xpersona",
+          "model_key": "xpersona/gpt-5.6-sol",
+          "model_id": "gpt-5.6-sol",
+          "input_cost": 1.5,
+          "output_cost": 12,
+          "max_input_tokens": 372000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "routing-run",
           "model_key": "routing-run/gpt-5.6-sol",
           "model_id": "gpt-5.6-sol",
@@ -7827,6 +7863,15 @@
           "input_cost": 1.5,
           "output_cost": 9,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "xpersona",
+          "model_key": "xpersona/gpt-5.6-terra",
+          "model_id": "gpt-5.6-terra",
+          "input_cost": 1.5,
+          "output_cost": 2,
+          "max_input_tokens": 372000,
           "max_output_tokens": 128000
         },
         {
@@ -8632,39 +8677,6 @@
         }
       ]
     },
-    "xai/grok-imagine-image": {
-      "frontier": {
-        "provider": "xai",
-        "providerClass": "creator",
-        "family": "grok-imagine-image",
-        "model_key": "xai/grok-imagine-image",
-        "version": "2026-01-28",
-        "tier": "base",
-        "release_date": "2026-01-28",
-        "last_updated": "2026-01-28",
-        "max_input_tokens": 8000,
-        "max_output_tokens": null,
-        "input_cost": null,
-        "output_cost": null,
-        "reasoning": false,
-        "tool_call": false,
-        "attachment": true,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "image",
-            "pdf"
-          ]
-        },
-        "open_weights": false,
-        "knowledge": null
-      },
-      "routes": []
-    },
     "xai/grok-imagine-image-quality": {
       "frontier": {
         "provider": "xai",
@@ -9463,8 +9475,8 @@
           "model_id": "glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "merge-gateway",
@@ -9989,8 +10001,8 @@
           "model_id": "glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "merge-gateway",

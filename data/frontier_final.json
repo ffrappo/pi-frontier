@@ -1716,36 +1716,6 @@
   {
     "provider": "xai",
     "providerClass": "creator",
-    "family": "grok-imagine-image",
-    "model_key": "xai/grok-imagine-image",
-    "version": "2026-01-28",
-    "tier": "base",
-    "release_date": "2026-01-28",
-    "last_updated": "2026-01-28",
-    "max_input_tokens": 8000,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "image",
-        "pdf"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
-    "provider": "xai",
-    "providerClass": "creator",
     "family": "grok-imagine-image-quality",
     "model_key": "xai/grok-imagine-image-quality",
     "version": "2026-04-03",
