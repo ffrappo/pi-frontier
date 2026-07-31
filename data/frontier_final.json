@@ -1329,8 +1329,8 @@
     "last_updated": "2026-07-09",
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
-    "input_cost": 0.000001,
-    "output_cost": 0.000006,
+    "input_cost": 2.0000000000000002e-7,
+    "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -1417,8 +1417,8 @@
     "last_updated": "2026-07-09",
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
-    "input_cost": 0.0000025,
-    "output_cost": 0.000015,
+    "input_cost": 0.000002,
+    "output_cost": 0.000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -1761,6 +1761,7 @@
     "attachment": true,
     "modalities": {
       "input": [
+        "text",
         "image",
         "pdf"
       ],
