@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-08-02
+Generated: 2026-08-03
 Source: models.dev
-69 frontier models across 16 providers (scope: creators).
+70 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -34,7 +34,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | flash | 2026-04-24 | 1000K → 384K | $0.14 | $0.28 |
+| `deepseek/deepseek-v4-flash` | flash | 2026-07-31 | 1000K → 384K | $0.14 | $0.28 |
 | `deepseek/deepseek-v4-pro` | pro | 2026-04-24 | 1000K → 384K | $0.43 | $0.87 |
 
 ## google
@@ -76,6 +76,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `mistral/mistral-medium-latest` | base | 2026-04-29 | 262K → 262K | $1.50 | $7.50 |
 | `mistral/mistral-small-latest` | lite | 2026-03-16 | 256K → 256K | $0.15 | $0.60 |
+| `mistral/voxtral-mini-tts-latest` | mini | 2026-03-01 | — → — | — | — |
 
 ## moonshotai
 

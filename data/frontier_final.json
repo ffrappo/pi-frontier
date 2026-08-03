@@ -264,10 +264,10 @@
     "providerClass": "creator",
     "family": "deepseek",
     "model_key": "deepseek/deepseek-v4-flash",
-    "version": "4 / 2026-04-24",
+    "version": "4 / 2026-07-31",
     "tier": "flash",
-    "release_date": "2026-04-24",
-    "last_updated": "2026-04-24",
+    "release_date": "2026-07-31",
+    "last_updated": "2026-07-31",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
     "input_cost": 1.4e-7,
@@ -886,6 +886,33 @@
       ]
     },
     "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "mistral",
+    "providerClass": "creator",
+    "family": "voxtral-tts",
+    "model_key": "mistral/voxtral-mini-tts-latest",
+    "version": "2026-03-01",
+    "tier": "mini",
+    "release_date": "2026-03-01",
+    "last_updated": "2026-03-01",
+    "max_input_tokens": null,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio"
+      ]
+    },
+    "open_weights": false,
     "knowledge": null
   },
   {
