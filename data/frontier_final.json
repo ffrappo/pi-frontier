@@ -3,18 +3,18 @@
     "provider": "alibaba",
     "providerClass": "creator",
     "family": "qwen",
-    "model_key": "alibaba/qwen3.7-plus",
-    "version": "3.7 / 2026-06-02",
+    "model_key": "alibaba/qwen3.8-max",
+    "version": "3.8 / 2026-08-03",
     "tier": "base",
-    "release_date": "2026-06-02",
-    "last_updated": "2026-06-04",
+    "release_date": "2026-08-03",
+    "last_updated": "2026-08-03",
     "max_input_tokens": 1000000,
-    "max_output_tokens": 65536,
-    "input_cost": 5e-7,
-    "output_cost": 0.000003,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000002,
+    "output_cost": 0.000006,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
         "text",
@@ -26,7 +26,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2025-04"
+    "knowledge": null
   },
   {
     "provider": "alibaba",
