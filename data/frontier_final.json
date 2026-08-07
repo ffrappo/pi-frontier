@@ -19,7 +19,8 @@
       "input": [
         "text",
         "image",
-        "video"
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
@@ -1602,16 +1603,16 @@
   {
     "provider": "upstage",
     "providerClass": "creator",
-    "family": "solar-pro3",
-    "model_key": "upstage/solar-pro3",
-    "version": "—",
+    "family": "solar-pro4",
+    "model_key": "upstage/solar-pro4",
+    "version": "2026-08-06",
     "tier": "base",
-    "release_date": "2026-01",
-    "last_updated": "2026-01",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 8192,
-    "input_cost": 2.5e-7,
-    "output_cost": 2.5e-7,
+    "release_date": "2026-08-06",
+    "last_updated": "2026-08-06",
+    "max_input_tokens": 524288,
+    "max_output_tokens": 131072,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": false,
@@ -1624,7 +1625,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2025-03"
+    "knowledge": "2026-02"
   },
   {
     "provider": "xai",

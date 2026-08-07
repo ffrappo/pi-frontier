@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-08-06
+Generated: 2026-08-07
 Source: models.dev
 70 frontier models across 16 providers (scope: creators).
 
@@ -126,7 +126,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `upstage/solar-pro3` | base | 2026-01 | 131K → 8K | $0.25 | $0.25 |
+| `upstage/solar-pro4` | base | 2026-08-06 | 524K → 131K | $0.30 | $1.20 |
 
 ## xai
 
