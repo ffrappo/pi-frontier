@@ -2,6 +2,60 @@
   {
     "provider": "alibaba",
     "providerClass": "creator",
+    "family": "deepseek",
+    "model_key": "alibaba/deepseek-v4-flash-0731",
+    "version": "4 / mmdd:0731",
+    "tier": "flash",
+    "release_date": "2026-07-31",
+    "last_updated": "2026-07-31",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "input_cost": 2.0000000000000002e-7,
+    "output_cost": 4.0000000000000003e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-05"
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "glm",
+    "model_key": "alibaba/glm-5.2",
+    "version": "5.2 / 2026-06-13",
+    "tier": "base",
+    "release_date": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 0.0000014,
+    "output_cost": 0.0000044,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
     "family": "qwen",
     "model_key": "alibaba/qwen3.8-max",
     "version": "3.8 / 2026-08-03",
