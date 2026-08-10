@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09",
+  "generated": "2026-08-10",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -146,6 +146,15 @@
           "output_cost": 0.28,
           "max_input_tokens": 1048576,
           "max_output_tokens": 384000
+        },
+        {
+          "provider": "merge-gateway",
+          "model_key": "merge-gateway/deepseek/deepseek-v4-flash-0731",
+          "model_id": "deepseek/deepseek-v4-flash-0731",
+          "input_cost": 0.14,
+          "output_cost": 0.28,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 393216
         },
         {
           "provider": "nano-gpt",
@@ -314,15 +323,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.098,
-          "output_cost": 0.308,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/zai-org/glm-5.2",
           "model_id": "zai-org/glm-5.2",
@@ -357,6 +357,15 @@
           "output_cost": 2.4,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.76,
+          "output_cost": 2.42,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 262144
         },
         {
           "provider": "wandb",
@@ -634,8 +643,8 @@
           "model_id": "z-ai/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1024000,
-          "max_output_tokens": 128000
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "nano-gpt",
@@ -742,7 +751,7 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 262144,
+          "max_input_tokens": 512000,
           "max_output_tokens": 164000
         },
         {
@@ -4267,7 +4276,7 @@
           "input_cost": 0.07,
           "output_cost": 0.34,
           "max_input_tokens": 262144,
-          "max_output_tokens": 16384
+          "max_output_tokens": 262144
         },
         {
           "provider": "llmgateway",
@@ -4277,15 +4286,6 @@
           "output_cost": 0.34,
           "max_input_tokens": 262144,
           "max_output_tokens": 32768
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
-          "model_id": "google/gemma-4-26b-a4b-it",
-          "input_cost": 0.07,
-          "output_cost": 0.34,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 16384
         },
         {
           "provider": "cloudflare-workers-ai",
@@ -4304,6 +4304,15 @@
           "output_cost": 0.557,
           "max_input_tokens": 262000,
           "max_output_tokens": 262000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
+          "model_id": "google/gemma-4-26b-a4b-it",
+          "input_cost": 0.12,
+          "output_cost": 0.4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "siliconflow",
@@ -5886,15 +5895,6 @@
           "max_output_tokens": 65536
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.6",
-          "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.5795,
-          "output_cost": 2.44,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
           "provider": "wandb",
           "model_key": "wandb/moonshotai/Kimi-K2.6",
           "model_id": "moonshotai/Kimi-K2.6",
@@ -6208,6 +6208,15 @@
           "output_cost": 4,
           "max_input_tokens": 262144,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.6",
+          "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "orcarouter",
@@ -11478,15 +11487,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.098,
-          "output_cost": 0.308,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/zai-org/glm-5.2",
           "model_id": "zai-org/glm-5.2",
@@ -11521,6 +11521,15 @@
           "output_cost": 2.4,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.76,
+          "output_cost": 2.42,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 262144
         },
         {
           "provider": "wandb",
@@ -11798,8 +11807,8 @@
           "model_id": "z-ai/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1024000,
-          "max_output_tokens": 128000
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "nano-gpt",
@@ -11906,7 +11915,7 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 262144,
+          "max_input_tokens": 512000,
           "max_output_tokens": 164000
         },
         {
@@ -12085,15 +12094,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.098,
-          "output_cost": 0.308,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 128000
-        },
-        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/zai-org/glm-5.2",
           "model_id": "zai-org/glm-5.2",
@@ -12128,6 +12128,15 @@
           "output_cost": 2.4,
           "max_input_tokens": 1048576,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.76,
+          "output_cost": 2.42,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 262144
         },
         {
           "provider": "wandb",
@@ -12405,8 +12414,8 @@
           "model_id": "z-ai/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1024000,
-          "max_output_tokens": 128000
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         },
         {
           "provider": "nano-gpt",
@@ -12513,7 +12522,7 @@
           "model_id": "zai-org/GLM-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 262144,
+          "max_input_tokens": 512000,
           "max_output_tokens": 164000
         },
         {
@@ -12879,6 +12888,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "ofox",
+          "model_key": "ofox/z-ai/glm-5v-turbo",
+          "model_id": "z-ai/glm-5v-turbo",
+          "input_cost": 1.2,
+          "output_cost": 4,
+          "max_input_tokens": 200000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5v-turbo",
           "model_id": "z-ai/glm-5v-turbo",
@@ -13027,6 +13045,15 @@
           "input_cost": 1.2,
           "output_cost": 4,
           "max_input_tokens": 202800,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "ofox",
+          "model_key": "ofox/z-ai/glm-5v-turbo",
+          "model_id": "z-ai/glm-5v-turbo",
+          "input_cost": 1.2,
+          "output_cost": 4,
+          "max_input_tokens": 200000,
           "max_output_tokens": 131072
         },
         {
