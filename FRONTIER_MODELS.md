@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-08-13
+Generated: 2026-08-14
 Source: models.dev
 70 frontier models across 16 providers (scope: creators).
 
@@ -43,7 +43,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `google/gemini-3.6-flash` | flash | 2026-07-21 | 1049K → 66K | $1.50 | $7.50 |
+| `google/gemini-3.7-flash` | flash | 2026-08-13 | 1049K → 66K | $0.75 | $3.75 |
 | `google/gemini-3.1-flash-lite-image` | flash | 2026-06-30 | 66K → 66K | $0.25 | $30.00 |
 | `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
 | `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 33K | $3.50 | $21.00 |
