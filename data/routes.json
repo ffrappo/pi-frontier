@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15",
+  "generated": "2026-08-16",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -265,6 +265,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "hyper",
+          "model_key": "hyper/deepseek-v4-flash-0731",
+          "model_id": "deepseek-v4-flash-0731",
+          "input_cost": 0.152432,
+          "output_cost": 0.304864,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "greenpt",
           "model_key": "greenpt/deepseek-v4-flash-0731",
           "model_id": "deepseek-v4-flash-0731",
@@ -295,15 +304,6 @@
           "provider": "edenai",
           "model_key": "edenai/qwen/deepseek-v4-flash-0731",
           "model_id": "qwen/deepseek-v4-flash-0731",
-          "input_cost": 0.2,
-          "output_cost": 0.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "hyper",
-          "model_key": "hyper/deepseek-v4-flash-0731",
-          "model_id": "deepseek-v4-flash-0731",
           "input_cost": 0.2,
           "output_cost": 0.4,
           "max_input_tokens": 1000000,
@@ -404,6 +404,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/GLM-5.2",
+          "model_id": "GLM-5.2",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "zai-coding-plan",
           "model_key": "zai-coding-plan/glm-5.2",
           "model_id": "glm-5.2",
@@ -434,8 +443,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.49,
-          "output_cost": 1.54,
+          "input_cost": 0.462,
+          "output_cost": 1.452,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -461,8 +470,8 @@
           "provider": "digitalocean",
           "model_key": "digitalocean/glm-5.2",
           "model_id": "glm-5.2",
-          "input_cost": 0.63,
-          "output_cost": 1.98,
+          "input_cost": 0.7,
+          "output_cost": 2.2,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         },
@@ -1432,6 +1441,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/qwen/qwen3.6-27b",
+          "model_id": "qwen/qwen3.6-27b",
+          "input_cost": 0.3,
+          "output_cost": 2,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "siliconflow",
           "model_key": "siliconflow/Qwen/Qwen3.6-27B",
           "model_id": "Qwen/Qwen3.6-27B",
@@ -1574,15 +1592,6 @@
           "output_cost": 3.6,
           "max_input_tokens": 256000,
           "max_output_tokens": 64000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/qwen/qwen3.6-27b",
-          "model_id": "qwen/qwen3.6-27b",
-          "input_cost": 0.6,
-          "output_cost": 3.6,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
         },
         {
           "provider": "pioneer",
@@ -2811,6 +2820,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/DeepSeek-V4-Flash",
+          "model_id": "DeepSeek-V4-Flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "unorouter",
           "model_key": "unorouter/deepseek-v4-flash",
           "model_id": "deepseek-v4-flash",
@@ -2820,11 +2838,11 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/deepseek/deepseek-v4-flash",
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.07,
-          "output_cost": 0.14,
+          "input_cost": 0.06426,
+          "output_cost": 0.12852,
           "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
@@ -2844,15 +2862,6 @@
           "input_cost": 0.076,
           "output_cost": 0.153,
           "max_input_tokens": 1050000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash",
-          "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.07966,
-          "output_cost": 0.15932,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -3042,6 +3051,15 @@
           "input_cost": 0.14,
           "output_cost": 0.28,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/deepseek/deepseek-v4-flash",
+          "model_id": "deepseek/deepseek-v4-flash",
+          "input_cost": 0.14,
+          "output_cost": 0.28,
+          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -5227,6 +5245,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/MiniMax-M2.7",
+          "model_id": "MiniMax-M2.7",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 204800,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "llmgateway",
           "model_key": "llmgateway/minimax-m2.7",
           "model_id": "minimax-m2.7",
@@ -5558,6 +5585,15 @@
           "provider": "nvidia",
           "model_key": "nvidia/minimaxai/minimax-m2.7",
           "model_id": "minimaxai/minimax-m2.7",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 204800,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/MiniMax-M2.7",
+          "model_id": "MiniMax-M2.7",
           "input_cost": 0,
           "output_cost": 0,
           "max_input_tokens": 204800,
@@ -6208,6 +6244,15 @@
           "max_output_tokens": 16384
         },
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "empiriolabs",
           "model_key": "empiriolabs/minimax-m3",
           "model_id": "minimax-m3",
@@ -6554,6 +6599,15 @@
           "output_cost": 0,
           "max_input_tokens": 1000000,
           "max_output_tokens": 16384
+        },
+        {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/MiniMax-M3",
+          "model_id": "MiniMax-M3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 512000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "empiriolabs",
@@ -7037,6 +7091,15 @@
           "provider": "nvidia",
           "model_key": "nvidia/moonshotai/kimi-k2.6",
           "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/Kimi-K2.6",
+          "model_id": "Kimi-K2.6",
           "input_cost": 0,
           "output_cost": 0,
           "max_input_tokens": 262144,
@@ -7625,6 +7688,15 @@
           "max_output_tokens": 262144
         },
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/Kimi-K2.7-Code",
+          "model_id": "Kimi-K2.7-Code",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
           "provider": "routing-run",
           "model_key": "routing-run/kimi-k2.7-code",
           "model_id": "kimi-k2.7-code",
@@ -7871,6 +7943,15 @@
           "provider": "nano-gpt",
           "model_key": "nano-gpt/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/TEE/kimi-k2.7-code",
+          "model_id": "TEE/kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
           "max_input_tokens": 262144,
@@ -8162,6 +8243,15 @@
           "provider": "kenari",
           "model_key": "kenari/kimi-k3",
           "model_id": "kimi-k3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/Kimi-K3",
+          "model_id": "Kimi-K3",
           "input_cost": 0,
           "output_cost": 0,
           "max_input_tokens": 1048576,
@@ -11619,6 +11709,15 @@
       },
       "routes": [
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/MiMo-V2.5-Pro",
+          "model_id": "MiMo-V2.5-Pro",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "xiaomi-token-plan-ams",
           "model_key": "xiaomi-token-plan-ams/mimo-v2.5-pro",
           "model_id": "mimo-v2.5-pro",
@@ -11667,8 +11766,8 @@
           "provider": "kilo",
           "model_key": "kilo/xiaomi/mimo-v2.5-pro",
           "model_id": "xiaomi/mimo-v2.5-pro",
-          "input_cost": 0.4,
-          "output_cost": 1.5,
+          "input_cost": 0.435,
+          "output_cost": 0.87,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -11897,6 +11996,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/GLM-5.2",
+          "model_id": "GLM-5.2",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "zai-coding-plan",
           "model_key": "zai-coding-plan/glm-5.2",
           "model_id": "glm-5.2",
@@ -11927,8 +12035,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.49,
-          "output_cost": 1.54,
+          "input_cost": 0.462,
+          "output_cost": 1.452,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -11954,8 +12062,8 @@
           "provider": "digitalocean",
           "model_key": "digitalocean/glm-5.2",
           "model_id": "glm-5.2",
-          "input_cost": 0.63,
-          "output_cost": 1.98,
+          "input_cost": 0.7,
+          "output_cost": 2.2,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         },
