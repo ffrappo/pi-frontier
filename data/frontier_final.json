@@ -434,37 +434,6 @@
   {
     "provider": "google",
     "providerClass": "creator",
-    "family": "gemini",
-    "model_key": "google/gemini-3.1-pro-preview",
-    "version": "3.1 / 2026-02-19",
-    "tier": "pro",
-    "release_date": "2026-02-19",
-    "last_updated": "2026-02-19",
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 65536,
-    "input_cost": 0.000002,
-    "output_cost": 0.000012,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-01"
-  },
-  {
-    "provider": "google",
-    "providerClass": "creator",
     "family": "gemini-embedding",
     "model_key": "google/gemini-embedding-2",
     "version": "2 / 2026-04-22",
