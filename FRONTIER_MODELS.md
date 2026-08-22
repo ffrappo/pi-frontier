@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-08-21
+Generated: 2026-08-22
 Source: models.dev
 70 frontier models across 16 providers (scope: creators).
 
@@ -36,8 +36,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `deepseek/deepseek-v4-flash-vision-exp` | flash | 2026-08-21 | 1000K → 384K | $0.14 | $0.28 |
 | `deepseek/deepseek-v4-pro` | pro | 2026-08-12 | 1000K → 384K | $0.43 | $0.87 |
-| `deepseek/deepseek-v4-flash` | flash | 2026-07-31 | 1000K → 384K | $0.14 | $0.28 |
 
 ## google
 

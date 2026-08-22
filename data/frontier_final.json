@@ -318,28 +318,29 @@
     "provider": "deepseek",
     "providerClass": "creator",
     "family": "deepseek",
-    "model_key": "deepseek/deepseek-v4-flash",
-    "version": "4 / 2026-07-31",
+    "model_key": "deepseek/deepseek-v4-flash-vision-exp",
+    "version": "4 / 2026-08-21",
     "tier": "flash",
-    "release_date": "2026-07-31",
-    "last_updated": "2026-07-31",
+    "release_date": "2026-08-21",
+    "last_updated": "2026-08-21",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
     "input_cost": 1.4e-7,
     "output_cost": 2.8e-7,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
       ]
     },
-    "open_weights": true,
-    "knowledge": "2025-05"
+    "open_weights": false,
+    "knowledge": null
   },
   {
     "provider": "deepseek",
