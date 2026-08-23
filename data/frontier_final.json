@@ -350,7 +350,7 @@
     "version": "4 / 2026-08-12",
     "tier": "pro",
     "release_date": "2026-08-12",
-    "last_updated": "2026-08-12",
+    "last_updated": "2026-08-22",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
     "input_cost": 4.35e-7,
@@ -366,7 +366,7 @@
         "text"
       ]
     },
-    "open_weights": false,
+    "open_weights": true,
     "knowledge": null
   },
   {
