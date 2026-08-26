@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-08-25
+Generated: 2026-08-26
 Source: models.dev
 70 frontier models across 16 providers (scope: creators).
 
@@ -95,9 +95,9 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `openai/gpt-5.6` | base | 2026-07-09 | 1050K → 128K | $5.00 | $30.00 |
+| `openai/gpt-5.6` | base | 2026-07-09 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-5.6-luna` | base | 2026-07-09 | 1050K → 128K | $0.20 | $1.20 |
-| `openai/gpt-5.6-sol` | base | 2026-07-09 | 1050K → 128K | $5.00 | $30.00 |
+| `openai/gpt-5.6-sol` | base | 2026-07-09 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-5.6-terra` | base | 2026-07-09 | 1050K → 128K | $2.00 | $12.00 |
 | `openai/gpt-realtime-2.1` | base | 2026-07-06 | 128K → 32K | $4.00 | $24.00 |
 | `openai/gpt-5.5-pro` | pro | 2026-04-23 | 1050K → 128K | $30.00 | $180.00 |
@@ -152,6 +152,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `zai/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
+| `zai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.40 | $4.40 |
 | `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
 | `zai/glm-5-turbo` | lite | 2026-03-16 | 200K → 131K | $1.20 | $4.00 |
