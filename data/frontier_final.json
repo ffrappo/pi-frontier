@@ -1569,33 +1569,6 @@
   {
     "provider": "stepfun",
     "providerClass": "creator",
-    "family": "step-tts",
-    "model_key": "stepfun/step-tts-2",
-    "version": "2 / 2026-03-01",
-    "tier": "base",
-    "release_date": "2026-03-01",
-    "last_updated": "2026-07-02",
-    "max_input_tokens": null,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
-    "provider": "stepfun",
-    "providerClass": "creator",
     "family": "stepaudio-asr",
     "model_key": "stepfun/stepaudio-2.5-asr",
     "version": "2.5 / 2026-04-24",
