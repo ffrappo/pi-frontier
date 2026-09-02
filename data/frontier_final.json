@@ -234,11 +234,11 @@
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude-fable",
-    "model_key": "anthropic/claude-fable-5",
-    "version": "5 / 2026-06-07",
+    "model_key": "anthropic/claude-fable-5-1",
+    "version": "5.1 / 2026-09-01",
     "tier": "base",
-    "release_date": "2026-06-07",
-    "last_updated": "2026-06-09",
+    "release_date": "2026-09-01",
+    "last_updated": "2026-09-01",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
     "input_cost": 0.00001,
@@ -257,7 +257,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": null
+    "knowledge": "2026-06"
   },
   {
     "provider": "cohere",
@@ -1565,33 +1565,6 @@
     },
     "open_weights": true,
     "knowledge": "2026-03-01"
-  },
-  {
-    "provider": "stepfun",
-    "providerClass": "creator",
-    "family": "step-tts",
-    "model_key": "stepfun/step-tts-2",
-    "version": "2 / 2026-03-01",
-    "tier": "base",
-    "release_date": "2026-03-01",
-    "last_updated": "2026-07-02",
-    "max_input_tokens": null,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "audio"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
   },
   {
     "provider": "stepfun",

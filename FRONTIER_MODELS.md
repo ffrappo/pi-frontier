@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-09-01
+Generated: 2026-09-02
 Source: models.dev
-72 frontier models across 16 providers (scope: creators).
+71 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -21,9 +21,9 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `anthropic/claude-fable-5-1` | base | 2026-09-01 | 1000K → 128K | $10.00 | $50.00 |
 | `anthropic/claude-opus-5` | opus | 2026-07-24 | 1000K → 128K | $5.00 | $25.00 |
 | `anthropic/claude-sonnet-5` | sonnet | 2026-06-29 | 1000K → 128K | $2.00 | $10.00 |
-| `anthropic/claude-fable-5` | base | 2026-06-07 | 1000K → 128K | $10.00 | $50.00 |
 
 ## cohere
 
@@ -122,7 +122,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.18 | $1.11 |
 | `stepfun/stepaudio-2.5-asr` | base | 2026-04-24 | — → — | — | — |
 | `stepfun/stepaudio-2.5-tts` | base | 2026-04-16 | — → — | — | — |
-| `stepfun/step-tts-2` | base | 2026-03-01 | — → — | — | — |
 
 ## upstage
 
