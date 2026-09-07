@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06",
+  "generated": "2026-09-07",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -85,13 +85,13 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
-          "model_id": "deepseek/deepseek-v4-flash-0731",
-          "input_cost": 0.065,
+          "provider": "edenai",
+          "model_key": "edenai/deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
+          "model_id": "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
+          "input_cost": 0.06,
           "output_cost": 0.18,
-          "max_input_tokens": 1310720,
-          "max_output_tokens": 943718
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
         },
         {
           "provider": "vercel",
@@ -128,15 +128,6 @@
           "output_cost": 0.252,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
-        },
-        {
-          "provider": "edenai",
-          "model_key": "edenai/deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "model_id": "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "input_cost": 0.08,
-          "output_cost": 0.18,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
         },
         {
           "provider": "baseten",
@@ -245,6 +236,15 @@
           "output_cost": 0.28,
           "max_input_tokens": 1024000,
           "max_output_tokens": 1024000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
+          "model_id": "deepseek/deepseek-v4-flash-0731",
+          "input_cost": 0.14,
+          "output_cost": 0.28,
+          "max_input_tokens": 1310720,
+          "max_output_tokens": 131072
         },
         {
           "provider": "requesty",
@@ -406,7 +406,7 @@
           "input_cost": 0.44,
           "output_cost": 1.32,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 943718
+          "max_output_tokens": 131072
         },
         {
           "provider": "ofox",
@@ -2933,6 +2933,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "neon",
+          "model_key": "neon/claude-fable-5-1",
+          "model_id": "claude-fable-5-1",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "opencode",
           "model_key": "opencode/claude-fable-5-1",
           "model_id": "claude-fable-5-1",
@@ -3064,6 +3073,15 @@
       },
       "routes": [
         {
+          "provider": "crof",
+          "model_key": "crof/deepseek-v4-flash-vision-exp",
+          "model_id": "deepseek-v4-flash-vision-exp",
+          "input_cost": 0.08,
+          "output_cost": 0.2,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "amd",
           "model_key": "amd/DeepSeek-V4-Flash-Vision-Exp",
           "model_id": "DeepSeek-V4-Flash-Vision-Exp",
@@ -3136,30 +3154,12 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/deepseek/deepseek-v4-flash-vision-exp",
-          "model_id": "deepseek/deepseek-v4-flash-vision-exp",
-          "input_cost": 0.22,
-          "output_cost": 0.66,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
           "provider": "opencode-go",
           "model_key": "opencode-go/deepseek-v4-flash-vision-exp",
           "model_id": "deepseek-v4-flash-vision-exp",
           "input_cost": 0.22,
           "output_cost": 0.66,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash-vision-exp",
-          "model_id": "deepseek/deepseek-v4-flash-vision-exp",
-          "input_cost": 0.22,
-          "output_cost": 0.66,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -3226,12 +3226,30 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/deepseek/deepseek-v4-flash-vision-exp",
+          "model_id": "deepseek/deepseek-v4-flash-vision-exp",
+          "input_cost": 0.44,
+          "output_cost": 1.32,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "ofox",
           "model_key": "ofox/deepseek/deepseek-v4-flash-vision-exp",
           "model_id": "deepseek/deepseek-v4-flash-vision-exp",
           "input_cost": 0.44,
           "output_cost": 1.32,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash-vision-exp",
+          "model_id": "deepseek/deepseek-v4-flash-vision-exp",
+          "input_cost": 0.44,
+          "output_cost": 1.32,
+          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         }
       ]
@@ -3300,6 +3318,15 @@
           "output_cost": 0,
           "max_input_tokens": 1000000,
           "max_output_tokens": 384000
+        },
+        {
+          "provider": "sensenova",
+          "model_key": "sensenova/deepseek-v4-pro",
+          "model_id": "deepseek-v4-pro",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 65536
         },
         {
           "provider": "volcengine-coding-plan",
@@ -3500,15 +3527,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.72819,
-          "output_cost": 1.45638,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
           "provider": "digitalocean",
           "model_key": "digitalocean/deepseek-v4-pro",
           "model_id": "deepseek-v4-pro",
@@ -3552,6 +3570,15 @@
           "output_cost": 3,
           "max_input_tokens": 1048560,
           "max_output_tokens": 393216
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 1.04226,
+          "output_cost": 2.08452,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
         },
         {
           "provider": "nano-gpt",
@@ -8334,6 +8361,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "sensenova",
+          "model_key": "sensenova/kimi-k3",
+          "model_id": "kimi-k3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "crof",
           "model_key": "crof/kimi-k3",
           "model_id": "kimi-k3",
@@ -8950,6 +8986,15 @@
           "output_cost": 0,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "sensenova",
+          "model_key": "sensenova/kimi-k3",
+          "model_id": "kimi-k3",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 65536
         },
         {
           "provider": "crof",
@@ -10407,9 +10452,18 @@
           ]
         },
         "open_weights": false,
-        "knowledge": null
+        "knowledge": "2026-04-30"
       },
       "routes": [
+        {
+          "provider": "azure",
+          "model_key": "azure/gpt-6-astra",
+          "model_id": "gpt-6-astra",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
         {
           "provider": "crossmodel",
           "model_key": "crossmodel/openai/gpt-6-astra",
@@ -10492,6 +10546,24 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "neon",
+          "model_key": "neon/gpt-6-astra",
+          "model_id": "gpt-6-astra",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "ofox",
+          "model_key": "ofox/openai/gpt-6-astra",
+          "model_id": "openai/gpt-6-astra",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "openai",
           "model_key": "openai/gpt-6-astra",
           "model_id": "gpt-6-astra",
@@ -10522,6 +10594,15 @@
           "provider": "vercel",
           "model_key": "vercel/openai/gpt-6-astra",
           "model_id": "openai/gpt-6-astra",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "vivgrid",
+          "model_key": "vivgrid/gpt-6-astra",
+          "model_id": "gpt-6-astra",
           "input_cost": 10,
           "output_cost": 50,
           "max_input_tokens": 1050000,
@@ -13731,7 +13812,7 @@
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 262144
+          "max_output_tokens": 943718
         },
         {
           "provider": "llmgateway-providers",
@@ -13794,7 +13875,7 @@
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1310720,
-          "max_output_tokens": 262144
+          "max_output_tokens": 943718
         },
         {
           "provider": "togetherai",
