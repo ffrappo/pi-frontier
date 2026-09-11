@@ -318,15 +318,15 @@
     "provider": "deepseek",
     "providerClass": "creator",
     "family": "deepseek",
-    "model_key": "deepseek/deepseek-v4-flash-vision-exp",
-    "version": "4 / 2026-08-21",
+    "model_key": "deepseek/deepseek-v4-flash",
+    "version": "4 / 2026-09-10",
     "tier": "flash",
-    "release_date": "2026-08-21",
-    "last_updated": "2026-08-21",
+    "release_date": "2026-09-10",
+    "last_updated": "2026-09-10",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
-    "input_cost": 1.4e-7,
-    "output_cost": 2.8e-7,
+    "input_cost": 1.5e-7,
+    "output_cost": 6e-7,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -339,8 +339,36 @@
         "text"
       ]
     },
-    "open_weights": false,
-    "knowledge": null
+    "open_weights": true,
+    "knowledge": "2025-05"
+  },
+  {
+    "provider": "deepseek",
+    "providerClass": "creator",
+    "family": "deepseek",
+    "model_key": "deepseek/deepseek-v4-flash-vision-exp",
+    "version": "4 / 2026-09-10",
+    "tier": "flash",
+    "release_date": "2026-09-10",
+    "last_updated": "2026-09-10",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 384000,
+    "input_cost": 1.5e-7,
+    "output_cost": 6e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-05"
   },
   {
     "provider": "deepseek",
@@ -724,15 +752,15 @@
     "provider": "inception",
     "providerClass": "creator",
     "family": "mercury",
-    "model_key": "inception/mercury-2",
-    "version": "2 / 2026-02-24",
+    "model_key": "inception/mercury-2.5",
+    "version": "2.5 / 2026-09-08",
     "tier": "base",
-    "release_date": "2026-02-24",
-    "last_updated": "2026-02-24",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 50000,
-    "input_cost": 2.5e-7,
-    "output_cost": 7.5e-7,
+    "release_date": "2026-09-08",
+    "last_updated": "2026-09-10",
+    "max_input_tokens": 260000,
+    "max_output_tokens": 65536,
+    "input_cost": 4e-8,
+    "output_cost": 1.5e-7,
     "reasoning": true,
     "tool_call": true,
     "attachment": false,
@@ -745,7 +773,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2025-01-01"
+    "knowledge": "2025-11-01"
   },
   {
     "provider": "inception",

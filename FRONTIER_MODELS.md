@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-09-10
+Generated: 2026-09-11
 Source: models.dev
-73 frontier models across 16 providers (scope: creators).
+74 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -36,7 +36,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `deepseek/deepseek-v4-flash-vision-exp` | flash | 2026-08-21 | 1000K → 384K | $0.14 | $0.28 |
+| `deepseek/deepseek-v4-flash` | flash | 2026-09-10 | 1000K → 384K | $0.15 | $0.60 |
+| `deepseek/deepseek-v4-flash-vision-exp` | flash | 2026-09-10 | 1000K → 384K | $0.15 | $0.60 |
 | `deepseek/deepseek-v4-pro` | pro | 2026-08-12 | 1000K → 384K | $0.43 | $0.87 |
 
 ## google
@@ -60,8 +61,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `inception/mercury-2.5` | base | 2026-09-08 | 260K → 66K | $0.04 | $0.15 |
 | `inception/mercury-edit-2` | base | 2026-03-30 | 128K → 8K | $0.25 | $0.75 |
-| `inception/mercury-2` | base | 2026-02-24 | 128K → 50K | $0.25 | $0.75 |
 
 ## minimax
 
