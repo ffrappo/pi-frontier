@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13",
+  "generated": "2026-09-14",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -76,15 +76,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
-          "model_id": "deepseek/deepseek-v4-flash-0731",
-          "input_cost": 0.04,
-          "output_cost": 0.08,
-          "max_input_tokens": 1310720,
-          "max_output_tokens": 943718
-        },
-        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/deepseek/deepseek-v4-flash-0731",
           "model_id": "deepseek/deepseek-v4-flash-0731",
@@ -110,6 +101,15 @@
           "output_cost": 0.18,
           "max_input_tokens": 1048576,
           "max_output_tokens": 384000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
+          "model_id": "deepseek/deepseek-v4-flash-0731",
+          "input_cost": 0.06,
+          "output_cost": 0.12,
+          "max_input_tokens": 1310720,
+          "max_output_tokens": 943718
         },
         {
           "provider": "edenai",
@@ -578,10 +578,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.6,
-          "output_cost": 2,
+          "input_cost": 0.6832,
+          "output_cost": 2.1472,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 182476
+          "max_output_tokens": 131072
         },
         {
           "provider": "digitalocean",
@@ -922,8 +922,8 @@
           "model_id": "z-ai/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 202752,
-          "max_output_tokens": 182476
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
@@ -3289,15 +3289,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash",
-          "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.04956,
-          "output_cost": 0.09912,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
           "provider": "llmgateway",
           "model_key": "llmgateway/deepseek-v4-flash",
           "model_id": "deepseek-v4-flash",
@@ -3350,6 +3341,15 @@
           "output_cost": 0.18,
           "max_input_tokens": 1000000,
           "max_output_tokens": 393216
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash",
+          "model_id": "deepseek/deepseek-v4-flash",
+          "input_cost": 0.088606,
+          "output_cost": 0.177212,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
         },
         {
           "provider": "deepinfra",
@@ -14651,15 +14651,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.3",
-          "model_id": "z-ai/glm-5.3",
-          "input_cost": 1.092,
-          "output_cost": 3.432,
-          "max_input_tokens": 1310720,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "cortecs",
           "model_key": "cortecs/glm-5.3",
           "model_id": "glm-5.3",
@@ -14827,8 +14818,8 @@
           "model_id": "z-ai/glm-5.3",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
+          "max_input_tokens": 1048575,
+          "max_output_tokens": 943717
         },
         {
           "provider": "llmgateway-providers",
@@ -14910,6 +14901,15 @@
           "output_cost": 4.4,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.3",
+          "model_id": "z-ai/glm-5.3",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1310720,
+          "max_output_tokens": 943717
         },
         {
           "provider": "togetherai",
