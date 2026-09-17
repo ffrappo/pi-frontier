@@ -56,6 +56,34 @@
   {
     "provider": "alibaba",
     "providerClass": "creator",
+    "family": "kimi-k3",
+    "model_key": "alibaba/kimi-k3",
+    "version": "2026-07-16",
+    "tier": "base",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000003,
+    "output_cost": 0.000015,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
     "family": "qwen",
     "model_key": "alibaba/qwen3.8-max",
     "version": "3.8 / 2026-08-03",
@@ -784,11 +812,11 @@
     "tier": "base",
     "release_date": "2026-03-30",
     "last_updated": "2026-03-30",
-    "max_input_tokens": 128000,
+    "max_input_tokens": 32000,
     "max_output_tokens": 8192,
     "input_cost": 2.5e-7,
     "output_cost": 7.5e-7,
-    "reasoning": true,
+    "reasoning": false,
     "tool_call": false,
     "attachment": false,
     "modalities": {
@@ -2025,33 +2053,6 @@
       ]
     },
     "open_weights": true,
-    "knowledge": null
-  },
-  {
-    "provider": "zai",
-    "providerClass": "creator",
-    "family": "glm",
-    "model_key": "zai/glm-5-turbo",
-    "version": "5 / 2026-03-16",
-    "tier": "lite",
-    "release_date": "2026-03-16",
-    "last_updated": "2026-03-16",
-    "max_input_tokens": 200000,
-    "max_output_tokens": 131072,
-    "input_cost": 0.0000012,
-    "output_cost": 0.000004,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
     "knowledge": null
   },
   {

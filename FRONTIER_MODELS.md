@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-09-16
+Generated: 2026-09-17
 Source: models.dev
 74 frontier models across 16 providers (scope: creators).
 
@@ -13,6 +13,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `alibaba/qwen3.8-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.47 |
 | `alibaba/qwen3.8-max` | base | 2026-08-03 | 1000K → 131K | $2.00 | $6.00 |
 | `alibaba/deepseek-v4-flash-0731` | flash | 2026-07-31 | 1000K → 384K | $0.20 | $0.40 |
+| `alibaba/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `alibaba/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
 | `alibaba/qwen3.6-35b-a3b` | base | 2026-04-17 | 262K → 66K | $0.25 | $1.49 |
@@ -62,7 +63,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `inception/mercury-2.5` | base | 2026-09-08 | 260K → 66K | $0.04 | $0.15 |
-| `inception/mercury-edit-2` | base | 2026-03-30 | 128K → 8K | $0.25 | $0.75 |
+| `inception/mercury-edit-2` | base | 2026-03-30 | 32K → 8K | $0.25 | $0.75 |
 
 ## minimax
 
@@ -158,4 +159,3 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `zai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.40 | $4.40 |
 | `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
 | `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $5.00 | $22.00 |
-| `zai/glm-5-turbo` | lite | 2026-03-16 | 200K → 131K | $1.20 | $4.00 |
