@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-09-17
+Generated: 2026-09-18
 Source: models.dev
-74 frontier models across 16 providers (scope: creators).
+72 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -77,7 +77,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `mistral/zai-glm-5-2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
+| `mistral/zai-glm-5-3` | base | 2026-08-14 | 1000K → 131K | $1.40 | $4.40 |
 | `mistral/mistral-medium-latest` | base | 2026-04-29 | 262K → 262K | $1.50 | $7.50 |
 | `mistral/mistral-small-latest` | lite | 2026-03-16 | 256K → 256K | $0.15 | $0.60 |
 | `mistral/voxtral-mini-tts-latest` | mini | 2026-03-01 | — → — | — | — |
@@ -137,10 +137,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `xai/grok-4.6` | base | 2026-08-12 | 500K → 500K | $2.00 | $6.00 |
-| `xai/grok-imagine-image-2.0` | base | 2026-08-07 | 64K → — | — | — |
 | `xai/grok-imagine-video-1.5` | base | 2026-05-30 | 1K → — | — | — |
 | `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
-| `xai/grok-imagine-image-quality` | base | 2026-04-03 | 16K → — | — | — |
 
 ## xiaomi
 

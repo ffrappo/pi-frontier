@@ -1000,11 +1000,11 @@
     "provider": "mistral",
     "providerClass": "creator",
     "family": "zai-glm",
-    "model_key": "mistral/zai-glm-5-2",
-    "version": "5.2 / 2026-06-13",
+    "model_key": "mistral/zai-glm-5-3",
+    "version": "5.3 / 2026-08-14",
     "tier": "base",
-    "release_date": "2026-06-13",
-    "last_updated": "2026-06-13",
+    "release_date": "2026-08-14",
+    "last_updated": "2026-08-14",
     "max_input_tokens": 1000000,
     "max_output_tokens": 131072,
     "input_cost": 0.0000014,
@@ -1789,66 +1789,6 @@
       ],
       "output": [
         "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
-    "provider": "xai",
-    "providerClass": "creator",
-    "family": "grok-imagine-image",
-    "model_key": "xai/grok-imagine-image-2.0",
-    "version": "2.0 / 2026-08-07",
-    "tier": "base",
-    "release_date": "2026-08-07",
-    "last_updated": "2026-08-07",
-    "max_input_tokens": 64000,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "image",
-        "pdf"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
-    "provider": "xai",
-    "providerClass": "creator",
-    "family": "grok-imagine-image-quality",
-    "model_key": "xai/grok-imagine-image-quality",
-    "version": "2026-04-03",
-    "tier": "base",
-    "release_date": "2026-04-03",
-    "last_updated": "2026-04-03",
-    "max_input_tokens": 16000,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "image",
-        "pdf"
       ]
     },
     "open_weights": false,
