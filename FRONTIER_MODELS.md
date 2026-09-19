@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-09-18
+Generated: 2026-09-19
 Source: models.dev
 72 frontier models across 16 providers (scope: creators).
 
@@ -70,8 +70,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1049K → 512K | $0.30 | $1.20 |
-| `minimax/MiniMax-M2.7` | base | 2026-03-18 | 205K → 131K | $0.30 | $1.20 |
-| `minimax/MiniMax-M2.7-highspeed` | base | 2026-03-18 | 205K → 131K | $0.60 | $2.40 |
 
 ## mistral
 
@@ -152,8 +150,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.07 | $0.25 |
-| `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.07 | $0.25 |
+| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
+| `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
+| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
+| `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.40 | $4.40 |
 | `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
 | `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $5.00 | $22.00 |
