@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19",
+  "generated": "2026-09-20",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -575,15 +575,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.5544,
-          "output_cost": 1.7424,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
           "provider": "ambient",
           "model_key": "ambient/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
@@ -591,6 +582,15 @@
           "output_cost": 2,
           "max_input_tokens": 202752,
           "max_output_tokens": 202752
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.6496,
+          "output_cost": 2.0416,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "digitalocean",
@@ -690,6 +690,15 @@
           "output_cost": 3,
           "max_input_tokens": 524288,
           "max_output_tokens": 524288
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.98,
+          "output_cost": 3.08,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "aiand",
@@ -1147,15 +1156,6 @@
           "model_id": "glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "zenmux",
-          "model_key": "zenmux/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 1.4,
-          "output_cost": 4.5,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
         },
@@ -4098,8 +4098,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash",
           "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.04704,
-          "output_cost": 0.09408,
+          "input_cost": 0.03668,
+          "output_cost": 0.07336,
           "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
@@ -4515,15 +4515,6 @@
           "input_cost": 0.15,
           "output_cost": 0.6,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "tensorx",
-          "model_key": "tensorx/deepseek/deepseek-v4-flash",
-          "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.15,
-          "output_cost": 0.3,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -4977,6 +4968,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.422298,
+          "output_cost": 0.844596,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "ebcloud",
           "model_key": "ebcloud/DeepSeek-V4-Pro",
           "model_id": "DeepSeek-V4-Pro",
@@ -5109,15 +5109,6 @@
           "input_cost": 0.442,
           "output_cost": 0.884,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.564282,
-          "output_cost": 1.128564,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -14074,6 +14065,15 @@
           "max_output_tokens": 500000
         },
         {
+          "provider": "zenmux",
+          "model_key": "zenmux/x-ai/grok-4.6",
+          "model_id": "x-ai/grok-4.6",
+          "input_cost": 2,
+          "output_cost": 6,
+          "max_input_tokens": 500000,
+          "max_output_tokens": 500000
+        },
+        {
           "provider": "azure",
           "model_key": "azure/grok-4.6",
           "model_id": "grok-4.6",
@@ -14963,8 +14963,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.3",
           "model_id": "z-ai/glm-5.3",
-          "input_cost": 0.91,
-          "output_cost": 2.86,
+          "input_cost": 0.896,
+          "output_cost": 2.816,
           "max_input_tokens": 1310720,
           "max_output_tokens": 131072
         },
@@ -15231,15 +15231,6 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/vichar-ai/glm-5.3",
-          "model_id": "vichar-ai/glm-5.3",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1048000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/glm-5.3",
           "model_id": "novita/glm-5.3",
           "input_cost": 1.4,
@@ -15264,6 +15255,15 @@
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "nebius",
+          "model_key": "nebius/zai-org/GLM-5.3",
+          "model_id": "zai-org/GLM-5.3",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1024000,
+          "max_output_tokens": 1024000
         },
         {
           "provider": "ofox",
@@ -15338,6 +15338,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3",
+          "model_id": "z-ai/glm-5.3",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "zhipuai",
           "model_key": "zhipuai/glm-5.3",
           "model_id": "glm-5.3",
@@ -15372,6 +15381,15 @@
           "output_cost": 5.41,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "tensorx",
+          "model_key": "tensorx/z-ai/glm-5.3",
+          "model_id": "z-ai/glm-5.3",
+          "input_cost": 1.75,
+          "output_cost": 4.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 64000
         },
         {
           "provider": "privatemode-ai",
@@ -15724,15 +15742,6 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/vichar-ai/glm-5.3-flash",
-          "model_id": "vichar-ai/glm-5.3-flash",
-          "input_cost": 0.15,
-          "output_cost": 0.5,
-          "max_input_tokens": 1048000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/glm-5.3-flash",
           "model_id": "novita/glm-5.3-flash",
           "input_cost": 0.15,
@@ -15867,6 +15876,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "zhipuai",
           "model_key": "zhipuai/glm-5.3-flash",
           "model_id": "glm-5.3-flash",
@@ -15901,6 +15919,15 @@
           "output_cost": 0.6,
           "max_input_tokens": 1000000,
           "max_output_tokens": 262144
+        },
+        {
+          "provider": "tensorx",
+          "model_key": "tensorx/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.2,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 64000
         },
         {
           "provider": "berget",
@@ -16262,15 +16289,6 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/vichar-ai/glm-5.3-flash",
-          "model_id": "vichar-ai/glm-5.3-flash",
-          "input_cost": 0.15,
-          "output_cost": 0.5,
-          "max_input_tokens": 1048000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/glm-5.3-flash",
           "model_id": "novita/glm-5.3-flash",
           "input_cost": 0.15,
@@ -16405,6 +16423,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "zhipuai",
           "model_key": "zhipuai/glm-5.3-flash",
           "model_id": "glm-5.3-flash",
@@ -16439,6 +16466,15 @@
           "output_cost": 0.6,
           "max_input_tokens": 1000000,
           "max_output_tokens": 262144
+        },
+        {
+          "provider": "tensorx",
+          "model_key": "tensorx/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.2,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 64000
         },
         {
           "provider": "berget",
@@ -16901,6 +16937,15 @@
           "output_cost": 1.25,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.375,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         }
       ]
     },
@@ -16980,6 +17025,15 @@
           "output_cost": 1.25,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.375,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         }
       ]
     }
