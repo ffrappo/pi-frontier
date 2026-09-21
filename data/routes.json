@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20",
+  "generated": "2026-09-21",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -80,7 +80,7 @@
           "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
           "model_id": "deepseek/deepseek-v4-flash-0731",
           "input_cost": 0.04,
-          "output_cost": 0.08,
+          "output_cost": 0.16,
           "max_input_tokens": 1310720,
           "max_output_tokens": 943718
         },
@@ -2857,24 +2857,6 @@
           "max_output_tokens": 81920
         },
         {
-          "provider": "kilo",
-          "model_key": "kilo/qwen/qwen3.6-35b-a3b",
-          "model_id": "qwen/qwen3.6-35b-a3b",
-          "input_cost": 0.1,
-          "output_cost": 0.9,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/qwen/qwen3.6-35b-a3b",
-          "model_id": "qwen/qwen3.6-35b-a3b",
-          "input_cost": 0.1,
-          "output_cost": 0.9,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/qwen/qwen3.6-35b-a3b",
           "model_id": "qwen/qwen3.6-35b-a3b",
@@ -2900,6 +2882,24 @@
           "output_cost": 0.95,
           "max_input_tokens": 262144,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "kilo",
+          "model_key": "kilo/qwen/qwen3.6-35b-a3b",
+          "model_id": "qwen/qwen3.6-35b-a3b",
+          "input_cost": 0.15,
+          "output_cost": 1,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/qwen/qwen3.6-35b-a3b",
+          "model_id": "qwen/qwen3.6-35b-a3b",
+          "input_cost": 0.15,
+          "output_cost": 1,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
         },
         {
           "provider": "cortecs",
@@ -4095,15 +4095,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash",
-          "model_id": "deepseek/deepseek-v4-flash",
-          "input_cost": 0.03668,
-          "output_cost": 0.07336,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
           "provider": "llmgateway",
           "model_key": "llmgateway/deepseek-v4-flash",
           "model_id": "deepseek-v4-flash",
@@ -4156,6 +4147,15 @@
           "output_cost": 0.18,
           "max_input_tokens": 1000000,
           "max_output_tokens": 393216
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash",
+          "model_id": "deepseek/deepseek-v4-flash",
+          "input_cost": 0.088606,
+          "output_cost": 0.177212,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
         },
         {
           "provider": "deepinfra",
@@ -4572,15 +4572,6 @@
           "max_output_tokens": 393216
         },
         {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/TEE/deepseek-v4-flash",
-          "model_id": "TEE/deepseek-v4-flash",
-          "input_cost": 0.2,
-          "output_cost": 0.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 393216
-        },
-        {
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/fireworks/deepseek-v4-flash",
           "model_id": "fireworks/deepseek-v4-flash",
@@ -4775,15 +4766,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-flash-vision-exp",
-          "model_id": "deepseek/deepseek-v4-flash-vision-exp",
-          "input_cost": 0.2156,
-          "output_cost": 0.6468,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 262144
-        },
-        {
           "provider": "fireworks-ai",
           "model_key": "fireworks-ai/accounts/fireworks/models/deepseek-v4-flash-vision-exp",
           "model_id": "accounts/fireworks/models/deepseek-v4-flash-vision-exp",
@@ -4793,13 +4775,13 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/deepseek/deepseek-v4-flash-vision-exp",
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-flash-vision-exp",
           "model_id": "deepseek/deepseek-v4-flash-vision-exp",
           "input_cost": 0.22,
           "output_cost": 0.66,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
+          "max_output_tokens": 943718
         },
         {
           "provider": "vercel",
@@ -4853,7 +4835,16 @@
           "input_cost": 0.44,
           "output_cost": 1.32,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 262144
+          "max_output_tokens": 943718
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/deepseek/deepseek-v4-flash-vision-exp",
+          "model_id": "deepseek/deepseek-v4-flash-vision-exp",
+          "input_cost": 0.44,
+          "output_cost": 1.32,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
         },
         {
           "provider": "ofox",
@@ -4966,15 +4957,6 @@
           "output_cost": 0.8,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.422298,
-          "output_cost": 0.844596,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
         },
         {
           "provider": "ebcloud",
@@ -5172,6 +5154,15 @@
           "input_cost": 0.8999,
           "output_cost": 1.7999,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.95526,
+          "output_cost": 1.91052,
+          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -14963,8 +14954,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.3",
           "model_id": "z-ai/glm-5.3",
-          "input_cost": 0.896,
-          "output_cost": 2.816,
+          "input_cost": 0.91,
+          "output_cost": 2.86,
           "max_input_tokens": 1310720,
           "max_output_tokens": 131072
         },
