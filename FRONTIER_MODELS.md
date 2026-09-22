@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-09-21
+Generated: 2026-09-22
 Source: models.dev
-72 frontier models across 16 providers (scope: creators).
+74 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -134,17 +134,19 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `xai/grok-4.6` | base | 2026-08-12 | 500K → 500K | $2.00 | $6.00 |
+| `xai/grok-4.7` | base | 2026-09-21 | 500K → 500K | $2.00 | $6.00 |
 | `xai/grok-imagine-video-1.5` | base | 2026-05-30 | 1K → — | — | — |
 | `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
+| `xai/grok-imagine-image-quality` | base | 2026-04-03 | 16K → — | — | — |
 
 ## xiaomi
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `xiaomi/mimo-v2.5-pro-ultraspeed` | pro | 2026-06-08 | 1049K → 131K | $1.30 | $2.61 |
+| `xiaomi/mimo-v2.6-flash` | flash | 2026-09-22 | 1049K → 131K | $0.14 | $0.28 |
+| `xiaomi/mimo-v2.6-pro` | pro | 2026-09-22 | 1049K → 131K | $0.43 | $0.87 |
+| `xiaomi/mimo-v2.6-pro-ultraspeed` | pro | 2026-09-21 | 1049K → 131K | $4.35 | $8.70 |
 | `xiaomi/mimo-v2.5` | base | 2026-04-22 | 1049K → 131K | $0.14 | $0.28 |
-| `xiaomi/mimo-v2.5-pro` | pro | 2026-04-22 | 1049K → 131K | $0.43 | $0.87 |
 
 ## zai
 

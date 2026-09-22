@@ -1686,11 +1686,11 @@
     "provider": "xai",
     "providerClass": "creator",
     "family": "grok",
-    "model_key": "xai/grok-4.6",
-    "version": "4.6 / 2026-08-12",
+    "model_key": "xai/grok-4.7",
+    "version": "4.7 / 2026-09-21",
     "tier": "base",
-    "release_date": "2026-08-12",
-    "last_updated": "2026-08-12",
+    "release_date": "2026-09-21",
+    "last_updated": "2026-09-21",
     "max_input_tokens": 500000,
     "max_output_tokens": 500000,
     "input_cost": 0.000002,
@@ -1709,7 +1709,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2026-02-01"
+    "knowledge": "2026-05"
   },
   {
     "provider": "xai",
@@ -1735,6 +1735,36 @@
       ],
       "output": [
         "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "xai",
+    "providerClass": "creator",
+    "family": "grok-imagine-image-quality",
+    "model_key": "xai/grok-imagine-image-quality",
+    "version": "2026-04-03",
+    "tier": "base",
+    "release_date": "2026-04-03",
+    "last_updated": "2026-04-03",
+    "max_input_tokens": 16000,
+    "max_output_tokens": null,
+    "input_cost": null,
+    "output_cost": null,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image",
+        "pdf"
       ]
     },
     "open_weights": false,
@@ -1804,55 +1834,93 @@
     "provider": "xiaomi",
     "providerClass": "creator",
     "family": "mimo",
-    "model_key": "xiaomi/mimo-v2.5-pro",
-    "version": "2.5 / 2026-04-22",
+    "model_key": "xiaomi/mimo-v2.6-flash",
+    "version": "2.6 / 2026-09-22",
+    "tier": "flash",
+    "release_date": "2026-09-22",
+    "last_updated": "2026-09-22",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 1.4e-7,
+    "output_cost": 2.8e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": "2026-09-22"
+  },
+  {
+    "provider": "xiaomi",
+    "providerClass": "creator",
+    "family": "mimo",
+    "model_key": "xiaomi/mimo-v2.6-pro",
+    "version": "2.6 / 2026-09-22",
     "tier": "pro",
-    "release_date": "2026-04-22",
-    "last_updated": "2026-06-24",
+    "release_date": "2026-09-22",
+    "last_updated": "2026-09-22",
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "input_cost": 4.35e-7,
     "output_cost": 8.7e-7,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
       ],
       "output": [
         "text"
       ]
     },
-    "open_weights": true,
-    "knowledge": "2024-12"
+    "open_weights": false,
+    "knowledge": "2026-09-22"
   },
   {
     "provider": "xiaomi",
     "providerClass": "creator",
     "family": "mimo-ultraspeed",
-    "model_key": "xiaomi/mimo-v2.5-pro-ultraspeed",
-    "version": "2.5 / 2026-06-08",
+    "model_key": "xiaomi/mimo-v2.6-pro-ultraspeed",
+    "version": "2.6 / 2026-09-21",
     "tier": "pro",
-    "release_date": "2026-06-08",
-    "last_updated": "2026-06-09",
+    "release_date": "2026-09-21",
+    "last_updated": "2026-09-21",
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
-    "input_cost": 0.000001305,
-    "output_cost": 0.00000261,
+    "input_cost": 0.00000435,
+    "output_cost": 0.0000087,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image",
+        "video",
+        "audio"
       ],
       "output": [
         "text"
       ]
     },
-    "open_weights": true,
-    "knowledge": "2024-12"
+    "open_weights": false,
+    "knowledge": null
   },
   {
     "provider": "zai",
