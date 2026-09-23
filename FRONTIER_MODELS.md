@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-09-22
+Generated: 2026-09-23
 Source: models.dev
 74 frontier models across 16 providers (scope: creators).
 
@@ -22,8 +22,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `anthropic/claude-opus-5-5` | opus | 2026-09-22 | 1000K → 128K | $4.00 | $20.00 |
 | `anthropic/claude-fable-5-1` | base | 2026-09-01 | 1000K → 128K | $10.00 | $50.00 |
-| `anthropic/claude-opus-5` | opus | 2026-07-24 | 1000K → 128K | $5.00 | $25.00 |
 | `anthropic/claude-sonnet-5` | sonnet | 2026-06-29 | 1000K → 128K | $2.00 | $10.00 |
 
 ## cohere
@@ -37,8 +37,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `deepseek/deepseek-v4-flash` | flash | 2026-09-10 | 1000K → 384K | $0.15 | $0.60 |
-| `deepseek/deepseek-v4-flash-vision-exp` | flash | 2026-09-10 | 1000K → 384K | $0.15 | $0.60 |
+| `deepseek/deepseek-flash` | flash | 2026-09-10 | 1000K → 384K | $0.15 | $0.60 |
 | `deepseek/deepseek-v4-pro` | pro | 2026-08-12 | 1000K → 384K | $0.43 | $0.87 |
 
 ## google
@@ -96,10 +95,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `openai/gpt-6-luna` | base | 2026-09-22 | 1050K → 128K | $0.10 | $0.50 |
+| `openai/gpt-6-sol` | base | 2026-09-22 | 1050K → 128K | $2.00 | $10.00 |
 | `openai/gpt-6-astra` | base | 2026-09-04 | 1050K → 128K | $10.00 | $50.00 |
 | `openai/gpt-5.6` | base | 2026-07-09 | 1050K → 128K | $4.00 | $20.00 |
-| `openai/gpt-5.6-luna` | base | 2026-07-09 | 1050K → 128K | $0.20 | $1.20 |
-| `openai/gpt-5.6-sol` | base | 2026-07-09 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-5.6-terra` | base | 2026-07-09 | 1050K → 128K | $2.00 | $12.00 |
 | `openai/gpt-realtime-2.1` | base | 2026-07-06 | 128K → 32K | $4.00 | $24.00 |
 | `openai/gpt-5.5-pro` | pro | 2026-04-23 | 1050K → 128K | $30.00 | $180.00 |
@@ -120,6 +119,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `stepfun/step-5-preview` | base | 2026-09-16 | 1000K → 1000K | $0.96 | $2.74 |
 | `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.18 | $1.11 |
 | `stepfun/stepaudio-2.5-asr` | base | 2026-04-24 | — → — | — | — |
 | `stepfun/stepaudio-2.5-tts` | base | 2026-04-16 | — → — | — | — |
