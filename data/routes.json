@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25",
+  "generated": "2026-09-26",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -70,7 +70,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
           "model_id": "deepseek/deepseek-v4-flash-0731",
-          "input_cost": 0.03,
+          "input_cost": 0.021,
           "output_cost": 0.32,
           "max_input_tokens": 1310720,
           "max_output_tokens": 943718
@@ -457,8 +457,8 @@
           "provider": "edenai",
           "model_key": "edenai/scaleway/deepseek-v4-flash-0731",
           "model_id": "scaleway/deepseek-v4-flash-0731",
-          "input_cost": 0.45468,
-          "output_cost": 0.90936,
+          "input_cost": 0.45612,
+          "output_cost": 0.91224,
           "max_input_tokens": 256000,
           "max_output_tokens": 384000
         },
@@ -744,15 +744,6 @@
           "output_cost": 3.9438,
           "max_input_tokens": 1000000,
           "max_output_tokens": 128000
-        },
-        {
-          "provider": "melious",
-          "model_key": "melious/glm-5.2",
-          "model_id": "glm-5.2",
-          "input_cost": 1.1592,
-          "output_cost": 4.6368,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
         },
         {
           "provider": "crossmodel",
@@ -2243,6 +2234,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "opencode",
+          "model_key": "opencode/qwen3.8-max",
+          "model_id": "qwen3.8-max",
+          "input_cost": 2,
+          "output_cost": 6,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "opencode-go",
           "model_key": "opencode-go/qwen3.8-max",
           "model_id": "qwen3.8-max",
@@ -2692,9 +2692,9 @@
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
           "input_cost": 0.32,
-          "output_cost": 2.7,
+          "output_cost": 3.2,
           "max_input_tokens": 262144,
-          "max_output_tokens": 262140
+          "max_output_tokens": 81920
         },
         {
           "provider": "ofox",
@@ -2721,7 +2721,7 @@
           "input_cost": 0.45,
           "output_cost": 2.7,
           "max_input_tokens": 262144,
-          "max_output_tokens": 262140
+          "max_output_tokens": 81920
         },
         {
           "provider": "synthetic",
@@ -3205,6 +3205,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "requesty",
+          "model_key": "requesty/claude-opus-5-5",
+          "model_id": "claude-opus-5-5",
+          "input_cost": 4,
+          "output_cost": 20,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "vivgrid",
           "model_key": "vivgrid/claude-opus-5-5",
           "model_id": "claude-opus-5-5",
@@ -3219,15 +3228,6 @@
           "model_id": "claude-opus-5-5",
           "input_cost": 4.8,
           "output_cost": 24,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "requesty",
-          "model_key": "requesty/claude-opus-5-5",
-          "model_id": "claude-opus-5-5",
-          "input_cost": 5,
-          "output_cost": 25,
           "max_input_tokens": 1000000,
           "max_output_tokens": 128000
         }
@@ -4018,6 +4018,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.418818,
+          "output_cost": 0.837636,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "ebcloud",
           "model_key": "ebcloud/DeepSeek-V4-Pro",
           "model_id": "DeepSeek-V4-Pro",
@@ -4195,15 +4204,6 @@
           "input_cost": 0.726,
           "output_cost": 2.178,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.783,
-          "output_cost": 1.566,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -4592,15 +4592,6 @@
           "output_cost": 3.57624,
           "max_input_tokens": 1000000,
           "max_output_tokens": 65536
-        },
-        {
-          "provider": "melious",
-          "model_key": "melious/deepseek-v4-pro",
-          "model_id": "deepseek-v4-pro",
-          "input_cost": 1.85472,
-          "output_cost": 3.70944,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
         },
         {
           "provider": "hyper",
@@ -5240,6 +5231,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
+          "model_id": "google/gemma-4-26b-a4b-it",
+          "input_cost": 0.0675,
+          "output_cost": 0.225,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
+        },
+        {
           "provider": "deepinfra",
           "model_key": "deepinfra/google/gemma-4-26B-A4B-it",
           "model_id": "google/gemma-4-26B-A4B-it",
@@ -5274,15 +5274,6 @@
           "output_cost": 0.34,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
-          "model_id": "google/gemma-4-26b-a4b-it",
-          "input_cost": 0.09,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
         },
         {
           "provider": "hyper",
@@ -9043,6 +9034,15 @@
           "output_cost": 8,
           "max_input_tokens": 262144,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/moonshotai/kimi-k2.7-code-highspeed",
+          "model_id": "moonshotai/kimi-k2.7-code-highspeed",
+          "input_cost": 1.9,
+          "output_cost": 8,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         }
       ]
     },
@@ -9184,6 +9184,15 @@
           "output_cost": 8,
           "max_input_tokens": 262144,
           "max_output_tokens": 32768
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/moonshotai/kimi-k2.7-code-highspeed",
+          "model_id": "moonshotai/kimi-k2.7-code-highspeed",
+          "input_cost": 1.9,
+          "output_cost": 8,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
         }
       ]
     },
@@ -11744,6 +11753,15 @@
           "output_cost": 50,
           "max_input_tokens": 1050000,
           "max_output_tokens": 128000
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/openai/gpt-6-astra",
+          "model_id": "openai/gpt-6-astra",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
         }
       ]
     },
@@ -12557,6 +12575,15 @@
           "provider": "vivgrid",
           "model_key": "vivgrid/gpt-6-sol",
           "model_id": "gpt-6-sol",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/openai/gpt-6-sol",
+          "model_id": "openai/gpt-6-sol",
           "input_cost": 2,
           "output_cost": 10,
           "max_input_tokens": 1050000,
@@ -14404,7 +14431,7 @@
           "model_id": "xiaomi/mimo-v2.6-pro",
           "input_cost": 0.435,
           "output_cost": 0.87,
-          "max_input_tokens": 1048576,
+          "max_input_tokens": 1050000,
           "max_output_tokens": 131072
         },
         {
@@ -14420,6 +14447,15 @@
           "provider": "xiaomi",
           "model_key": "xiaomi/mimo-v2.6-pro",
           "model_id": "mimo-v2.6-pro",
+          "input_cost": 0.435,
+          "output_cost": 0.87,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/xiaomi/mimo-v2.6-pro",
+          "model_id": "xiaomi/mimo-v2.6-pro",
           "input_cost": 0.435,
           "output_cost": 0.87,
           "max_input_tokens": 1048576,
@@ -14641,6 +14677,15 @@
           "input_cost": 0,
           "output_cost": 0,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.3",
+          "model_id": "z-ai/glm-5.3",
+          "input_cost": 0.3794,
+          "output_cost": 1.1924,
+          "max_input_tokens": 1310720,
           "max_output_tokens": 131072
         },
         {
@@ -14901,8 +14946,8 @@
           "model_id": "z-ai/glm-5.3",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1048575,
-          "max_output_tokens": 943717
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
@@ -15011,15 +15056,6 @@
           "output_cost": 4.4,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.3",
-          "model_id": "z-ai/glm-5.3",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1310720,
-          "max_output_tokens": 943717
         },
         {
           "provider": "siliconflow",
@@ -15239,10 +15275,10 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.3-flash",
           "model_id": "z-ai/glm-5.3-flash",
-          "input_cost": 0.045,
-          "output_cost": 0.14,
+          "input_cost": 0.04,
+          "output_cost": 0.5,
           "max_input_tokens": 1310720,
-          "max_output_tokens": 128000
+          "max_output_tokens": 131072
         },
         {
           "provider": "crof",
@@ -15476,7 +15512,7 @@
           "input_cost": 0.15,
           "output_cost": 0.5,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 128000
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
