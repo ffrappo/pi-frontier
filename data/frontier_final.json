@@ -552,37 +552,6 @@
   {
     "provider": "google",
     "providerClass": "creator",
-    "family": "gemini-live",
-    "model_key": "google/gemini-3.1-flash-live-preview",
-    "version": "3.1 / 2026-03-26",
-    "tier": "flash",
-    "release_date": "2026-03-26",
-    "last_updated": "2026-03-26",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 65536,
-    "input_cost": 7.5e-7,
-    "output_cost": 0.0000045,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio"
-      ],
-      "output": [
-        "text",
-        "audio"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-01"
-  },
-  {
-    "provider": "google",
-    "providerClass": "creator",
     "family": "gemini-live-translate",
     "model_key": "google/gemini-3.5-live-translate-preview",
     "version": "3.5 / 2026-06-09",
