@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-09-27
+Generated: 2026-09-28
 Source: models.dev
-71 frontier models across 16 providers (scope: creators).
+74 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -10,6 +10,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `alibaba/qwen3.8-omni-flash` | flash | 2026-09-17 | 1000K → 131K | $0.15 | $0.47 |
 | `alibaba/qwen3.8-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.47 |
 | `alibaba/qwen3.8-max` | base | 2026-08-03 | 1000K → 131K | $2.00 | $6.00 |
 | `alibaba/deepseek-v4-flash-0731` | flash | 2026-07-31 | 1000K → 384K | $0.20 | $0.40 |
@@ -98,6 +99,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `openai/gpt-6-luna` | base | 2026-09-22 | 1050K → 128K | $0.10 | $0.50 |
 | `openai/gpt-6-sol` | base | 2026-09-22 | 1050K → 128K | $2.00 | $10.00 |
 | `openai/gpt-6-astra` | base | 2026-09-04 | 1050K → 128K | $10.00 | $50.00 |
+| `openai/gpt-daybreak-blue-latest` | base | 2026-08-07 | 1050K → 128K | $4.00 | $20.00 |
+| `openai/gpt-daybreak-red-latest` | base | 2026-08-07 | 400K → 128K | $12.50 | $75.00 |
 | `openai/gpt-5.6` | base | 2026-07-09 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-5.6-terra` | base | 2026-07-09 | 1050K → 128K | $2.00 | $12.00 |
 | `openai/gpt-realtime-2.1` | base | 2026-07-06 | 128K → 32K | $4.00 | $24.00 |

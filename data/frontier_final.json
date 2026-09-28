@@ -201,6 +201,36 @@
     "knowledge": null
   },
   {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "qwen-omni",
+    "model_key": "alibaba/qwen3.8-omni-flash",
+    "version": "3.8 / 2026-09-17",
+    "tier": "flash",
+    "release_date": "2026-09-17",
+    "last_updated": "2026-09-17",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 1.5e-7,
+    "output_cost": 4.6999999999999995e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude",
@@ -1342,6 +1372,63 @@
     },
     "open_weights": false,
     "knowledge": "2025-08-31"
+  },
+  {
+    "provider": "openai",
+    "providerClass": "creator",
+    "family": "gpt-daybreak-blue",
+    "model_key": "openai/gpt-daybreak-blue-latest",
+    "version": "2026-08-07",
+    "tier": "base",
+    "release_date": "2026-08-07",
+    "last_updated": "2026-08-07",
+    "max_input_tokens": 1050000,
+    "max_output_tokens": 128000,
+    "input_cost": 0.000004,
+    "output_cost": 0.00002,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": "2026-02-16"
+  },
+  {
+    "provider": "openai",
+    "providerClass": "creator",
+    "family": "gpt-daybreak-red",
+    "model_key": "openai/gpt-daybreak-red-latest",
+    "version": "2026-08-07",
+    "tier": "base",
+    "release_date": "2026-08-07",
+    "last_updated": "2026-08-07",
+    "max_input_tokens": 400000,
+    "max_output_tokens": 128000,
+    "input_cost": 0.0000125,
+    "output_cost": 0.000075,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": "2026-02-16"
   },
   {
     "provider": "openai",
