@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-09-29
+Generated: 2026-09-30
 Source: models.dev
 74 frontier models across 16 providers (scope: creators).
 
@@ -96,8 +96,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `openai/gpt-6.1-sol` | base | 2026-09-29 | 1050K → 128K | $2.00 | $10.00 |
 | `openai/gpt-6-luna` | base | 2026-09-22 | 1050K → 128K | $0.10 | $0.50 |
-| `openai/gpt-6-sol` | base | 2026-09-22 | 1050K → 128K | $2.00 | $10.00 |
 | `openai/gpt-6-astra` | base | 2026-09-04 | 1050K → 128K | $10.00 | $50.00 |
 | `openai/gpt-daybreak-blue-latest` | base | 2026-08-07 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-daybreak-red-latest` | base | 2026-08-07 | 400K → 128K | $12.50 | $75.00 |
