@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-09-30
+Generated: 2026-10-01
 Source: models.dev
-74 frontier models across 16 providers (scope: creators).
+73 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -62,7 +62,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `inception/mercury-2.5` | base | 2026-09-08 | 260K → 66K | $0.04 | $0.15 |
-| `inception/mercury-edit-2` | base | 2026-03-30 | 32K → 8K | $0.25 | $0.75 |
 
 ## minimax
 

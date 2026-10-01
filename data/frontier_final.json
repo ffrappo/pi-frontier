@@ -775,33 +775,6 @@
     "knowledge": "2025-11-01"
   },
   {
-    "provider": "inception",
-    "providerClass": "creator",
-    "family": "mercury-edit",
-    "model_key": "inception/mercury-edit-2",
-    "version": "2 / 2026-03-30",
-    "tier": "base",
-    "release_date": "2026-03-30",
-    "last_updated": "2026-03-30",
-    "max_input_tokens": 32000,
-    "max_output_tokens": 8192,
-    "input_cost": 2.5e-7,
-    "output_cost": 7.5e-7,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": false,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
     "provider": "minimax",
     "providerClass": "creator",
     "family": "minimax-m3",
