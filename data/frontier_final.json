@@ -1829,36 +1829,6 @@
   {
     "provider": "xai",
     "providerClass": "creator",
-    "family": "grok-imagine-image-quality",
-    "model_key": "xai/grok-imagine-image-quality",
-    "version": "2026-04-03",
-    "tier": "base",
-    "release_date": "2026-04-03",
-    "last_updated": "2026-04-03",
-    "max_input_tokens": 16000,
-    "max_output_tokens": null,
-    "input_cost": null,
-    "output_cost": null,
-    "reasoning": false,
-    "tool_call": false,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "image",
-        "pdf"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
-    "provider": "xai",
-    "providerClass": "creator",
     "family": "grok-imagine-video",
     "model_key": "xai/grok-imagine-video-1.5",
     "version": "1.5 / 2026-05-30",
