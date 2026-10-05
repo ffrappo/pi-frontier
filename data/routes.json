@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04",
+  "generated": "2026-10-05",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -557,6 +557,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.0224,
+          "output_cost": 16,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "crof",
           "model_key": "crof/glm-5.2",
           "model_id": "glm-5.2",
@@ -564,15 +573,6 @@
           "output_cost": 1.05,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.38,
-          "output_cost": 3.49,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 943718
         },
         {
           "provider": "nano-gpt",
@@ -977,7 +977,7 @@
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 943718
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
@@ -1131,15 +1131,6 @@
           "output_cost": 4.4,
           "max_input_tokens": 1049000,
           "max_output_tokens": 262000
-        },
-        {
-          "provider": "subconscious",
-          "model_key": "subconscious/subconscious/glm-5.2",
-          "model_id": "subconscious/glm-5.2",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
         },
         {
           "provider": "synthetic",
@@ -1366,8 +1357,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.72,
-          "output_cost": 13,
+          "input_cost": 0.67,
+          "output_cost": 14,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -2773,9 +2764,9 @@
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
           "input_cost": 0.32,
-          "output_cost": 3.2,
+          "output_cost": 2.7,
           "max_input_tokens": 262144,
-          "max_output_tokens": 81920
+          "max_output_tokens": 262140
         },
         {
           "provider": "ofox",
@@ -2802,7 +2793,7 @@
           "input_cost": 0.45,
           "output_cost": 2.7,
           "max_input_tokens": 262144,
-          "max_output_tokens": 81920
+          "max_output_tokens": 262140
         },
         {
           "provider": "synthetic",
@@ -2893,15 +2884,6 @@
           "output_cost": 3.6,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
-        },
-        {
-          "provider": "blueclaw",
-          "model_key": "blueclaw/Qwen3.6-27B",
-          "model_id": "Qwen3.6-27B",
-          "input_cost": null,
-          "output_cost": null,
-          "max_input_tokens": 196608,
-          "max_output_tokens": 65536
         }
       ]
     },
@@ -4529,8 +4511,8 @@
           "model_id": "deepseek-v4-pro",
           "input_cost": 1.7,
           "output_cost": 3.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
         },
         {
           "provider": "abacus",
@@ -5288,15 +5270,6 @@
           "max_output_tokens": 32768
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
-          "model_id": "google/gemma-4-26b-a4b-it",
-          "input_cost": 0.0675,
-          "output_cost": 0.225,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
           "provider": "deepinfra",
           "model_key": "deepinfra/google/gemma-4-26B-A4B-it",
           "model_id": "google/gemma-4-26B-A4B-it",
@@ -5331,6 +5304,15 @@
           "output_cost": 0.34,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
+          "model_id": "google/gemma-4-26b-a4b-it",
+          "input_cost": 0.09,
+          "output_cost": 0.3,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
         },
         {
           "provider": "hyper",
@@ -5707,24 +5689,6 @@
           "max_output_tokens": 131072
         },
         {
-          "provider": "deepinfra",
-          "model_key": "deepinfra/google/gemma-4-31B-it",
-          "model_id": "google/gemma-4-31B-it",
-          "input_cost": 0.15,
-          "output_cost": 0.4,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 32768
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/deepinfra/gemma-4-31b-it",
-          "model_id": "deepinfra/gemma-4-31b-it",
-          "input_cost": 0.15,
-          "output_cost": 0.4,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 32768
-        },
-        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/TEE/gemma-4-31b-it",
           "model_id": "TEE/gemma-4-31b-it",
@@ -5748,6 +5712,24 @@
           "model_id": "google/gemma-4-31b-it",
           "input_cost": 0.2,
           "output_cost": 0.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "deepinfra",
+          "model_key": "deepinfra/google/gemma-4-31B-it",
+          "model_id": "google/gemma-4-31B-it",
+          "input_cost": 0.2,
+          "output_cost": 0.4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/deepinfra/gemma-4-31b-it",
+          "model_id": "deepinfra/gemma-4-31b-it",
+          "input_cost": 0.2,
+          "output_cost": 0.4,
           "max_input_tokens": 262144,
           "max_output_tokens": 32768
         },
@@ -7258,8 +7240,8 @@
           "model_id": "kimi-k2.6",
           "input_cost": 0.475,
           "output_cost": 2.97,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
+          "max_input_tokens": 256000,
+          "max_output_tokens": 256000
         },
         {
           "provider": "crof",
@@ -9320,8 +9302,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.72,
-          "output_cost": 13,
+          "input_cost": 0.67,
+          "output_cost": 14,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -10073,8 +10055,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.72,
-          "output_cost": 13,
+          "input_cost": 0.67,
+          "output_cost": 14,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -14440,7 +14422,7 @@
           "provider": "kilo",
           "model_key": "kilo/xiaomi/mimo-v2.6-flash",
           "model_id": "xiaomi/mimo-v2.6-flash",
-          "input_cost": 0.115,
+          "input_cost": 0.1,
           "output_cost": 0.28,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
@@ -14986,6 +14968,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.3",
+          "model_id": "z-ai/glm-5.3",
+          "input_cost": 0.05,
+          "output_cost": 7,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943718
+        },
+        {
           "provider": "crof",
           "model_key": "crof/glm-5.3",
           "model_id": "glm-5.3",
@@ -15262,7 +15253,7 @@
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
+          "max_output_tokens": 943718
         },
         {
           "provider": "llmgateway-providers",
@@ -15388,15 +15379,6 @@
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.3",
-          "model_id": "z-ai/glm-5.3",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
         {
