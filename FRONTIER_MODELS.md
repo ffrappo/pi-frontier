@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-05
+Generated: 2026-10-06
 Source: models.dev
-73 frontier models across 16 providers (scope: creators).
+71 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -108,8 +108,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `openai/gpt-image-2` | base | 2026-04-21 | — → — | $5.00 | $30.00 |
 | `openai/gpt-5.4-mini` | mini | 2026-03-17 | 400K → 128K | $0.75 | $4.50 |
 | `openai/gpt-5.4-nano` | nano | 2026-03-17 | 400K → 128K | $0.20 | $1.25 |
-| `openai/gpt-5.3-codex` | base | 2026-02-05 | 400K → 128K | $1.75 | $14.00 |
-| `openai/gpt-5.3-codex-spark` | base | 2026-02-05 | 128K → 32K | $1.75 | $14.00 |
 
 ## sarvam
 

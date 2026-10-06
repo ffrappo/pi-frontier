@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05",
+  "generated": "2026-10-06",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -70,7 +70,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
           "model_id": "deepseek/deepseek-v4-flash-0731",
-          "input_cost": 0.0152,
+          "input_cost": 0.0079,
           "output_cost": 1.28,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -457,8 +457,8 @@
           "provider": "edenai",
           "model_key": "edenai/scaleway/deepseek-v4-flash-0731",
           "model_id": "scaleway/deepseek-v4-flash-0731",
-          "input_cost": 0.449,
-          "output_cost": 0.898,
+          "input_cost": 0.44816,
+          "output_cost": 0.89632,
           "max_input_tokens": 256000,
           "max_output_tokens": 384000
         },
@@ -560,8 +560,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.0224,
-          "output_cost": 16,
+          "input_cost": 0.152,
+          "output_cost": 12,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -905,7 +905,7 @@
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 262144,
-          "max_output_tokens": 262144
+          "max_output_tokens": 131072
         },
         {
           "provider": "edenai",
@@ -1357,7 +1357,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.67,
+          "input_cost": 0.83,
           "output_cost": 14,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -2697,15 +2697,6 @@
           "max_output_tokens": 65536
         },
         {
-          "provider": "merge-gateway",
-          "model_key": "merge-gateway/qwen/qwen3.6-27b",
-          "model_id": "qwen/qwen3.6-27b",
-          "input_cost": 0.289,
-          "output_cost": 2.4,
-          "max_input_tokens": 131072,
-          "max_output_tokens": 32768
-        },
-        {
           "provider": "siliconflow",
           "model_key": "siliconflow/Qwen/Qwen3.6-27B",
           "model_id": "Qwen/Qwen3.6-27B",
@@ -2764,9 +2755,18 @@
           "model_key": "openrouter/qwen/qwen3.6-27b",
           "model_id": "qwen/qwen3.6-27b",
           "input_cost": 0.32,
-          "output_cost": 2.7,
+          "output_cost": 3.25,
           "max_input_tokens": 262144,
           "max_output_tokens": 262140
+        },
+        {
+          "provider": "merge-gateway",
+          "model_key": "merge-gateway/qwen/qwen3.6-27b",
+          "model_id": "qwen/qwen3.6-27b",
+          "input_cost": 0.4126,
+          "output_cost": 2.4754,
+          "max_input_tokens": 256000,
+          "max_output_tokens": 64000
         },
         {
           "provider": "ofox",
@@ -2875,15 +2875,6 @@
           "output_cost": 3.6,
           "max_input_tokens": 256000,
           "max_output_tokens": 65536
-        },
-        {
-          "provider": "wandb",
-          "model_key": "wandb/Qwen/Qwen3.6-27B",
-          "model_id": "Qwen/Qwen3.6-27B",
-          "input_cost": 0.6,
-          "output_cost": 3.6,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
         }
       ]
     },
@@ -4351,15 +4342,6 @@
           "output_cost": 2.2,
           "max_input_tokens": 1048576,
           "max_output_tokens": 384000
-        },
-        {
-          "provider": "wandb",
-          "model_key": "wandb/deepseek-ai/DeepSeek-V4-Pro",
-          "model_id": "deepseek-ai/DeepSeek-V4-Pro",
-          "input_cost": 1.15,
-          "output_cost": 2.55,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
         },
         {
           "provider": "deepinfra",
@@ -9302,7 +9284,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.67,
+          "input_cost": 0.83,
           "output_cost": 14,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -10055,7 +10037,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.67,
+          "input_cost": 0.83,
           "output_cost": 14,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -11868,333 +11850,6 @@
           "input_cost": 10,
           "output_cost": 50,
           "max_input_tokens": 1050000,
-          "max_output_tokens": 128000
-        }
-      ]
-    },
-    "openai/gpt-5.3-codex": {
-      "frontier": {
-        "provider": "openai",
-        "providerClass": "creator",
-        "family": "gpt-codex",
-        "model_key": "openai/gpt-5.3-codex",
-        "version": "5.3 / 2026-02-05",
-        "tier": "base",
-        "release_date": "2026-02-05",
-        "last_updated": "2026-02-05",
-        "max_input_tokens": 400000,
-        "max_output_tokens": 128000,
-        "input_cost": 0.00000175,
-        "output_cost": 0.000014,
-        "reasoning": true,
-        "tool_call": true,
-        "attachment": true,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "knowledge": "2025-08-31"
-      },
-      "routes": [
-        {
-          "provider": "ofox",
-          "model_key": "ofox/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.4,
-          "output_cost": 11.2,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "poe",
-          "model_key": "poe/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.6,
-          "output_cost": 13,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "abacus",
-          "model_key": "abacus/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "aihubmix",
-          "model_key": "aihubmix/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "azure",
-          "model_key": "azure/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "azure-cognitive-services",
-          "model_key": "azure-cognitive-services/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "edenai",
-          "model_key": "edenai/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "fastrouter",
-          "model_key": "fastrouter/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "freemodel",
-          "model_key": "freemodel/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "github-copilot",
-          "model_key": "github-copilot/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "impossibl",
-          "model_key": "impossibl/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "kilo",
-          "model_key": "kilo/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway",
-          "model_key": "llmgateway/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/azure/gpt-5.3-codex",
-          "model_id": "azure/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "openai",
-          "model_key": "openai/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "opencode",
-          "model_key": "opencode/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "opper",
-          "model_key": "opper/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "orcarouter",
-          "model_key": "orcarouter/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "pioneer",
-          "model_key": "pioneer/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "requesty",
-          "model_key": "requesty/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "vercel",
-          "model_key": "vercel/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "vivgrid",
-          "model_key": "vivgrid/gpt-5.3-codex",
-          "model_id": "gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "zenmux",
-          "model_key": "zenmux/openai/gpt-5.3-codex",
-          "model_id": "openai/gpt-5.3-codex",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 400000,
-          "max_output_tokens": 128000
-        }
-      ]
-    },
-    "openai/gpt-5.3-codex-spark": {
-      "frontier": {
-        "provider": "openai",
-        "providerClass": "creator",
-        "family": "gpt-codex-spark",
-        "model_key": "openai/gpt-5.3-codex-spark",
-        "version": "5.3 / 2026-02-05",
-        "tier": "base",
-        "release_date": "2026-02-05",
-        "last_updated": "2026-02-05",
-        "max_input_tokens": 128000,
-        "max_output_tokens": 32000,
-        "input_cost": 0.00000175,
-        "output_cost": 0.000014,
-        "reasoning": true,
-        "tool_call": true,
-        "attachment": true,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "pdf"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": false,
-        "knowledge": "2025-08-31"
-      },
-      "routes": [
-        {
-          "provider": "poe",
-          "model_key": "poe/openai/gpt-5.3-codex-spark",
-          "model_id": "openai/gpt-5.3-codex-spark",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 128000,
-          "max_output_tokens": 16384
-        },
-        {
-          "provider": "openai",
-          "model_key": "openai/gpt-5.3-codex-spark",
-          "model_id": "gpt-5.3-codex-spark",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 128000,
-          "max_output_tokens": 32000
-        },
-        {
-          "provider": "opencode",
-          "model_key": "opencode/gpt-5.3-codex-spark",
-          "model_id": "gpt-5.3-codex-spark",
-          "input_cost": 1.75,
-          "output_cost": 14,
-          "max_input_tokens": 128000,
           "max_output_tokens": 128000
         }
       ]
@@ -14971,7 +14626,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.3",
           "model_id": "z-ai/glm-5.3",
-          "input_cost": 0.05,
+          "input_cost": 0.07,
           "output_cost": 7,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -15854,7 +15509,7 @@
           "input_cost": 0.15,
           "output_cost": 0.5,
           "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
+          "max_output_tokens": 131072
         },
         {
           "provider": "edenai",

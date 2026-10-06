@@ -1318,64 +1318,6 @@
   {
     "provider": "openai",
     "providerClass": "creator",
-    "family": "gpt-codex",
-    "model_key": "openai/gpt-5.3-codex",
-    "version": "5.3 / 2026-02-05",
-    "tier": "base",
-    "release_date": "2026-02-05",
-    "last_updated": "2026-02-05",
-    "max_input_tokens": 400000,
-    "max_output_tokens": 128000,
-    "input_cost": 0.00000175,
-    "output_cost": 0.000014,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-08-31"
-  },
-  {
-    "provider": "openai",
-    "providerClass": "creator",
-    "family": "gpt-codex-spark",
-    "model_key": "openai/gpt-5.3-codex-spark",
-    "version": "5.3 / 2026-02-05",
-    "tier": "base",
-    "release_date": "2026-02-05",
-    "last_updated": "2026-02-05",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 32000,
-    "input_cost": 0.00000175,
-    "output_cost": 0.000014,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": "2025-08-31"
-  },
-  {
-    "provider": "openai",
-    "providerClass": "creator",
     "family": "gpt-daybreak-blue",
     "model_key": "openai/gpt-daybreak-blue-latest",
     "version": "2026-08-07",
