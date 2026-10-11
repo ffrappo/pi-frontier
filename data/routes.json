@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -70,8 +70,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
           "model_id": "deepseek/deepseek-v4-flash-0731",
-          "input_cost": 0.0076,
-          "output_cost": 1.28,
+          "input_cost": 0.0143,
+          "output_cost": 0.64,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -324,6 +324,15 @@
           "model_id": "deepseek/deepseek-v4-flash-0731",
           "input_cost": 0.147,
           "output_cost": 0.295,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
+          "provider": "moark",
+          "model_key": "moark/deepseek-v4-flash-0731",
+          "model_id": "deepseek-v4-flash-0731",
+          "input_cost": 0.15,
+          "output_cost": 0.3,
           "max_input_tokens": 1000000,
           "max_output_tokens": 384000
         },
@@ -1366,8 +1375,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.64,
-          "output_cost": 13.5,
+          "input_cost": 0.8,
+          "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -1759,6 +1768,15 @@
           "max_output_tokens": 1048576
         },
         {
+          "provider": "moark",
+          "model_key": "moark/kimi-k3",
+          "model_id": "kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "modal",
           "model_key": "modal/moonshotai/Kimi-K3",
           "model_id": "moonshotai/Kimi-K3",
@@ -1991,6 +2009,15 @@
           "output_cost": 16.332,
           "max_input_tokens": 1048576,
           "max_output_tokens": 16000
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/moonshotai/kimi-k3",
+          "model_id": "moonshotai/kimi-k3",
+          "input_cost": 3.3,
+          "output_cost": 16.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "orcarouter",
@@ -2983,6 +3010,24 @@
           "max_output_tokens": 81920
         },
         {
+          "provider": "kilo",
+          "model_key": "kilo/qwen/qwen3.6-35b-a3b",
+          "model_id": "qwen/qwen3.6-35b-a3b",
+          "input_cost": 0.1,
+          "output_cost": 0.95,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/qwen/qwen3.6-35b-a3b",
+          "model_id": "qwen/qwen3.6-35b-a3b",
+          "input_cost": 0.1,
+          "output_cost": 0.95,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/qwen/qwen3.6-35b-a3b",
           "model_id": "qwen/qwen3.6-35b-a3b",
@@ -3017,24 +3062,6 @@
           "output_cost": 0.95,
           "max_input_tokens": 262144,
           "max_output_tokens": 65536
-        },
-        {
-          "provider": "kilo",
-          "model_key": "kilo/qwen/qwen3.6-35b-a3b",
-          "model_id": "qwen/qwen3.6-35b-a3b",
-          "input_cost": 0.15,
-          "output_cost": 1,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/qwen/qwen3.6-35b-a3b",
-          "model_id": "qwen/qwen3.6-35b-a3b",
-          "input_cost": 0.15,
-          "output_cost": 1,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
         },
         {
           "provider": "cortecs",
@@ -3355,6 +3382,15 @@
         "knowledge": "2026-06"
       },
       "routes": [
+        {
+          "provider": "302ai",
+          "model_key": "302ai/claude-haiku-5-5",
+          "model_id": "claude-haiku-5-5",
+          "input_cost": 0.1,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
         {
           "provider": "anthropic",
           "model_key": "anthropic/claude-haiku-5-5",
@@ -3968,6 +4004,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "nearai",
+          "model_key": "nearai/anthropic/claude-fable-5-1",
+          "model_id": "anthropic/claude-fable-5-1",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "neon",
           "model_key": "neon/claude-fable-5-1",
           "model_id": "claude-fable-5-1",
@@ -4296,6 +4341,15 @@
           "max_output_tokens": 384000
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.2088,
+          "output_cost": 0.4176,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "routing-run",
           "model_key": "routing-run/deepseek-v4-pro",
           "model_id": "deepseek-v4-pro",
@@ -4509,15 +4563,6 @@
           "input_cost": 0.8999,
           "output_cost": 1.7999,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.9483,
-          "output_cost": 1.8966,
-          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -4881,6 +4926,15 @@
           "max_output_tokens": 65536
         },
         {
+          "provider": "moark",
+          "model_key": "moark/DeepSeek-V4-Pro",
+          "model_id": "DeepSeek-V4-Pro",
+          "input_cost": 1.8,
+          "output_cost": 3.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/alibaba/deepseek-v4-pro",
           "model_id": "alibaba/deepseek-v4-pro",
@@ -5098,6 +5152,15 @@
         {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/google/gemini-3.8-flash",
+          "model_id": "google/gemini-3.8-flash",
+          "input_cost": 0.75,
+          "output_cost": 3.75,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 65536
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/google/gemini-3.8-flash",
           "model_id": "google/gemini-3.8-flash",
           "input_cost": 0.75,
           "output_cost": 3.75,
@@ -7570,24 +7633,6 @@
           "max_output_tokens": 32000
         },
         {
-          "provider": "kilo",
-          "model_key": "kilo/moonshotai/kimi-k2.6",
-          "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.465,
-          "output_cost": 2.45,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/moonshotai/kimi-k2.6",
-          "model_id": "moonshotai/kimi-k2.6",
-          "input_cost": 0.465,
-          "output_cost": 2.45,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
           "provider": "cortecs",
           "model_key": "cortecs/kimi-k2.6",
           "model_id": "kimi-k2.6",
@@ -7640,6 +7685,24 @@
           "output_cost": 3.05,
           "max_input_tokens": 262144,
           "max_output_tokens": 131072
+        },
+        {
+          "provider": "kilo",
+          "model_key": "kilo/moonshotai/kimi-k2.6",
+          "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0.65,
+          "output_cost": 3.41,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/moonshotai/kimi-k2.6",
+          "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0.65,
+          "output_cost": 3.41,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
         },
         {
           "provider": "wandb",
@@ -7728,6 +7791,15 @@
           "model_id": "moonshotai/kimi-k2.6",
           "input_cost": 0.8,
           "output_cost": 3.4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/moonshotai/kimi-k2.6",
+          "model_id": "moonshotai/kimi-k2.6",
+          "input_cost": 0.81,
+          "output_cost": 3.85,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         },
@@ -8061,6 +8133,15 @@
           "model_id": "novita/kimi-k2.6",
           "input_cost": 0.96,
           "output_cost": 4.04,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "moark",
+          "model_key": "moark/Kimi-K2.6",
+          "model_id": "Kimi-K2.6",
+          "input_cost": 0.98,
+          "output_cost": 4,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
         },
@@ -9637,8 +9718,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.64,
-          "output_cost": 13.5,
+          "input_cost": 0.8,
+          "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -10030,6 +10111,15 @@
           "max_output_tokens": 1048576
         },
         {
+          "provider": "moark",
+          "model_key": "moark/kimi-k3",
+          "model_id": "kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "modal",
           "model_key": "modal/moonshotai/Kimi-K3",
           "model_id": "moonshotai/Kimi-K3",
@@ -10262,6 +10352,15 @@
           "output_cost": 16.332,
           "max_input_tokens": 1048576,
           "max_output_tokens": 16000
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/moonshotai/kimi-k3",
+          "model_id": "moonshotai/kimi-k3",
+          "input_cost": 3.3,
+          "output_cost": 16.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "orcarouter",
@@ -10390,8 +10489,8 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.64,
-          "output_cost": 13.5,
+          "input_cost": 0.8,
+          "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
         },
@@ -10783,6 +10882,15 @@
           "max_output_tokens": 1048576
         },
         {
+          "provider": "moark",
+          "model_key": "moark/kimi-k3",
+          "model_id": "kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "modal",
           "model_key": "modal/moonshotai/Kimi-K3",
           "model_id": "moonshotai/Kimi-K3",
@@ -11015,6 +11123,15 @@
           "output_cost": 16.332,
           "max_input_tokens": 1048576,
           "max_output_tokens": 16000
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/moonshotai/kimi-k3",
+          "model_id": "moonshotai/kimi-k3",
+          "input_cost": 3.3,
+          "output_cost": 16.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "orcarouter",
@@ -12125,6 +12242,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "nearai",
+          "model_key": "nearai/openai/gpt-6-astra",
+          "model_id": "openai/gpt-6-astra",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "neon",
           "model_key": "neon/gpt-6-astra",
           "model_id": "gpt-6-astra",
@@ -12488,6 +12614,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "nearai",
+          "model_key": "nearai/openai/gpt-6-luna",
+          "model_id": "openai/gpt-6-luna",
+          "input_cost": 0.1,
+          "output_cost": 0.5,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "openai",
           "model_key": "openai/gpt-6-luna",
           "model_id": "gpt-6-luna",
@@ -12626,6 +12761,15 @@
       },
       "routes": [
         {
+          "provider": "302ai",
+          "model_key": "302ai/gpt-6.1-sol",
+          "model_id": "gpt-6.1-sol",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "azure",
           "model_key": "azure/gpt-6.1-sol",
           "model_id": "gpt-6.1-sol",
@@ -12727,6 +12871,15 @@
         {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/openai/gpt-6.1-sol",
+          "model_id": "openai/gpt-6.1-sol",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/openai/gpt-6.1-sol",
           "model_id": "openai/gpt-6.1-sol",
           "input_cost": 2,
           "output_cost": 10,
@@ -15079,7 +15232,7 @@
           "model_key": "nano-gpt/z-ai/glm-5.3",
           "model_id": "z-ai/glm-5.3",
           "input_cost": 0.6,
-          "output_cost": 2.2,
+          "output_cost": 1.1,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -15224,6 +15377,15 @@
           "model_id": "runware/glm-5.3",
           "input_cost": 1.2,
           "output_cost": 4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "moark",
+          "model_key": "moark/GLM-5.3",
+          "model_id": "GLM-5.3",
+          "input_cost": 1.2,
+          "output_cost": 4.18,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
         },
@@ -16078,6 +16240,15 @@
           "input_cost": 0.15,
           "output_cost": 0.5,
           "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
           "max_output_tokens": 131072
         },
         {
