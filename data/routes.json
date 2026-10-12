@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11",
+  "generated": "2026-10-12",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -70,10 +70,19 @@
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-flash-0731",
           "model_id": "deepseek/deepseek-v4-flash-0731",
-          "input_cost": 0.0143,
+          "input_cost": 0.016,
           "output_cost": 0.64,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
+        },
+        {
+          "provider": "edenai",
+          "model_key": "edenai/flexai/DeepSeek-V4-Flash-0731",
+          "model_id": "flexai/DeepSeek-V4-Flash-0731",
+          "input_cost": 0.0192,
+          "output_cost": 0.27,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 384000
         },
         {
           "provider": "merge-gateway",
@@ -115,15 +124,6 @@
           "provider": "edenai",
           "model_key": "edenai/deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
           "model_id": "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "input_cost": 0.06,
-          "output_cost": 0.18,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
-          "provider": "edenai",
-          "model_key": "edenai/flexai/DeepSeek-V4-Flash-0731",
-          "model_id": "flexai/DeepSeek-V4-Flash-0731",
           "input_cost": 0.06,
           "output_cost": 0.18,
           "max_input_tokens": 1048576,
@@ -1375,7 +1375,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.8,
+          "input_cost": 0.73,
           "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -3473,6 +3473,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "nearai",
+          "model_key": "nearai/anthropic/claude-haiku-5-5",
+          "model_id": "anthropic/claude-haiku-5-5",
+          "input_cost": 0.1,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "opencode",
           "model_key": "opencode/claude-haiku-5-5",
           "model_id": "claude-haiku-5-5",
@@ -3659,6 +3668,15 @@
           "max_output_tokens": 128000
         },
         {
+          "provider": "nearai",
+          "model_key": "nearai/anthropic/claude-opus-5-5",
+          "model_id": "anthropic/claude-opus-5-5",
+          "input_cost": 4,
+          "output_cost": 20,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
           "provider": "neon",
           "model_key": "neon/claude-opus-5-5",
           "model_id": "claude-opus-5-5",
@@ -3829,6 +3847,15 @@
         {
           "provider": "merge-gateway",
           "model_key": "merge-gateway/anthropic/claude-sonnet-5-5",
+          "model_id": "anthropic/claude-sonnet-5-5",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/anthropic/claude-sonnet-5-5",
           "model_id": "anthropic/claude-sonnet-5-5",
           "input_cost": 2,
           "output_cost": 10,
@@ -4341,15 +4368,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.2088,
-          "output_cost": 0.4176,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
           "provider": "routing-run",
           "model_key": "routing-run/deepseek-v4-pro",
           "model_id": "deepseek-v4-pro",
@@ -4563,6 +4581,15 @@
           "input_cost": 0.8999,
           "output_cost": 1.7999,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 384000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.95526,
+          "output_cost": 1.91052,
+          "max_input_tokens": 1048576,
           "max_output_tokens": 384000
         },
         {
@@ -5537,15 +5564,6 @@
           "max_output_tokens": 32768
         },
         {
-          "provider": "openrouter",
-          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
-          "model_id": "google/gemma-4-26b-a4b-it",
-          "input_cost": 0.0675,
-          "output_cost": 0.225,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 235929
-        },
-        {
           "provider": "deepinfra",
           "model_key": "deepinfra/google/gemma-4-26B-A4B-it",
           "model_id": "google/gemma-4-26B-A4B-it",
@@ -5580,6 +5598,15 @@
           "output_cost": 0.34,
           "max_input_tokens": 262144,
           "max_output_tokens": 262144
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/google/gemma-4-26b-a4b-it",
+          "model_id": "google/gemma-4-26b-a4b-it",
+          "input_cost": 0.09,
+          "output_cost": 0.3,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 235929
         },
         {
           "provider": "hyper",
@@ -8323,6 +8350,15 @@
           "max_output_tokens": 235929
         },
         {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.6712,
+          "output_cost": 3.35,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
@@ -8578,15 +8614,6 @@
           "provider": "nano-gpt",
           "model_key": "nano-gpt/TEE/kimi-k2.7-code",
           "model_id": "TEE/kimi-k2.7-code",
-          "input_cost": 0.95,
-          "output_cost": 4,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
           "max_input_tokens": 262144,
@@ -8878,6 +8905,15 @@
           "max_output_tokens": 235929
         },
         {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/moonshotai/kimi-k2.7-code",
+          "model_id": "moonshotai/kimi-k2.7-code",
+          "input_cost": 0.6712,
+          "output_cost": 3.35,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 65536
+        },
+        {
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k2.7-code",
           "model_id": "moonshotai/kimi-k2.7-code",
@@ -9133,15 +9169,6 @@
           "provider": "nano-gpt",
           "model_key": "nano-gpt/TEE/kimi-k2.7-code",
           "model_id": "TEE/kimi-k2.7-code",
-          "input_cost": 0.95,
-          "output_cost": 4,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/moonshotai/kimi-k2.7-code",
-          "model_id": "moonshotai/kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
           "max_input_tokens": 262144,
@@ -9718,7 +9745,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.8,
+          "input_cost": 0.73,
           "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -10489,7 +10516,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.8,
+          "input_cost": 0.73,
           "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -13892,15 +13919,6 @@
       },
       "routes": [
         {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/x-ai/grok-4.7",
-          "model_id": "x-ai/grok-4.7",
-          "input_cost": 1.6,
-          "output_cost": 4.8,
-          "max_input_tokens": 500000,
-          "max_output_tokens": 500000
-        },
-        {
           "provider": "302ai",
           "model_key": "302ai/grok-4.7",
           "model_id": "grok-4.7",
@@ -13967,6 +13985,24 @@
           "provider": "merge-gateway",
           "model_key": "merge-gateway/xai/grok-4.7",
           "model_id": "xai/grok-4.7",
+          "input_cost": 2,
+          "output_cost": 6,
+          "max_input_tokens": 500000,
+          "max_output_tokens": 500000
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/x-ai/grok-4.7",
+          "model_id": "x-ai/grok-4.7",
+          "input_cost": 2,
+          "output_cost": 6,
+          "max_input_tokens": 500000,
+          "max_output_tokens": 500000
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/x-ai/grok-4.7",
+          "model_id": "x-ai/grok-4.7",
           "input_cost": 2,
           "output_cost": 6,
           "max_input_tokens": 500000,
@@ -15213,7 +15249,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.3",
           "model_id": "z-ai/glm-5.3",
-          "input_cost": 0.039,
+          "input_cost": 0.079,
           "output_cost": 4.8,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -15874,6 +15910,15 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.0232,
+          "output_cost": 1.2,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943718
+        },
+        {
           "provider": "pareto",
           "model_key": "pareto/z-ai/glm-5.3-flash",
           "model_id": "z-ai/glm-5.3-flash",
@@ -16158,8 +16203,8 @@
           "model_id": "z-ai/glm-5.3-flash",
           "input_cost": 0.15,
           "output_cost": 0.5,
-          "max_input_tokens": 1048575,
-          "max_output_tokens": 943717
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943718
         },
         {
           "provider": "llmgateway-providers",
@@ -16313,15 +16358,6 @@
           "output_cost": 0.5,
           "max_input_tokens": 1000000,
           "max_output_tokens": 131072
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/z-ai/glm-5.3-flash",
-          "model_id": "z-ai/glm-5.3-flash",
-          "input_cost": 0.15,
-          "output_cost": 0.5,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 943717
         },
         {
           "provider": "siliconflow",
