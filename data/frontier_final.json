@@ -549,6 +549,37 @@
   {
     "provider": "google",
     "providerClass": "creator",
+    "family": "gemini-argon",
+    "model_key": "google/gemini-4-argon",
+    "version": "4 / 2026-10-13",
+    "tier": "base",
+    "release_date": "2026-10-13",
+    "last_updated": "2026-10-13",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 32768,
+    "input_cost": 0.000002,
+    "output_cost": 0.00001,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": "2026-03"
+  },
+  {
+    "provider": "google",
+    "providerClass": "creator",
     "family": "gemini-embedding",
     "model_key": "google/gemini-embedding-2",
     "version": "2 / 2026-04-22",
