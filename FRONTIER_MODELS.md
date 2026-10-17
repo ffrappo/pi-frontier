@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-16
+Generated: 2026-10-17
 Source: models.dev
-72 frontier models across 16 providers (scope: creators).
+71 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -125,7 +125,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `stepfun/step-5-preview` | base | 2026-09-16 | 1000K → 66K | $0.96 | $2.74 |
 | `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.18 | $1.11 |
 | `stepfun/stepaudio-2.5-asr` | base | 2026-04-24 | — → — | — | — |
-| `stepfun/stepaudio-2.5-tts` | base | 2026-04-16 | — → — | — | — |
 
 ## upstage
 
