@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-17
+Generated: 2026-10-18
 Source: models.dev
-71 frontier models across 16 providers (scope: creators).
+70 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -17,7 +17,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `alibaba/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `alibaba/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
-| `alibaba/qwen3.6-35b-a3b` | base | 2026-04-17 | 262K → 66K | $0.25 | $1.49 |
 
 ## anthropic
 
@@ -40,7 +39,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `deepseek/deepseek-flash` | flash | 2026-09-10 | 1000K → 393K | $0.15 | $0.60 |
+| `deepseek/deepseek-flash` | flash | 2026-10-17 | 1000K → 393K | $0.15 | $0.60 |
 | `deepseek/deepseek-v4-pro` | pro | 2026-08-12 | 1000K → 393K | $0.66 | $1.98 |
 
 ## google
