@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-18
+Generated: 2026-10-19
 Source: models.dev
-70 frontier models across 16 providers (scope: creators).
+66 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -85,10 +85,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
-| `moonshotai-cn/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
-| `moonshotai-cn/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 | `moonshotai/kimi-k2.6` | base | 2026-04-21 | 262K → 262K | $0.95 | $4.00 |
@@ -110,13 +107,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `openai/gpt-5.4-mini` | mini | 2026-03-17 | 400K → 128K | $0.75 | $4.50 |
 | `openai/gpt-5.4-nano` | nano | 2026-03-17 | 400K → 128K | $0.20 | $1.25 |
 
-## sarvam
-
-| Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
-|---|---|---|---|---|---|
-| `sarvam/sarvam-105b` | base | 2026-02-18 | 131K → 131K | — | — |
-| `sarvam/sarvam-30b` | base | 2026-02-18 | 66K → 66K | — | — |
-
 ## stepfun
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
@@ -129,6 +119,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `upstage/solar-mini4` | base | 2026-09-22 | 524K → 131K | $0.10 | $0.40 |
 | `upstage/solar-pro4` | base | 2026-08-06 | 524K → 131K | $0.30 | $1.20 |
 
 ## xai
