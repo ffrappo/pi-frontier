@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-21
+Generated: 2026-10-22
 Source: models.dev
-69 frontier models across 15 providers (scope: creators).
+67 frontier models across 15 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -53,7 +53,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 33K | $3.50 | $21.00 |
 | `google/gemini-3-pro-image` | pro | 2026-05-28 | 66K → 33K | $2.00 | $120.00 |
 | `google/gemini-embedding-2` | base | 2026-04-22 | 8K → 1 | $0.20 | $0.00 |
-| `google/deep-research-max-preview-04-2026` | base | 2026-04-21 | 131K → 66K | $2.00 | $12.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | — | — |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | — | — |
 | `google/veo-3.1-lite-generate-preview` | lite | 2026-03-31 | 480 → 8K | — | — |
@@ -87,7 +86,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
-| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
+| `moonshotai-cn/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.97 | $4.03 |
+| `moonshotai-cn/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.94 | $8.07 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
@@ -144,8 +144,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
-| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
