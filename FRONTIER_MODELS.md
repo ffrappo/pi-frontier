@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-10-22
+Generated: 2026-10-23
 Source: models.dev
 67 frontier models across 15 providers (scope: creators).
 
@@ -16,7 +16,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `alibaba/deepseek-v4-flash-0731` | flash | 2026-07-31 | 1000K → 384K | $0.44 | $1.32 |
 | `alibaba/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `alibaba/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
-| `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
 
 ## anthropic
 
@@ -52,10 +51,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
 | `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 33K | $3.50 | $21.00 |
 | `google/gemini-3-pro-image` | pro | 2026-05-28 | 66K → 33K | $2.00 | $120.00 |
-| `google/gemini-embedding-2` | base | 2026-04-22 | 8K → 1 | $0.20 | $0.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | — | — |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | — | — |
-| `google/veo-3.1-lite-generate-preview` | lite | 2026-03-31 | 480 → 8K | — | — |
 
 ## inception
 
@@ -75,7 +72,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `mistral/mistral-large-4` | base | 2026-10-06 | 1049K → 262K | $0.68 | $2.09 |
+| `mistral/mistral-large-4` | base | 2026-10-06 | 1049K → 262K | $1.36 | $4.18 |
+| `mistral/zai-glm-5-3-flash` | flash | 2026-08-26 | 1049K → 131K | $0.15 | $0.50 |
 | `mistral/zai-glm-5-3` | base | 2026-08-14 | 1049K → 131K | $1.40 | $4.40 |
 | `mistral/mistral-medium-latest` | base | 2026-04-29 | 262K → 262K | $1.50 | $7.50 |
 | `mistral/voxtral-mini-tts-latest` | mini | 2026-03-23 | — → — | — | — |
@@ -144,6 +142,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
+| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
