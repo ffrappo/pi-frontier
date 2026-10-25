@@ -715,16 +715,16 @@
   {
     "provider": "minimax",
     "providerClass": "creator",
-    "family": "minimax-m",
-    "model_key": "minimax/MiniMax-M3.1-Flash",
-    "version": "3.1 / 2026-10-19",
-    "tier": "flash",
-    "release_date": "2026-10-19",
-    "last_updated": "2026-10-19",
+    "family": "minimax-m3",
+    "model_key": "minimax/MiniMax-M3",
+    "version": "2026-06-01",
+    "tier": "base",
+    "release_date": "2026-06-01",
+    "last_updated": "2026-06-25",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 1.5e-7,
-    "output_cost": 6e-7,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -738,22 +738,22 @@
         "text"
       ]
     },
-    "open_weights": false,
+    "open_weights": true,
     "knowledge": null
   },
   {
     "provider": "minimax",
     "providerClass": "creator",
     "family": "minimax-m3",
-    "model_key": "minimax/MiniMax-M3",
+    "model_key": "minimax-cn/MiniMax-M3",
     "version": "2026-06-01",
     "tier": "base",
     "release_date": "2026-06-01",
     "last_updated": "2026-06-25",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 3e-7,
-    "output_cost": 0.0000012,
+    "input_cost": 3.1369999999999996e-7,
+    "output_cost": 0.0000012548999999999998,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -1002,6 +1002,35 @@
   {
     "provider": "moonshotai",
     "providerClass": "creator",
+    "family": "kimi-k",
+    "model_key": "moonshotai/kimi-k3.1-pro",
+    "version": "3.1 / 2026-10-23",
+    "tier": "pro",
+    "release_date": "2026-10-23",
+    "last_updated": "2026-10-23",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000002,
+    "output_cost": 0.00001,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
     "family": "kimi-k-highspeed",
     "model_key": "moonshotai/kimi-k2.7-code-highspeed",
     "version": "2.7 / 2026-06-12",
@@ -1060,6 +1089,35 @@
   {
     "provider": "moonshotai",
     "providerClass": "creator",
+    "family": "kimi-k-highspeed",
+    "model_key": "moonshotai/kimi-k3.1-pro-highspeed",
+    "version": "3.1 / 2026-10-23",
+    "tier": "pro",
+    "release_date": "2026-10-23",
+    "last_updated": "2026-10-23",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000004,
+    "output_cost": 0.00002,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
     "family": "kimi-k3",
     "model_key": "moonshotai-cn/kimi-k3",
     "version": "2026-07-16",
@@ -1070,6 +1128,35 @@
     "max_output_tokens": 1048576,
     "input_cost": 0.0000029879,
     "output_cost": 0.0000149395,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
+    "family": "kimi-k3",
+    "model_key": "moonshotai/kimi-k3",
+    "version": "2026-07-16",
+    "tier": "base",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000003,
+    "output_cost": 0.000015,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
