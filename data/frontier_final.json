@@ -1174,6 +1174,228 @@
     "knowledge": null
   },
   {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-dsv41flash",
+    "model_key": "morph/morph-dsv41flash",
+    "version": "2026-09-10",
+    "tier": "base",
+    "release_date": "2026-09-10",
+    "last_updated": "2026-09-10",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 1.2e-7,
+    "output_cost": 8.000000000000001e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-05"
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-dsv41flash",
+    "model_key": "morph/morph-dsv41flash-1017",
+    "version": "mmdd:1017",
+    "tier": "base",
+    "release_date": "2026-10-17",
+    "last_updated": "2026-10-17",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 1.2e-7,
+    "output_cost": 8.000000000000001e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-05"
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-dsv4flash",
+    "model_key": "morph/morph-dsv4flash",
+    "version": "2026-07-31",
+    "tier": "base",
+    "release_date": "2026-07-31",
+    "last_updated": "2026-07-31",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 1.41953125e-7,
+    "output_cost": 3.99625e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": "2025-05"
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-glm52-744b",
+    "model_key": "morph/morph-glm52-744b",
+    "version": "2026-06-13",
+    "tier": "base",
+    "release_date": "2026-06-13",
+    "last_updated": "2026-06-13",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.00000119,
+    "output_cost": 0.000006,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-glm53-744b",
+    "model_key": "morph/morph-glm53-744b",
+    "version": "2026-08-14",
+    "tier": "base",
+    "release_date": "2026-08-14",
+    "last_updated": "2026-08-14",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.00000119,
+    "output_cost": 0.000006,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-glm53flash",
+    "model_key": "morph/morph-glm53flash",
+    "version": "2026-08-26",
+    "tier": "base",
+    "release_date": "2026-08-26",
+    "last_updated": "2026-08-26",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 2.0000000000000002e-7,
+    "output_cost": 7e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-kimik3",
+    "model_key": "morph/morph-kimik3",
+    "version": "2026-07-16",
+    "tier": "base",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.0000025,
+    "output_cost": 0.000014,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "morph",
+    "providerClass": "creator",
+    "family": "morph-kimik3",
+    "model_key": "morph/morph-kimik3-fast",
+    "version": "2026-07-16",
+    "tier": "fast",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000006,
+    "output_cost": 0.0000225,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
     "provider": "openai",
     "providerClass": "creator",
     "family": "gpt",
@@ -1922,6 +2144,36 @@
   {
     "provider": "zai",
     "providerClass": "creator",
+    "family": "glm",
+    "model_key": "zai/glm-5.3-flash",
+    "version": "5.3 / 2026-08-26",
+    "tier": "flash",
+    "release_date": "2026-08-26",
+    "last_updated": "2026-08-26",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 1.5e-7,
+    "output_cost": 5e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
     "family": "glm-flashx",
     "model_key": "zhipuai/glm-5.3-flashx",
     "version": "5.3 / 2026-09-18",
@@ -1932,6 +2184,36 @@
     "max_output_tokens": 131072,
     "input_cost": 2.9879e-7,
     "output_cost": 0.00000104577,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-flashx",
+    "model_key": "zai/glm-5.3-flashx",
+    "version": "5.3 / 2026-09-18",
+    "tier": "base",
+    "release_date": "2026-09-18",
+    "last_updated": "2026-09-18",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 3.7e-7,
+    "output_cost": 0.00000125,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,

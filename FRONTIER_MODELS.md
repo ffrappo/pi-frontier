@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-25
+Generated: 2026-10-26
 Source: models.dev
-68 frontier models across 15 providers (scope: creators).
+78 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -92,6 +92,19 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
+## morph
+
+| Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
+|---|---|---|---|---|---|
+| `morph/morph-dsv41flash-1017` | base | 2026-10-17 | 1049K → 1049K | $0.12 | $0.80 |
+| `morph/morph-dsv41flash` | base | 2026-09-10 | 1049K → 1049K | $0.12 | $0.80 |
+| `morph/morph-glm53flash` | base | 2026-08-26 | 1049K → 1049K | $0.20 | $0.70 |
+| `morph/morph-glm53-744b` | base | 2026-08-14 | 1049K → 1049K | $1.19 | $6.00 |
+| `morph/morph-dsv4flash` | base | 2026-07-31 | 1049K → 1049K | $0.14 | $0.40 |
+| `morph/morph-kimik3` | base | 2026-07-16 | 1049K → 1049K | $2.50 | $14.00 |
+| `morph/morph-kimik3-fast` | fast | 2026-07-16 | 1049K → 1049K | $6.00 | $22.50 |
+| `morph/morph-glm52-744b` | base | 2026-06-13 | 1049K → 1049K | $1.19 | $6.00 |
+
 ## openai
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
@@ -145,6 +158,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
+| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
