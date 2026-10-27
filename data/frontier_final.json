@@ -1715,15 +1715,15 @@
     "provider": "openai",
     "providerClass": "creator",
     "family": "gpt-terra",
-    "model_key": "openai/gpt-5.6-terra",
-    "version": "5.6 / 2026-07-09",
+    "model_key": "openai/gpt-6.1-terra",
+    "version": "6.1 / 2026-10-26",
     "tier": "base",
-    "release_date": "2026-07-09",
-    "last_updated": "2026-07-09",
+    "release_date": "2026-10-26",
+    "last_updated": "2026-10-26",
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
-    "input_cost": 0.000002,
-    "output_cost": 0.000012,
+    "input_cost": 0.000001,
+    "output_cost": 0.000005,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -1738,7 +1738,7 @@
       ]
     },
     "open_weights": false,
-    "knowledge": "2026-02-16"
+    "knowledge": "2026-06-01"
   },
   {
     "provider": "stepfun",
@@ -2144,36 +2144,6 @@
   {
     "provider": "zai",
     "providerClass": "creator",
-    "family": "glm",
-    "model_key": "zai/glm-5.3-flash",
-    "version": "5.3 / 2026-08-26",
-    "tier": "flash",
-    "release_date": "2026-08-26",
-    "last_updated": "2026-08-26",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 131072,
-    "input_cost": 1.5e-7,
-    "output_cost": 5e-7,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": null
-  },
-  {
-    "provider": "zai",
-    "providerClass": "creator",
     "family": "glm-flashx",
     "model_key": "zhipuai/glm-5.3-flashx",
     "version": "5.3 / 2026-09-18",
@@ -2184,36 +2154,6 @@
     "max_output_tokens": 131072,
     "input_cost": 2.9879e-7,
     "output_cost": 0.00000104577,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": null
-  },
-  {
-    "provider": "zai",
-    "providerClass": "creator",
-    "family": "glm-flashx",
-    "model_key": "zai/glm-5.3-flashx",
-    "version": "5.3 / 2026-09-18",
-    "tier": "base",
-    "release_date": "2026-09-18",
-    "last_updated": "2026-09-18",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 131072,
-    "input_cost": 3.7e-7,
-    "output_cost": 0.00000125,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
