@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-10-28",
   "models": {
     "alibaba/deepseek-v4-flash-0731": {
       "frontier": {
@@ -170,7 +170,7 @@
           "model_key": "inceptron/deepseek-ai/DeepSeek-V4-Flash-0731",
           "model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
           "input_cost": 0.13,
-          "output_cost": 0.4125,
+          "output_cost": 0.4312,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
         },
@@ -238,15 +238,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "edenai",
-          "model_key": "edenai/together_ai/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "model_id": "together_ai/deepseek-ai/DeepSeek-V4-Flash-0731",
-          "input_cost": 0.14,
-          "output_cost": 0.28,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 384000
-        },
-        {
           "provider": "huggingface",
           "model_key": "huggingface/deepseek-ai/DeepSeek-V4-Flash-0731",
           "model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -295,8 +286,8 @@
           "provider": "edenai",
           "model_key": "edenai/greenpt/deepseek-v4-flash-0731",
           "model_id": "greenpt/deepseek-v4-flash-0731",
-          "input_cost": 0.156632,
-          "output_cost": 0.39158,
+          "input_cost": 0.1561,
+          "output_cost": 0.39025,
           "max_input_tokens": 1000000,
           "max_output_tokens": 384000
         },
@@ -475,8 +466,8 @@
           "provider": "edenai",
           "model_key": "edenai/scaleway/deepseek-v4-flash-0731",
           "model_id": "scaleway/deepseek-v4-flash-0731",
-          "input_cost": 0.44752,
-          "output_cost": 0.89504,
+          "input_cost": 0.446,
+          "output_cost": 0.892,
           "max_input_tokens": 256000,
           "max_output_tokens": 384000
         },
@@ -578,10 +569,19 @@
           "provider": "openrouter",
           "model_key": "openrouter/z-ai/glm-5.2",
           "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.0341,
+          "input_cost": 0.014,
           "output_cost": 7,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/z-ai/glm-5.2",
+          "model_id": "z-ai/glm-5.2",
+          "input_cost": 0.203,
+          "output_cost": 2.208,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "boundless",
@@ -589,15 +589,6 @@
           "model_id": "glm-5.2",
           "input_cost": 0.34,
           "output_cost": 2.3,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/z-ai/glm-5.2",
-          "model_id": "z-ai/glm-5.2",
-          "input_cost": 0.42,
-          "output_cost": 1.32,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -818,15 +809,6 @@
           "max_output_tokens": 128000
         },
         {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/embercloud/glm-5.2",
-          "model_id": "embercloud/glm-5.2",
-          "input_cost": 1.26,
-          "output_cost": 3.96,
-          "max_input_tokens": 203000,
-          "max_output_tokens": 131000
-        },
-        {
           "provider": "siliconflow",
           "model_key": "siliconflow/zai-org/GLM-5.2",
           "model_id": "zai-org/GLM-5.2",
@@ -1008,21 +990,21 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/baidu/glm-5.2",
-          "model_id": "baidu/glm-5.2",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/alibaba/glm-5.2",
-          "model_id": "alibaba/glm-5.2",
+          "model_key": "llmgateway-providers/zai/glm-5.2",
+          "model_id": "zai/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/tencent/glm-5.2",
+          "model_id": "tencent/glm-5.2",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
         },
         {
           "provider": "llmgateway-providers",
@@ -1035,8 +1017,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/novita/glm-5.2",
-          "model_id": "novita/glm-5.2",
+          "model_key": "llmgateway-providers/baidu/glm-5.2",
+          "model_id": "baidu/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
@@ -1053,21 +1035,21 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/tencent/glm-5.2",
-          "model_id": "tencent/glm-5.2",
+          "model_key": "llmgateway-providers/alibaba/glm-5.2",
+          "model_id": "alibaba/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/zai/glm-5.2",
-          "model_id": "zai/glm-5.2",
+          "model_key": "llmgateway-providers/novita/glm-5.2",
+          "model_id": "novita/glm-5.2",
           "input_cost": 1.4,
           "output_cost": 4.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "nano-gpt",
@@ -1384,7 +1366,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.189,
+          "input_cost": 0.179,
           "output_cost": 20,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -1706,8 +1688,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/runware/kimi-k3",
-          "model_id": "runware/kimi-k3",
+          "model_key": "llmgateway-providers/aws-bedrock/kimi-k3",
+          "model_id": "aws-bedrock/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -1724,8 +1706,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/alibaba/kimi-k3",
-          "model_id": "alibaba/kimi-k3",
+          "model_key": "llmgateway-providers/tencent/kimi-k3",
+          "model_id": "tencent/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -1742,8 +1724,44 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/fireworks/kimi-k3",
+          "model_id": "fireworks/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1040384,
+          "max_output_tokens": 1040384
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/moonshot/kimi-k3",
+          "model_id": "moonshot/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/alibaba/kimi-k3",
+          "model_id": "alibaba/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/kimi-k3",
           "model_id": "novita/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/runware/kimi-k3",
+          "model_id": "runware/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -1757,42 +1775,6 @@
           "output_cost": 15,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/kimi-k3",
-          "model_id": "aws-bedrock/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/tencent/kimi-k3",
-          "model_id": "tencent/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/moonshot/kimi-k3",
-          "model_id": "moonshot/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/fireworks/kimi-k3",
-          "model_id": "fireworks/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1040384,
-          "max_output_tokens": 1040384
         },
         {
           "provider": "merge-gateway",
@@ -2904,6 +2886,24 @@
           "max_output_tokens": 131072
         },
         {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/qwen3.8-omni-flash",
+          "model_id": "qwen3.8-omni-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.47,
+          "max_input_tokens": 983616,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/alibaba/qwen3.8-omni-flash",
+          "model_id": "alibaba/qwen3.8-omni-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.47,
+          "max_input_tokens": 983616,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "nano-gpt",
           "model_key": "nano-gpt/qwen/qwen3.8-omni-flash",
           "model_id": "qwen/qwen3.8-omni-flash",
@@ -3055,8 +3055,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/anthropic/claude-haiku-5-5",
-          "model_id": "anthropic/claude-haiku-5-5",
+          "model_key": "llmgateway-providers/aws-bedrock/claude-haiku-5-5",
+          "model_id": "aws-bedrock/claude-haiku-5-5",
           "input_cost": 0.1,
           "output_cost": 0.5,
           "max_input_tokens": 1000000,
@@ -3064,8 +3064,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/claude-haiku-5-5",
-          "model_id": "aws-bedrock/claude-haiku-5-5",
+          "model_key": "llmgateway-providers/anthropic/claude-haiku-5-5",
+          "model_id": "anthropic/claude-haiku-5-5",
           "input_cost": 0.1,
           "output_cost": 0.5,
           "max_input_tokens": 1000000,
@@ -3277,6 +3277,15 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/aws-bedrock/claude-opus-5-5",
+          "model_id": "aws-bedrock/claude-opus-5-5",
+          "input_cost": 4,
+          "output_cost": 20,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/azure-anthropic/claude-opus-5-5",
           "model_id": "azure-anthropic/claude-opus-5-5",
           "input_cost": 4,
@@ -3288,15 +3297,6 @@
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/anthropic/claude-opus-5-5",
           "model_id": "anthropic/claude-opus-5-5",
-          "input_cost": 4,
-          "output_cost": 20,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/claude-opus-5-5",
-          "model_id": "aws-bedrock/claude-opus-5-5",
           "input_cost": 4,
           "output_cost": 20,
           "max_input_tokens": 1000000,
@@ -3499,6 +3499,15 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/aws-bedrock/claude-sonnet-5-5",
+          "model_id": "aws-bedrock/claude-sonnet-5-5",
+          "input_cost": 2,
+          "output_cost": 10,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/azure-anthropic/claude-sonnet-5-5",
           "model_id": "azure-anthropic/claude-sonnet-5-5",
           "input_cost": 2,
@@ -3510,15 +3519,6 @@
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/anthropic/claude-sonnet-5-5",
           "model_id": "anthropic/claude-sonnet-5-5",
-          "input_cost": 2,
-          "output_cost": 10,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/claude-sonnet-5-5",
-          "model_id": "aws-bedrock/claude-sonnet-5-5",
           "input_cost": 2,
           "output_cost": 10,
           "max_input_tokens": 1000000,
@@ -3712,6 +3712,15 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/aws-bedrock/claude-fable-5-1",
+          "model_id": "aws-bedrock/claude-fable-5-1",
+          "input_cost": 10,
+          "output_cost": 50,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/azure-anthropic/claude-fable-5-1",
           "model_id": "azure-anthropic/claude-fable-5-1",
           "input_cost": 10,
@@ -3723,15 +3732,6 @@
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/anthropic/claude-fable-5-1",
           "model_id": "anthropic/claude-fable-5-1",
-          "input_cost": 10,
-          "output_cost": 50,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/claude-fable-5-1",
-          "model_id": "aws-bedrock/claude-fable-5-1",
           "input_cost": 10,
           "output_cost": 50,
           "max_input_tokens": 1000000,
@@ -4121,20 +4121,20 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/deepseek/deepseek-v4-pro",
-          "model_id": "deepseek/deepseek-v4-pro",
-          "input_cost": 0.435,
-          "output_cost": 0.87,
-          "max_input_tokens": 1050000,
-          "max_output_tokens": 393216
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/tencent/deepseek-v4-pro",
           "model_id": "tencent/deepseek-v4-pro",
           "input_cost": 0.435,
           "output_cost": 0.87,
           "max_input_tokens": 1000000,
+          "max_output_tokens": 393216
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/deepseek/deepseek-v4-pro",
+          "model_id": "deepseek/deepseek-v4-pro",
+          "input_cost": 0.435,
+          "output_cost": 0.87,
+          "max_input_tokens": 1050000,
           "max_output_tokens": 393216
         },
         {
@@ -4291,15 +4291,6 @@
           "max_output_tokens": 384000
         },
         {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/reka-ai/deepseek-v4-pro",
-          "model_id": "reka-ai/deepseek-v4-pro",
-          "input_cost": 0.9,
-          "output_cost": 1.9,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 393216
-        },
-        {
           "provider": "openrouter",
           "model_key": "openrouter/deepseek/deepseek-v4-pro",
           "model_id": "deepseek/deepseek-v4-pro",
@@ -4373,21 +4364,21 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/baidu/deepseek-v4-pro",
-          "model_id": "baidu/deepseek-v4-pro",
-          "input_cost": 1.32,
-          "output_cost": 3.96,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/together-ai/deepseek-v4-pro",
           "model_id": "together-ai/deepseek-v4-pro",
           "input_cost": 1.32,
           "output_cost": 3.96,
           "max_input_tokens": 1048576,
           "max_output_tokens": 163840
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/baidu/deepseek-v4-pro",
+          "model_id": "baidu/deepseek-v4-pro",
+          "input_cost": 1.32,
+          "output_cost": 3.96,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
@@ -5002,8 +4993,8 @@
         },
         {
           "provider": "edenai",
-          "model_key": "edenai/google/gemini-3.8-flash",
-          "model_id": "google/gemini-3.8-flash",
+          "model_key": "edenai/vertex/gemini-3.8-flash",
+          "model_id": "vertex/gemini-3.8-flash",
           "input_cost": 1.5,
           "output_cost": 7.5,
           "max_input_tokens": 1048576,
@@ -5011,8 +5002,8 @@
         },
         {
           "provider": "edenai",
-          "model_key": "edenai/vertex/gemini-3.8-flash",
-          "model_id": "vertex/gemini-3.8-flash",
+          "model_key": "edenai/google/gemini-3.8-flash",
+          "model_id": "google/gemini-3.8-flash",
           "input_cost": 1.5,
           "output_cost": 7.5,
           "max_input_tokens": 1048576,
@@ -5271,8 +5262,8 @@
         },
         {
           "provider": "edenai",
-          "model_key": "edenai/google/gemini-4-argon",
-          "model_id": "google/gemini-4-argon",
+          "model_key": "edenai/vertex/gemini-4-argon",
+          "model_id": "vertex/gemini-4-argon",
           "input_cost": 4,
           "output_cost": 20,
           "max_input_tokens": 1048576,
@@ -5280,8 +5271,8 @@
         },
         {
           "provider": "edenai",
-          "model_key": "edenai/vertex/gemini-4-argon",
-          "model_id": "vertex/gemini-4-argon",
+          "model_key": "edenai/google/gemini-4-argon",
+          "model_id": "google/gemini-4-argon",
           "input_cost": 4,
           "output_cost": 20,
           "max_input_tokens": 1048576,
@@ -5538,6 +5529,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/google/gemma-4-26b-a4b-it",
+          "model_id": "google/gemma-4-26b-a4b-it",
+          "input_cost": 0.07,
+          "output_cost": 0.24,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 131072
+        },
+        {
           "provider": "requesty",
           "model_key": "requesty/gemma-4-26b-a4b-it",
           "model_id": "gemma-4-26b-a4b-it",
@@ -5545,15 +5545,6 @@
           "output_cost": 0.34,
           "max_input_tokens": 262144,
           "max_output_tokens": 32768
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/google/gemma-4-26b-a4b-it",
-          "model_id": "google/gemma-4-26b-a4b-it",
-          "input_cost": 0.09,
-          "output_cost": 0.3,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 131072
         },
         {
           "provider": "openrouter",
@@ -5993,6 +5984,15 @@
           "max_output_tokens": 32768
         },
         {
+          "provider": "modular",
+          "model_key": "modular/google/gemma-4-31b-it",
+          "model_id": "google/gemma-4-31b-it",
+          "input_cost": 0.25,
+          "output_cost": 0.65,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 32768
+        },
+        {
           "provider": "berget",
           "model_key": "berget/google/gemma-4-31B-it",
           "model_id": "google/gemma-4-31B-it",
@@ -6274,6 +6274,15 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/together-ai/minimax-m3.1-flash",
           "model_id": "together-ai/minimax-m3.1-flash",
           "input_cost": 0.15,
@@ -6300,12 +6309,279 @@
           "max_output_tokens": 524288
         },
         {
+          "provider": "merge-gateway",
+          "model_key": "merge-gateway/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "minimax",
+          "model_key": "minimax/MiniMax-M3.1-Flash",
+          "model_id": "MiniMax-M3.1-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "modular",
+          "model_key": "modular/MiniMaxAI/MiniMax-M3.1-Flash",
+          "model_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "nebius",
+          "model_key": "nebius/MiniMaxAI/MiniMax-M3.1-Flash",
+          "model_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "novita-ai",
+          "model_key": "novita-ai/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "ollama-cloud",
+          "model_key": "ollama-cloud/minimax-m3.1-flash",
+          "model_id": "minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "opencode-go",
+          "model_key": "opencode-go/minimax-m3.1-flash",
+          "model_id": "minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "requesty",
+          "model_key": "requesty/minimax-m3.1-flash",
+          "model_id": "minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/minimax-m3.1-flash",
+          "model_id": "minimax-m3.1-flash",
+          "input_cost": 0.304,
+          "output_cost": 1.219,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 64000
+        }
+      ]
+    },
+    "minimax/MiniMax-M3.1-Flash": {
+      "frontier": {
+        "provider": "minimax",
+        "providerClass": "creator",
+        "family": "minimax-m",
+        "model_key": "minimax/MiniMax-M3.1-Flash",
+        "version": "3.1 / 2026-10-19",
+        "tier": "flash",
+        "release_date": "2026-10-19",
+        "last_updated": "2026-10-19",
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 524288,
+        "input_cost": 1.5e-7,
+        "output_cost": 6e-7,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": false,
+        "knowledge": null
+      },
+      "routes": [
+        {
+          "provider": "minimax-cn-coding-plan",
+          "model_key": "minimax-cn-coding-plan/MiniMax-M3.1-Flash",
+          "model_id": "MiniMax-M3.1-Flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "minimax-coding-plan",
+          "model_key": "minimax-coding-plan/MiniMax-M3.1-Flash",
+          "model_id": "MiniMax-M3.1-Flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "nvidia",
+          "model_key": "nvidia/minimaxai/minimax-m3.1-flash",
+          "model_id": "minimaxai/minimax-m3.1-flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/minimax-m3.1-flash",
+          "model_id": "minimax-m3.1-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/inference.net/minimax-m3.1-flash",
+          "model_id": "inference.net/minimax-m3.1-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "minimax-cn",
+          "model_key": "minimax-cn/MiniMax-M3.1-Flash",
+          "model_id": "MiniMax-M3.1-Flash",
+          "input_cost": 0.1494,
+          "output_cost": 0.5976,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "digitalocean",
+          "model_key": "digitalocean/minimax-m3.1-flash",
+          "model_id": "minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "edenai",
+          "model_key": "edenai/minimax/MiniMax-M3.1-Flash",
+          "model_id": "minimax/MiniMax-M3.1-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "huggingface",
+          "model_key": "huggingface/MiniMaxAI/MiniMax-M3.1-Flash",
+          "model_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 512000
+        },
+        {
+          "provider": "kilo",
+          "model_key": "kilo/minimax/minimax-m3.1-flash",
+          "model_id": "minimax/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 524288
+        },
+        {
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/minimax/minimax-m3.1-flash",
           "model_id": "minimax/minimax-m3.1-flash",
           "input_cost": 0.15,
           "output_cost": 0.6,
           "max_input_tokens": 1048576,
+          "max_output_tokens": 524288
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/together-ai/minimax-m3.1-flash",
+          "model_id": "together-ai/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/nebius/minimax-m3.1-flash",
+          "model_id": "nebius/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/novita/minimax-m3.1-flash",
+          "model_id": "novita/minimax-m3.1-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
           "max_output_tokens": 524288
         },
         {
@@ -6325,6 +6601,15 @@
           "output_cost": 0.6,
           "max_input_tokens": 1000000,
           "max_output_tokens": 524288
+        },
+        {
+          "provider": "modular",
+          "model_key": "modular/MiniMaxAI/MiniMax-M3.1-Flash",
+          "model_id": "MiniMaxAI/MiniMax-M3.1-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 512000
         },
         {
           "provider": "nano-gpt",
@@ -6495,15 +6780,6 @@
           "max_output_tokens": 512000
         },
         {
-          "provider": "kilo",
-          "model_key": "kilo/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.224,
-          "output_cost": 0.88,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 512000
-        },
-        {
           "provider": "empiriolabs",
           "model_key": "empiriolabs/minimax-m3",
           "model_id": "minimax-m3",
@@ -6693,555 +6969,9 @@
           "max_output_tokens": 512000
         },
         {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/together-ai/minimax-m3",
-          "model_id": "together-ai/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/tencent/minimax-m3",
-          "model_id": "tencent/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "merge-gateway",
-          "model_key": "merge-gateway/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "minimax",
-          "model_key": "minimax/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "nebius",
-          "model_key": "nebius/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "novita-ai",
-          "model_key": "novita-ai/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "opencode",
-          "model_key": "opencode/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "opencode-go",
-          "model_key": "opencode-go/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "openrouter",
-          "model_key": "openrouter/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "orcarouter",
-          "model_key": "orcarouter/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "requesty",
-          "model_key": "requesty/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "siliconflow",
-          "model_key": "siliconflow/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131000
-        },
-        {
-          "provider": "standardcompute",
-          "model_key": "standardcompute/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 50000
-        },
-        {
-          "provider": "tempr",
-          "model_key": "tempr/minimax/MiniMax-M3",
-          "model_id": "minimax/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "togetherai",
-          "model_key": "togetherai/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "vercel",
-          "model_key": "vercel/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "zenmux",
-          "model_key": "zenmux/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "minimax-cn",
-          "model_key": "minimax-cn/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0.3137,
-          "output_cost": 1.2549,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "hyper",
-          "model_key": "hyper/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.32664,
-          "output_cost": 1.30656,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "crossmodel",
-          "model_key": "crossmodel/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.33,
-          "output_cost": 1.32,
-          "max_input_tokens": 1024000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "wafer.ai",
-          "model_key": "wafer.ai/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0.33,
-          "output_cost": 1.32,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "kenari",
-          "model_key": "kenari/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.36,
-          "output_cost": 1.42857143,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "tensorx",
-          "model_key": "tensorx/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.4,
-          "output_cost": 2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "gmicloud",
-          "model_key": "gmicloud/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.6,
-          "output_cost": 2.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.6,
-          "output_cost": 2.4,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "ofox",
-          "model_key": "ofox/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.6,
-          "output_cost": 2.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "ollama-cloud",
-          "model_key": "ollama-cloud/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.6,
-          "output_cost": 2.4,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "opper",
-          "model_key": "opper/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.6,
-          "output_cost": 2.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "sambanova",
-          "model_key": "sambanova/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0.6,
-          "output_cost": 2.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "synthetic",
-          "model_key": "synthetic/hf:MiniMaxAI/MiniMax-M3",
-          "model_id": "hf:MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.6,
-          "output_cost": 1.2,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 65536
-        },
-        {
-          "provider": "302ai",
-          "model_key": "302ai/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0.72,
-          "output_cost": 2.88,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        }
-      ]
-    },
-    "minimax-cn/MiniMax-M3": {
-      "frontier": {
-        "provider": "minimax",
-        "providerClass": "creator",
-        "family": "minimax-m3",
-        "model_key": "minimax-cn/MiniMax-M3",
-        "version": "2026-06-01",
-        "tier": "base",
-        "release_date": "2026-06-01",
-        "last_updated": "2026-06-25",
-        "max_input_tokens": 1000000,
-        "max_output_tokens": 524288,
-        "input_cost": 3.1369999999999996e-7,
-        "output_cost": 0.0000012548999999999998,
-        "reasoning": true,
-        "tool_call": true,
-        "attachment": true,
-        "modalities": {
-          "input": [
-            "text",
-            "image",
-            "video"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "open_weights": true,
-        "knowledge": null
-      },
-      "routes": [
-        {
-          "provider": "minimax-cn-coding-plan",
-          "model_key": "minimax-cn-coding-plan/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "minimax-coding-plan",
-          "model_key": "minimax-coding-plan/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "scnet-token-plan",
-          "model_key": "scnet-token-plan/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "volcengine-coding-plan",
-          "model_key": "volcengine-coding-plan/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0,
-          "output_cost": 0,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "vultr",
-          "model_key": "vultr/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.2,
-          "output_cost": 0.9,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 512000
-        },
-        {
           "provider": "kilo",
           "model_key": "kilo/minimax/minimax-m3",
           "model_id": "minimax/minimax-m3",
-          "input_cost": 0.224,
-          "output_cost": 0.88,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "empiriolabs",
-          "model_key": "empiriolabs/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.225,
-          "output_cost": 0.9,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "ambient",
-          "model_key": "ambient/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.23,
-          "output_cost": 0.96,
-          "max_input_tokens": 131072,
-          "max_output_tokens": 131702
-        },
-        {
-          "provider": "nano-gpt",
-          "model_key": "nano-gpt/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.23,
-          "output_cost": 0.96,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 80000
-        },
-        {
-          "provider": "wandb",
-          "model_key": "wandb/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.23,
-          "output_cost": 0.96,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
-          "provider": "vancine",
-          "model_key": "vancine/MiniMax-M3",
-          "model_id": "MiniMax-M3",
-          "input_cost": 0.24,
-          "output_cost": 0.96,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "boundless",
-          "model_key": "boundless/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.28,
-          "output_cost": 1.1,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "deepinfra",
-          "model_key": "deepinfra/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.28,
-          "output_cost": 1.1,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "lilac",
-          "model_key": "lilac/minimaxai/minimax-m3",
-          "model_id": "minimaxai/minimax-m3",
-          "input_cost": 0.28,
-          "output_cost": 1.1,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway",
-          "model_key": "llmgateway/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.28,
-          "output_cost": 1.1,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/consensusprotocol/minimax-m3",
-          "model_id": "consensusprotocol/minimax-m3",
-          "input_cost": 0.28,
-          "output_cost": 1.1,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "aihubmix",
-          "model_key": "aihubmix/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.288,
-          "output_cost": 1.152,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "abacus",
-          "model_key": "abacus/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "cline-pass",
-          "model_key": "cline-pass/cline-pass/minimax-m3",
-          "model_id": "cline-pass/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "commandcode",
-          "model_key": "commandcode/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "cortecs",
-          "model_key": "cortecs/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "edenai",
-          "model_key": "edenai/minimax/MiniMax-M3",
-          "model_id": "minimax/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "fireworks-ai",
-          "model_key": "fireworks-ai/accounts/fireworks/models/minimax-m3",
-          "model_id": "accounts/fireworks/models/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 512000,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "huggingface",
-          "model_key": "huggingface/MiniMaxAI/MiniMax-M3",
-          "model_id": "MiniMaxAI/MiniMax-M3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 524288,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "inco",
-          "model_key": "inco/minimax-m3",
-          "model_id": "minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.2,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 512000
-        },
-        {
-          "provider": "iteracompute",
-          "model_key": "iteracompute/minimax/minimax-m3",
-          "model_id": "minimax/minimax-m3",
-          "input_cost": 0.3,
-          "output_cost": 1.19,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 524288
-        },
-        {
-          "provider": "jalapeno",
-          "model_key": "jalapeno/MiniMax-M3",
-          "model_id": "MiniMax-M3",
           "input_cost": 0.3,
           "output_cost": 1.2,
           "max_input_tokens": 524288,
@@ -7282,6 +7012,15 @@
           "output_cost": 1.2,
           "max_input_tokens": 1000000,
           "max_output_tokens": 524288
+        },
+        {
+          "provider": "modular",
+          "model_key": "modular/minimax/minimax-m3",
+          "model_id": "minimax/minimax-m3",
+          "input_cost": 0.3,
+          "output_cost": 1.2,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 512000
         },
         {
           "provider": "nebius",
@@ -8232,15 +7971,6 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/novita/kimi-k2.7-code",
-          "model_id": "novita/kimi-k2.7-code",
-          "input_cost": 0.95,
-          "output_cost": 4,
-          "max_input_tokens": 262144,
-          "max_output_tokens": 262144
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/tencent/kimi-k2.7-code",
           "model_id": "tencent/kimi-k2.7-code",
           "input_cost": 0.95,
@@ -8252,6 +7982,15 @@
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/moonshot/kimi-k2.7-code",
           "model_id": "moonshot/kimi-k2.7-code",
+          "input_cost": 0.95,
+          "output_cost": 4,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/novita/kimi-k2.7-code",
+          "model_id": "novita/kimi-k2.7-code",
           "input_cost": 0.95,
           "output_cost": 4,
           "max_input_tokens": 262144,
@@ -8631,6 +8370,15 @@
           "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
+        },
+        {
+          "provider": "302ai",
+          "model_key": "302ai/kimi-k3.1-pro",
+          "model_id": "kimi-k3.1-pro",
+          "input_cost": 2.4,
+          "output_cost": 12,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         }
       ]
     },
@@ -8799,6 +8547,15 @@
           "output_cost": 10,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
+        },
+        {
+          "provider": "302ai",
+          "model_key": "302ai/kimi-k3.1-pro",
+          "model_id": "kimi-k3.1-pro",
+          "input_cost": 2.4,
+          "output_cost": 12,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         }
       ]
     },
@@ -9251,7 +9008,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.189,
+          "input_cost": 0.179,
           "output_cost": 20,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -9573,8 +9330,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/runware/kimi-k3",
-          "model_id": "runware/kimi-k3",
+          "model_key": "llmgateway-providers/aws-bedrock/kimi-k3",
+          "model_id": "aws-bedrock/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -9591,8 +9348,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/alibaba/kimi-k3",
-          "model_id": "alibaba/kimi-k3",
+          "model_key": "llmgateway-providers/tencent/kimi-k3",
+          "model_id": "tencent/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -9609,8 +9366,44 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/fireworks/kimi-k3",
+          "model_id": "fireworks/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1040384,
+          "max_output_tokens": 1040384
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/moonshot/kimi-k3",
+          "model_id": "moonshot/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/alibaba/kimi-k3",
+          "model_id": "alibaba/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/kimi-k3",
           "model_id": "novita/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/runware/kimi-k3",
+          "model_id": "runware/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -9624,42 +9417,6 @@
           "output_cost": 15,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/kimi-k3",
-          "model_id": "aws-bedrock/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/tencent/kimi-k3",
-          "model_id": "tencent/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/moonshot/kimi-k3",
-          "model_id": "moonshot/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/fireworks/kimi-k3",
-          "model_id": "fireworks/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1040384,
-          "max_output_tokens": 1040384
         },
         {
           "provider": "merge-gateway",
@@ -10067,7 +9824,7 @@
           "provider": "openrouter",
           "model_key": "openrouter/moonshotai/kimi-k3",
           "model_id": "moonshotai/kimi-k3",
-          "input_cost": 0.189,
+          "input_cost": 0.179,
           "output_cost": 20,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943718
@@ -10389,8 +10146,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/runware/kimi-k3",
-          "model_id": "runware/kimi-k3",
+          "model_key": "llmgateway-providers/aws-bedrock/kimi-k3",
+          "model_id": "aws-bedrock/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -10407,8 +10164,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/alibaba/kimi-k3",
-          "model_id": "alibaba/kimi-k3",
+          "model_key": "llmgateway-providers/tencent/kimi-k3",
+          "model_id": "tencent/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -10425,8 +10182,44 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/fireworks/kimi-k3",
+          "model_id": "fireworks/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1040384,
+          "max_output_tokens": 1040384
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/moonshot/kimi-k3",
+          "model_id": "moonshot/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/alibaba/kimi-k3",
+          "model_id": "alibaba/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/kimi-k3",
           "model_id": "novita/kimi-k3",
+          "input_cost": 3,
+          "output_cost": 15,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/runware/kimi-k3",
+          "model_id": "runware/kimi-k3",
           "input_cost": 3,
           "output_cost": 15,
           "max_input_tokens": 1048576,
@@ -10440,42 +10233,6 @@
           "output_cost": 15,
           "max_input_tokens": 1048576,
           "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/aws-bedrock/kimi-k3",
-          "model_id": "aws-bedrock/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/tencent/kimi-k3",
-          "model_id": "tencent/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/moonshot/kimi-k3",
-          "model_id": "moonshot/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 1048576
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/fireworks/kimi-k3",
-          "model_id": "fireworks/kimi-k3",
-          "input_cost": 3,
-          "output_cost": 15,
-          "max_input_tokens": 1040384,
-          "max_output_tokens": 1040384
         },
         {
           "provider": "merge-gateway",
@@ -11374,8 +11131,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/azure/gpt-5.4-mini",
-          "model_id": "azure/gpt-5.4-mini",
+          "model_key": "llmgateway-providers/openai/gpt-5.4-mini",
+          "model_id": "openai/gpt-5.4-mini",
           "input_cost": 0.75,
           "output_cost": 4.5,
           "max_input_tokens": 400000,
@@ -11383,8 +11140,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/openai/gpt-5.4-mini",
-          "model_id": "openai/gpt-5.4-mini",
+          "model_key": "llmgateway-providers/azure/gpt-5.4-mini",
+          "model_id": "azure/gpt-5.4-mini",
           "input_cost": 0.75,
           "output_cost": 4.5,
           "max_input_tokens": 400000,
@@ -11703,8 +11460,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/azure/gpt-5.4-nano",
-          "model_id": "azure/gpt-5.4-nano",
+          "model_key": "llmgateway-providers/openai/gpt-5.4-nano",
+          "model_id": "openai/gpt-5.4-nano",
           "input_cost": 0.2,
           "output_cost": 1.25,
           "max_input_tokens": 400000,
@@ -11712,8 +11469,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/openai/gpt-5.4-nano",
-          "model_id": "openai/gpt-5.4-nano",
+          "model_key": "llmgateway-providers/azure/gpt-5.4-nano",
+          "model_id": "azure/gpt-5.4-nano",
           "input_cost": 0.2,
           "output_cost": 1.25,
           "max_input_tokens": 400000,
@@ -12219,8 +11976,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/azure/gpt-6-astra",
-          "model_id": "azure/gpt-6-astra",
+          "model_key": "llmgateway-providers/openai/gpt-6-astra",
+          "model_id": "openai/gpt-6-astra",
           "input_cost": 10,
           "output_cost": 50,
           "max_input_tokens": 1050000,
@@ -12228,8 +11985,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/openai/gpt-6-astra",
-          "model_id": "openai/gpt-6-astra",
+          "model_key": "llmgateway-providers/azure/gpt-6-astra",
+          "model_id": "azure/gpt-6-astra",
           "input_cost": 10,
           "output_cost": 50,
           "max_input_tokens": 1050000,
@@ -12690,8 +12447,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/azure/gpt-6-luna",
-          "model_id": "azure/gpt-6-luna",
+          "model_key": "llmgateway-providers/openai/gpt-6-luna",
+          "model_id": "openai/gpt-6-luna",
           "input_cost": 0.1,
           "output_cost": 0.5,
           "max_input_tokens": 1050000,
@@ -12699,8 +12456,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/openai/gpt-6-luna",
-          "model_id": "openai/gpt-6-luna",
+          "model_key": "llmgateway-providers/azure/gpt-6-luna",
+          "model_id": "azure/gpt-6-luna",
           "input_cost": 0.1,
           "output_cost": 0.5,
           "max_input_tokens": 1050000,
@@ -13053,8 +12810,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/azure/gpt-6.1-sol",
-          "model_id": "azure/gpt-6.1-sol",
+          "model_key": "llmgateway-providers/openai/gpt-6.1-sol",
+          "model_id": "openai/gpt-6.1-sol",
           "input_cost": 2,
           "output_cost": 10,
           "max_input_tokens": 1050000,
@@ -13062,8 +12819,8 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/openai/gpt-6.1-sol",
-          "model_id": "openai/gpt-6.1-sol",
+          "model_key": "llmgateway-providers/azure/gpt-6.1-sol",
+          "model_id": "azure/gpt-6.1-sol",
           "input_cost": 2,
           "output_cost": 10,
           "max_input_tokens": 1050000,
@@ -13380,6 +13137,24 @@
           "output_cost": 5,
           "max_input_tokens": 1050000,
           "max_output_tokens": 128000
+        },
+        {
+          "provider": "vivgrid",
+          "model_key": "vivgrid/gpt-6.1-terra",
+          "model_id": "gpt-6.1-terra",
+          "input_cost": 1.1,
+          "output_cost": 5.5,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/gpt-6.1-terra",
+          "model_id": "gpt-6.1-terra",
+          "input_cost": 1.176,
+          "output_cost": 5.882,
+          "max_input_tokens": 1050000,
+          "max_output_tokens": 128000
         }
       ]
     },
@@ -13443,20 +13218,20 @@
         },
         {
           "provider": "edenai",
-          "model_key": "edenai/tencent/step-5-preview",
-          "model_id": "tencent/step-5-preview",
-          "input_cost": 1,
-          "output_cost": 2.7,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 1000000
-        },
-        {
-          "provider": "edenai",
           "model_key": "edenai/deepinfra/stepfun-ai/Step-5-Preview",
           "model_id": "deepinfra/stepfun-ai/Step-5-Preview",
           "input_cost": 1,
           "output_cost": 2.7,
           "max_input_tokens": 1048576,
+          "max_output_tokens": 1000000
+        },
+        {
+          "provider": "edenai",
+          "model_key": "edenai/tencent/step-5-preview",
+          "model_id": "tencent/step-5-preview",
+          "input_cost": 1,
+          "output_cost": 2.7,
+          "max_input_tokens": 1000000,
           "max_output_tokens": 1000000
         },
         {
@@ -14586,21 +14361,21 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/xiaomi/mimo-v2.6-flash",
-          "model_id": "xiaomi/mimo-v2.6-flash",
-          "input_cost": 0.14,
-          "output_cost": 0.28,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/deepinfra/mimo-v2.6-flash",
           "model_id": "deepinfra/mimo-v2.6-flash",
           "input_cost": 0.14,
           "output_cost": 0.28,
           "max_input_tokens": 1048576,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/xiaomi/mimo-v2.6-flash",
+          "model_id": "xiaomi/mimo-v2.6-flash",
+          "input_cost": 0.14,
+          "output_cost": 0.28,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "nano-gpt",
@@ -14836,21 +14611,21 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/xiaomi/mimo-v2.6-pro",
-          "model_id": "xiaomi/mimo-v2.6-pro",
-          "input_cost": 0.435,
-          "output_cost": 0.87,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/deepinfra/mimo-v2.6-pro",
           "model_id": "deepinfra/mimo-v2.6-pro",
           "input_cost": 0.435,
           "output_cost": 0.87,
           "max_input_tokens": 1048576,
           "max_output_tokens": 65536
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/xiaomi/mimo-v2.6-pro",
+          "model_id": "xiaomi/mimo-v2.6-pro",
+          "input_cost": 0.435,
+          "output_cost": 0.87,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
         },
         {
           "provider": "nano-gpt",
@@ -15576,8 +15351,35 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/zai/glm-5.3",
+          "model_id": "zai/glm-5.3",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/together-ai/glm-5.3",
+          "model_id": "together-ai/glm-5.3",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943717
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/mistral/glm-5.3",
           "model_id": "mistral/glm-5.3",
+          "input_cost": 1.4,
+          "output_cost": 4.4,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/fireworks/glm-5.3",
+          "model_id": "fireworks/glm-5.3",
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
@@ -15594,15 +15396,6 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/together-ai/glm-5.3",
-          "model_id": "together-ai/glm-5.3",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 943717
-        },
-        {
-          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/alibaba/glm-5.3",
           "model_id": "alibaba/glm-5.3",
           "input_cost": 1.4,
@@ -15614,24 +15407,6 @@
           "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/novita/glm-5.3",
           "model_id": "novita/glm-5.3",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1048576,
-          "max_output_tokens": 131072
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/zai/glm-5.3",
-          "model_id": "zai/glm-5.3",
-          "input_cost": 1.4,
-          "output_cost": 4.4,
-          "max_input_tokens": 1000000,
-          "max_output_tokens": 128000
-        },
-        {
-          "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/fireworks/glm-5.3",
-          "model_id": "fireworks/glm-5.3",
           "input_cost": 1.4,
           "output_cost": 4.4,
           "max_input_tokens": 1048576,
@@ -16060,19 +15835,19 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/entrim/glm-5.3-flash",
-          "model_id": "entrim/glm-5.3-flash",
+          "model_key": "llmgateway-providers/consensusprotocol/glm-5.3-flash",
+          "model_id": "consensusprotocol/glm-5.3-flash",
           "input_cost": 0.1,
-          "output_cost": 0.35,
+          "output_cost": 0.25,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/consensusprotocol/glm-5.3-flash",
-          "model_id": "consensusprotocol/glm-5.3-flash",
+          "model_key": "llmgateway-providers/entrim/glm-5.3-flash",
+          "model_id": "entrim/glm-5.3-flash",
           "input_cost": 0.1,
-          "output_cost": 0.25,
+          "output_cost": 0.35,
           "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
@@ -16321,11 +16096,11 @@
         },
         {
           "provider": "llmgateway-providers",
-          "model_key": "llmgateway-providers/runware/glm-5.3-flash",
-          "model_id": "runware/glm-5.3-flash",
+          "model_key": "llmgateway-providers/zai/glm-5.3-flash",
+          "model_id": "zai/glm-5.3-flash",
           "input_cost": 0.15,
           "output_cost": 0.5,
-          "max_input_tokens": 1000000,
+          "max_input_tokens": 1048576,
           "max_output_tokens": 131072
         },
         {
@@ -16336,6 +16111,24 @@
           "output_cost": 0.5,
           "max_input_tokens": 1048576,
           "max_output_tokens": 943717
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/fireworks/glm-5.3-flash",
+          "model_id": "fireworks/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/baidu/glm-5.3-flash",
+          "model_id": "baidu/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
         },
         {
           "provider": "llmgateway-providers",
@@ -16357,6 +16150,742 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/runware/glm-5.3-flash",
+          "model_id": "runware/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "merge-gateway",
+          "model_key": "merge-gateway/zai/glm-5.3-flash",
+          "model_id": "zai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "munito-eu",
+          "model_key": "munito-eu/zai-org/glm-5.3-flash",
+          "model_id": "zai-org/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943718
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/TEE/glm-5.3-flash",
+          "model_id": "TEE/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "nebius",
+          "model_key": "nebius/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1024000,
+          "max_output_tokens": 1024000
+        },
+        {
+          "provider": "neuralwatt",
+          "model_key": "neuralwatt/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048560,
+          "max_output_tokens": 1048560
+        },
+        {
+          "provider": "novita-ai",
+          "model_key": "novita-ai/zai-org/glm-5.3-flash",
+          "model_id": "zai-org/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "ofox",
+          "model_key": "ofox/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "ollama-cloud",
+          "model_key": "ollama-cloud/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "opencode",
+          "model_key": "opencode/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "opencode-go",
+          "model_key": "opencode-go/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943717
+        },
+        {
+          "provider": "orcarouter",
+          "model_key": "orcarouter/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "perplexity-agent",
+          "model_key": "perplexity-agent/perplexity/glm-5.3-flash",
+          "model_id": "perplexity/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "prime",
+          "model_key": "prime/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "siliconflow",
+          "model_key": "siliconflow/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1049000,
+          "max_output_tokens": 262000
+        },
+        {
+          "provider": "synthetic",
+          "model_key": "synthetic/hf:zai-org/GLM-5.3-Flash",
+          "model_id": "hf:zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 524288,
+          "max_output_tokens": 65536
+        },
+        {
+          "provider": "tempr",
+          "model_key": "tempr/zai/glm-5.3-flash",
+          "model_id": "zai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "togetherai",
+          "model_key": "togetherai/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048575,
+          "max_output_tokens": 400000
+        },
+        {
+          "provider": "tokengo",
+          "model_key": "tokengo/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/zai/glm-5.3-flash",
+          "model_id": "zai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131000
+        },
+        {
+          "provider": "vivgrid",
+          "model_key": "vivgrid/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zai",
+          "model_key": "zai/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "bothub",
+          "model_key": "bothub/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.1566,
+          "output_cost": 0.522,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "hyper",
+          "model_key": "hyper/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.16332,
+          "output_cost": 0.5444,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "above",
+          "model_key": "above/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.165,
+          "output_cost": 0.55,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "inceptron",
+          "model_key": "inceptron/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.17,
+          "output_cost": 0.6,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "opper",
+          "model_key": "opper/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.2,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "requesty",
+          "model_key": "requesty/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.2,
+          "output_cost": 0.6,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "tensorx",
+          "model_key": "tensorx/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.2,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 64000
+        },
+        {
+          "provider": "privatemode-ai",
+          "model_key": "privatemode-ai/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.2311,
+          "output_cost": 0.7511,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "berget",
+          "model_key": "berget/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.29,
+          "output_cost": 0.58,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 16384
+        },
+        {
+          "provider": "modal",
+          "model_key": "modal/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.45,
+          "output_cost": 1.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        }
+      ]
+    },
+    "zai/glm-5.3-flash": {
+      "frontier": {
+        "provider": "zai",
+        "providerClass": "creator",
+        "family": "glm",
+        "model_key": "zai/glm-5.3-flash",
+        "version": "5.3 / 2026-08-26",
+        "tier": "flash",
+        "release_date": "2026-08-26",
+        "last_updated": "2026-08-26",
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 131072,
+        "input_cost": 1.5e-7,
+        "output_cost": 5e-7,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": null
+      },
+      "routes": [
+        {
+          "provider": "amd",
+          "model_key": "amd/GLM-5.3-Flash",
+          "model_id": "GLM-5.3-Flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "nvidia",
+          "model_key": "nvidia/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "scnet-token-plan",
+          "model_key": "scnet-token-plan/GLM-5.3-Flash",
+          "model_id": "GLM-5.3-Flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "volcengine-coding-plan",
+          "model_key": "volcengine-coding-plan/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zai-coding-plan",
+          "model_key": "zai-coding-plan/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zhipuai-coding-plan",
+          "model_key": "zhipuai-coding-plan/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0,
+          "output_cost": 0,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "pareto",
+          "model_key": "pareto/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.06,
+          "output_cost": 0.2,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "302ai",
+          "model_key": "302ai/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.075,
+          "output_cost": 0.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.075,
+          "output_cost": 0.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "iteracompute",
+          "model_key": "iteracompute/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.08,
+          "output_cost": 0.28,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "nearai",
+          "model_key": "nearai/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.08,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "standardcompute",
+          "model_key": "standardcompute/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.08,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 50000
+        },
+        {
+          "provider": "llmgateway",
+          "model_key": "llmgateway/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.088,
+          "output_cost": 0.25,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/scx-ai-gp/glm-5.3-flash",
+          "model_id": "scx-ai-gp/glm-5.3-flash",
+          "input_cost": 0.088,
+          "output_cost": 0.25,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/inference.net/glm-5.3-flash",
+          "model_id": "inference.net/glm-5.3-flash",
+          "input_cost": 0.09,
+          "output_cost": 0.28,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "cortecs",
+          "model_key": "cortecs/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.35,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/consensusprotocol/glm-5.3-flash",
+          "model_id": "consensusprotocol/glm-5.3-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.25,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/entrim/glm-5.3-flash",
+          "model_id": "entrim/glm-5.3-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.35,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "nano-gpt",
+          "model_key": "nano-gpt/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.3,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "vultr",
+          "model_key": "vultr/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.1,
+          "output_cost": 0.35,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "runinfra",
+          "model_key": "runinfra/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.11,
+          "output_cost": 0.45,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "aihubmix",
+          "model_key": "aihubmix/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.11268,
+          "output_cost": 0.39438,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "melious",
+          "model_key": "melious/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.11592,
+          "output_cost": 0.46368,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zhipuai",
+          "model_key": "zhipuai/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.11952,
+          "output_cost": 0.41831,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "boundless",
+          "model_key": "boundless/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.12,
+          "output_cost": 0.4,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "vancine",
+          "model_key": "vancine/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.12,
+          "output_cost": 0.4,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "wandb",
+          "model_key": "wandb/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.12,
+          "output_cost": 0.38,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "greenpt",
+          "model_key": "greenpt/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.127754,
+          "output_cost": 0.511016,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "munito",
+          "model_key": "munito/zai-org/glm-5.3-flash",
+          "model_id": "zai-org/glm-5.3-flash",
+          "input_cost": 0.13,
+          "output_cost": 0.45,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943718
+        },
+        {
+          "provider": "engy",
+          "model_key": "engy/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.135,
+          "output_cost": 0.45,
+          "max_input_tokens": 327680,
+          "max_output_tokens": 32768
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/greenference/glm-5.3-flash",
+          "model_id": "greenference/glm-5.3-flash",
+          "input_cost": 0.14,
+          "output_cost": 0.49,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "aiand",
+          "model_key": "aiand/zai-org/glm-5.3-flash",
+          "model_id": "zai-org/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048550,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "aimlapi",
+          "model_key": "aimlapi/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "arcee",
+          "model_key": "arcee/zai-org/glm-5.3-flash",
+          "model_id": "zai-org/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "baseten",
+          "model_key": "baseten/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "cline-pass",
+          "model_key": "cline-pass/cline-pass/glm-5.3-flash",
+          "model_id": "cline-pass/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "cloudflare-workers-ai",
+          "model_key": "cloudflare-workers-ai/@cf/zai-org/glm-5.3-flash",
+          "model_id": "@cf/zai-org/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 1048576
+        },
+        {
+          "provider": "commandcode",
+          "model_key": "commandcode/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "crossmodel",
+          "model_key": "crossmodel/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        },
+        {
+          "provider": "deepinfra",
+          "model_key": "deepinfra/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "digitalocean",
+          "model_key": "digitalocean/glm-5.3-flash",
+          "model_id": "glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "edenai",
+          "model_key": "edenai/zai/glm-5.3-flash",
+          "model_id": "zai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "friendli",
+          "model_key": "friendli/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "huggingface",
+          "model_key": "huggingface/zai-org/GLM-5.3-Flash",
+          "model_id": "zai-org/GLM-5.3-Flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "kilo",
+          "model_key": "kilo/z-ai/glm-5.3-flash",
+          "model_id": "z-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048575,
+          "max_output_tokens": 943717
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/zai/glm-5.3-flash",
           "model_id": "zai/glm-5.3-flash",
           "input_cost": 0.15,
@@ -16366,11 +16895,56 @@
         },
         {
           "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/together-ai/glm-5.3-flash",
+          "model_id": "together-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 943717
+        },
+        {
+          "provider": "llmgateway-providers",
           "model_key": "llmgateway-providers/fireworks/glm-5.3-flash",
           "model_id": "fireworks/glm-5.3-flash",
           "input_cost": 0.15,
           "output_cost": 0.5,
           "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/baidu/glm-5.3-flash",
+          "model_id": "baidu/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/novita/glm-5.3-flash",
+          "model_id": "novita/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/reka-ai/glm-5.3-flash",
+          "model_id": "reka-ai/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 262144,
+          "max_output_tokens": 262144
+        },
+        {
+          "provider": "llmgateway-providers",
+          "model_key": "llmgateway-providers/runware/glm-5.3-flash",
+          "model_id": "runware/glm-5.3-flash",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
           "max_output_tokens": 131072
         },
         {
@@ -16677,6 +17251,121 @@
         "max_output_tokens": 131072,
         "input_cost": 2.9879e-7,
         "output_cost": 0.00000104577,
+        "reasoning": true,
+        "tool_call": true,
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "open_weights": true,
+        "knowledge": null
+      },
+      "routes": [
+        {
+          "provider": "ofox",
+          "model_key": "ofox/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.15,
+          "output_cost": 0.5,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zhipuai",
+          "model_key": "zhipuai/glm-5.3-flashx",
+          "model_id": "glm-5.3-flashx",
+          "input_cost": 0.29879,
+          "output_cost": 1.04577,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "commandcode",
+          "model_key": "commandcode/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.37,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "kilo",
+          "model_key": "kilo/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.37,
+          "output_cost": 1.25,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "openrouter",
+          "model_key": "openrouter/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.37,
+          "output_cost": 1.25,
+          "max_input_tokens": 1048576,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "tempr",
+          "model_key": "tempr/zai/glm-5.3-flashx",
+          "model_id": "zai/glm-5.3-flashx",
+          "input_cost": 0.37,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "vercel",
+          "model_key": "vercel/zai/glm-5.3-flashx",
+          "model_id": "zai/glm-5.3-flashx",
+          "input_cost": 0.37,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zai",
+          "model_key": "zai/glm-5.3-flashx",
+          "model_id": "glm-5.3-flashx",
+          "input_cost": 0.37,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 131072
+        },
+        {
+          "provider": "zenmux",
+          "model_key": "zenmux/z-ai/glm-5.3-flashx",
+          "model_id": "z-ai/glm-5.3-flashx",
+          "input_cost": 0.375,
+          "output_cost": 1.25,
+          "max_input_tokens": 1000000,
+          "max_output_tokens": 128000
+        }
+      ]
+    },
+    "zai/glm-5.3-flashx": {
+      "frontier": {
+        "provider": "zai",
+        "providerClass": "creator",
+        "family": "glm-flashx",
+        "model_key": "zai/glm-5.3-flashx",
+        "version": "5.3 / 2026-09-18",
+        "tier": "base",
+        "release_date": "2026-09-18",
+        "last_updated": "2026-09-18",
+        "max_input_tokens": 1000000,
+        "max_output_tokens": 131072,
+        "input_cost": 3.7e-7,
+        "output_cost": 0.00000125,
         "reasoning": true,
         "tool_call": true,
         "attachment": true,
