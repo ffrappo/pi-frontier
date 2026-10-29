@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-28
+Generated: 2026-10-29
 Source: models.dev
-78 frontier models across 16 providers (scope: creators).
+79 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -65,13 +65,14 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax-cn/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
-| `minimax/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.31 | $1.25 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.30 | $1.20 |
 
 ## mistral
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `mistral/deepseek-v4-1-flash-1017` | flash | 2026-10-17 | 1049K → 128K | $0.30 | $1.20 |
 | `mistral/mistral-large-4` | base | 2026-10-06 | 1049K → 262K | $1.36 | $4.18 |
 | `mistral/zai-glm-5-3-flash` | flash | 2026-08-26 | 1049K → 131K | $0.15 | $0.50 |
 | `mistral/zai-glm-5-3` | base | 2026-08-14 | 1049K → 131K | $1.40 | $4.40 |
