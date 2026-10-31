@@ -715,16 +715,16 @@
   {
     "provider": "minimax",
     "providerClass": "creator",
-    "family": "minimax-m",
-    "model_key": "minimax/MiniMax-M3.1-Flash",
-    "version": "3.1 / 2026-10-19",
-    "tier": "flash",
-    "release_date": "2026-10-19",
-    "last_updated": "2026-10-19",
+    "family": "minimax-m3",
+    "model_key": "minimax/MiniMax-M3",
+    "version": "2026-06-01",
+    "tier": "base",
+    "release_date": "2026-06-01",
+    "last_updated": "2026-06-25",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 1.5e-7,
-    "output_cost": 6e-7,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -738,22 +738,22 @@
         "text"
       ]
     },
-    "open_weights": false,
+    "open_weights": true,
     "knowledge": null
   },
   {
     "provider": "minimax",
     "providerClass": "creator",
     "family": "minimax-m3",
-    "model_key": "minimax/MiniMax-M3",
+    "model_key": "minimax-cn/MiniMax-M3",
     "version": "2026-06-01",
     "tier": "base",
     "release_date": "2026-06-01",
     "last_updated": "2026-06-25",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 3e-7,
-    "output_cost": 0.0000012,
+    "input_cost": 3.1369999999999996e-7,
+    "output_cost": 0.0000012548999999999998,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -2113,6 +2113,36 @@
   {
     "provider": "zai",
     "providerClass": "creator",
+    "family": "glm",
+    "model_key": "zai/glm-5.3-flash",
+    "version": "5.3 / 2026-08-26",
+    "tier": "flash",
+    "release_date": "2026-08-26",
+    "last_updated": "2026-08-26",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 1.5e-7,
+    "output_cost": 5e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
     "family": "glm-flashx",
     "model_key": "zhipuai/glm-5.3-flashx",
     "version": "5.3 / 2026-09-18",
@@ -2123,6 +2153,36 @@
     "max_output_tokens": 131072,
     "input_cost": 2.9879e-7,
     "output_cost": 0.00000104577,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-flashx",
+    "model_key": "zai/glm-5.3-flashx",
+    "version": "5.3 / 2026-09-18",
+    "tier": "base",
+    "release_date": "2026-09-18",
+    "last_updated": "2026-09-18",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 3.7e-7,
+    "output_cost": 0.00000125,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
