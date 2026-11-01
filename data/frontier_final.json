@@ -1058,6 +1058,35 @@
   {
     "provider": "moonshotai",
     "providerClass": "creator",
+    "family": "kimi-k",
+    "model_key": "moonshotai/kimi-k3.1-pro",
+    "version": "3.1 / 2026-10-23",
+    "tier": "pro",
+    "release_date": "2026-10-23",
+    "last_updated": "2026-10-23",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000002,
+    "output_cost": 0.00001,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
     "family": "kimi-k-highspeed",
     "model_key": "moonshotai/kimi-k2.7-code-highspeed",
     "version": "2.7 / 2026-06-12",
@@ -1116,6 +1145,35 @@
   {
     "provider": "moonshotai",
     "providerClass": "creator",
+    "family": "kimi-k-highspeed",
+    "model_key": "moonshotai/kimi-k3.1-pro-highspeed",
+    "version": "3.1 / 2026-10-23",
+    "tier": "pro",
+    "release_date": "2026-10-23",
+    "last_updated": "2026-10-23",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000004,
+    "output_cost": 0.00002,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
     "family": "kimi-k3",
     "model_key": "moonshotai-cn/kimi-k3",
     "version": "2026-07-16",
@@ -1126,6 +1184,35 @@
     "max_output_tokens": 1048576,
     "input_cost": 0.0000029879,
     "output_cost": 0.0000149395,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "moonshotai",
+    "providerClass": "creator",
+    "family": "kimi-k3",
+    "model_key": "moonshotai/kimi-k3",
+    "version": "2026-07-16",
+    "tier": "base",
+    "release_date": "2026-07-16",
+    "last_updated": "2026-07-16",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000003,
+    "output_cost": 0.000015,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,

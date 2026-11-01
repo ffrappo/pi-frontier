@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-10-31
+Generated: 2026-11-01
 Source: models.dev
-77 frontier models across 16 providers (scope: creators).
+80 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -87,7 +87,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
+| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
+| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
+| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
