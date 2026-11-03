@@ -1,6 +1,6 @@
 # Frontier Models
 
-Generated: 2026-11-02
+Generated: 2026-11-03
 Source: models.dev
 75 frontier models across 16 providers (scope: creators).
 
@@ -65,7 +65,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax-cn/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
-| `minimax/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.31 | $1.25 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.30 | $1.20 |
 
 ## mistral
