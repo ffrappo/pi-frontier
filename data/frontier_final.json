@@ -519,6 +519,37 @@
   {
     "provider": "google",
     "providerClass": "creator",
+    "family": "gemini-hydrogen",
+    "model_key": "google/gemini-4-hydrogen",
+    "version": "4 / 2026-11-12",
+    "tier": "base",
+    "release_date": "2026-11-12",
+    "last_updated": "2026-11-12",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 65536,
+    "input_cost": 0.0000015,
+    "output_cost": 0.0000075,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": "2026-03"
+  },
+  {
+    "provider": "google",
+    "providerClass": "creator",
     "family": "gemini-image",
     "model_key": "google/gemini-3.1-flash-lite-image",
     "version": "3.1 / 2026-06-30",
@@ -605,35 +636,6 @@
   {
     "provider": "google",
     "providerClass": "creator",
-    "family": "gemini-omni",
-    "model_key": "google/gemini-omni-flash-preview",
-    "version": "2026-06-30",
-    "tier": "flash",
-    "release_date": "2026-06-30",
-    "last_updated": "2026-06-30",
-    "max_input_tokens": 131072,
-    "max_output_tokens": 65536,
-    "input_cost": 0.0000015,
-    "output_cost": 0.0000175,
-    "reasoning": true,
-    "tool_call": false,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "video"
-      ]
-    },
-    "open_weights": false,
-    "knowledge": null
-  },
-  {
-    "provider": "google",
-    "providerClass": "creator",
     "family": "gemma-26b-a4b-it",
     "model_key": "google/gemma-4-26b-a4b-it",
     "version": "4 / 2026-04-02",
@@ -642,8 +644,8 @@
     "last_updated": "2026-04-02",
     "max_input_tokens": 262144,
     "max_output_tokens": 32768,
-    "input_cost": null,
-    "output_cost": null,
+    "input_cost": 0,
+    "output_cost": 0,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -670,8 +672,8 @@
     "last_updated": "2026-04-02",
     "max_input_tokens": 262144,
     "max_output_tokens": 32768,
-    "input_cost": null,
-    "output_cost": null,
+    "input_cost": 0,
+    "output_cost": 0,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -746,16 +748,16 @@
   {
     "provider": "minimax",
     "providerClass": "creator",
-    "family": "minimax-m3",
-    "model_key": "minimax/MiniMax-M3",
-    "version": "2026-06-01",
-    "tier": "base",
-    "release_date": "2026-06-01",
-    "last_updated": "2026-06-25",
+    "family": "minimax-m",
+    "model_key": "minimax/MiniMax-M3.1-Flash",
+    "version": "3.1 / 2026-10-19",
+    "tier": "flash",
+    "release_date": "2026-10-19",
+    "last_updated": "2026-10-19",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 3e-7,
-    "output_cost": 0.0000012,
+    "input_cost": 1.5e-7,
+    "output_cost": 6e-7,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -776,15 +778,15 @@
     "provider": "minimax",
     "providerClass": "creator",
     "family": "minimax-m3",
-    "model_key": "minimax-cn/MiniMax-M3",
+    "model_key": "minimax/MiniMax-M3",
     "version": "2026-06-01",
     "tier": "base",
     "release_date": "2026-06-01",
     "last_updated": "2026-06-25",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 3.1369999999999996e-7,
-    "output_cost": 0.0000012548999999999998,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -816,10 +818,11 @@
     "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
-    "attachment": false,
+    "attachment": true,
     "modalities": {
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "output": [
         "text"
