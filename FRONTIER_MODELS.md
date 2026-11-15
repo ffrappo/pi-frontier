@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-14
+Generated: 2026-11-15
 Source: models.dev
-82 frontier models across 16 providers (scope: creators).
+81 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -50,7 +50,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `google/gemini-4-argon` | base | 2026-10-13 | 1049K → 33K | $2.00 | $10.00 |
 | `google/gemini-3.8-flash` | flash | 2026-09-02 | 1049K → 66K | $0.75 | $3.75 |
 | `google/gemini-3.1-flash-lite-image` | flash | 2026-06-30 | 66K → 4K | $0.25 | $30.00 |
-| `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 33K | $3.50 | $21.00 |
+| `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
+| `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 16K | $3.50 | $21.00 |
 | `google/gemini-3-pro-image` | pro | 2026-05-28 | 66K → 33K | $2.00 | $120.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | $0.00 | $0.00 |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | $0.00 | $0.00 |
@@ -162,8 +163,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
-| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
