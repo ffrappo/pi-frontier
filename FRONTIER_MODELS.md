@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-17
+Generated: 2026-11-18
 Source: models.dev
-82 frontier models across 16 providers (scope: creators).
+75 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -88,10 +88,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
-| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
-| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
-| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
@@ -113,18 +110,16 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `openai/gpt-6.2-astra` | base | 2026-11-17 | 1050K → 128K | $8.00 | $40.00 |
+| `openai/gpt-6.2-sol` | base | 2026-11-17 | 1050K → 128K | $2.00 | $10.00 |
 | `openai/gpt-6.1-terra` | base | 2026-10-26 | 1050K → 128K | $1.00 | $5.00 |
-| `openai/gpt-6.1-sol` | base | 2026-09-29 | 1050K → 128K | $2.00 | $10.00 |
 | `openai/gpt-6-luna` | base | 2026-09-22 | 1050K → 128K | $0.10 | $0.50 |
-| `openai/gpt-6-astra` | base | 2026-09-04 | 1050K → 128K | $10.00 | $50.00 |
 | `openai/gpt-daybreak-blue-latest` | base | 2026-08-07 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-daybreak-red-latest` | base | 2026-08-07 | 400K → 128K | $12.50 | $75.00 |
 | `openai/gpt-5.6` | base | 2026-07-09 | 1050K → 128K | $4.00 | $20.00 |
 | `openai/gpt-realtime-2.1` | base | 2026-07-06 | 128K → 32K | $4.00 | $24.00 |
 | `openai/gpt-5.5-pro` | pro | 2026-04-23 | 1050K → 128K | $30.00 | $180.00 |
 | `openai/gpt-image-2` | base | 2026-04-21 | — → — | — | — |
-| `openai/gpt-5.4-mini` | mini | 2026-03-17 | 400K → 128K | $0.75 | $4.50 |
-| `openai/gpt-5.4-nano` | nano | 2026-03-17 | 400K → 128K | $0.20 | $1.25 |
 
 ## stepfun
 
@@ -162,8 +157,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
-| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
