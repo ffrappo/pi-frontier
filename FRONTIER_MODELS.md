@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-18
+Generated: 2026-11-19
 Source: models.dev
-75 frontier models across 16 providers (scope: creators).
+79 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -45,6 +45,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `google/gemini-4-neon` | base | 2026-11-18 | 1049K → 66K | $3.00 | $15.00 |
 | `google/gemini-4-hydrogen` | base | 2026-11-12 | 1049K → 66K | $1.50 | $7.50 |
 | `google/gemini-4-carbon` | base | 2026-11-10 | 1049K → 33K | $2.00 | $10.00 |
 | `google/gemini-4-argon` | base | 2026-10-13 | 1049K → 33K | $2.00 | $10.00 |
@@ -67,7 +68,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax-cn/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
-| `minimax/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.31 | $1.25 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.30 | $1.20 |
 
 ## mistral
@@ -88,7 +89,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
+| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
+| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
+| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
