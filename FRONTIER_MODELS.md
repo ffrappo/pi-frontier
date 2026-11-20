@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-19
+Generated: 2026-11-20
 Source: models.dev
-79 frontier models across 16 providers (scope: creators).
+80 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -147,7 +147,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `xai/grok-imagine-video-1.5-lite` | lite | 2026-10-01 | 1K → — | — | — |
 | `xai/grok-4.7` | base | 2026-09-21 | 500K → 500K | $2.00 | $6.00 |
 | `xai/grok-imagine-video-1.5` | base | 2026-05-30 | 1K → — | — | — |
-| `xai/grok-build-0.1` | base | 2026-04-16 | 256K → 256K | $1.00 | $2.00 |
 
 ## xiaomi
 
@@ -161,6 +160,8 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
+| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
