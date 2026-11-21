@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-20
+Generated: 2026-11-21
 Source: models.dev
-80 frontier models across 16 providers (scope: creators).
+86 frontier models across 16 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -16,6 +16,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `alibaba/deepseek-v4-flash-0731` | flash | 2026-07-31 | 1000K → 384K | $0.44 | $1.32 |
 | `alibaba/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `alibaba/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
+| `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
 
 ## anthropic
 
@@ -54,14 +55,19 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `google/gemini-omni-flash-preview` | flash | 2026-06-30 | 131K → 66K | $1.50 | $17.50 |
 | `google/gemini-3.5-live-translate-preview` | base | 2026-06-09 | 16K → 16K | $3.50 | $21.00 |
 | `google/gemini-3-pro-image` | pro | 2026-05-28 | 66K → 33K | $2.00 | $12.00 |
+| `google/gemini-embedding-2` | base | 2026-04-22 | 8K → 1 | $0.20 | $0.00 |
+| `google/deep-research-max-preview-04-2026` | base | 2026-04-21 | 1049K → 66K | $2.00 | $12.00 |
+| `google/gemini-3.1-flash-tts-preview` | flash | 2026-04-15 | 8K → 16K | $1.00 | $20.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | $0.00 | $0.00 |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | $0.00 | $0.00 |
+| `google/gemini-3.1-flash-live-preview` | flash | 2026-03-26 | 131K → 66K | $0.75 | $4.50 |
 
 ## inception
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `inception/mercury-3` | base | 2026-10-16 | 1000K → 131K | $0.10 | $0.35 |
+| `inception/mercury-edit-2` | base | 2026-03-30 | 32K → 8K | $0.25 | $0.75 |
 
 ## minimax
 
@@ -89,10 +95,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
-| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
-| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
-| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
@@ -132,6 +135,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `stepfun/step-5-preview` | base | 2026-09-16 | 1000K → 66K | $1.05 | $2.99 |
 | `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.20 | $1.21 |
 | `stepfun/stepaudio-2.5-asr` | base | 2026-04-24 | — → — | — | — |
+| `stepfun/stepaudio-2.5-tts` | base | 2026-04-16 | — → — | — | — |
 
 ## upstage
 
@@ -165,3 +169,5 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
+| `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
+| `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $0.75 | $3.29 |
