@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-22
+Generated: 2026-11-23
 Source: models.dev
-86 frontier models across 16 providers (scope: creators).
+91 frontier models across 17 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -74,7 +74,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax-cn/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
-| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.31 | $1.25 |
+| `minimax/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.30 | $1.20 |
 
 ## mistral
@@ -95,7 +95,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
+| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
+| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
+| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `moonshotai/kimi-k2.7-code` | code | 2026-06-12 | 262K → 262K | $0.95 | $4.00 |
 | `moonshotai/kimi-k2.7-code-highspeed` | code | 2026-06-12 | 262K → 262K | $1.90 | $8.00 |
 
@@ -127,6 +130,16 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `openai/gpt-realtime-2.1` | base | 2026-07-06 | 128K → 32K | $4.00 | $24.00 |
 | `openai/gpt-5.5-pro` | pro | 2026-04-23 | 1050K → 128K | $30.00 | $180.00 |
 | `openai/gpt-image-2` | base | 2026-04-21 | — → — | — | — |
+
+## sarvam
+
+| Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
+|---|---|---|---|---|---|
+| `sarvam/deepseekv4.1-flash-1017` | flash | 2026-10-17 | 1049K → 384K | $0.15 | $0.59 |
+| `sarvam/deepseekv4.1-flash-1017-interactive` | flash | 2026-10-17 | 1049K → 384K | $0.27 | $1.12 |
+| `sarvam/glm5.3-flash` | flash | 2026-08-26 | 1049K → 131K | $0.14 | $0.48 |
+| `sarvam/glm5.3` | base | 2026-08-14 | 1049K → 131K | $1.34 | $4.15 |
+| `sarvam/gemma4` | base | 2026-04-02 | 262K → 33K | $0.37 | $0.96 |
 
 ## stepfun
 
@@ -164,10 +177,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
-| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
-| `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
 | `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $0.75 | $3.29 |
