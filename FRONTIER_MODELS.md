@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-24
+Generated: 2026-11-25
 Source: models.dev
-84 frontier models across 17 providers (scope: creators).
+91 frontier models across 17 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -10,8 +10,12 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `alibaba/qwen4-max` | base | 2026-11-16 | 1000K → 262K | $1.50 | $4.50 |
+| `alibaba/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
+| `alibaba/kimi-k3.1-pro-prime` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `alibaba/qwen3.8-omni-flash` | flash | 2026-09-17 | 1000K → 131K | $0.15 | $0.47 |
 | `alibaba/qwen3.8-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.47 |
+| `alibaba/glm-5.3-prime` | base | 2026-08-14 | 1000K → 131K | $2.80 | $8.80 |
 | `alibaba/qwen3.8-max` | base | 2026-08-03 | 1000K → 131K | $2.00 | $6.00 |
 | `alibaba/deepseek-v4-flash-0731` | flash | 2026-07-31 | 1000K → 384K | $0.44 | $1.32 |
 | `alibaba/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
@@ -31,9 +35,9 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
-| `cohere/north-small-translate-09-2026` | lite | 2026-09-09 | 33K → 16K | $0.00 | $0.00 |
-| `cohere/north-mini-code-1-0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
-| `cohere/command-a-plus-05-2026` | base | 2026-05-20 | 128K → 64K | $2.50 | $10.00 |
+| `cohere/north-small-translate-1.0` | lite | 2026-09-09 | 33K → 16K | $0.00 | $0.00 |
+| `cohere/north-mini-code-1.0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
+| `cohere/command-a-plus-05-2026` | base | 2026-05-20 | 128K → 64K | $0.00 | $0.00 |
 
 ## deepseek
 
@@ -80,7 +84,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `mistral/deepseek-v4-1-flash-1017` | flash | 2026-10-17 | 1049K → 128K | $0.30 | $1.20 |
-| `mistral/mistral-large-4` | base | 2026-10-06 | 1049K → 262K | $0.70 | $2.10 |
+| `mistral/mistral-large-4` | base | 2026-10-05 | 1049K → 262K | $0.70 | $2.10 |
 | `mistral/zai-glm-5-3-flash` | flash | 2026-08-26 | 1049K → 131K | $0.15 | $0.50 |
 | `mistral/zai-glm-5-3` | base | 2026-08-14 | 1049K → 131K | $1.40 | $4.40 |
 
@@ -137,6 +141,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `stepfun/step-5-preview` | base | 2026-09-16 | 1000K → 66K | $1.05 | $2.99 |
 | `stepfun/step-3.7-flash` | flash | 2026-05-29 | 256K → 256K | $0.20 | $1.21 |
+| `stepfun/stepaudio-2.5-chat` | base | 2026-05-09 | — → — | $1.95 | $4.79 |
 | `stepfun/stepaudio-2.5-asr` | base | 2026-04-24 | — → — | — | — |
 | `stepfun/stepaudio-2.5-tts` | base | 2026-04-16 | — → — | — | — |
 
@@ -161,12 +166,14 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `xiaomi/mimo-v2.6-flash` | flash | 2026-09-22 | 1049K → 131K | $0.14 | $0.28 |
 | `xiaomi/mimo-v2.6-pro` | pro | 2026-09-22 | 1049K → 131K | $0.43 | $0.87 |
-| `xiaomi/mimo-v2.6-pro-ultraspeed` | pro | 2026-09-21 | 1049K → 131K | $4.35 | $8.70 |
+| `xiaomi/mimo-v2.6-pro-ultraspeed` | pro | 2026-09-22 | 1049K → 131K | $4.35 | $8.70 |
 
 ## zai
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `zai/glm-5.3-flashx-legal` | base | 2026-11-02 | 1000K → 131K | $0.37 | $1.25 |
+| `zhipuai/glm-5.3-flashx-legal` | base | 2026-11-02 | 1000K → 131K | $0.30 | $1.05 |
 | `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
 | `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |

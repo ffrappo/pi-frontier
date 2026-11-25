@@ -56,6 +56,89 @@
   {
     "provider": "alibaba",
     "providerClass": "creator",
+    "family": "glm-prime",
+    "model_key": "alibaba/glm-5.3-prime",
+    "version": "5.3 / 2026-08-14",
+    "tier": "base",
+    "release_date": "2026-08-14",
+    "last_updated": "2026-08-14",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 0.0000028,
+    "output_cost": 0.0000088,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "kimi-k",
+    "model_key": "alibaba/kimi-k3.1-pro",
+    "version": "3.1 / 2026-10-23",
+    "tier": "pro",
+    "release_date": "2026-10-23",
+    "last_updated": "2026-10-23",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000002,
+    "output_cost": 0.00001,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "kimi-k-prime",
+    "model_key": "alibaba/kimi-k3.1-pro-prime",
+    "version": "3.1 / 2026-10-23",
+    "tier": "pro",
+    "release_date": "2026-10-23",
+    "last_updated": "2026-10-23",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "input_cost": 0.000004,
+    "output_cost": 0.00002,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
     "family": "kimi-k3",
     "model_key": "alibaba/kimi-k3",
     "version": "2026-07-16",
@@ -200,6 +283,36 @@
     "knowledge": null
   },
   {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "qwen4",
+    "model_key": "alibaba/qwen4-max",
+    "version": "2026-11-16",
+    "tier": "base",
+    "release_date": "2026-11-16",
+    "last_updated": "2026-11-16",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 262144,
+    "input_cost": 0.0000015,
+    "output_cost": 0.0000045,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
     "provider": "anthropic",
     "providerClass": "creator",
     "family": "claude",
@@ -326,8 +439,8 @@
     "last_updated": "2026-06-09",
     "max_input_tokens": 128000,
     "max_output_tokens": 64000,
-    "input_cost": 0.0000025,
-    "output_cost": 0.00001,
+    "input_cost": 0,
+    "output_cost": 0,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -347,7 +460,7 @@
     "provider": "cohere",
     "providerClass": "creator",
     "family": "north",
-    "model_key": "cohere/north-mini-code-1-0",
+    "model_key": "cohere/north-mini-code-1.0",
     "version": "1.0 / 2026-06-09",
     "tier": "mini",
     "release_date": "2026-06-09",
@@ -374,8 +487,8 @@
     "provider": "cohere",
     "providerClass": "creator",
     "family": "north-translate",
-    "model_key": "cohere/north-small-translate-09-2026",
-    "version": "2026-09-00",
+    "model_key": "cohere/north-small-translate-1.0",
+    "version": "1.0 / 2026-09-09",
     "tier": "lite",
     "release_date": "2026-09-09",
     "last_updated": "2026-09-09",
@@ -658,7 +771,9 @@
     "modalities": {
       "input": [
         "text",
-        "image"
+        "image",
+        "video",
+        "pdf"
       ],
       "output": [
         "text",
@@ -1017,10 +1132,10 @@
     "providerClass": "creator",
     "family": "mistral-large",
     "model_key": "mistral/mistral-large-4",
-    "version": "4 / 2026-10-06",
+    "version": "4 / 2026-10-05",
     "tier": "base",
-    "release_date": "2026-10-06",
-    "last_updated": "2026-10-06",
+    "release_date": "2026-10-05",
+    "last_updated": "2026-10-05",
     "max_input_tokens": 1048576,
     "max_output_tokens": 262144,
     "input_cost": 7e-7,
@@ -1038,7 +1153,7 @@
         "text"
       ]
     },
-    "open_weights": false,
+    "open_weights": true,
     "knowledge": null
   },
   {
@@ -1923,6 +2038,34 @@
   {
     "provider": "stepfun",
     "providerClass": "creator",
+    "family": "stepaudio",
+    "model_key": "stepfun/stepaudio-2.5-chat",
+    "version": "2.5 / 2026-05-09",
+    "tier": "base",
+    "release_date": "2026-05-09",
+    "last_updated": "2026-05-09",
+    "max_input_tokens": null,
+    "max_output_tokens": null,
+    "input_cost": 0.0000019463,
+    "output_cost": 0.000004790899999999999,
+    "reasoning": false,
+    "tool_call": false,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "stepfun",
+    "providerClass": "creator",
     "family": "stepaudio-asr",
     "model_key": "stepfun/stepaudio-2.5-asr",
     "version": "2.5 / 2026-04-24",
@@ -2179,10 +2322,10 @@
     "providerClass": "creator",
     "family": "mimo-ultraspeed",
     "model_key": "xiaomi/mimo-v2.6-pro-ultraspeed",
-    "version": "2.6 / 2026-09-21",
+    "version": "2.6 / 2026-09-22",
     "tier": "pro",
-    "release_date": "2026-09-21",
-    "last_updated": "2026-09-21",
+    "release_date": "2026-09-22",
+    "last_updated": "2026-09-22",
     "max_input_tokens": 1048576,
     "max_output_tokens": 131072,
     "input_cost": 0.00000435,
@@ -2409,6 +2552,66 @@
       ]
     },
     "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-flashx-legal",
+    "model_key": "zhipuai/glm-5.3-flashx-legal",
+    "version": "5.3 / 2026-11-02",
+    "tier": "base",
+    "release_date": "2026-11-02",
+    "last_updated": "2026-11-02",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 2.9943e-7,
+    "output_cost": 0.00000104801,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-flashx-legal",
+    "model_key": "zai/glm-5.3-flashx-legal",
+    "version": "5.3 / 2026-11-02",
+    "tier": "base",
+    "release_date": "2026-11-02",
+    "last_updated": "2026-11-02",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 3.7e-7,
+    "output_cost": 0.00000125,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
     "knowledge": null
   }
 ]
