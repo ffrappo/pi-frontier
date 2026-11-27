@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-26
+Generated: 2026-11-27
 Source: models.dev
-87 frontier models across 17 providers (scope: creators).
+89 frontier models across 17 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -36,7 +36,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `cohere/north-small-translate-1.0` | lite | 2026-09-09 | 33K → 16K | $0.00 | $0.00 |
-| `cohere/north-mini-code-1-0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
+| `cohere/north-mini-code-1.0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
 | `cohere/command-a-plus-05-2026` | base | 2026-05-20 | 128K → 64K | $0.00 | $0.00 |
 
 ## deepseek
@@ -62,7 +62,6 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `google/deep-research-max-preview-04-2026` | base | 2026-04-21 | 1049K → 66K | $2.00 | $12.00 |
 | `google/gemma-4-26b-a4b-it` | base | 2026-04-02 | 262K → 33K | $0.00 | $0.00 |
 | `google/gemma-4-31b-it` | base | 2026-04-02 | 262K → 33K | $0.00 | $0.00 |
-| `google/gemini-3.1-flash-live-preview` | flash | 2026-03-26 | 131K → 66K | $0.75 | $4.50 |
 
 ## inception
 
@@ -76,7 +75,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax-cn/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
-| `minimax/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
+| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.31 | $1.25 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.30 | $1.20 |
 
 ## mistral
@@ -94,7 +93,10 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
+| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
+| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
+| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 
 ## morph
 
