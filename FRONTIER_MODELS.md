@@ -1,8 +1,8 @@
 # Frontier Models
 
-Generated: 2026-11-27
+Generated: 2026-11-28
 Source: models.dev
-89 frontier models across 17 providers (scope: creators).
+94 frontier models across 17 providers (scope: creators).
 
 Costs are per 1M tokens. Context is the token limit (input → output).
 
@@ -13,11 +13,15 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | `alibaba/qwen4-max` | base | 2026-11-16 | 1000K → 262K | $1.50 | $4.50 |
 | `alibaba/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
 | `alibaba/kimi-k3.1-pro-prime` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
+| `alibaba/macaron-v1.1-coding-venti` | base | 2026-09-22 | 1049K → 131K | $1.19 | $3.74 |
+| `alibaba/macaron-v1.1-venti` | base | 2026-09-22 | 1049K → 131K | $1.19 | $3.74 |
+| `alibaba/macaron-v1.1-venti-pro` | pro | 2026-09-22 | 1049K → 131K | $2.00 | $10.00 |
 | `alibaba/qwen3.8-omni-flash` | flash | 2026-09-17 | 1000K → 131K | $0.15 | $0.47 |
 | `alibaba/qwen3.8-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.47 |
 | `alibaba/glm-5.3-prime` | base | 2026-08-14 | 1000K → 131K | $2.80 | $8.80 |
 | `alibaba/qwen3.8-max` | base | 2026-08-03 | 1000K → 131K | $2.00 | $6.00 |
 | `alibaba/deepseek-v4-flash-0731` | flash | 2026-07-31 | 1000K → 384K | $0.44 | $1.32 |
+| `alibaba/macaron-v1-tall` | base | 2026-07-21 | 262K → 66K | $0.45 | $2.60 |
 | `alibaba/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 | `alibaba/glm-5.2` | base | 2026-06-13 | 1000K → 131K | $1.40 | $4.40 |
 | `alibaba/qwen3.6-27b` | base | 2026-04-22 | 262K → 66K | $0.60 | $3.60 |
@@ -36,7 +40,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `cohere/north-small-translate-1.0` | lite | 2026-09-09 | 33K → 16K | $0.00 | $0.00 |
-| `cohere/north-mini-code-1.0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
+| `cohere/north-mini-code-1-0` | mini | 2026-06-09 | 256K → 64K | $0.00 | $0.00 |
 | `cohere/command-a-plus-05-2026` | base | 2026-05-20 | 128K → 64K | $0.00 | $0.00 |
 
 ## deepseek
@@ -75,7 +79,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
 | `minimax-cn/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
-| `minimax-cn/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.31 | $1.25 |
+| `minimax/MiniMax-M3.1-Flash` | flash | 2026-10-19 | 1000K → 524K | $0.15 | $0.60 |
 | `minimax/MiniMax-M3` | base | 2026-06-01 | 1000K → 524K | $0.30 | $1.20 |
 
 ## mistral
@@ -93,10 +97,7 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 |---|---|---|---|---|---|
 | `moonshotai-cn/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $1.94 | $10.17 |
 | `moonshotai-cn/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $3.89 | $20.33 |
-| `moonshotai/kimi-k3.1-pro` | pro | 2026-10-23 | 1049K → 1049K | $2.00 | $10.00 |
-| `moonshotai/kimi-k3.1-pro-highspeed` | pro | 2026-10-23 | 1049K → 1049K | $4.00 | $20.00 |
 | `moonshotai-cn/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $2.99 | $14.94 |
-| `moonshotai/kimi-k3` | base | 2026-07-16 | 1049K → 1049K | $3.00 | $15.00 |
 
 ## morph
 
@@ -174,8 +175,12 @@ Costs are per 1M tokens. Context is the token limit (input → output).
 
 | Model | Tier | Released | Context (in→out) | $/1M in | $/1M out |
 |---|---|---|---|---|---|
+| `zai/glm-5.3-flashx-legal` | base | 2026-11-02 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx-legal` | base | 2026-11-02 | 1000K → 131K | $0.30 | $1.05 |
+| `zai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.37 | $1.25 |
 | `zhipuai/glm-5.3-flashx` | base | 2026-09-18 | 1000K → 131K | $0.30 | $1.05 |
+| `zai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.15 | $0.50 |
 | `zhipuai/glm-5.3-flash` | flash | 2026-08-26 | 1000K → 131K | $0.12 | $0.42 |
 | `zhipuai/glm-5.3` | base | 2026-08-14 | 1000K → 131K | $1.20 | $4.18 |
+| `zai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $1.20 | $4.00 |
 | `zhipuai/glm-5v-turbo` | lite | 2026-04-01 | 200K → 131K | $0.75 | $3.29 |

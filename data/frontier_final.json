@@ -167,6 +167,116 @@
   {
     "provider": "alibaba",
     "providerClass": "creator",
+    "family": "macaron-coding-venti",
+    "model_key": "alibaba/macaron-v1.1-coding-venti",
+    "version": "1.1 / 2026-09-22",
+    "tier": "base",
+    "release_date": "2026-09-22",
+    "last_updated": "2026-09-22",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 0.00000119,
+    "output_cost": 0.00000374,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "macaron-tall",
+    "model_key": "alibaba/macaron-v1-tall",
+    "version": "1 / 2026-07-21",
+    "tier": "base",
+    "release_date": "2026-07-21",
+    "last_updated": "2026-07-21",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 65536,
+    "input_cost": 4.5000000000000003e-7,
+    "output_cost": 0.0000026,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "macaron-venti",
+    "model_key": "alibaba/macaron-v1.1-venti",
+    "version": "1.1 / 2026-09-22",
+    "tier": "base",
+    "release_date": "2026-09-22",
+    "last_updated": "2026-09-22",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 0.00000119,
+    "output_cost": 0.00000374,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
+    "family": "macaron-venti",
+    "model_key": "alibaba/macaron-v1.1-venti-pro",
+    "version": "1.1 / 2026-09-22",
+    "tier": "pro",
+    "release_date": "2026-09-22",
+    "last_updated": "2026-09-22",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "input_cost": 0.000002,
+    "output_cost": 0.00001,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "alibaba",
+    "providerClass": "creator",
     "family": "qwen",
     "model_key": "alibaba/qwen3.8-max",
     "version": "3.8 / 2026-08-03",
@@ -460,7 +570,7 @@
     "provider": "cohere",
     "providerClass": "creator",
     "family": "north",
-    "model_key": "cohere/north-mini-code-1.0",
+    "model_key": "cohere/north-mini-code-1-0",
     "version": "1.0 / 2026-06-09",
     "tier": "mini",
     "release_date": "2026-06-09",
@@ -1013,16 +1123,16 @@
   {
     "provider": "minimax",
     "providerClass": "creator",
-    "family": "minimax-m3",
-    "model_key": "minimax/MiniMax-M3",
-    "version": "2026-06-01",
-    "tier": "base",
-    "release_date": "2026-06-01",
-    "last_updated": "2026-06-25",
+    "family": "minimax-m",
+    "model_key": "minimax/MiniMax-M3.1-Flash",
+    "version": "3.1 / 2026-10-19",
+    "tier": "flash",
+    "release_date": "2026-10-19",
+    "last_updated": "2026-10-19",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 3e-7,
-    "output_cost": 0.0000012,
+    "input_cost": 1.5e-7,
+    "output_cost": 6e-7,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -1043,15 +1153,15 @@
     "provider": "minimax",
     "providerClass": "creator",
     "family": "minimax-m3",
-    "model_key": "minimax-cn/MiniMax-M3",
+    "model_key": "minimax/MiniMax-M3",
     "version": "2026-06-01",
     "tier": "base",
     "release_date": "2026-06-01",
     "last_updated": "2026-06-25",
     "max_input_tokens": 1000000,
     "max_output_tokens": 524288,
-    "input_cost": 3.1369999999999996e-7,
-    "output_cost": 0.0000012548999999999998,
+    "input_cost": 3e-7,
+    "output_cost": 0.0000012,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -1213,35 +1323,6 @@
   {
     "provider": "moonshotai",
     "providerClass": "creator",
-    "family": "kimi-k",
-    "model_key": "moonshotai/kimi-k3.1-pro",
-    "version": "3.1 / 2026-10-23",
-    "tier": "pro",
-    "release_date": "2026-10-23",
-    "last_updated": "2026-10-23",
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "input_cost": 0.000002,
-    "output_cost": 0.00001,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": null
-  },
-  {
-    "provider": "moonshotai",
-    "providerClass": "creator",
     "family": "kimi-k-highspeed",
     "model_key": "moonshotai-cn/kimi-k3.1-pro-highspeed",
     "version": "3.1 / 2026-10-23",
@@ -1271,35 +1352,6 @@
   {
     "provider": "moonshotai",
     "providerClass": "creator",
-    "family": "kimi-k-highspeed",
-    "model_key": "moonshotai/kimi-k3.1-pro-highspeed",
-    "version": "3.1 / 2026-10-23",
-    "tier": "pro",
-    "release_date": "2026-10-23",
-    "last_updated": "2026-10-23",
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "input_cost": 0.000004,
-    "output_cost": 0.00002,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": null
-  },
-  {
-    "provider": "moonshotai",
-    "providerClass": "creator",
     "family": "kimi-k3",
     "model_key": "moonshotai-cn/kimi-k3",
     "version": "2026-07-16",
@@ -1310,35 +1362,6 @@
     "max_output_tokens": 1048576,
     "input_cost": 0.0000029879,
     "output_cost": 0.0000149395,
-    "reasoning": true,
-    "tool_call": true,
-    "attachment": true,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "open_weights": true,
-    "knowledge": null
-  },
-  {
-    "provider": "moonshotai",
-    "providerClass": "creator",
-    "family": "kimi-k3",
-    "model_key": "moonshotai/kimi-k3",
-    "version": "2026-07-16",
-    "tier": "base",
-    "release_date": "2026-07-16",
-    "last_updated": "2026-07-16",
-    "max_input_tokens": 1048576,
-    "max_output_tokens": 1048576,
-    "input_cost": 0.000003,
-    "output_cost": 0.000015,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -2463,6 +2486,36 @@
   {
     "provider": "zai",
     "providerClass": "creator",
+    "family": "glm",
+    "model_key": "zai/glm-5.3-flash",
+    "version": "5.3 / 2026-08-26",
+    "tier": "flash",
+    "release_date": "2026-08-26",
+    "last_updated": "2026-08-26",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 1.5e-7,
+    "output_cost": 5e-7,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
     "family": "glm-5v",
     "model_key": "zhipuai/glm-5v-turbo",
     "version": "2026-04-01",
@@ -2473,6 +2526,36 @@
     "max_output_tokens": 131072,
     "input_cost": 7.4698e-7,
     "output_cost": 0.00000328669,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-5v",
+    "model_key": "zai/glm-5v-turbo",
+    "version": "2026-04-01",
+    "tier": "lite",
+    "release_date": "2026-04-01",
+    "last_updated": "2026-04-01",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 131072,
+    "input_cost": 0.0000012,
+    "output_cost": 0.000004,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
@@ -2523,6 +2606,36 @@
   {
     "provider": "zai",
     "providerClass": "creator",
+    "family": "glm-flashx",
+    "model_key": "zai/glm-5.3-flashx",
+    "version": "5.3 / 2026-09-18",
+    "tier": "base",
+    "release_date": "2026-09-18",
+    "last_updated": "2026-09-18",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 3.7e-7,
+    "output_cost": 0.00000125,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
     "family": "glm-flashx-legal",
     "model_key": "zhipuai/glm-5.3-flashx-legal",
     "version": "5.3 / 2026-11-02",
@@ -2533,6 +2646,36 @@
     "max_output_tokens": 131072,
     "input_cost": 2.9943e-7,
     "output_cost": 0.00000104801,
+    "reasoning": true,
+    "tool_call": true,
+    "attachment": true,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": false,
+    "knowledge": null
+  },
+  {
+    "provider": "zai",
+    "providerClass": "creator",
+    "family": "glm-flashx-legal",
+    "model_key": "zai/glm-5.3-flashx-legal",
+    "version": "5.3 / 2026-11-02",
+    "tier": "base",
+    "release_date": "2026-11-02",
+    "last_updated": "2026-11-02",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 131072,
+    "input_cost": 3.7e-7,
+    "output_cost": 0.00000125,
     "reasoning": true,
     "tool_call": true,
     "attachment": true,
